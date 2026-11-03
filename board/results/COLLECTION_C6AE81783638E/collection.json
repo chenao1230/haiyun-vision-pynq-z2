@@ -1,0 +1,45 @@
+{
+  "collection_id": "C6AE81783638E",
+  "status": "STOPPED",
+  "started": "2026-11-02T12:54:27.912063",
+  "manifest_crc32": "6122C318",
+  "mode": "TRACK",
+  "groups": [
+    "G066",
+    "G029",
+    "G071",
+    "G078",
+    "G002",
+    "G138",
+    "G094"
+  ],
+  "pending": [],
+  "expected_counts": {
+    "G066": 12,
+    "G029": 12,
+    "G071": 11,
+    "G078": 12,
+    "G002": 13,
+    "G138": 10,
+    "G094": 15
+  },
+  "expected_frames": 85,
+  "completed": [
+    {
+      "sequence_id": "G066",
+      "run_id": "R6AE817836D2",
+      "board_status": "STOPPED",
+      "board_frames": 12,
+      "received_frames": 12,
+      "expected_frames": 12
+    }
+  ],
+  "current": "G066",
+  "current_received": 12,
+  "waiting_next": false,
+  "cancel_requested": true,
+  "directory": "E:\\Ship_Ethernet_V1_20261101\\runs\\COLLECTION_C6AE81783638E",
+  "current_run_id": "R6AE817836D2",
+  "finished": "2026-11-02T12:54:44.147937",
+  "received_frames": 12
+}

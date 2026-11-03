@@ -1,0 +1,110 @@
+{
+  "manifest_crc32": "6122C318",
+  "groups": {
+    "DETECT06": {
+      "title": "检测01—六张独立场景图",
+      "mode": "DET",
+      "order": 0
+    },
+    "G066": {
+      "title": "跟踪01—日光单船",
+      "mode": "TRACK",
+      "order": 1
+    },
+    "G029": {
+      "title": "跟踪02—多船并行",
+      "mode": "TRACK",
+      "order": 2
+    },
+    "G071": {
+      "title": "跟踪03—交会遮挡",
+      "mode": "TRACK",
+      "order": 3
+    },
+    "G078": {
+      "title": "跟踪04—灰暗低对比度",
+      "mode": "TRACK",
+      "order": 4
+    },
+    "G002": {
+      "title": "跟踪05—远处小目标",
+      "mode": "TRACK",
+      "order": 5
+    },
+    "G138": {
+      "title": "跟踪06—低能见度多船",
+      "mode": "TRACK",
+      "order": 6
+    },
+    "G094": {
+      "title": "跟踪07—夜间低照度",
+      "mode": "TRACK",
+      "order": 7
+    }
+  },
+  "independent_images": [
+    {
+      "number": "D01",
+      "title": "日光大船",
+      "source_image": "D01_Daylight.jpg",
+      "old_number": "D01",
+      "source_path": "C:\\Users\\wsy\\Desktop\\FPGA\\ship_fpga_tracking\\test\\000487_20170104_171627.jpg",
+      "original_name": "000730.jpg"
+    },
+    {
+      "number": "D02",
+      "title": "较小船舶",
+      "source_image": "D02_Small.jpg",
+      "old_number": "D04",
+      "source_path": "C:\\Users\\wsy\\Desktop\\FPGA\\ship_fpga_tracking\\test\\001805_20170819_135815.jpg",
+      "original_name": "004341.jpg"
+    },
+    {
+      "number": "D03",
+      "title": "多船交会",
+      "source_image": "D03_Crossing.jpg",
+      "old_number": "D05",
+      "source_path": "C:\\Users\\wsy\\Desktop\\FPGA\\ship_fpga_tracking\\test\\001524_20170819_075707.jpg",
+      "original_name": "003690.jpg"
+    },
+    {
+      "number": "D04",
+      "title": "水面反光",
+      "source_image": "D04_Reflection.jpg",
+      "old_number": "D07",
+      "source_path": "C:\\Users\\wsy\\Desktop\\FPGA\\ship_fpga_tracking\\test\\001864_20170819_154307.jpg",
+      "original_name": "005070.jpg"
+    },
+    {
+      "number": "D05",
+      "title": "灰暗低对比度",
+      "source_image": "D05_LowContrast.jpg",
+      "old_number": "D08",
+      "source_path": "C:\\Users\\wsy\\Desktop\\FPGA\\ship_fpga_tracking\\test\\003009_20170822_173511.jpg",
+      "original_name": "002961.jpg"
+    },
+    {
+      "number": "D06",
+      "title": "夜间低照度",
+      "source_image": "D06_Night.jpg",
+      "old_number": "D10",
+      "source_path": "E:\\Ship_Scene_Test_Candidates_20261030\\G094\\originals\\004140.jpg",
+      "original_name": "004140.jpg"
+    }
+  ],
+  "tracking_collection": [
+    "G066",
+    "G029",
+    "G071",
+    "G078",
+    "G002",
+    "G138",
+    "G094"
+  ],
+  "collection_title": "跟踪合集—01至07（85帧）",
+  "alarm_reuse": [
+    "G066",
+    "G029",
+    "G071"
+  ]
+}

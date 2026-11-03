@@ -1,0 +1,181 @@
+=== EARLY DIAGNOSTIC: PS7 initialization returned OK ===
+
+Xilinx First Stage Boot Loader 
+
+Release 2019.2	Oct 21 2026-21:05:51
+
+DDR CHECK BEGIN
+PYNQ-Z2 FIX: PS reference=50MHz CPU=650MHz DDR=525MHz FCLK0=120MHz
+DDR 4MB PATTERN TEST BEGIN (uncached CPU writes/reads, independent of SD data)
+DDR PATTERN pass=0 errors=0
+DDR PATTERN pass=1 errors=0
+DDR PATTERN pass=2 errors=0
+DDR PATTERN pass=3 errors=0
+DDR PATTERN pass=4 errors=0
+DDR 4MB PATTERN TEST PASS
+DDR CHECK OK; PCAP INIT BEGIN
+Devcfg driver initialized 
+
+PCAP INIT OK
+Silicon Version 3.1
+
+Boot mode is SD
+
+OPEN BOOT.BIN BEGIN
+SD: rc= 00000000
+
+OPEN BOOT.BIN OK
+SD Init Done 
+
+Flash Base Address: 0xe0100000
+
+LOAD BOOT IMAGE BEGIN
+Reboot status register: 0x60400000
+
+Multiboot Register: 0x0000c000
+
+Image Start Address: 0x00000000
+
+Partition Header Offset:0x00000c80
+
+Partition Count: 3
+
+Partition Number: 1
+
+Header Dump
+
+Image Word Len: 0x000f6ec0
+
+Data Word Len: 0x000f6ec0
+
+Partition Word Len:0x000f6ec0
+
+Load Addr: 0x00000000
+
+Exec Addr: 0x00000000
+
+Partition Start: 0x000075d0
+
+Partition Attr: 0x00000020
+
+Partition Checksum Offset: 0x00000000
+
+Section Count: 0x00000001
+
+Checksum: 0xffd13b7e
+
+Bitstream
+
+BITSTREAM LOAD BEGIN
+In FsblHookBeforeBitstreamDload function 
+
+SD large read OK bytes=4045568 source=0001d740 destination=00100000
+PL payload source=00100000 words=1011392 destination_words=1011392
+PL payload SUM32=3af3b7be FNV_WORD32=7e1a9289
+PL word[0]=ffffffff
+PL word[1]=ffffffff
+PL word[2]=ffffffff
+PL word[3]=ffffffff
+PL word[4]=ffffffff
+PL word[5]=ffffffff
+PL word[6]=ffffffff
+PL word[7]=ffffffff
+PL word[8]=000000bb
+PL word[9]=11220044
+PL word[10]=ffffffff
+PL word[11]=ffffffff
+PL word[12]=aa995566
+PL word[13]=20000000
+PL word[14]=30022001
+PL word[15]=00000000
+PCAP:StatusReg = 0x40000a30
+
+PCAP:device ready
+
+PCAP:Clear done
+
+Level Shifter Value = 0xa 
+
+Devcfg Status register = 0x40000a30 
+
+PCAP:Fabric is Initialized done
+
+PCAP register dump:
+
+PCAP CTRL 0xf8007000: 0x4c00e07f
+
+PCAP LOCK 0xf8007004: 0x0000001a
+
+PCAP CONFIG 0xf8007008: 0x00000508
+
+PCAP ISR 0xf800700c: 0x0802000b
+
+PCAP IMR 0xf8007010: 0xffffffff
+
+PCAP STATUS 0xf8007014: 0x00000a30
+
+PCAP DMA SRC ADDR 0xf8007018: 0x00100001
+
+PCAP DMA DEST ADDR 0xf800701c: 0xffffffff
+
+PCAP DMA SRC LEN 0xf8007020: 0x000f6ec0
+
+PCAP DMA DEST LEN 0xf8007024: 0x000f6ec0
+
+PCAP ROM SHADOW CTRL 0xf8007028: 0xffffffff
+
+PCAP MBOOT 0xf800702c: 0x0000c000
+
+PCAP SW ID 0xf8007030: 0x00000000
+
+PCAP UNLOCK 0xf8007034: 0x757bdf0d
+
+PCAP MCTRL 0xf8007080: 0x30800100
+
+
+
+DMA Done ! 
+
+
+
+FPGA Done ! 
+
+BITSTREAM LOAD OK
+In FsblHookAfterBitstreamDload function 
+
+Partition Number: 2
+
+Header Dump
+
+Image Word Len: 0x00029dd4
+
+Data Word Len: 0x00029dd4
+
+Partition Word Len:0x00029dd4
+
+Load Addr: 0x00100000
+
+Exec Addr: 0x00100000
+
+Partition Start: 0x000fe490
+
+Partition Attr: 0x00000010
+
+Partition Checksum Offset: 0x00000000
+
+Section Count: 0x00000001
+
+Checksum: 0xffc83f82
+
+Application
+
+LOAD BOOT IMAGE OK
+Handoff Address: 0x00100000
+
+APPLICATION HANDOFF BEGIN
+In FsblHookBeforeHandoff function 
+
+SUCCESSFUL_HANDOFF
+
+FSBL Status = 0x0001
+

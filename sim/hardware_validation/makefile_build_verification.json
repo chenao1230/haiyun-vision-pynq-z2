@@ -1,0 +1,16 @@
+{
+  "haiyun_app": {
+    "makefile_build_exit_code": 0,
+    "elf_load_ranges_verified": true,
+    "sha256": "4c1c146c1b85374f6e382a0af4c8effbcc4d33a6d7427bd58a1f6ec86d629c5a",
+    "bytes": 2444600,
+    "board_retested": false
+  },
+  "haiyun_fsbl": {
+    "makefile_build_exit_code": 0,
+    "elf_load_ranges_verified": true,
+    "sha256": "07d1b69425210461946c09acbdaddba0b34c0195ee64570e40cd0d66fd81b300",
+    "bytes": 614112,
+    "board_retested": false
+  }
+}

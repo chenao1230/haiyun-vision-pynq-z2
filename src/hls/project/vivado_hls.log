@@ -1,0 +1,1178 @@
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'HuangYJ' on host 'desktop-09pohoa' (Windows NT_amd64 version 6.2) on Sun Aug 04 12:30:43 +0800 2024
+INFO: [HLS 200-10] In directory 'D:/Desktop/demo/hls/top/top'
+Sourcing Tcl script 'D:/Desktop/demo/hls/top/top/top/solution1/csynth.tcl'
+INFO: [HLS 200-10] Opening project 'D:/Desktop/demo/hls/top/top/top'.
+INFO: [HLS 200-10] Adding design file '../src/conv.cpp' to the project
+INFO: [HLS 200-10] Adding design file '../src/conv.h' to the project
+INFO: [HLS 200-10] Adding design file '../src/maxpool.cpp' to the project
+INFO: [HLS 200-10] Adding design file '../src/maxpool.h' to the project
+INFO: [HLS 200-10] Adding design file '../src/pwconv.cpp' to the project
+INFO: [HLS 200-10] Adding design file '../src/pwconv.h' to the project
+INFO: [HLS 200-10] Adding design file '../src/std_conv.cpp' to the project
+INFO: [HLS 200-10] Adding design file '../src/std_conv.h' to the project
+INFO: [HLS 200-10] Adding design file '../src/upsample.cpp' to the project
+INFO: [HLS 200-10] Adding design file '../src/upsample.h' to the project
+INFO: [HLS 200-10] Adding test bench file '../src/pwconv_test.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file '../src/pwconv_test.h' to the project
+INFO: [HLS 200-10] Adding test bench file '../src/sampling_test.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file '../src/sampling_test.h' to the project
+INFO: [HLS 200-10] Adding test bench file '../src/test_tb.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file '../src/winoconv_test.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file '../src/winoconv_test.h' to the project
+INFO: [HLS 200-10] Opening solution 'D:/Desktop/demo/hls/top/top/top/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5.5ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5.5ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../src/upsample.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../src/std_conv.cpp' ... 
+WARNING: [HLS 200-40] In file included from ../src/std_conv.cpp:1:
+In file included from ../src/conv.h:2:
+../src/std_conv.h:8:9: warning: 'Tm' macro redefined
+#define Tm 32
+        ^
+../src/pwconv.h:5:9: note: previous definition is here
+#define Tm 8
+        ^
+In file included from ../src/std_conv.cpp:1:
+In file included from ../src/conv.h:2:
+../src/std_conv.h:11:9: warning: 'MAX_LEN' macro redefined
+#define MAX_LEN 512
+        ^
+../src/pwconv.h:6:9: note: previous definition is here
+#define MAX_LEN 1024
+        ^
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file '../src/pwconv.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../src/maxpool.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../src/conv.cpp' ... 
+WARNING: [HLS 200-40] In file included from ../src/conv.cpp:1:
+In file included from ../src/conv.h:2:
+../src/std_conv.h:8:9: warning: 'Tm' macro redefined
+#define Tm 32
+        ^
+../src/pwconv.h:5:9: note: previous definition is here
+#define Tm 8
+        ^
+In file included from ../src/conv.cpp:1:
+In file included from ../src/conv.h:2:
+../src/std_conv.h:11:9: warning: 'MAX_LEN' macro redefined
+#define MAX_LEN 512
+        ^
+../src/pwconv.h:6:9: note: previous definition is here
+#define MAX_LEN 1024
+        ^
+2 warnings generated.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:26 . Memory (MB): peak = 193.738 ; gain = 101.160
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:26 . Memory (MB): peak = 193.738 ; gain = 101.160
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:27 . Memory (MB): peak = 196.258 ; gain = 103.680
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'next_block.1' into 'pwconv' (../src/pwconv.cpp:177) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:28 . Memory (MB): peak = 220.926 ; gain = 128.348
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (../src/pwconv.cpp:49) in function 'compute.1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (../src/pwconv.cpp:70) in function 'load_bias.1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1.1.1' (../src/std_conv.cpp:120) in function 'compute' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (../src/std_conv.cpp:135) in function 'load_bias' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (../src/pwconv.cpp:51) in function 'compute.1' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (../src/pwconv.cpp:72) in function 'load_bias.1' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1.1.1' (../src/std_conv.cpp:122) in function 'compute' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1.1.1.1' (../src/std_conv.cpp:123) in function 'compute' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (../src/std_conv.cpp:137) in function 'load_bias' completely with a factor of 32.
+INFO: [XFORM 203-101] Partitioning array 'bias_buff.V' (../src/std_conv.cpp:266) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'fm_out1.V' (../src/std_conv.cpp:268) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'fm_out2.V' (../src/std_conv.cpp:270) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'bias_buff.V' (../src/pwconv.cpp:159) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'fm_out1.V' (../src/pwconv.cpp:161) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'fm_out2.V' (../src/pwconv.cpp:163) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'fm_in_buff1.V' (../src/pwconv.cpp:104) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'fm_in_buff2.V' (../src/pwconv.cpp:106) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'wt_buff1.V' (../src/pwconv.cpp:108) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'wt_buff2.V' (../src/pwconv.cpp:111) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'fm_in_buff1.V' (../src/std_conv.cpp:183) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'fm_in_buff2.V' (../src/std_conv.cpp:185) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'wt_buff1.V' (../src/std_conv.cpp:187) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'wt_buff2.V' (../src/std_conv.cpp:190) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'wt_buff1.V' (../src/pwconv.cpp:108) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'wt_buff2.V' (../src/pwconv.cpp:111) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'wt_buff1.V' (../src/std_conv.cpp:187) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'wt_buff2.V' (../src/std_conv.cpp:190) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'next_block' into 'std_conv' (../src/std_conv.cpp:283) automatically.
+INFO: [XFORM 203-602] Inlining function 'next_block.1' into 'pwconv' (../src/pwconv.cpp:177) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../src/std_conv.cpp:159:18) to (../src/std_conv.cpp:163:12) in function 'store_output'... converting 28 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../src/std_conv.cpp:165:13) to (../src/std_conv.cpp:168:13) in function 'store_output'... converting 19 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../src/std_conv.cpp:295:6) to (../src/std_conv.cpp:299:3) in function 'std_conv'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../src/pwconv.cpp:5:5) to (../src/pwconv.cpp:11:1) in function 'pwconv_leakyrelu'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../src/std_conv.cpp:5:5) to (../src/std_conv.cpp:11:1) in function 'leaky_relu'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../src/pwconv.cpp:49:21) to (../src/pwconv.cpp:49:16) in function 'compute.1'... converting 321 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../src/std_conv.cpp:120:29) to (../src/std_conv.cpp:120:23) in function 'compute'... converting 1281 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'leaky_relu' into 'store_output' (../src/std_conv.cpp:159) automatically.
+INFO: [XFORM 203-602] Inlining function 'pwconv_leakyrelu' into 'store_output.1' (../src/pwconv.cpp:91) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'store_output.2' (../src/maxpool.cpp:33:34)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'load_input.2' (../src/maxpool.cpp:9:36)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'load_input' (../src/std_conv.cpp:13)...21 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:45 . Memory (MB): peak = 341.805 ; gain = 249.227
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (../src/upsample.cpp:8:25) in function 'upsample'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (../src/upsample.cpp:7:24) in function 'upsample'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (../src/maxpool.cpp:38:26) in function 'store_output.2'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (../src/maxpool.cpp:37:25) in function 'store_output.2'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (../src/pwconv.cpp:85:9) in function 'store_output.1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (../src/std_conv.cpp:154:10) in function 'store_output'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (../src/std_conv.cpp:153:9) in function 'store_output'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (../src/pwconv.cpp:34:9) in function 'load_weight.1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (../src/std_conv.cpp:82:6) in function 'load_weight'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (../src/maxpool.cpp:17:26) in function 'load_input.2'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (../src/maxpool.cpp:16:25) in function 'load_input.2'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (../src/std_conv.cpp:24:7) in function 'load_input'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2' (../src/std_conv.cpp:49:10) in function 'load_input'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (../src/std_conv.cpp:134:9) in function 'load_bias'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (../src/maxpool.cpp:53:25) in function 'compute.2'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (../src/maxpool.cpp:52:24) in function 'compute.2'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1.1' (../src/std_conv.cpp:119:11) in function 'compute'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (../src/std_conv.cpp:118:10) in function 'compute'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (../src/std_conv.cpp:117:9) in function 'compute'.
+WARNING: [HLS 200-466] Port 'out1.V'() has different latency/depth on the same m_axi bundle:'FM1'
+WARNING: [HLS 200-466] Port 'out2.V'() has different latency/depth on the same m_axi bundle:'FM2'
+WARNING: [HLS 200-466] Port 'out3.V'() has different latency/depth on the same m_axi bundle:'FM3'
+WARNING: [HLS 200-466] Port 'out4.V'() has different latency/depth on the same m_axi bundle:'FM4'
+WARNING: [HLS 200-466] Port 'b.V'() has different latency/depth on the same m_axi bundle:'W1'
+INFO: [HLS 200-444] Inferring multiple bus burst write of a total cumulative length 13 on port 'out.V' (../src/maxpool.cpp:45:2). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 26 on port 'in.V' (../src/maxpool.cpp:24:2). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of variable length on port 'weight.V' (../src/pwconv.cpp:167:5). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst write of a total cumulative length 169 on port 'fm_out.V' (../src/pwconv.cpp:96:16). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 4 on port 'weight.V' (../src/pwconv.cpp:37:2). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 169 on port 'in1.V' (../src/pwconv.cpp:22:2). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 169 on port 'in2.V' (../src/pwconv.cpp:23:25). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 169 on port 'in3.V' (../src/pwconv.cpp:24:39). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 169 on port 'in4.V' (../src/pwconv.cpp:25:39). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of variable length on port 'w1.V' (../src/std_conv.cpp:281:5). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst write of a total cumulative length 13 on port 'out1.V' (../src/std_conv.cpp:172:21). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst write of a total cumulative length 13 on port 'out2.V' (../src/std_conv.cpp:173:21). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst write of a total cumulative length 13 on port 'out3.V' (../src/std_conv.cpp:174:21). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst write of a total cumulative length 13 on port 'out4.V' (../src/std_conv.cpp:175:21). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 36 on port 'w1.V' (../src/std_conv.cpp:90:10). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 36 on port 'w2.V' (../src/std_conv.cpp:91:10). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 36 on port 'w3.V' (../src/std_conv.cpp:92:10). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 36 on port 'w4.V' (../src/std_conv.cpp:93:10). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 15 on port 'in1.V' (../src/std_conv.cpp:29:2). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 15 on port 'in2.V' (../src/std_conv.cpp:30:12). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 15 on port 'in3.V' (../src/std_conv.cpp:31:27). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 15 on port 'in4.V' (../src/std_conv.cpp:32:27). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 27 on port 'in1.V' (../src/std_conv.cpp:54:2). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 27 on port 'in2.V' (../src/std_conv.cpp:55:15). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 27 on port 'in3.V' (../src/std_conv.cpp:56:33). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 27 on port 'in4.V' (../src/std_conv.cpp:57:30). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-472] Inferring partial write operation for 'fm_out_buff[0].V' (../src/pwconv.cpp:73:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'fm_out_buff[0].V' (../src/std_conv.cpp:139:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'fm_out_buff[0].V' (../src/std_conv.cpp:126:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'fm_out_buff.V' (../src/maxpool.cpp:63:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'fm_out_buff[0].V' (../src/pwconv.cpp:61:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'bias_buff[0].V' (../src/std_conv.cpp:281:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'bias_buff[0].V' (../src/pwconv.cpp:167:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'wt_buff[0][0].V' (../src/std_conv.cpp:95:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'wt_buff[0][0].V' (../src/std_conv.cpp:101:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'wt_buff[1][0].V' (../src/std_conv.cpp:102:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'wt_buff[1][0].V' (../src/std_conv.cpp:96:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'wt_buff[2][0].V' (../src/std_conv.cpp:103:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'wt_buff[2][0].V' (../src/std_conv.cpp:97:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'wt_buff[3][0].V' (../src/std_conv.cpp:104:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'wt_buff[3][0].V' (../src/std_conv.cpp:98:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'fm_in_buff.V' (../src/maxpool.cpp:24:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'fm_in_buff[0].V' (../src/pwconv.cpp:22:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'fm_in_buff[1].V' (../src/pwconv.cpp:23:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'fm_in_buff[2].V' (../src/pwconv.cpp:24:39)
+INFO: [HLS 200-472] Inferring partial write operation for 'fm_in_buff[3].V' (../src/pwconv.cpp:25:39)
+INFO: [HLS 200-472] Inferring partial write operation for 'fm_in_buff[0].V' (../src/std_conv.cpp:40:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'fm_in_buff[1].V' (../src/std_conv.cpp:35:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'fm_in_buff[2].V' (../src/std_conv.cpp:42:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'fm_in_buff[3].V' (../src/std_conv.cpp:37:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'fm_in_buff[0].V' (../src/std_conv.cpp:65:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'fm_in_buff[1].V' (../src/std_conv.cpp:60:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'fm_in_buff[2].V' (../src/std_conv.cpp:67:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'fm_in_buff[3].V' (../src/std_conv.cpp:62:6)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:15 ; elapsed = 00:01:15 . Memory (MB): peak = 550.535 ; gain = 457.957
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv' ...
+WARNING: [SYN 201-103] Legalizing function name 'load_input.2' to 'load_input_2'.
+WARNING: [SYN 201-103] Legalizing function name 'compute.2' to 'compute_2'.
+WARNING: [SYN 201-103] Legalizing function name 'store_output.2' to 'store_output_2'.
+WARNING: [SYN 201-103] Legalizing function name 'load_bias.1' to 'load_bias_1'.
+WARNING: [SYN 201-103] Legalizing function name 'load_input.1' to 'load_input_1'.
+WARNING: [SYN 201-103] Legalizing function name 'load_weight.1' to 'load_weight_1'.
+WARNING: [SYN 201-103] Legalizing function name 'compute.1' to 'compute_1'.
+WARNING: [SYN 201-103] Legalizing function name 'compute_output.1' to 'compute_output_1'.
+WARNING: [SYN 201-103] Legalizing function name 'store_output.1' to 'store_output_1'.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Mul_LUT' (../src/maxpool.cpp:23) on 'select' operation ('select_ln22_1', ../src/maxpool.cpp:22) due to incompatible operation sets.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'upsample' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-69] Unable to schedule bus request on port 'in_V' (../src/upsample.cpp:17) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 22.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 74.884 seconds; current allocated memory: 478.426 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.135 seconds; current allocated memory: 478.910 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_input_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 25.
+WARNING: [SCHED 204-21] Estimated clock period (5.33725ns) exceeds the target (target clock period: 5.5ns, clock uncertainty: 0.6875ns, effective delay budget: 4.8125ns).
+WARNING: [SCHED 204-21] The critical path in module 'load_input_2' consists of the following:
+	'add' operation ('jj', ../src/maxpool.cpp:18) [101]  (1.78 ns)
+	'phi' operation ('jj') with incoming values : ('jj', ../src/maxpool.cpp:18) [36]  (0 ns)
+	'icmp' operation ('icmp_ln18', ../src/maxpool.cpp:18) [63]  (1.36 ns)
+	'and' operation ('and_ln20', ../src/maxpool.cpp:20) [64]  (0.978 ns)
+	'or' operation ('or_ln22', ../src/maxpool.cpp:22) [66]  (0 ns)
+	'select' operation ('select_ln22', ../src/maxpool.cpp:22) [67]  (1.22 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.165 seconds; current allocated memory: 479.381 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.136 seconds; current allocated memory: 479.852 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('tmp3.V', ../src/maxpool.cpp:58) on array 'fm_in_buff_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'fm_in_buff_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 18.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.182 seconds; current allocated memory: 480.177 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.111 seconds; current allocated memory: 480.536 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'store_output_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 21.
+WARNING: [SCHED 204-21] Estimated clock period (5.039ns) exceeds the target (target clock period: 5.5ns, clock uncertainty: 0.6875ns, effective delay budget: 4.8125ns).
+WARNING: [SCHED 204-21] The critical path in module 'store_output_2' consists of the following:
+	'add' operation ('jj', ../src/maxpool.cpp:39) [102]  (1.74 ns)
+	'phi' operation ('jj') with incoming values : ('jj', ../src/maxpool.cpp:39) [38]  (0 ns)
+	'icmp' operation ('icmp_ln39', ../src/maxpool.cpp:39) [66]  (1.3 ns)
+	'and' operation ('and_ln41', ../src/maxpool.cpp:41) [67]  (0.978 ns)
+	'or' operation ('or_ln43', ../src/maxpool.cpp:43) [69]  (0 ns)
+	'select' operation ('select_ln43', ../src/maxpool.cpp:43) [70]  (1.02 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.168 seconds; current allocated memory: 480.994 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.144 seconds; current allocated memory: 481.469 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'maxpool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.146 seconds; current allocated memory: 481.724 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.115 seconds; current allocated memory: 482.005 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_bias_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.135 seconds; current allocated memory: 482.277 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.083 seconds; current allocated memory: 482.470 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_input_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-21] Estimated clock period (5.00614ns) exceeds the target (target clock period: 5.5ns, clock uncertainty: 0.6875ns, effective delay budget: 4.8125ns).
+WARNING: [SCHED 204-21] The critical path in module 'load_input_1' consists of the following:
+	wire read on port 'in4_V_offset' [19]  (0 ns)
+	'add' operation ('add_ln203_18', ../src/pwconv.cpp:25) [63]  (5.01 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.111 seconds; current allocated memory: 482.717 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.114 seconds; current allocated memory: 483.040 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_weight_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 13.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.165 seconds; current allocated memory: 483.996 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.254 seconds; current allocated memory: 485.192 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 11.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.623 seconds; current allocated memory: 489.168 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.049 seconds; current allocated memory: 495.257 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_output_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.275 seconds; current allocated memory: 497.454 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.525 seconds; current allocated memory: 499.526 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'store_output_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 36.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.668 seconds; current allocated memory: 501.210 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.187 seconds; current allocated memory: 501.829 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pwconv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'memcpy.bias_buff.V.gep.bias.V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.221 seconds; current allocated memory: 502.328 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.575 seconds; current allocated memory: 504.215 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_bias' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.591 seconds; current allocated memory: 505.963 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 506.570 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_input' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated delay (9.27ns) of 'mul' operation ('mul_ln52', ../src/std_conv.cpp:52) exceeds the target cycle time (target cycle time: 5.5ns, clock uncertainty: 0.688ns, effective cycle time: 4.81ns).
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 24.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 23.
+WARNING: [SCHED 204-21] Estimated clock period (9.275ns) exceeds the target (target clock period: 5.5ns, clock uncertainty: 0.6875ns, effective delay budget: 4.8125ns).
+WARNING: [SCHED 204-21] The critical path in module 'load_input' consists of the following:
+	'mul' operation ('mul_ln52', ../src/std_conv.cpp:52) [102]  (9.28 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.259 seconds; current allocated memory: 507.373 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.274 seconds; current allocated memory: 508.551 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_weight' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated delay (9.27ns) of 'mul' operation ('ch_in_kk', ../src/std_conv.cpp:80) exceeds the target cycle time (target cycle time: 5.5ns, clock uncertainty: 0.688ns, effective cycle time: 4.81ns).
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 23.
+WARNING: [SCHED 204-21] Estimated clock period (9.275ns) exceeds the target (target clock period: 5.5ns, clock uncertainty: 0.6875ns, effective delay budget: 4.8125ns).
+WARNING: [SCHED 204-21] The critical path in module 'load_weight' consists of the following:
+	'mul' operation ('ch_in_kk', ../src/std_conv.cpp:80) [161]  (9.28 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.782 seconds; current allocated memory: 511.346 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.658 seconds; current allocated memory: 523.948 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 20.
+WARNING: [SCHED 204-21] Estimated clock period (5.039ns) exceeds the target (target clock period: 5.5ns, clock uncertainty: 0.6875ns, effective delay budget: 4.8125ns).
+WARNING: [SCHED 204-21] The critical path in module 'compute6' consists of the following:
+	'add' operation ('cc', ../src/std_conv.cpp:120) [7132]  (1.74 ns)
+	'phi' operation ('cc') with incoming values : ('cc', ../src/std_conv.cpp:120) [175]  (0 ns)
+	'icmp' operation ('icmp_ln120', ../src/std_conv.cpp:120) [194]  (1.3 ns)
+	'and' operation ('and_ln124', ../src/std_conv.cpp:124) [195]  (0 ns)
+	'and' operation ('and_ln124_2', ../src/std_conv.cpp:124) [335]  (0.978 ns)
+	'or' operation ('or_ln124_2', ../src/std_conv.cpp:124) [337]  (0 ns)
+	'or' operation ('or_ln124_3', ../src/std_conv.cpp:124) [338]  (0 ns)
+	'select' operation ('select_ln124_4', ../src/std_conv.cpp:124) [339]  (1.02 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.26 seconds; current allocated memory: 539.963 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 5.125 seconds; current allocated memory: 573.242 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_output' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 5.111 seconds; current allocated memory: 579.346 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.595 seconds; current allocated memory: 584.123 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'store_output' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 22.
+WARNING: [SCHED 204-21] Estimated clock period (5.039ns) exceeds the target (target clock period: 5.5ns, clock uncertainty: 0.6875ns, effective delay budget: 4.8125ns).
+WARNING: [SCHED 204-21] The critical path in module 'store_output' consists of the following:
+	'add' operation ('cc', ../src/std_conv.cpp:155) [531]  (1.74 ns)
+	'phi' operation ('cc') with incoming values : ('cc', ../src/std_conv.cpp:155) [94]  (0 ns)
+	'icmp' operation ('icmp_ln155', ../src/std_conv.cpp:155) [194]  (1.3 ns)
+	'and' operation ('and_ln160', ../src/std_conv.cpp:160) [195]  (0.978 ns)
+	'or' operation ('or_ln159', ../src/std_conv.cpp:159) [198]  (0 ns)
+	'select' operation ('select_ln159', ../src/std_conv.cpp:159) [199]  (1.02 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.856 seconds; current allocated memory: 590.209 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.429 seconds; current allocated memory: 594.054 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'std_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'memcpy.bias_buff.V.gep.bias.V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.523 seconds; current allocated memory: 595.103 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.965 seconds; current allocated memory: 601.444 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.128 seconds; current allocated memory: 606.553 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.742 seconds; current allocated memory: 611.710 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'upsample' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_4ns_5ns_15ns_15_3_1' to 'conv_mac_muladd_4bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_8ns_11ns_5ns_17_3_1' to 'conv_mac_muladd_8cud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_4bkb': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_8cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'upsample'.
+INFO: [HLS 200-111]  Elapsed time: 2.35 seconds; current allocated memory: 619.130 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_input_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'conv_urem_12ns_6ns_12_16_1' to 'conv_urem_12ns_6ndEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_16ns_16ns_16ns_31_3_1' to 'conv_mac_muladd_1eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_16ns_16ns_32ns_32_3_1' to 'conv_mac_muladd_1fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_16ns_3ns_32s_33_3_1' to 'conv_mac_muladd_1g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mul_mul_16ns_5ns_21_3_1' to 'conv_mul_mul_16nshbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_3ns_6ns_5ns_8_3_1' to 'conv_mac_muladd_3ibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_8ns_6ns_5ns_13_3_1' to 'conv_mac_muladd_8jbC' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_1eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_1fYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_1g8j': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_3ibs': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_8jbC': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_mul_16nshbi': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_urem_12ns_6ndEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_input_2'.
+INFO: [HLS 200-111]  Elapsed time: 0.375 seconds; current allocated memory: 620.651 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_3ns_5ns_4ns_7_3_1' to 'conv_mac_muladd_3kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_7ns_5ns_4ns_11_3_1' to 'conv_mac_muladd_7lbW' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_3kbM': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_7lbW': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_2'.
+INFO: [HLS 200-111]  Elapsed time: 0.331 seconds; current allocated memory: 621.668 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'store_output_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'conv_urem_10ns_5ns_10_14_1' to 'conv_urem_10ns_5nmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mul_4ns_16ns_20_2_1' to 'conv_mul_4ns_16nsncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mul_mul_16ns_16ns_31_3_1' to 'conv_mul_mul_16nsocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_14ns_16ns_31ns_31_3_1' to 'conv_mac_muladd_1pcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_3ns_14ns_31ns_32_3_1' to 'conv_mac_muladd_3qcK' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_1pcA': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_3kbM': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_3qcK': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_7lbW': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_4ns_16nsncg': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_mul_16nsocq': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_urem_10ns_5nmb6': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'store_output_2'.
+INFO: [HLS 200-111]  Elapsed time: 0.352 seconds; current allocated memory: 623.109 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'maxpool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'maxpool_fm_in_buff_V' to 'maxpool_fm_in_bufrcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'maxpool_fm_out_buff_V' to 'maxpool_fm_out_busc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mul_32s_32s_32_5_1' to 'conv_mul_32s_32s_tde' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_32s_32s_tde': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'maxpool'.
+INFO: [HLS 200-111]  Elapsed time: 0.345 seconds; current allocated memory: 624.217 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_bias_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_bias_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.237 seconds; current allocated memory: 624.832 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_input_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'conv_mul_mul_16ns_16ns_18_3_1' to 'conv_mul_mul_16nsudo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_18ns_16ns_16ns_32_3_1' to 'conv_mac_muladd_1vdy' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_1vdy': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_mul_16nsudo': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_input_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.216 seconds; current allocated memory: 625.838 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_weight_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'conv_am_addmul_16ns_16ns_16ns_32_3_1' to 'conv_am_addmul_16wdI' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_am_addmul_16wdI': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_weight_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.308 seconds; current allocated memory: 629.947 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'conv_mul_mul_16s_16s_32_3_1' to 'conv_mul_mul_16s_xdS' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_mul_16s_xdS': 32 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.879 seconds; current allocated memory: 641.360 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_output_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'compute_output_1_fm_in_buff1_0_V' to 'compute_output_1_yd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_1_fm_in_buff1_1_V' to 'compute_output_1_zec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_1_fm_in_buff1_2_V' to 'compute_output_1_Aem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_1_fm_in_buff1_3_V' to 'compute_output_1_Bew' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_1_fm_in_buff2_0_V' to 'compute_output_1_CeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_1_fm_in_buff2_1_V' to 'compute_output_1_DeQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_1_fm_in_buff2_2_V' to 'compute_output_1_Ee0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_1_fm_in_buff2_3_V' to 'compute_output_1_Ffa' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_output_1'.
+INFO: [HLS 200-111]  Elapsed time: 3.972 seconds; current allocated memory: 651.479 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'store_output_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'conv_urem_24ns_9ns_24_28_1' to 'conv_urem_24ns_9nGfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mul_mul_16ns_9ns_24_3_1' to 'conv_mul_mul_16nsHfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_18ns_17ns_16ns_35_3_1' to 'conv_mac_muladd_1IfE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mul_mul_7ns_16s_23_3_1' to 'conv_mul_mul_7ns_JfO' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_1IfE': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_mul_16nsHfu': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_mul_16nsudo': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_mul_7ns_JfO': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mux_83_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_urem_24ns_9nGfk': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'store_output_1'.
+INFO: [HLS 200-111]  Elapsed time: 1.216 seconds; current allocated memory: 654.707 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pwconv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'pwconv_bias_buff_0_V' to 'pwconv_bias_buff_KfY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pwconv_bias_buff_1_V' to 'pwconv_bias_buff_Lf8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pwconv_bias_buff_2_V' to 'pwconv_bias_buff_Mgi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pwconv_bias_buff_3_V' to 'pwconv_bias_buff_Ngs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pwconv_bias_buff_4_V' to 'pwconv_bias_buff_OgC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pwconv_bias_buff_5_V' to 'pwconv_bias_buff_PgM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pwconv_bias_buff_6_V' to 'pwconv_bias_buff_QgW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pwconv_bias_buff_7_V' to 'pwconv_bias_buff_Rg6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mul_mul_16ns_16ns_32_3_1' to 'conv_mul_mul_16nsShg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_32s_32s_tde': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_mul_16nsShg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pwconv'.
+INFO: [HLS 200-111]  Elapsed time: 0.647 seconds; current allocated memory: 658.036 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_bias' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_4ns_5ns_4ns_8_3_1' to 'conv_mac_muladd_4Thq' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_4Thq': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_bias'.
+INFO: [HLS 200-111]  Elapsed time: 0.912 seconds; current allocated memory: 660.755 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_input' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'conv_urem_10ns_6ns_10_14_1' to 'conv_urem_10ns_6nUhA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mul_16ns_5ns_21_1_1' to 'conv_mul_16ns_5nsVhK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_urem_8ns_5ns_8_12_1' to 'conv_urem_8ns_5nsWhU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mul_16ns_4ns_20_1_1' to 'conv_mul_16ns_4nsXh4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mul_mul_17s_16ns_32_3_1' to 'conv_mul_mul_17s_Yie' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_18ns_16ns_32s_32_3_1' to 'conv_mac_muladd_1Zio' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_5ns_6ns_5ns_10_3_1' to 'conv_mac_muladd_50iy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_4ns_6ns_4ns_9_3_1' to 'conv_mac_muladd_41iI' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_1Zio': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_1fYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_41iI': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_50iy': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_16ns_4nsXh4': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_16ns_5nsVhK': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_mul_16nsudo': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_mul_17s_Yie': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_urem_10ns_6nUhA': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_urem_8ns_5nsWhU': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_input'.
+INFO: [HLS 200-111]  Elapsed time: 0.583 seconds; current allocated memory: 664.097 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_weight' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'conv_urem_9ns_7ns_9_13_1' to 'conv_urem_9ns_7ns2iS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_urem_6ns_5ns_4_10_1' to 'conv_urem_6ns_5ns3i2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_urem_6ns_3ns_5_10_1' to 'conv_urem_6ns_3ns4jc' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_16ns_16ns_16ns_32_3_1' to 'conv_mac_muladd_15jm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_21ns_6ns_32s_33_3_1' to 'conv_mac_muladd_26jw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_21ns_5ns_32s_33_3_1' to 'conv_mac_muladd_27jG' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_15jm': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_26jw': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_27jG': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_16ns_5nsVhK': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_urem_6ns_3ns4jc': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_urem_6ns_5ns3i2': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_urem_9ns_7ns2iS': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_weight'.
+INFO: [HLS 200-111]  Elapsed time: 0.952 seconds; current allocated memory: 669.821 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'conv_mul_11s_4ns_11_2_1' to 'conv_mul_11s_4ns_8jQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_4ns_11s_2ns_11_3_1' to 'conv_mac_muladd_49j0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_5ns_4ns_4ns_8_3_1' to 'conv_mac_muladd_5bak' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mac_muladd_6ns_11s_11s_11_3_1' to 'conv_mac_muladd_6bbk' due to the length limit 20
+INFO: [RTGEN 206-104] Estimated max fanout for 'compute6' is 20149 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_49j0': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_5bak': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_6bbk': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_11s_4ns_8jQ': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_mul_16s_xdS': 128 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute6'.
+INFO: [HLS 200-111]  Elapsed time: 3.843 seconds; current allocated memory: 717.597 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_output' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'compute_output_fm_in_buff1_0_V' to 'compute_output_fmbck' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_fm_in_buff1_1_V' to 'compute_output_fmbdk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_fm_in_buff1_2_V' to 'compute_output_fmbek' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_fm_in_buff1_3_V' to 'compute_output_fmbfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_fm_in_buff2_0_V' to 'compute_output_fmbgk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_fm_in_buff2_1_V' to 'compute_output_fmbhl' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_fm_in_buff2_2_V' to 'compute_output_fmbil' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_fm_in_buff2_3_V' to 'compute_output_fmbjl' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_0_0_V' to 'compute_output_wtbkl' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_0_1_V' to 'compute_output_wtbll' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_0_2_V' to 'compute_output_wtbml' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_0_3_V' to 'compute_output_wtbnm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_1_0_V' to 'compute_output_wtbom' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_1_1_V' to 'compute_output_wtbpm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_1_2_V' to 'compute_output_wtbqm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_1_3_V' to 'compute_output_wtbrm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_2_0_V' to 'compute_output_wtbsm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_2_1_V' to 'compute_output_wtbtn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_2_2_V' to 'compute_output_wtbun' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_2_3_V' to 'compute_output_wtbvn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_3_0_V' to 'compute_output_wtbwn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_3_1_V' to 'compute_output_wtbxn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_3_2_V' to 'compute_output_wtbyn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_3_3_V' to 'compute_output_wtbzo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_4_0_V' to 'compute_output_wtbAo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_4_1_V' to 'compute_output_wtbBo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_4_2_V' to 'compute_output_wtbCo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_4_3_V' to 'compute_output_wtbDo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_5_0_V' to 'compute_output_wtbEo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_5_1_V' to 'compute_output_wtbFp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_5_2_V' to 'compute_output_wtbGp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_5_3_V' to 'compute_output_wtbHp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_6_0_V' to 'compute_output_wtbIp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_6_1_V' to 'compute_output_wtbJp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_6_2_V' to 'compute_output_wtbKp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_6_3_V' to 'compute_output_wtbLp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_7_0_V' to 'compute_output_wtbMq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_7_1_V' to 'compute_output_wtbNq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_7_2_V' to 'compute_output_wtbOq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_7_3_V' to 'compute_output_wtbPq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_8_0_V' to 'compute_output_wtbQq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_8_1_V' to 'compute_output_wtbRq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_8_2_V' to 'compute_output_wtbSr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_8_3_V' to 'compute_output_wtbTr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_9_0_V' to 'compute_output_wtbUr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_9_1_V' to 'compute_output_wtbVr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_9_2_V' to 'compute_output_wtbWr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_9_3_V' to 'compute_output_wtbXr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_10_0_V' to 'compute_output_wtbYs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_10_1_V' to 'compute_output_wtbZs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_10_2_V' to 'compute_output_wtb0s' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_10_3_V' to 'compute_output_wtb1s' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_11_0_V' to 'compute_output_wtb2s' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_11_1_V' to 'compute_output_wtb3s' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_11_2_V' to 'compute_output_wtb4t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_11_3_V' to 'compute_output_wtb5t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_12_0_V' to 'compute_output_wtb6t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_12_1_V' to 'compute_output_wtb7t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_12_2_V' to 'compute_output_wtb8t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_12_3_V' to 'compute_output_wtb9t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_13_0_V' to 'compute_output_wtcau' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_13_1_V' to 'compute_output_wtcbu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_13_2_V' to 'compute_output_wtccu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_13_3_V' to 'compute_output_wtcdu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_14_0_V' to 'compute_output_wtceu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_14_1_V' to 'compute_output_wtcfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_14_2_V' to 'compute_output_wtcgu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_14_3_V' to 'compute_output_wtchv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_15_0_V' to 'compute_output_wtciv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_15_1_V' to 'compute_output_wtcjv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_15_2_V' to 'compute_output_wtckv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_15_3_V' to 'compute_output_wtclv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_16_0_V' to 'compute_output_wtcmv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_16_1_V' to 'compute_output_wtcnw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_16_2_V' to 'compute_output_wtcow' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_16_3_V' to 'compute_output_wtcpw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_17_0_V' to 'compute_output_wtcqw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_17_1_V' to 'compute_output_wtcrw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_17_2_V' to 'compute_output_wtcsw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_17_3_V' to 'compute_output_wtctx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_18_0_V' to 'compute_output_wtcux' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_18_1_V' to 'compute_output_wtcvx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_18_2_V' to 'compute_output_wtcwx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_18_3_V' to 'compute_output_wtcxx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_19_0_V' to 'compute_output_wtcyx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_19_1_V' to 'compute_output_wtczy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_19_2_V' to 'compute_output_wtcAy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_19_3_V' to 'compute_output_wtcBy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_20_0_V' to 'compute_output_wtcCy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_20_1_V' to 'compute_output_wtcDy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_20_2_V' to 'compute_output_wtcEy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_20_3_V' to 'compute_output_wtcFz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_21_0_V' to 'compute_output_wtcGz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_21_1_V' to 'compute_output_wtcHz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_21_2_V' to 'compute_output_wtcIz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_21_3_V' to 'compute_output_wtcJz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_22_0_V' to 'compute_output_wtcKz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_22_1_V' to 'compute_output_wtcLz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_22_2_V' to 'compute_output_wtcMA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_22_3_V' to 'compute_output_wtcNA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_23_0_V' to 'compute_output_wtcOA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_23_1_V' to 'compute_output_wtcPA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_23_2_V' to 'compute_output_wtcQA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_23_3_V' to 'compute_output_wtcRA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_24_0_V' to 'compute_output_wtcSB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_24_1_V' to 'compute_output_wtcTB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_24_2_V' to 'compute_output_wtcUB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_24_3_V' to 'compute_output_wtcVB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_25_0_V' to 'compute_output_wtcWB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_25_1_V' to 'compute_output_wtcXB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_25_2_V' to 'compute_output_wtcYC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_25_3_V' to 'compute_output_wtcZC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_26_0_V' to 'compute_output_wtc0C' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_26_1_V' to 'compute_output_wtc1C' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_26_2_V' to 'compute_output_wtc2C' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_26_3_V' to 'compute_output_wtc3C' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_27_0_V' to 'compute_output_wtc4D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_27_1_V' to 'compute_output_wtc5D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_27_2_V' to 'compute_output_wtc6D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_27_3_V' to 'compute_output_wtc7D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_28_0_V' to 'compute_output_wtc8D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_28_1_V' to 'compute_output_wtc9D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_28_2_V' to 'compute_output_wtdaE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_28_3_V' to 'compute_output_wtdbE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_29_0_V' to 'compute_output_wtdcE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_29_1_V' to 'compute_output_wtddE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_29_2_V' to 'compute_output_wtdeE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_29_3_V' to 'compute_output_wtdfE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_30_0_V' to 'compute_output_wtdgE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_30_1_V' to 'compute_output_wtdhF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_30_2_V' to 'compute_output_wtdiF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_30_3_V' to 'compute_output_wtdjF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_31_0_V' to 'compute_output_wtdkF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_31_1_V' to 'compute_output_wtdlF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_31_2_V' to 'compute_output_wtdmF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff1_31_3_V' to 'compute_output_wtdnG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_0_0_V' to 'compute_output_wtdoG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_0_1_V' to 'compute_output_wtdpG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_0_2_V' to 'compute_output_wtdqG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_0_3_V' to 'compute_output_wtdrG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_1_0_V' to 'compute_output_wtdsG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_1_1_V' to 'compute_output_wtdtH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_1_2_V' to 'compute_output_wtduH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_1_3_V' to 'compute_output_wtdvH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_2_0_V' to 'compute_output_wtdwH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_2_1_V' to 'compute_output_wtdxH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_2_2_V' to 'compute_output_wtdyH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_2_3_V' to 'compute_output_wtdzI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_3_0_V' to 'compute_output_wtdAI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_3_1_V' to 'compute_output_wtdBI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_3_2_V' to 'compute_output_wtdCI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_3_3_V' to 'compute_output_wtdDI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_4_0_V' to 'compute_output_wtdEI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_4_1_V' to 'compute_output_wtdFJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_4_2_V' to 'compute_output_wtdGJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_4_3_V' to 'compute_output_wtdHJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_5_0_V' to 'compute_output_wtdIJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_5_1_V' to 'compute_output_wtdJJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_5_2_V' to 'compute_output_wtdKJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_5_3_V' to 'compute_output_wtdLJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_6_0_V' to 'compute_output_wtdMK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_6_1_V' to 'compute_output_wtdNK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_6_2_V' to 'compute_output_wtdOK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_6_3_V' to 'compute_output_wtdPK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_7_0_V' to 'compute_output_wtdQK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_7_1_V' to 'compute_output_wtdRK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_7_2_V' to 'compute_output_wtdSL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_7_3_V' to 'compute_output_wtdTL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_8_0_V' to 'compute_output_wtdUL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_8_1_V' to 'compute_output_wtdVL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_8_2_V' to 'compute_output_wtdWL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_8_3_V' to 'compute_output_wtdXL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_9_0_V' to 'compute_output_wtdYM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_9_1_V' to 'compute_output_wtdZM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_9_2_V' to 'compute_output_wtd0M' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_9_3_V' to 'compute_output_wtd1M' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_10_0_V' to 'compute_output_wtd2M' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_10_1_V' to 'compute_output_wtd3M' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_10_2_V' to 'compute_output_wtd4N' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_10_3_V' to 'compute_output_wtd5N' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_11_0_V' to 'compute_output_wtd6N' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_11_1_V' to 'compute_output_wtd7N' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_11_2_V' to 'compute_output_wtd8N' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_11_3_V' to 'compute_output_wtd9N' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_12_0_V' to 'compute_output_wteaO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_12_1_V' to 'compute_output_wtebO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_12_2_V' to 'compute_output_wtecO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_12_3_V' to 'compute_output_wtedO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_13_0_V' to 'compute_output_wteeO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_13_1_V' to 'compute_output_wtefO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_13_2_V' to 'compute_output_wtegO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_13_3_V' to 'compute_output_wtehP' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_14_0_V' to 'compute_output_wteiP' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_14_1_V' to 'compute_output_wtejP' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_14_2_V' to 'compute_output_wtekP' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_14_3_V' to 'compute_output_wtelP' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_15_0_V' to 'compute_output_wtemP' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_15_1_V' to 'compute_output_wtenQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_15_2_V' to 'compute_output_wteoQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_15_3_V' to 'compute_output_wtepQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_16_0_V' to 'compute_output_wteqQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_16_1_V' to 'compute_output_wterQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_16_2_V' to 'compute_output_wtesQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_16_3_V' to 'compute_output_wtetR' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_17_0_V' to 'compute_output_wteuR' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_17_1_V' to 'compute_output_wtevR' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_17_2_V' to 'compute_output_wtewR' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_17_3_V' to 'compute_output_wtexR' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_18_0_V' to 'compute_output_wteyR' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_18_1_V' to 'compute_output_wtezS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_18_2_V' to 'compute_output_wteAS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_18_3_V' to 'compute_output_wteBS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_19_0_V' to 'compute_output_wteCS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_19_1_V' to 'compute_output_wteDS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_19_2_V' to 'compute_output_wteES' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_19_3_V' to 'compute_output_wteFT' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_20_0_V' to 'compute_output_wteGT' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_20_1_V' to 'compute_output_wteHT' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_20_2_V' to 'compute_output_wteIT' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_20_3_V' to 'compute_output_wteJT' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_21_0_V' to 'compute_output_wteKT' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_21_1_V' to 'compute_output_wteLT' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_21_2_V' to 'compute_output_wteMU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_21_3_V' to 'compute_output_wteNU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_22_0_V' to 'compute_output_wteOU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_22_1_V' to 'compute_output_wtePU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_22_2_V' to 'compute_output_wteQU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_22_3_V' to 'compute_output_wteRU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_23_0_V' to 'compute_output_wteSV' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_23_1_V' to 'compute_output_wteTV' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_23_2_V' to 'compute_output_wteUV' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_23_3_V' to 'compute_output_wteVV' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_24_0_V' to 'compute_output_wteWV' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_24_1_V' to 'compute_output_wteXV' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_24_2_V' to 'compute_output_wteYW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_24_3_V' to 'compute_output_wteZW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_25_0_V' to 'compute_output_wte0W' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_25_1_V' to 'compute_output_wte1W' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_25_2_V' to 'compute_output_wte2W' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_25_3_V' to 'compute_output_wte3W' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_26_0_V' to 'compute_output_wte4X' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_26_1_V' to 'compute_output_wte5X' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_26_2_V' to 'compute_output_wte6X' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_26_3_V' to 'compute_output_wte7X' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_27_0_V' to 'compute_output_wte8X' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_27_1_V' to 'compute_output_wte9X' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_27_2_V' to 'compute_output_wtfaY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_27_3_V' to 'compute_output_wtfbY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_28_0_V' to 'compute_output_wtfcY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_28_1_V' to 'compute_output_wtfdY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_28_2_V' to 'compute_output_wtfeY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_28_3_V' to 'compute_output_wtffY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_29_0_V' to 'compute_output_wtfgY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_29_1_V' to 'compute_output_wtfhZ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_29_2_V' to 'compute_output_wtfiZ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_29_3_V' to 'compute_output_wtfjZ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_30_0_V' to 'compute_output_wtfkZ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_30_1_V' to 'compute_output_wtflZ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_30_2_V' to 'compute_output_wtfmZ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_30_3_V' to 'compute_output_wtfn0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_31_0_V' to 'compute_output_wtfo0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_31_1_V' to 'compute_output_wtfp0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_31_2_V' to 'compute_output_wtfq0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_output_wt_buff2_31_3_V' to 'compute_output_wtfr0' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_output'.
+INFO: [HLS 200-111]  Elapsed time: 19.355 seconds; current allocated memory: 753.390 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'store_output' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'conv_urem_11ns_5ns_11_15_1' to 'conv_urem_11ns_5nfs0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_mul_mul_16s_16s_16_3_1' to 'conv_mul_mul_16s_ft1' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ama_addmuladd_16ns_4ns_16ns_16ns_32_3_1' to 'conv_ama_addmuladfu1' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_am_addmul_16ns_6ns_16ns_32_3_1' to 'conv_am_addmul_16fv1' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_am_addmul_16fv1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_ama_addmuladfu1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_15jm': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mac_muladd_5bak': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_mul_16s_ft1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_mul_mul_7ns_JfO': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_urem_11ns_5nfs0': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'store_output'.
+INFO: [HLS 200-111]  Elapsed time: 3.294 seconds; current allocated memory: 763.917 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'std_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_0_V' to 'std_conv_bias_buffw1' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_1_V' to 'std_conv_bias_buffx1' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_2_V' to 'std_conv_bias_buffy1' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_3_V' to 'std_conv_bias_buffz2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_4_V' to 'std_conv_bias_buffA2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_5_V' to 'std_conv_bias_buffB2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_6_V' to 'std_conv_bias_buffC2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_7_V' to 'std_conv_bias_buffD2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_8_V' to 'std_conv_bias_buffE2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_9_V' to 'std_conv_bias_buffF3' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_10_V' to 'std_conv_bias_buffG3' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_11_V' to 'std_conv_bias_buffH3' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_12_V' to 'std_conv_bias_buffI3' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_13_V' to 'std_conv_bias_buffJ3' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_14_V' to 'std_conv_bias_buffK3' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_15_V' to 'std_conv_bias_buffL3' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_16_V' to 'std_conv_bias_buffM4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_17_V' to 'std_conv_bias_buffN4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_18_V' to 'std_conv_bias_buffO4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_19_V' to 'std_conv_bias_buffP4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_20_V' to 'std_conv_bias_buffQ4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_21_V' to 'std_conv_bias_buffR4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_22_V' to 'std_conv_bias_buffS5' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_23_V' to 'std_conv_bias_buffT5' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_24_V' to 'std_conv_bias_buffU5' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_25_V' to 'std_conv_bias_buffV5' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_26_V' to 'std_conv_bias_buffW5' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_27_V' to 'std_conv_bias_buffX5' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_28_V' to 'std_conv_bias_buffY6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_29_V' to 'std_conv_bias_buffZ6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_30_V' to 'std_conv_bias_buff06' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_bias_buff_31_V' to 'std_conv_bias_buff16' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_0_V' to 'std_conv_fm_out1_f26' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_1_V' to 'std_conv_fm_out1_f36' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_2_V' to 'std_conv_fm_out1_f47' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_3_V' to 'std_conv_fm_out1_f57' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_4_V' to 'std_conv_fm_out1_f67' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_5_V' to 'std_conv_fm_out1_f77' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_6_V' to 'std_conv_fm_out1_f87' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_7_V' to 'std_conv_fm_out1_f97' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_8_V' to 'std_conv_fm_out1_ga8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_9_V' to 'std_conv_fm_out1_gb8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_10_V' to 'std_conv_fm_out1_gc8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_11_V' to 'std_conv_fm_out1_gd8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_12_V' to 'std_conv_fm_out1_ge8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_13_V' to 'std_conv_fm_out1_gf8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_14_V' to 'std_conv_fm_out1_gg8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_15_V' to 'std_conv_fm_out1_gh9' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_16_V' to 'std_conv_fm_out1_gi9' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_17_V' to 'std_conv_fm_out1_gj9' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_18_V' to 'std_conv_fm_out1_gk9' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_19_V' to 'std_conv_fm_out1_gl9' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_20_V' to 'std_conv_fm_out1_gm9' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_21_V' to 'std_conv_fm_out1_gnb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_22_V' to 'std_conv_fm_out1_gob' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_23_V' to 'std_conv_fm_out1_gpb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_24_V' to 'std_conv_fm_out1_gqb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_25_V' to 'std_conv_fm_out1_grb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_26_V' to 'std_conv_fm_out1_gsb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_27_V' to 'std_conv_fm_out1_gtb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_28_V' to 'std_conv_fm_out1_gub' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_29_V' to 'std_conv_fm_out1_gvb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_30_V' to 'std_conv_fm_out1_gwb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out1_31_V' to 'std_conv_fm_out1_gxb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_0_V' to 'std_conv_fm_out2_gyb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_1_V' to 'std_conv_fm_out2_gzb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_2_V' to 'std_conv_fm_out2_gAb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_3_V' to 'std_conv_fm_out2_gBb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_4_V' to 'std_conv_fm_out2_gCb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_5_V' to 'std_conv_fm_out2_gDb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_6_V' to 'std_conv_fm_out2_gEb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_7_V' to 'std_conv_fm_out2_gFb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_8_V' to 'std_conv_fm_out2_gGb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_9_V' to 'std_conv_fm_out2_gHb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_10_V' to 'std_conv_fm_out2_gIb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_11_V' to 'std_conv_fm_out2_gJb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_12_V' to 'std_conv_fm_out2_gKb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_13_V' to 'std_conv_fm_out2_gLb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_14_V' to 'std_conv_fm_out2_gMb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_15_V' to 'std_conv_fm_out2_gNb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_16_V' to 'std_conv_fm_out2_gOb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_17_V' to 'std_conv_fm_out2_gPb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_18_V' to 'std_conv_fm_out2_gQb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_19_V' to 'std_conv_fm_out2_gRb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_20_V' to 'std_conv_fm_out2_gSb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_21_V' to 'std_conv_fm_out2_gTb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_22_V' to 'std_conv_fm_out2_gUb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_23_V' to 'std_conv_fm_out2_gVb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_24_V' to 'std_conv_fm_out2_gWb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_25_V' to 'std_conv_fm_out2_gXb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_26_V' to 'std_conv_fm_out2_gYb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'std_conv_fm_out2_gYb' is changed to 'std_conv_fm_out2_gYb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_27_V' to 'std_conv_fm_out2_gZb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'std_conv_fm_out2_gZb' is changed to 'std_conv_fm_out2_gZb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_28_V' to 'std_conv_fm_out2_g0b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_29_V' to 'std_conv_fm_out2_g1b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_30_V' to 'std_conv_fm_out2_g2b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'std_conv_fm_out2_31_V' to 'std_conv_fm_out2_g3b' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'std_conv'.
+INFO: [HLS 200-111]  Elapsed time: 2.847 seconds; current allocated memory: 773.084 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/FM1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/FM2' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/FM3' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/FM4' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/W1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/W2' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/W3' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/W4' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/in1_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/in2_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/in3_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/in4_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/w1_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/w2_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/w3_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/w4_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/b_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/out1_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/out2_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/out3_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/out4_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ch_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ch_out' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/fsize' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/stride' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/kernel' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/act' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'conv' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'in1_V', 'in2_V', 'in3_V', 'in4_V', 'w1_V', 'w2_V', 'w3_V', 'w4_V', 'b_V', 'out1_V', 'out2_V', 'out3_V', 'ch_in', 'ch_out', 'fsize', 'stride', 'kernel' and 'act' to AXI-Lite port CTRL.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv'.
+INFO: [HLS 200-111]  Elapsed time: 3.371 seconds; current allocated memory: 783.662 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 107.82 MHz
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_urem_12ns_6ndEe_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_urem_10ns_5nmb6_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_mul_4ns_16nsncg_MulnS_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_mul_32s_32s_tde_MulnS_1'
+INFO: [RTMG 210-278] Implementing memory 'maxpool_fm_in_bufrcU_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'maxpool_fm_out_busc4_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'compute_output_1_yd2_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_urem_24ns_9nGfk_div'
+INFO: [RTMG 210-278] Implementing memory 'pwconv_bias_buff_KfY_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'pwconv_fm_out1_0_V_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_urem_10ns_6nUhA_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_mul_16ns_5nsVhK_Mul_LUT_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_urem_8ns_5nsWhU_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_mul_16ns_4nsXh4_Mul_LUT_1'
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_urem_9ns_7ns2iS_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_urem_6ns_5ns3i2_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_urem_6ns_3ns4jc_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_mul_11s_4ns_8jQ_MulnS_2'
+INFO: [RTMG 210-278] Implementing memory 'compute_output_fmbck_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'compute_output_wtbkl_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_urem_11ns_5nfs0_div'
+INFO: [RTMG 210-278] Implementing memory 'std_conv_bias_buffw1_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'std_conv_fm_out1_f26_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'std_conv_fm_out1_f36_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:36 ; elapsed = 00:02:44 . Memory (MB): peak = 1118.824 ; gain = 1026.246
+INFO: [VHDL 208-304] Generating VHDL RTL for conv.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv.
+INFO: [HLS 200-112] Total elapsed time: 163.858 seconds; peak allocated memory: 783.662 MB.

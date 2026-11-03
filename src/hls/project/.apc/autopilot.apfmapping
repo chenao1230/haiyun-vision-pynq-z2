@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="upsample.h" path="C:\Users\22347\Desktop\yolo4_tiny_acc\hls\top\src\upsample.h"/>
+    <originFiles name="upsample.cpp" path="C:\Users\22347\Desktop\yolo4_tiny_acc\hls\top\src\upsample.cpp"/>
+    <originFiles name="std_conv.h" path="C:\Users\22347\Desktop\yolo4_tiny_acc\hls\top\src\std_conv.h"/>
+    <originFiles name="std_conv.cpp" path="C:\Users\22347\Desktop\yolo4_tiny_acc\hls\top\src\std_conv.cpp"/>
+    <originFiles name="pwconv.h" path="C:\Users\22347\Desktop\yolo4_tiny_acc\hls\top\src\pwconv.h"/>
+    <originFiles name="pwconv.cpp" path="C:\Users\22347\Desktop\yolo4_tiny_acc\hls\top\src\pwconv.cpp"/>
+    <originFiles name="maxpool.h" path="C:\Users\22347\Desktop\yolo4_tiny_acc\hls\top\src\maxpool.h"/>
+    <originFiles name="maxpool.cpp" path="C:\Users\22347\Desktop\yolo4_tiny_acc\hls\top\src\maxpool.cpp"/>
+    <originFiles name="conv.h" path="C:\Users\22347\Desktop\yolo4_tiny_acc\hls\top\src\conv.h"/>
+    <originFiles name="conv.cpp" path="C:\Users\22347\Desktop\yolo4_tiny_acc\hls\top\src\conv.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="winoconv_test.h" path="C:\Users\22347\Desktop\yolo4_tiny_acc\hls\top\src\winoconv_test.h"/>
+    <originFiles name="winoconv_test.cpp" path="C:\Users\22347\Desktop\yolo4_tiny_acc\hls\top\src\winoconv_test.cpp"/>
+    <originFiles name="test_tb.cpp" path="C:\Users\22347\Desktop\yolo4_tiny_acc\hls\top\src\test_tb.cpp"/>
+    <originFiles name="sampling_test.h" path="C:\Users\22347\Desktop\yolo4_tiny_acc\hls\top\src\sampling_test.h"/>
+    <originFiles name="sampling_test.cpp" path="C:\Users\22347\Desktop\yolo4_tiny_acc\hls\top\src\sampling_test.cpp"/>
+    <originFiles name="pwconv_test.h" path="C:\Users\22347\Desktop\yolo4_tiny_acc\hls\top\src\pwconv_test.h"/>
+    <originFiles name="pwconv_test.cpp" path="C:\Users\22347\Desktop\yolo4_tiny_acc\hls\top\src\pwconv_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

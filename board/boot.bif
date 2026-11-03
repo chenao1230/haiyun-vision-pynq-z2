@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+ [bootloader] components/fsbl_ethernet_2019_2.elf
+ components/design_1_wrapper.bit
+ components/haiyun_eth_app.elf
+}

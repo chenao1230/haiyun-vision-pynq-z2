@@ -1,0 +1,24 @@
+{
+  "rebuilt_from_release_sources": true,
+  "fsbl_lfn": 0,
+  "app_lfn": 1,
+  "cpu_hz": 650000000,
+  "scratch": "C:\\Users\\LIUDAN~1\\AppData\\Local\\Temp\\pynq_sw_release_nxcprbjj",
+  "fsbl.elf_load_segments_equal_golden": true,
+  "haiyun_app.elf_load_segments_equal_golden": true,
+  "boot_equal_golden": false,
+  "files": {
+    "fsbl.elf": {
+      "bytes": 511048,
+      "sha256": "81b5e8de1b0fcb63f000c28d101e4115b0715f52840335caa9f32af024e2be18"
+    },
+    "haiyun_app.elf": {
+      "bytes": 2444856,
+      "sha256": "957c30dcfecf7ce5aa1fb6e3a96ee6c60968ffa417bb2385d4171342cc50dee8"
+    },
+    "BOOT.bin": {
+      "bytes": 4852112,
+      "sha256": "12e119cf7d64d57ffe2c7584cc19a377e37839ef34b69c2954c6f1be97999693"
+    }
+  }
+}

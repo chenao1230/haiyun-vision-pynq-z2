@@ -1,0 +1,447 @@
+
+
+================================================================
+== Vivado HLS Report for 'pwconv'
+================================================================
+* Date:           Sat May 13 09:21:52 2023
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        top
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 5.50 ns | 7.583 ns |   0.69 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                 |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |            Loop Name            |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- memcpy.bias_buff.V.gep.bias.V  |        ?|        ?|         3|          1|          1|     ?|    yes   |
+        |- Loop 2                         |        ?|        ?|         ?|          -|          -|   119|    no    |
+        +---------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 22
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 8 9 10 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 11 9 
+9 --> 10 
+10 --> 8 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 19 
+17 --> 18 
+18 --> 20 22 16 
+19 --> 18 
+20 --> 21 
+21 --> 
+22 --> 21 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.81>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%M_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %M)" [src/pwconv.cpp:154]   --->   Operation 23 'read' 'M_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%bias_V_offset_read = call i31 @_ssdm_op_Read.ap_auto.i31(i31 %bias_V_offset)" [src/pwconv.cpp:154]   --->   Operation 24 'read' 'bias_V_offset_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln154 = zext i31 %bias_V_offset_read to i64" [src/pwconv.cpp:154]   --->   Operation 25 'zext' 'zext_ln154' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%weight_V_addr = getelementptr i16* %weight_V, i64 %zext_ln154" [src/pwconv.cpp:154]   --->   Operation 26 'getelementptr' 'weight_V_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%bias_buff_0_V = alloca [128 x i16], align 2" [src/pwconv.cpp:159]   --->   Operation 27 'alloca' 'bias_buff_0_V' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 128> <RAM>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%bias_buff_1_V = alloca [128 x i16], align 2" [src/pwconv.cpp:159]   --->   Operation 28 'alloca' 'bias_buff_1_V' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 128> <RAM>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%bias_buff_2_V = alloca [128 x i16], align 2" [src/pwconv.cpp:159]   --->   Operation 29 'alloca' 'bias_buff_2_V' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 128> <RAM>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%bias_buff_3_V = alloca [128 x i16], align 2" [src/pwconv.cpp:159]   --->   Operation 30 'alloca' 'bias_buff_3_V' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 128> <RAM>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%bias_buff_4_V = alloca [128 x i16], align 2" [src/pwconv.cpp:159]   --->   Operation 31 'alloca' 'bias_buff_4_V' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 128> <RAM>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%bias_buff_5_V = alloca [128 x i16], align 2" [src/pwconv.cpp:159]   --->   Operation 32 'alloca' 'bias_buff_5_V' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 128> <RAM>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%bias_buff_6_V = alloca [128 x i16], align 2" [src/pwconv.cpp:159]   --->   Operation 33 'alloca' 'bias_buff_6_V' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 128> <RAM>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%bias_buff_7_V = alloca [128 x i16], align 2" [src/pwconv.cpp:159]   --->   Operation 34 'alloca' 'bias_buff_7_V' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 128> <RAM>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%fm_out1_0_V = alloca [169 x i16], align 2" [src/pwconv.cpp:161]   --->   Operation 35 'alloca' 'fm_out1_0_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%fm_out1_1_V = alloca [169 x i16], align 2" [src/pwconv.cpp:161]   --->   Operation 36 'alloca' 'fm_out1_1_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%fm_out1_2_V = alloca [169 x i16], align 2" [src/pwconv.cpp:161]   --->   Operation 37 'alloca' 'fm_out1_2_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%fm_out1_3_V = alloca [169 x i16], align 2" [src/pwconv.cpp:161]   --->   Operation 38 'alloca' 'fm_out1_3_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%fm_out1_4_V = alloca [169 x i16], align 2" [src/pwconv.cpp:161]   --->   Operation 39 'alloca' 'fm_out1_4_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%fm_out1_5_V = alloca [169 x i16], align 2" [src/pwconv.cpp:161]   --->   Operation 40 'alloca' 'fm_out1_5_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%fm_out1_6_V = alloca [169 x i16], align 2" [src/pwconv.cpp:161]   --->   Operation 41 'alloca' 'fm_out1_6_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%fm_out1_7_V = alloca [169 x i16], align 2" [src/pwconv.cpp:161]   --->   Operation 42 'alloca' 'fm_out1_7_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%fm_out2_0_V = alloca [169 x i16], align 2" [src/pwconv.cpp:163]   --->   Operation 43 'alloca' 'fm_out2_0_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%fm_out2_1_V = alloca [169 x i16], align 2" [src/pwconv.cpp:163]   --->   Operation 44 'alloca' 'fm_out2_1_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%fm_out2_2_V = alloca [169 x i16], align 2" [src/pwconv.cpp:163]   --->   Operation 45 'alloca' 'fm_out2_2_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%fm_out2_3_V = alloca [169 x i16], align 2" [src/pwconv.cpp:163]   --->   Operation 46 'alloca' 'fm_out2_3_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%fm_out2_4_V = alloca [169 x i16], align 2" [src/pwconv.cpp:163]   --->   Operation 47 'alloca' 'fm_out2_4_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%fm_out2_5_V = alloca [169 x i16], align 2" [src/pwconv.cpp:163]   --->   Operation 48 'alloca' 'fm_out2_5_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%fm_out2_6_V = alloca [169 x i16], align 2" [src/pwconv.cpp:163]   --->   Operation 49 'alloca' 'fm_out2_6_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%fm_out2_7_V = alloca [169 x i16], align 2" [src/pwconv.cpp:163]   --->   Operation 50 'alloca' 'fm_out2_7_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%trunc_ln167 = trunc i32 %M_read to i31" [src/pwconv.cpp:167]   --->   Operation 51 'trunc' 'trunc_ln167' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%zext_ln167 = zext i31 %trunc_ln167 to i32" [src/pwconv.cpp:167]   --->   Operation 52 'zext' 'zext_ln167' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [7/7] (4.81ns)   --->   "%weight_V_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i16P(i16* %weight_V_addr, i32 %zext_ln167)" [src/pwconv.cpp:167]   --->   Operation 53 'readreq' 'weight_V_addr_rd_req' <Predicate = true> <Delay = 4.81> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 2 <SV = 1> <Delay = 4.81>
+ST_2 : Operation 54 [6/7] (4.81ns)   --->   "%weight_V_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i16P(i16* %weight_V_addr, i32 %zext_ln167)" [src/pwconv.cpp:167]   --->   Operation 54 'readreq' 'weight_V_addr_rd_req' <Predicate = true> <Delay = 4.81> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 3 <SV = 2> <Delay = 4.81>
+ST_3 : Operation 55 [5/7] (4.81ns)   --->   "%weight_V_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i16P(i16* %weight_V_addr, i32 %zext_ln167)" [src/pwconv.cpp:167]   --->   Operation 55 'readreq' 'weight_V_addr_rd_req' <Predicate = true> <Delay = 4.81> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 4.81>
+ST_4 : Operation 56 [4/7] (4.81ns)   --->   "%weight_V_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i16P(i16* %weight_V_addr, i32 %zext_ln167)" [src/pwconv.cpp:167]   --->   Operation 56 'readreq' 'weight_V_addr_rd_req' <Predicate = true> <Delay = 4.81> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 4.81>
+ST_5 : Operation 57 [3/7] (4.81ns)   --->   "%weight_V_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i16P(i16* %weight_V_addr, i32 %zext_ln167)" [src/pwconv.cpp:167]   --->   Operation 57 'readreq' 'weight_V_addr_rd_req' <Predicate = true> <Delay = 4.81> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 4.81>
+ST_6 : Operation 58 [2/7] (4.81ns)   --->   "%weight_V_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i16P(i16* %weight_V_addr, i32 %zext_ln167)" [src/pwconv.cpp:167]   --->   Operation 58 'readreq' 'weight_V_addr_rd_req' <Predicate = true> <Delay = 4.81> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 4.81>
+ST_7 : Operation 59 [1/1] (0.00ns)   --->   "%ACT_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %ACT)" [src/pwconv.cpp:154]   --->   Operation 59 'read' 'ACT_read' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 60 [1/1] (0.00ns)   --->   "%SIZE_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %SIZE)" [src/pwconv.cpp:154]   --->   Operation 60 'read' 'SIZE_read' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 61 [1/1] (0.00ns)   --->   "%N_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %N)" [src/pwconv.cpp:154]   --->   Operation 61 'read' 'N_read' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 62 [1/1] (0.00ns)   --->   "%out_V_offset_read = call i31 @_ssdm_op_Read.ap_auto.i31(i31 %out_V_offset)" [src/pwconv.cpp:154]   --->   Operation 62 'read' 'out_V_offset_read' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 63 [1/1] (0.00ns)   --->   "%weight_V_offset_read = call i31 @_ssdm_op_Read.ap_auto.i31(i31 %weight_V_offset)" [src/pwconv.cpp:154]   --->   Operation 63 'read' 'weight_V_offset_read' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 64 [1/1] (0.00ns)   --->   "%in4_V_offset_read = call i31 @_ssdm_op_Read.ap_auto.i31(i31 %in4_V_offset)" [src/pwconv.cpp:154]   --->   Operation 64 'read' 'in4_V_offset_read' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 65 [1/1] (0.00ns)   --->   "%in3_V_offset_read = call i31 @_ssdm_op_Read.ap_auto.i31(i31 %in3_V_offset)" [src/pwconv.cpp:154]   --->   Operation 65 'read' 'in3_V_offset_read' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 66 [1/1] (0.00ns)   --->   "%in2_V_offset_read = call i31 @_ssdm_op_Read.ap_auto.i31(i31 %in2_V_offset)" [src/pwconv.cpp:154]   --->   Operation 66 'read' 'in2_V_offset_read' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 67 [1/1] (0.00ns)   --->   "%in1_V_offset_read = call i31 @_ssdm_op_Read.ap_auto.i31(i31 %in1_V_offset)" [src/pwconv.cpp:154]   --->   Operation 67 'read' 'in1_V_offset_read' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 68 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %in1_V, [6 x i8]* @p_str334, i32 0, i32 0, [1 x i8]* @p_str132, i32 0, i32 0, [4 x i8]* @p_str435, [6 x i8]* @p_str536, [1 x i8]* @p_str132, i32 16, i32 16, i32 256, i32 256, [1 x i8]* @p_str132, [1 x i8]* @p_str132)"   --->   Operation 68 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 69 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %weight_V, [6 x i8]* @p_str334, i32 0, i32 0, [1 x i8]* @p_str132, i32 0, i32 128, [3 x i8]* @p_str940, [6 x i8]* @p_str536, [1 x i8]* @p_str132, i32 16, i32 16, i32 256, i32 16, [1 x i8]* @p_str132, [1 x i8]* @p_str132)"   --->   Operation 69 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 70 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %weight_V, [6 x i8]* @p_str334, i32 0, i32 0, [1 x i8]* @p_str132, i32 0, i32 65536, [3 x i8]* @p_str940, [6 x i8]* @p_str536, [1 x i8]* @p_str132, i32 16, i32 16, i32 256, i32 16, [1 x i8]* @p_str132, [1 x i8]* @p_str132)"   --->   Operation 70 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 71 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %in4_V, [6 x i8]* @p_str334, i32 0, i32 0, [1 x i8]* @p_str132, i32 0, i32 60000, [4 x i8]* @p_str839, [6 x i8]* @p_str536, [1 x i8]* @p_str132, i32 16, i32 16, i32 256, i32 256, [1 x i8]* @p_str132, [1 x i8]* @p_str132)"   --->   Operation 71 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 72 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %in3_V, [6 x i8]* @p_str334, i32 0, i32 0, [1 x i8]* @p_str132, i32 0, i32 60000, [4 x i8]* @p_str738, [6 x i8]* @p_str536, [1 x i8]* @p_str132, i32 16, i32 16, i32 256, i32 256, [1 x i8]* @p_str132, [1 x i8]* @p_str132)"   --->   Operation 72 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 73 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %in2_V, [6 x i8]* @p_str334, i32 0, i32 0, [1 x i8]* @p_str132, i32 0, i32 60000, [4 x i8]* @p_str637, [6 x i8]* @p_str536, [1 x i8]* @p_str132, i32 16, i32 16, i32 256, i32 256, [1 x i8]* @p_str132, [1 x i8]* @p_str132)"   --->   Operation 73 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 74 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %in1_V, [6 x i8]* @p_str334, i32 0, i32 0, [1 x i8]* @p_str132, i32 0, i32 60000, [4 x i8]* @p_str435, [6 x i8]* @p_str536, [1 x i8]* @p_str132, i32 16, i32 16, i32 256, i32 256, [1 x i8]* @p_str132, [1 x i8]* @p_str132)"   --->   Operation 74 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 75 [1/7] (4.81ns)   --->   "%weight_V_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i16P(i16* %weight_V_addr, i32 %zext_ln167)" [src/pwconv.cpp:167]   --->   Operation 75 'readreq' 'weight_V_addr_rd_req' <Predicate = true> <Delay = 4.81> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_7 : Operation 76 [1/1] (0.46ns)   --->   "br label %burst.rd.header" [src/pwconv.cpp:167]   --->   Operation 76 'br' <Predicate = true> <Delay = 0.46>
+
+State 8 <SV = 7> <Delay = 2.76>
+ST_8 : Operation 77 [1/1] (0.00ns)   --->   "%phi_ln167 = phi i31 [ 0, %0 ], [ %add_ln167, %burstread.region_end ]" [src/pwconv.cpp:167]   --->   Operation 77 'phi' 'phi_ln167' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 78 [1/1] (1.96ns)   --->   "%icmp_ln167 = icmp eq i31 %phi_ln167, %trunc_ln167" [src/pwconv.cpp:167]   --->   Operation 78 'icmp' 'icmp_ln167' <Predicate = true> <Delay = 1.96> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.96> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 79 [1/1] (1.87ns)   --->   "%add_ln167 = add i31 %phi_ln167, 1" [src/pwconv.cpp:167]   --->   Operation 79 'add' 'add_ln167' <Predicate = true> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 80 [1/1] (0.00ns)   --->   "br i1 %icmp_ln167, label %burst.rd.end, label %burstread.region_begin" [src/pwconv.cpp:167]   --->   Operation 80 'br' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 81 [1/1] (0.00ns)   --->   "%tmp_1 = call i28 @_ssdm_op_PartSelect.i28.i31.i32.i32(i31 %phi_ln167, i32 3, i32 30)" [src/pwconv.cpp:167]   --->   Operation 81 'partselect' 'tmp_1' <Predicate = (!icmp_ln167)> <Delay = 0.00>
+ST_8 : Operation 82 [1/1] (0.00ns)   --->   "%trunc_ln167_1 = trunc i31 %phi_ln167 to i3" [src/pwconv.cpp:167]   --->   Operation 82 'trunc' 'trunc_ln167_1' <Predicate = (!icmp_ln167)> <Delay = 0.00>
+ST_8 : Operation 83 [1/1] (0.97ns)   --->   "switch i3 %trunc_ln167_1, label %branch7 [
+    i3 0, label %branch0
+    i3 1, label %branch1
+    i3 2, label %branch2
+    i3 3, label %branch3
+    i3 -4, label %branch4
+    i3 -3, label %branch5
+    i3 -2, label %branch6
+  ]" [src/pwconv.cpp:167]   --->   Operation 83 'switch' <Predicate = (!icmp_ln167)> <Delay = 0.97>
+
+State 9 <SV = 8> <Delay = 4.81>
+ST_9 : Operation 84 [1/1] (4.81ns)   --->   "%weight_V_addr_read = call i16 @_ssdm_op_Read.m_axi.i16P(i16* %weight_V_addr)" [src/pwconv.cpp:167]   --->   Operation 84 'read' 'weight_V_addr_read' <Predicate = true> <Delay = 4.81> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_9 : Operation 85 [1/1] (0.00ns)   --->   "br label %burstread.region_end" [src/pwconv.cpp:167]   --->   Operation 85 'br' <Predicate = (trunc_ln167_1 == 6)> <Delay = 0.00>
+ST_9 : Operation 86 [1/1] (0.00ns)   --->   "br label %burstread.region_end" [src/pwconv.cpp:167]   --->   Operation 86 'br' <Predicate = (trunc_ln167_1 == 5)> <Delay = 0.00>
+ST_9 : Operation 87 [1/1] (0.00ns)   --->   "br label %burstread.region_end" [src/pwconv.cpp:167]   --->   Operation 87 'br' <Predicate = (trunc_ln167_1 == 4)> <Delay = 0.00>
+ST_9 : Operation 88 [1/1] (0.00ns)   --->   "br label %burstread.region_end" [src/pwconv.cpp:167]   --->   Operation 88 'br' <Predicate = (trunc_ln167_1 == 3)> <Delay = 0.00>
+ST_9 : Operation 89 [1/1] (0.00ns)   --->   "br label %burstread.region_end" [src/pwconv.cpp:167]   --->   Operation 89 'br' <Predicate = (trunc_ln167_1 == 2)> <Delay = 0.00>
+ST_9 : Operation 90 [1/1] (0.00ns)   --->   "br label %burstread.region_end" [src/pwconv.cpp:167]   --->   Operation 90 'br' <Predicate = (trunc_ln167_1 == 1)> <Delay = 0.00>
+ST_9 : Operation 91 [1/1] (0.00ns)   --->   "br label %burstread.region_end" [src/pwconv.cpp:167]   --->   Operation 91 'br' <Predicate = (trunc_ln167_1 == 0)> <Delay = 0.00>
+ST_9 : Operation 92 [1/1] (0.00ns)   --->   "br label %burstread.region_end" [src/pwconv.cpp:167]   --->   Operation 92 'br' <Predicate = (trunc_ln167_1 == 7)> <Delay = 0.00>
+
+State 10 <SV = 9> <Delay = 2.77>
+ST_10 : Operation 93 [1/1] (0.00ns)   --->   "%burstread_rbegin = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @burstread_OC_region_s)" [src/pwconv.cpp:167]   --->   Operation 93 'specregionbegin' 'burstread_rbegin' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 94 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str100)" [src/pwconv.cpp:167]   --->   Operation 94 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 95 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopName([30 x i8]* @memcpy_OC_bias_buff_s)" [src/pwconv.cpp:167]   --->   Operation 95 'specloopname' 'empty' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 96 [1/1] (0.00ns)   --->   "%zext_ln167_1 = zext i28 %tmp_1 to i64" [src/pwconv.cpp:167]   --->   Operation 96 'zext' 'zext_ln167_1' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 97 [1/1] (0.00ns)   --->   "%bias_buff_0_V_addr = getelementptr [128 x i16]* %bias_buff_0_V, i64 0, i64 %zext_ln167_1" [src/pwconv.cpp:167]   --->   Operation 97 'getelementptr' 'bias_buff_0_V_addr' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 98 [1/1] (0.00ns)   --->   "%bias_buff_1_V_addr = getelementptr [128 x i16]* %bias_buff_1_V, i64 0, i64 %zext_ln167_1" [src/pwconv.cpp:167]   --->   Operation 98 'getelementptr' 'bias_buff_1_V_addr' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 99 [1/1] (0.00ns)   --->   "%bias_buff_2_V_addr = getelementptr [128 x i16]* %bias_buff_2_V, i64 0, i64 %zext_ln167_1" [src/pwconv.cpp:167]   --->   Operation 99 'getelementptr' 'bias_buff_2_V_addr' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 100 [1/1] (0.00ns)   --->   "%bias_buff_3_V_addr = getelementptr [128 x i16]* %bias_buff_3_V, i64 0, i64 %zext_ln167_1" [src/pwconv.cpp:167]   --->   Operation 100 'getelementptr' 'bias_buff_3_V_addr' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 101 [1/1] (0.00ns)   --->   "%bias_buff_4_V_addr = getelementptr [128 x i16]* %bias_buff_4_V, i64 0, i64 %zext_ln167_1" [src/pwconv.cpp:167]   --->   Operation 101 'getelementptr' 'bias_buff_4_V_addr' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 102 [1/1] (0.00ns)   --->   "%bias_buff_5_V_addr = getelementptr [128 x i16]* %bias_buff_5_V, i64 0, i64 %zext_ln167_1" [src/pwconv.cpp:167]   --->   Operation 102 'getelementptr' 'bias_buff_5_V_addr' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 103 [1/1] (0.00ns)   --->   "%bias_buff_6_V_addr = getelementptr [128 x i16]* %bias_buff_6_V, i64 0, i64 %zext_ln167_1" [src/pwconv.cpp:167]   --->   Operation 103 'getelementptr' 'bias_buff_6_V_addr' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 104 [1/1] (0.00ns)   --->   "%bias_buff_7_V_addr = getelementptr [128 x i16]* %bias_buff_7_V, i64 0, i64 %zext_ln167_1" [src/pwconv.cpp:167]   --->   Operation 104 'getelementptr' 'bias_buff_7_V_addr' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 105 [1/1] (2.77ns)   --->   "store i16 %weight_V_addr_read, i16* %bias_buff_6_V_addr, align 2" [src/pwconv.cpp:167]   --->   Operation 105 'store' <Predicate = (trunc_ln167_1 == 6)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 128> <RAM>
+ST_10 : Operation 106 [1/1] (2.77ns)   --->   "store i16 %weight_V_addr_read, i16* %bias_buff_5_V_addr, align 2" [src/pwconv.cpp:167]   --->   Operation 106 'store' <Predicate = (trunc_ln167_1 == 5)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 128> <RAM>
+ST_10 : Operation 107 [1/1] (2.77ns)   --->   "store i16 %weight_V_addr_read, i16* %bias_buff_4_V_addr, align 2" [src/pwconv.cpp:167]   --->   Operation 107 'store' <Predicate = (trunc_ln167_1 == 4)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 128> <RAM>
+ST_10 : Operation 108 [1/1] (2.77ns)   --->   "store i16 %weight_V_addr_read, i16* %bias_buff_3_V_addr, align 2" [src/pwconv.cpp:167]   --->   Operation 108 'store' <Predicate = (trunc_ln167_1 == 3)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 128> <RAM>
+ST_10 : Operation 109 [1/1] (2.77ns)   --->   "store i16 %weight_V_addr_read, i16* %bias_buff_2_V_addr, align 2" [src/pwconv.cpp:167]   --->   Operation 109 'store' <Predicate = (trunc_ln167_1 == 2)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 128> <RAM>
+ST_10 : Operation 110 [1/1] (2.77ns)   --->   "store i16 %weight_V_addr_read, i16* %bias_buff_1_V_addr, align 2" [src/pwconv.cpp:167]   --->   Operation 110 'store' <Predicate = (trunc_ln167_1 == 1)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 128> <RAM>
+ST_10 : Operation 111 [1/1] (2.77ns)   --->   "store i16 %weight_V_addr_read, i16* %bias_buff_0_V_addr, align 2" [src/pwconv.cpp:167]   --->   Operation 111 'store' <Predicate = (trunc_ln167_1 == 0)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 128> <RAM>
+ST_10 : Operation 112 [1/1] (2.77ns)   --->   "store i16 %weight_V_addr_read, i16* %bias_buff_7_V_addr, align 2" [src/pwconv.cpp:167]   --->   Operation 112 'store' <Predicate = (trunc_ln167_1 == 7)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 128> <RAM>
+ST_10 : Operation 113 [1/1] (0.00ns)   --->   "%burstread_rend = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @burstread_OC_region_s, i32 %burstread_rbegin)" [src/pwconv.cpp:167]   --->   Operation 113 'specregionend' 'burstread_rend' <Predicate = (!icmp_ln167)> <Delay = 0.00>
+ST_10 : Operation 114 [1/1] (0.00ns)   --->   "br label %burst.rd.header" [src/pwconv.cpp:167]   --->   Operation 114 'br' <Predicate = (!icmp_ln167)> <Delay = 0.00>
+
+State 11 <SV = 8> <Delay = 3.33>
+ST_11 : Operation 115 [1/1] (0.00ns)   --->   "%trunc_ln174 = trunc i32 %SIZE_read to i16" [src/pwconv.cpp:174]   --->   Operation 115 'trunc' 'trunc_ln174' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 116 [1/1] (0.00ns)   --->   "%trunc_ln174_1 = trunc i32 %N_read to i16" [src/pwconv.cpp:174]   --->   Operation 116 'trunc' 'trunc_ln174_1' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 117 [5/5] (3.33ns)   --->   "%mul_ln190 = mul nsw i32 %SIZE_read, %SIZE_read" [src/pwconv.cpp:190]   --->   Operation 117 'mul' 'mul_ln190' <Predicate = true> <Delay = 3.33> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 3.33> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 9> <Delay = 3.33>
+ST_12 : Operation 118 [4/5] (3.33ns)   --->   "%mul_ln190 = mul nsw i32 %SIZE_read, %SIZE_read" [src/pwconv.cpp:190]   --->   Operation 118 'mul' 'mul_ln190' <Predicate = true> <Delay = 3.33> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 3.33> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 10> <Delay = 3.33>
+ST_13 : Operation 119 [3/5] (3.33ns)   --->   "%mul_ln190 = mul nsw i32 %SIZE_read, %SIZE_read" [src/pwconv.cpp:190]   --->   Operation 119 'mul' 'mul_ln190' <Predicate = true> <Delay = 3.33> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 3.33> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 11> <Delay = 5.50>
+ST_14 : Operation 120 [1/1] (0.00ns)   --->   "%trunc_ln174_2 = trunc i32 %M_read to i16" [src/pwconv.cpp:174]   --->   Operation 120 'trunc' 'trunc_ln174_2' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 121 [2/2] (4.81ns)   --->   "call fastcc void @compute_output.1([169 x i16]* nocapture %fm_out1_0_V, [169 x i16]* nocapture %fm_out1_1_V, [169 x i16]* nocapture %fm_out1_2_V, [169 x i16]* nocapture %fm_out1_3_V, [169 x i16]* nocapture %fm_out1_4_V, [169 x i16]* nocapture %fm_out1_5_V, [169 x i16]* nocapture %fm_out1_6_V, [169 x i16]* nocapture %fm_out1_7_V, [128 x i16]* nocapture %bias_buff_0_V, [128 x i16]* nocapture %bias_buff_1_V, [128 x i16]* nocapture %bias_buff_2_V, [128 x i16]* nocapture %bias_buff_3_V, [128 x i16]* nocapture %bias_buff_4_V, [128 x i16]* nocapture %bias_buff_5_V, [128 x i16]* nocapture %bias_buff_6_V, [128 x i16]* nocapture %bias_buff_7_V, i16* %in1_V, i31 %in1_V_offset_read, i16* %in2_V, i31 %in2_V_offset_read, i16* %in3_V, i31 %in3_V_offset_read, i16* %in4_V, i31 %in4_V_offset_read, i16* %weight_V, i31 %weight_V_offset_read, i16 zeroext 0, i16 zeroext %trunc_ln174, i16 zeroext %trunc_ln174_1, i16 zeroext %trunc_ln174_2, i16 zeroext 0)" [src/pwconv.cpp:174]   --->   Operation 121 'call' <Predicate = true> <Delay = 4.81> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 122 [2/5] (3.33ns)   --->   "%mul_ln190 = mul nsw i32 %SIZE_read, %SIZE_read" [src/pwconv.cpp:190]   --->   Operation 122 'mul' 'mul_ln190' <Predicate = true> <Delay = 3.33> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 3.33> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 123 [1/1] (0.00ns)   --->   "%zext_ln144 = zext i16 %trunc_ln174 to i32" [src/pwconv.cpp:144->src/pwconv.cpp:177]   --->   Operation 123 'zext' 'zext_ln144' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 124 [2/2] (5.50ns) (root node of the DSP)   --->   "%mul_ln144 = mul nsw i32 %zext_ln144, %zext_ln144" [src/pwconv.cpp:144->src/pwconv.cpp:177]   --->   Operation 124 'mul' 'mul_ln144' <Predicate = true> <Delay = 5.50> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 1> <II = 1> <Delay = 5.50> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 15 <SV = 12> <Delay = 3.33>
+ST_15 : Operation 125 [1/2] (0.00ns)   --->   "call fastcc void @compute_output.1([169 x i16]* nocapture %fm_out1_0_V, [169 x i16]* nocapture %fm_out1_1_V, [169 x i16]* nocapture %fm_out1_2_V, [169 x i16]* nocapture %fm_out1_3_V, [169 x i16]* nocapture %fm_out1_4_V, [169 x i16]* nocapture %fm_out1_5_V, [169 x i16]* nocapture %fm_out1_6_V, [169 x i16]* nocapture %fm_out1_7_V, [128 x i16]* nocapture %bias_buff_0_V, [128 x i16]* nocapture %bias_buff_1_V, [128 x i16]* nocapture %bias_buff_2_V, [128 x i16]* nocapture %bias_buff_3_V, [128 x i16]* nocapture %bias_buff_4_V, [128 x i16]* nocapture %bias_buff_5_V, [128 x i16]* nocapture %bias_buff_6_V, [128 x i16]* nocapture %bias_buff_7_V, i16* %in1_V, i31 %in1_V_offset_read, i16* %in2_V, i31 %in2_V_offset_read, i16* %in3_V, i31 %in3_V_offset_read, i16* %in4_V, i31 %in4_V_offset_read, i16* %weight_V, i31 %weight_V_offset_read, i16 zeroext 0, i16 zeroext %trunc_ln174, i16 zeroext %trunc_ln174_1, i16 zeroext %trunc_ln174_2, i16 zeroext 0)" [src/pwconv.cpp:174]   --->   Operation 125 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_15 : Operation 126 [1/5] (3.33ns)   --->   "%mul_ln190 = mul nsw i32 %SIZE_read, %SIZE_read" [src/pwconv.cpp:190]   --->   Operation 126 'mul' 'mul_ln190' <Predicate = true> <Delay = 3.33> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 3.33> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 127 [1/2] (0.00ns) (root node of the DSP)   --->   "%mul_ln144 = mul nsw i32 %zext_ln144, %zext_ln144" [src/pwconv.cpp:144->src/pwconv.cpp:177]   --->   Operation 127 'mul' 'mul_ln144' <Predicate = true> <Delay = 0.00> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 1> <II = 1> <Delay = 5.50> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_15 : Operation 128 [1/1] (0.46ns)   --->   "br label %hls_label_7_begin" [src/pwconv.cpp:175]   --->   Operation 128 'br' <Predicate = true> <Delay = 0.46>
+
+State 16 <SV = 13> <Delay = 4.13>
+ST_16 : Operation 129 [1/1] (0.00ns)   --->   "%baseChannel_assign = phi i16 [ 0, %burst.rd.end ], [ %baseChannel, %hls_label_7_end ]"   --->   Operation 129 'phi' 'baseChannel_assign' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 130 [1/1] (0.00ns)   --->   "%basePixAddr_assign = phi i16 [ 0, %burst.rd.end ], [ %basePixAddr, %hls_label_7_end ]"   --->   Operation 130 'phi' 'basePixAddr_assign' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 131 [1/1] (0.00ns)   --->   "%pingpong_0 = phi i1 [ true, %burst.rd.end ], [ %pingpong_1, %hls_label_7_end ]"   --->   Operation 131 'phi' 'pingpong_0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 132 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str919)" [src/pwconv.cpp:175]   --->   Operation 132 'specregionbegin' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 133 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i32 119, i32 119, i32 119, [1 x i8]* @p_str111) nounwind" [src/pwconv.cpp:176]   --->   Operation 133 'speclooptripcount' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 134 [1/1] (0.00ns)   --->   "%zext_ln144_1 = zext i16 %basePixAddr_assign to i17" [src/pwconv.cpp:144->src/pwconv.cpp:177]   --->   Operation 134 'zext' 'zext_ln144_1' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 135 [1/1] (1.54ns)   --->   "%add_ln144 = add i17 %zext_ln144_1, 169" [src/pwconv.cpp:144->src/pwconv.cpp:177]   --->   Operation 135 'add' 'add_ln144' <Predicate = true> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 136 [1/1] (0.00ns)   --->   "%zext_ln144_2 = zext i17 %add_ln144 to i32" [src/pwconv.cpp:144->src/pwconv.cpp:177]   --->   Operation 136 'zext' 'zext_ln144_2' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 137 [1/1] (1.96ns)   --->   "%icmp_ln144 = icmp ult i32 %zext_ln144_2, %mul_ln144" [src/pwconv.cpp:144->src/pwconv.cpp:177]   --->   Operation 137 'icmp' 'icmp_ln144' <Predicate = true> <Delay = 1.96> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.96> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 138 [1/1] (1.54ns)   --->   "%add_ln149 = add i16 %basePixAddr_assign, 169" [src/pwconv.cpp:149->src/pwconv.cpp:177]   --->   Operation 138 'add' 'add_ln149' <Predicate = true> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 139 [1/1] (1.54ns)   --->   "%add_ln146 = add i16 %baseChannel_assign, 8" [src/pwconv.cpp:146->src/pwconv.cpp:177]   --->   Operation 139 'add' 'add_ln146' <Predicate = true> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 140 [1/1] (0.62ns)   --->   "%basePixAddr = select i1 %icmp_ln144, i16 %add_ln149, i16 0" [src/pwconv.cpp:144->src/pwconv.cpp:177]   --->   Operation 140 'select' 'basePixAddr' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_16 : Operation 141 [1/1] (0.62ns)   --->   "%baseChannel = select i1 %icmp_ln144, i16 %baseChannel_assign, i16 %add_ln146" [src/pwconv.cpp:144->src/pwconv.cpp:177]   --->   Operation 141 'select' 'baseChannel' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_16 : Operation 142 [1/1] (0.00ns)   --->   "br i1 %pingpong_0, label %1, label %2" [src/pwconv.cpp:178]   --->   Operation 142 'br' <Predicate = true> <Delay = 0.00>
+
+State 17 <SV = 14> <Delay = 4.81>
+ST_17 : Operation 143 [2/2] (4.81ns)   --->   "call fastcc void @compute_output.1([169 x i16]* nocapture %fm_out1_0_V, [169 x i16]* nocapture %fm_out1_1_V, [169 x i16]* nocapture %fm_out1_2_V, [169 x i16]* nocapture %fm_out1_3_V, [169 x i16]* nocapture %fm_out1_4_V, [169 x i16]* nocapture %fm_out1_5_V, [169 x i16]* nocapture %fm_out1_6_V, [169 x i16]* nocapture %fm_out1_7_V, [128 x i16]* nocapture %bias_buff_0_V, [128 x i16]* nocapture %bias_buff_1_V, [128 x i16]* nocapture %bias_buff_2_V, [128 x i16]* nocapture %bias_buff_3_V, [128 x i16]* nocapture %bias_buff_4_V, [128 x i16]* nocapture %bias_buff_5_V, [128 x i16]* nocapture %bias_buff_6_V, [128 x i16]* nocapture %bias_buff_7_V, i16* %in1_V, i31 %in1_V_offset_read, i16* %in2_V, i31 %in2_V_offset_read, i16* %in3_V, i31 %in3_V_offset_read, i16* %in4_V, i31 %in4_V_offset_read, i16* %weight_V, i31 %weight_V_offset_read, i16 zeroext %baseChannel, i16 zeroext %trunc_ln174, i16 zeroext %trunc_ln174_1, i16 zeroext %trunc_ln174_2, i16 zeroext %basePixAddr)" [src/pwconv.cpp:184]   --->   Operation 143 'call' <Predicate = true> <Delay = 4.81> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_17 : Operation 144 [2/2] (4.81ns)   --->   "call fastcc void @store_output.1([169 x i16]* nocapture %fm_out2_0_V, [169 x i16]* nocapture %fm_out2_1_V, [169 x i16]* nocapture %fm_out2_2_V, [169 x i16]* nocapture %fm_out2_3_V, [169 x i16]* nocapture %fm_out2_4_V, [169 x i16]* nocapture %fm_out2_5_V, [169 x i16]* nocapture %fm_out2_6_V, [169 x i16]* nocapture %fm_out2_7_V, i16* %in1_V, i31 %out_V_offset_read, i16 zeroext %basePixAddr_assign, i16 zeroext %baseChannel_assign, i16 zeroext %trunc_ln174, i16 zeroext %trunc_ln174_2, i32 %ACT_read)" [src/pwconv.cpp:185]   --->   Operation 144 'call' <Predicate = true> <Delay = 4.81> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 18 <SV = 15> <Delay = 3.51>
+ST_18 : Operation 145 [1/2] (0.00ns)   --->   "call fastcc void @compute_output.1([169 x i16]* nocapture %fm_out1_0_V, [169 x i16]* nocapture %fm_out1_1_V, [169 x i16]* nocapture %fm_out1_2_V, [169 x i16]* nocapture %fm_out1_3_V, [169 x i16]* nocapture %fm_out1_4_V, [169 x i16]* nocapture %fm_out1_5_V, [169 x i16]* nocapture %fm_out1_6_V, [169 x i16]* nocapture %fm_out1_7_V, [128 x i16]* nocapture %bias_buff_0_V, [128 x i16]* nocapture %bias_buff_1_V, [128 x i16]* nocapture %bias_buff_2_V, [128 x i16]* nocapture %bias_buff_3_V, [128 x i16]* nocapture %bias_buff_4_V, [128 x i16]* nocapture %bias_buff_5_V, [128 x i16]* nocapture %bias_buff_6_V, [128 x i16]* nocapture %bias_buff_7_V, i16* %in1_V, i31 %in1_V_offset_read, i16* %in2_V, i31 %in2_V_offset_read, i16* %in3_V, i31 %in3_V_offset_read, i16* %in4_V, i31 %in4_V_offset_read, i16* %weight_V, i31 %weight_V_offset_read, i16 zeroext %baseChannel, i16 zeroext %trunc_ln174, i16 zeroext %trunc_ln174_1, i16 zeroext %trunc_ln174_2, i16 zeroext %basePixAddr)" [src/pwconv.cpp:184]   --->   Operation 145 'call' <Predicate = (!pingpong_0)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_18 : Operation 146 [1/2] (0.00ns)   --->   "call fastcc void @store_output.1([169 x i16]* nocapture %fm_out2_0_V, [169 x i16]* nocapture %fm_out2_1_V, [169 x i16]* nocapture %fm_out2_2_V, [169 x i16]* nocapture %fm_out2_3_V, [169 x i16]* nocapture %fm_out2_4_V, [169 x i16]* nocapture %fm_out2_5_V, [169 x i16]* nocapture %fm_out2_6_V, [169 x i16]* nocapture %fm_out2_7_V, i16* %in1_V, i31 %out_V_offset_read, i16 zeroext %basePixAddr_assign, i16 zeroext %baseChannel_assign, i16 zeroext %trunc_ln174, i16 zeroext %trunc_ln174_2, i32 %ACT_read)" [src/pwconv.cpp:185]   --->   Operation 146 'call' <Predicate = (!pingpong_0)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_18 : Operation 147 [1/1] (0.46ns)   --->   "br label %3"   --->   Operation 147 'br' <Predicate = (!pingpong_0)> <Delay = 0.46>
+ST_18 : Operation 148 [1/2] (0.00ns)   --->   "call fastcc void @compute_output.1([169 x i16]* nocapture %fm_out2_0_V, [169 x i16]* nocapture %fm_out2_1_V, [169 x i16]* nocapture %fm_out2_2_V, [169 x i16]* nocapture %fm_out2_3_V, [169 x i16]* nocapture %fm_out2_4_V, [169 x i16]* nocapture %fm_out2_5_V, [169 x i16]* nocapture %fm_out2_6_V, [169 x i16]* nocapture %fm_out2_7_V, [128 x i16]* nocapture %bias_buff_0_V, [128 x i16]* nocapture %bias_buff_1_V, [128 x i16]* nocapture %bias_buff_2_V, [128 x i16]* nocapture %bias_buff_3_V, [128 x i16]* nocapture %bias_buff_4_V, [128 x i16]* nocapture %bias_buff_5_V, [128 x i16]* nocapture %bias_buff_6_V, [128 x i16]* nocapture %bias_buff_7_V, i16* %in1_V, i31 %in1_V_offset_read, i16* %in2_V, i31 %in2_V_offset_read, i16* %in3_V, i31 %in3_V_offset_read, i16* %in4_V, i31 %in4_V_offset_read, i16* %weight_V, i31 %weight_V_offset_read, i16 zeroext %baseChannel, i16 zeroext %trunc_ln174, i16 zeroext %trunc_ln174_1, i16 zeroext %trunc_ln174_2, i16 zeroext %basePixAddr)" [src/pwconv.cpp:179]   --->   Operation 148 'call' <Predicate = (pingpong_0)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_18 : Operation 149 [1/2] (0.00ns)   --->   "call fastcc void @store_output.1([169 x i16]* nocapture %fm_out1_0_V, [169 x i16]* nocapture %fm_out1_1_V, [169 x i16]* nocapture %fm_out1_2_V, [169 x i16]* nocapture %fm_out1_3_V, [169 x i16]* nocapture %fm_out1_4_V, [169 x i16]* nocapture %fm_out1_5_V, [169 x i16]* nocapture %fm_out1_6_V, [169 x i16]* nocapture %fm_out1_7_V, i16* %in1_V, i31 %out_V_offset_read, i16 zeroext %basePixAddr_assign, i16 zeroext %baseChannel_assign, i16 zeroext %trunc_ln174, i16 zeroext %trunc_ln174_2, i32 %ACT_read)" [src/pwconv.cpp:180]   --->   Operation 149 'call' <Predicate = (pingpong_0)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_18 : Operation 150 [1/1] (0.46ns)   --->   "br label %3" [src/pwconv.cpp:182]   --->   Operation 150 'br' <Predicate = (pingpong_0)> <Delay = 0.46>
+ST_18 : Operation 151 [1/1] (0.00ns)   --->   "%pingpong_1 = phi i1 [ false, %1 ], [ true, %2 ]"   --->   Operation 151 'phi' 'pingpong_1' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 152 [1/1] (0.00ns)   --->   "%zext_ln190 = zext i16 %basePixAddr to i17" [src/pwconv.cpp:190]   --->   Operation 152 'zext' 'zext_ln190' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 153 [1/1] (1.54ns)   --->   "%add_ln190 = add i17 %zext_ln190, 169" [src/pwconv.cpp:190]   --->   Operation 153 'add' 'add_ln190' <Predicate = true> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 154 [1/1] (0.00ns)   --->   "%zext_ln190_1 = zext i17 %add_ln190 to i32" [src/pwconv.cpp:190]   --->   Operation 154 'zext' 'zext_ln190_1' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 155 [1/1] (1.96ns)   --->   "%icmp_ln190 = icmp slt i32 %zext_ln190_1, %mul_ln190" [src/pwconv.cpp:190]   --->   Operation 155 'icmp' 'icmp_ln190' <Predicate = true> <Delay = 1.96> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.96> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 156 [1/1] (0.00ns)   --->   "br i1 %icmp_ln190, label %hls_label_7_end, label %4" [src/pwconv.cpp:190]   --->   Operation 156 'br' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 157 [1/1] (0.00ns)   --->   "%zext_ln190_2 = zext i16 %baseChannel to i17" [src/pwconv.cpp:190]   --->   Operation 157 'zext' 'zext_ln190_2' <Predicate = (!icmp_ln190)> <Delay = 0.00>
+ST_18 : Operation 158 [1/1] (1.54ns)   --->   "%add_ln190_1 = add i17 %zext_ln190_2, 8" [src/pwconv.cpp:190]   --->   Operation 158 'add' 'add_ln190_1' <Predicate = (!icmp_ln190)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 159 [1/1] (0.00ns)   --->   "%zext_ln190_3 = zext i17 %add_ln190_1 to i32" [src/pwconv.cpp:190]   --->   Operation 159 'zext' 'zext_ln190_3' <Predicate = (!icmp_ln190)> <Delay = 0.00>
+ST_18 : Operation 160 [1/1] (1.96ns)   --->   "%icmp_ln190_1 = icmp slt i32 %zext_ln190_3, %M_read" [src/pwconv.cpp:190]   --->   Operation 160 'icmp' 'icmp_ln190_1' <Predicate = (!icmp_ln190)> <Delay = 1.96> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.96> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 161 [1/1] (0.00ns)   --->   "br i1 %icmp_ln190_1, label %hls_label_7_end, label %5" [src/pwconv.cpp:190]   --->   Operation 161 'br' <Predicate = (!icmp_ln190)> <Delay = 0.00>
+ST_18 : Operation 162 [1/1] (0.00ns)   --->   "br i1 %pingpong_1, label %6, label %7" [src/pwconv.cpp:193]   --->   Operation 162 'br' <Predicate = (!icmp_ln190 & !icmp_ln190_1)> <Delay = 0.00>
+ST_18 : Operation 163 [1/1] (0.00ns)   --->   "%empty_31 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str919, i32 %tmp)" [src/pwconv.cpp:192]   --->   Operation 163 'specregionend' 'empty_31' <Predicate = (icmp_ln190_1) | (icmp_ln190)> <Delay = 0.00>
+ST_18 : Operation 164 [1/1] (0.00ns)   --->   "br label %hls_label_7_begin" [src/pwconv.cpp:192]   --->   Operation 164 'br' <Predicate = (icmp_ln190_1) | (icmp_ln190)> <Delay = 0.00>
+
+State 19 <SV = 14> <Delay = 4.81>
+ST_19 : Operation 165 [2/2] (4.81ns)   --->   "call fastcc void @compute_output.1([169 x i16]* nocapture %fm_out2_0_V, [169 x i16]* nocapture %fm_out2_1_V, [169 x i16]* nocapture %fm_out2_2_V, [169 x i16]* nocapture %fm_out2_3_V, [169 x i16]* nocapture %fm_out2_4_V, [169 x i16]* nocapture %fm_out2_5_V, [169 x i16]* nocapture %fm_out2_6_V, [169 x i16]* nocapture %fm_out2_7_V, [128 x i16]* nocapture %bias_buff_0_V, [128 x i16]* nocapture %bias_buff_1_V, [128 x i16]* nocapture %bias_buff_2_V, [128 x i16]* nocapture %bias_buff_3_V, [128 x i16]* nocapture %bias_buff_4_V, [128 x i16]* nocapture %bias_buff_5_V, [128 x i16]* nocapture %bias_buff_6_V, [128 x i16]* nocapture %bias_buff_7_V, i16* %in1_V, i31 %in1_V_offset_read, i16* %in2_V, i31 %in2_V_offset_read, i16* %in3_V, i31 %in3_V_offset_read, i16* %in4_V, i31 %in4_V_offset_read, i16* %weight_V, i31 %weight_V_offset_read, i16 zeroext %baseChannel, i16 zeroext %trunc_ln174, i16 zeroext %trunc_ln174_1, i16 zeroext %trunc_ln174_2, i16 zeroext %basePixAddr)" [src/pwconv.cpp:179]   --->   Operation 165 'call' <Predicate = true> <Delay = 4.81> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_19 : Operation 166 [2/2] (4.81ns)   --->   "call fastcc void @store_output.1([169 x i16]* nocapture %fm_out1_0_V, [169 x i16]* nocapture %fm_out1_1_V, [169 x i16]* nocapture %fm_out1_2_V, [169 x i16]* nocapture %fm_out1_3_V, [169 x i16]* nocapture %fm_out1_4_V, [169 x i16]* nocapture %fm_out1_5_V, [169 x i16]* nocapture %fm_out1_6_V, [169 x i16]* nocapture %fm_out1_7_V, i16* %in1_V, i31 %out_V_offset_read, i16 zeroext %basePixAddr_assign, i16 zeroext %baseChannel_assign, i16 zeroext %trunc_ln174, i16 zeroext %trunc_ln174_2, i32 %ACT_read)" [src/pwconv.cpp:180]   --->   Operation 166 'call' <Predicate = true> <Delay = 4.81> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 20 <SV = 16> <Delay = 4.81>
+ST_20 : Operation 167 [2/2] (4.81ns)   --->   "call fastcc void @store_output.1([169 x i16]* nocapture %fm_out2_0_V, [169 x i16]* nocapture %fm_out2_1_V, [169 x i16]* nocapture %fm_out2_2_V, [169 x i16]* nocapture %fm_out2_3_V, [169 x i16]* nocapture %fm_out2_4_V, [169 x i16]* nocapture %fm_out2_5_V, [169 x i16]* nocapture %fm_out2_6_V, [169 x i16]* nocapture %fm_out2_7_V, i16* %in1_V, i31 %out_V_offset_read, i16 zeroext %basePixAddr, i16 zeroext %baseChannel, i16 zeroext %trunc_ln174, i16 zeroext %trunc_ln174_2, i32 %ACT_read)" [src/pwconv.cpp:197]   --->   Operation 167 'call' <Predicate = true> <Delay = 4.81> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 21 <SV = 17> <Delay = 0.00>
+ST_21 : Operation 168 [1/2] (0.00ns)   --->   "call fastcc void @store_output.1([169 x i16]* nocapture %fm_out2_0_V, [169 x i16]* nocapture %fm_out2_1_V, [169 x i16]* nocapture %fm_out2_2_V, [169 x i16]* nocapture %fm_out2_3_V, [169 x i16]* nocapture %fm_out2_4_V, [169 x i16]* nocapture %fm_out2_5_V, [169 x i16]* nocapture %fm_out2_6_V, [169 x i16]* nocapture %fm_out2_7_V, i16* %in1_V, i31 %out_V_offset_read, i16 zeroext %basePixAddr, i16 zeroext %baseChannel, i16 zeroext %trunc_ln174, i16 zeroext %trunc_ln174_2, i32 %ACT_read)" [src/pwconv.cpp:197]   --->   Operation 168 'call' <Predicate = (!pingpong_1)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_21 : Operation 169 [1/1] (0.00ns)   --->   "br label %8"   --->   Operation 169 'br' <Predicate = (!pingpong_1)> <Delay = 0.00>
+ST_21 : Operation 170 [1/2] (0.00ns)   --->   "call fastcc void @store_output.1([169 x i16]* nocapture %fm_out1_0_V, [169 x i16]* nocapture %fm_out1_1_V, [169 x i16]* nocapture %fm_out1_2_V, [169 x i16]* nocapture %fm_out1_3_V, [169 x i16]* nocapture %fm_out1_4_V, [169 x i16]* nocapture %fm_out1_5_V, [169 x i16]* nocapture %fm_out1_6_V, [169 x i16]* nocapture %fm_out1_7_V, i16* %in1_V, i31 %out_V_offset_read, i16 zeroext %basePixAddr, i16 zeroext %baseChannel, i16 zeroext %trunc_ln174, i16 zeroext %trunc_ln174_2, i32 %ACT_read)" [src/pwconv.cpp:194]   --->   Operation 170 'call' <Predicate = (pingpong_1)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_21 : Operation 171 [1/1] (0.00ns)   --->   "br label %8" [src/pwconv.cpp:195]   --->   Operation 171 'br' <Predicate = (pingpong_1)> <Delay = 0.00>
+ST_21 : Operation 172 [1/1] (0.00ns)   --->   "ret void" [src/pwconv.cpp:199]   --->   Operation 172 'ret' <Predicate = true> <Delay = 0.00>
+
+State 22 <SV = 16> <Delay = 4.81>
+ST_22 : Operation 173 [2/2] (4.81ns)   --->   "call fastcc void @store_output.1([169 x i16]* nocapture %fm_out1_0_V, [169 x i16]* nocapture %fm_out1_1_V, [169 x i16]* nocapture %fm_out1_2_V, [169 x i16]* nocapture %fm_out1_3_V, [169 x i16]* nocapture %fm_out1_4_V, [169 x i16]* nocapture %fm_out1_5_V, [169 x i16]* nocapture %fm_out1_6_V, [169 x i16]* nocapture %fm_out1_7_V, i16* %in1_V, i31 %out_V_offset_read, i16 zeroext %basePixAddr, i16 zeroext %baseChannel, i16 zeroext %trunc_ln174, i16 zeroext %trunc_ln174_2, i32 %ACT_read)" [src/pwconv.cpp:194]   --->   Operation 173 'call' <Predicate = true> <Delay = 4.81> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5.5ns, clock uncertainty: 0.688ns.
+
+ <State 1>: 4.81ns
+The critical path consists of the following:
+	wire read on port 'M' (src/pwconv.cpp:154) [19]  (0 ns)
+	bus request on port 'weight_V' (src/pwconv.cpp:167) [63]  (4.81 ns)
+
+ <State 2>: 4.81ns
+The critical path consists of the following:
+	bus request on port 'weight_V' (src/pwconv.cpp:167) [63]  (4.81 ns)
+
+ <State 3>: 4.81ns
+The critical path consists of the following:
+	bus request on port 'weight_V' (src/pwconv.cpp:167) [63]  (4.81 ns)
+
+ <State 4>: 4.81ns
+The critical path consists of the following:
+	bus request on port 'weight_V' (src/pwconv.cpp:167) [63]  (4.81 ns)
+
+ <State 5>: 4.81ns
+The critical path consists of the following:
+	bus request on port 'weight_V' (src/pwconv.cpp:167) [63]  (4.81 ns)
+
+ <State 6>: 4.81ns
+The critical path consists of the following:
+	bus request on port 'weight_V' (src/pwconv.cpp:167) [63]  (4.81 ns)
+
+ <State 7>: 4.81ns
+The critical path consists of the following:
+	bus request on port 'weight_V' (src/pwconv.cpp:167) [63]  (4.81 ns)
+
+ <State 8>: 2.76ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln167', src/pwconv.cpp:167) [67]  (1.96 ns)
+	blocking operation 0.8 ns on control path)
+
+ <State 9>: 4.81ns
+The critical path consists of the following:
+	bus read on port 'weight_V' (src/pwconv.cpp:167) [74]  (4.81 ns)
+
+ <State 10>: 2.77ns
+The critical path consists of the following:
+	'getelementptr' operation ('bias_buff_6_V_addr', src/pwconv.cpp:167) [84]  (0 ns)
+	'store' operation ('store_ln167', src/pwconv.cpp:167) of variable 'weight_V_addr_read', src/pwconv.cpp:167 on array 'bias_buff[6].V', src/pwconv.cpp:159 [88]  (2.77 ns)
+
+ <State 11>: 3.34ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln190', src/pwconv.cpp:190) [119]  (3.34 ns)
+
+ <State 12>: 3.34ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln190', src/pwconv.cpp:190) [119]  (3.34 ns)
+
+ <State 13>: 3.34ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln190', src/pwconv.cpp:190) [119]  (3.34 ns)
+
+ <State 14>: 5.5ns
+The critical path consists of the following:
+	'mul' operation of DSP[121] ('mul_ln144', src/pwconv.cpp:144->src/pwconv.cpp:177) [121]  (5.5 ns)
+
+ <State 15>: 3.34ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln190', src/pwconv.cpp:190) [119]  (3.34 ns)
+
+ <State 16>: 4.14ns
+The critical path consists of the following:
+	'phi' operation ('basePixAddr') with incoming values : ('next_basePixAddr', src/pwconv.cpp:144->src/pwconv.cpp:177) [125]  (0 ns)
+	'add' operation ('add_ln144', src/pwconv.cpp:144->src/pwconv.cpp:177) [130]  (1.54 ns)
+	'icmp' operation ('icmp_ln144', src/pwconv.cpp:144->src/pwconv.cpp:177) [132]  (1.97 ns)
+	'select' operation ('next_basePixAddr', src/pwconv.cpp:144->src/pwconv.cpp:177) [135]  (0.627 ns)
+
+ <State 17>: 4.81ns
+The critical path consists of the following:
+	'call' operation ('call_ln184', src/pwconv.cpp:184) to 'compute_output.1' [139]  (4.81 ns)
+
+ <State 18>: 3.51ns
+The critical path consists of the following:
+	'add' operation ('add_ln190', src/pwconv.cpp:190) [149]  (1.54 ns)
+	'icmp' operation ('icmp_ln190', src/pwconv.cpp:190) [151]  (1.97 ns)
+
+ <State 19>: 4.81ns
+The critical path consists of the following:
+	'call' operation ('call_ln179', src/pwconv.cpp:179) to 'compute_output.1' [143]  (4.81 ns)
+
+ <State 20>: 4.81ns
+The critical path consists of the following:
+	'call' operation ('call_ln197', src/pwconv.cpp:197) to 'store_output.1' [162]  (4.81 ns)
+
+ <State 21>: 0ns
+The critical path consists of the following:
+
+ <State 22>: 4.81ns
+The critical path consists of the following:
+	'call' operation ('call_ln194', src/pwconv.cpp:194) to 'store_output.1' [165]  (4.81 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

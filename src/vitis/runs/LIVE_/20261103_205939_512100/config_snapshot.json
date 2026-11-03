@@ -1,0 +1,88 @@
+{
+  "created_at": "2026-11-03T20:59:39.849844",
+  "origin": "LIVE_BOARD_ETHERNET_BATCH",
+  "rules": {
+    "G066": {
+      "version": 1,
+      "sequence_id": "G066",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "zones": [
+        {
+          "id": "zone1",
+          "name": "警戒区1",
+          "vertices": [
+            [
+              0.29615384615384616,
+              0.3097949886104784
+            ],
+            [
+              0.6692307692307692,
+              0.3097949886104784
+            ],
+            [
+              0.6692307692307692,
+              0.7312072892938497
+            ],
+            [
+              0.29615384615384616,
+              0.7312072892938497
+            ]
+          ],
+          "confirm_frames": 2,
+          "max_gap_s": 8.0,
+          "exit_frames": 2,
+          "missing_frames": 2,
+          "margin": 0.008
+        },
+        {
+          "id": "zone2",
+          "name": "警戒区2",
+          "vertices": [
+            [
+              0.2141025641025641,
+              0.25740318906605925
+            ],
+            [
+              0.541025641025641,
+              0.25740318906605925
+            ],
+            [
+              0.541025641025641,
+              0.5763097949886105
+            ],
+            [
+              0.2141025641025641,
+              0.5763097949886105
+            ]
+          ],
+          "confirm_frames": 2,
+          "max_gap_s": 8.0,
+          "exit_frames": 2,
+          "missing_frames": 2,
+          "margin": 0.008
+        }
+      ],
+      "lines": [],
+      "source": "user_drawn",
+      "reference_image": "PC_PREVIEW_G066.png",
+      "enabled": true,
+      "classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "det_min_score": 0.5
+    }
+  },
+  "status": "SUCCESS",
+  "finished_at": "2026-11-03T21:00:05.697537",
+  "frames": 12,
+  "events": 4,
+  "snapshot_errors": []
+}

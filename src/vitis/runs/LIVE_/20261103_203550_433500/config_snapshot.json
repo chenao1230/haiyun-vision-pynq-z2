@@ -1,0 +1,61 @@
+{
+  "created_at": "2026-11-03T20:35:50.653433",
+  "origin": "LIVE_BOARD_ETHERNET_BATCH",
+  "rules": {
+    "G066": {
+      "version": 1,
+      "sequence_id": "G066",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "zones": [
+        {
+          "id": "zone1",
+          "name": "警戒区",
+          "vertices": [
+            [
+              0.34685598377281945,
+              0.3971119133574007
+            ],
+            [
+              0.6247464503042597,
+              0.3971119133574007
+            ],
+            [
+              0.6247464503042597,
+              0.8483754512635379
+            ],
+            [
+              0.34685598377281945,
+              0.8483754512635379
+            ]
+          ],
+          "confirm_frames": 2,
+          "max_gap_s": 8.0,
+          "exit_frames": 2,
+          "missing_frames": 2,
+          "margin": 0.008
+        }
+      ],
+      "lines": [],
+      "source": "user_drawn",
+      "reference_image": "PC_B6AE9D4F0B6_0011.png",
+      "enabled": true,
+      "classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "det_min_score": 0.5
+    }
+  },
+  "status": "SUCCESS",
+  "finished_at": "2026-11-03T20:36:16.622764",
+  "frames": 12,
+  "events": 2,
+  "snapshot_errors": []
+}

@@ -1,0 +1,14 @@
+{
+  "manifest": "E:\\Ship_Depth_Finetune_20261031\\manifests\\seepersea_full_balanced_20261101.jsonl",
+  "model_root": "E:\\Ship_Monocular_Depth_Test_20261031\\repos\\depth_anything_v2\\metric_depth",
+  "pretrained": "E:\\Ship_Depth_Finetune_20261031\\checkpoints\\depth_anything_v2_metric_vkitti_vits.pth",
+  "save_dir": "E:\\Ship_Depth_Finetune_20261031\\runs\\b3_full_balanced_20261101",
+  "freeze_encoder": true,
+  "epochs": 3,
+  "batch_size": 1,
+  "image_size": 518,
+  "min_depth": 1.0,
+  "max_depth": 80.0,
+  "lr": 3e-05,
+  "seed": 20261101
+}

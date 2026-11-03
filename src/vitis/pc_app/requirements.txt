@@ -1,0 +1,6 @@
+pyserial==3.5
+Pillow>=10
+opencv-python>=4.8
+numpy>=1.24
+# Monocular mode also requires torch/torchvision. The supplied launcher uses the
+# existing yolo11_power environment where these are already installed.

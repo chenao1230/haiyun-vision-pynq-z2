@@ -1,0 +1,117 @@
+{
+  "created_at": "2026-11-02T13:00:08.306566",
+  "origin": "LIVE_BOARD_SERIAL",
+  "rules": {
+    "G002": {
+      "version": 1,
+      "sequence_id": "G002",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "enabled": false,
+      "source": "user_disabled",
+      "zones": [],
+      "lines": [],
+      "classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "det_min_score": 0.5
+    },
+    "G029": {
+      "version": 1,
+      "sequence_id": "G029",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "enabled": false,
+      "source": "user_disabled",
+      "zones": [],
+      "lines": [],
+      "classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "det_min_score": 0.5
+    },
+    "G066": {
+      "version": 1,
+      "sequence_id": "G066",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "enabled": false,
+      "source": "user_disabled",
+      "zones": [],
+      "lines": [],
+      "classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "det_min_score": 0.5
+    },
+    "G071": {
+      "version": 1,
+      "sequence_id": "G071",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "enabled": false,
+      "source": "user_disabled",
+      "zones": [],
+      "lines": [],
+      "classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "det_min_score": 0.5
+    },
+    "G138": {
+      "version": 1,
+      "sequence_id": "G138",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "zones": [],
+      "lines": [],
+      "source": "user_disabled",
+      "reference_image": "002724_20170822_141803.jpg",
+      "enabled": false,
+      "classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "det_min_score": 0.5
+    }
+  },
+  "status": "STOPPED",
+  "finished_at": "2026-11-02T13:00:11.505562",
+  "frames": 2,
+  "events": 0,
+  "snapshot_errors": []
+}

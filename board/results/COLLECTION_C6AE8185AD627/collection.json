@@ -1,0 +1,93 @@
+{
+  "collection_id": "C6AE8185AD627",
+  "status": "SUCCESS",
+  "started": "2026-11-02T12:58:02.361683",
+  "manifest_crc32": "6122C318",
+  "mode": "TRACK",
+  "groups": [
+    "G066",
+    "G029",
+    "G071",
+    "G078",
+    "G002",
+    "G138",
+    "G094"
+  ],
+  "pending": [],
+  "expected_counts": {
+    "G066": 12,
+    "G029": 12,
+    "G071": 11,
+    "G078": 12,
+    "G002": 13,
+    "G138": 10,
+    "G094": 15
+  },
+  "expected_frames": 85,
+  "completed": [
+    {
+      "sequence_id": "G066",
+      "run_id": "R6AE8185A1B4",
+      "board_status": "SUCCESS",
+      "board_frames": 12,
+      "received_frames": 12,
+      "expected_frames": 12
+    },
+    {
+      "sequence_id": "G029",
+      "run_id": "R6AE8186BED2",
+      "board_status": "SUCCESS",
+      "board_frames": 12,
+      "received_frames": 12,
+      "expected_frames": 12
+    },
+    {
+      "sequence_id": "G071",
+      "run_id": "R6AE8187C8C3",
+      "board_status": "SUCCESS",
+      "board_frames": 11,
+      "received_frames": 11,
+      "expected_frames": 11
+    },
+    {
+      "sequence_id": "G078",
+      "run_id": "R6AE8188BF18",
+      "board_status": "SUCCESS",
+      "board_frames": 12,
+      "received_frames": 12,
+      "expected_frames": 12
+    },
+    {
+      "sequence_id": "G002",
+      "run_id": "R6AE8189C3CD",
+      "board_status": "SUCCESS",
+      "board_frames": 13,
+      "received_frames": 13,
+      "expected_frames": 13
+    },
+    {
+      "sequence_id": "G138",
+      "run_id": "R6AE818AE1F9",
+      "board_status": "SUCCESS",
+      "board_frames": 10,
+      "received_frames": 10,
+      "expected_frames": 10
+    },
+    {
+      "sequence_id": "G094",
+      "run_id": "R6AE818BC12D",
+      "board_status": "SUCCESS",
+      "board_frames": 15,
+      "received_frames": 15,
+      "expected_frames": 15
+    }
+  ],
+  "current": "G094",
+  "current_received": 15,
+  "waiting_next": false,
+  "cancel_requested": false,
+  "directory": "E:\\Ship_Ethernet_V1_20261101\\runs\\COLLECTION_C6AE8185AD627",
+  "current_run_id": "R6AE818BC12D",
+  "finished": "2026-11-02T13:00:01.783213",
+  "received_frames": 85
+}

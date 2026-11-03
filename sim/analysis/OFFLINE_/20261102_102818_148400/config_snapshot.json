@@ -1,0 +1,174 @@
+{
+  "created_at": "2026-11-02T10:28:18.683141",
+  "origin": "OFFLINE_SAVED_BOARD_RESULTS",
+  "rules": {
+    "G002": {
+      "version": 1,
+      "sequence_id": "G002",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "enabled": false,
+      "source": "user_disabled",
+      "zones": [],
+      "lines": [],
+      "classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "det_min_score": 0.5
+    },
+    "G029": {
+      "version": 1,
+      "sequence_id": "G029",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "enabled": false,
+      "source": "user_disabled",
+      "zones": [],
+      "lines": [],
+      "classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "det_min_score": 0.5
+    },
+    "G066": {
+      "version": 1,
+      "sequence_id": "G066",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "enabled": true,
+      "source": "user_drawn",
+      "zones": [
+        {
+          "id": "zone1",
+          "name": "警戒区",
+          "vertices": [
+            [
+              0.27661510464058237,
+              0.3737864077669903
+            ],
+            [
+              0.5195632393084623,
+              0.3737864077669903
+            ],
+            [
+              0.5195632393084623,
+              0.6504854368932039
+            ],
+            [
+              0.27661510464058237,
+              0.6504854368932039
+            ]
+          ],
+          "confirm_frames": 2,
+          "max_gap_s": 8.0,
+          "exit_frames": 2,
+          "missing_frames": 2,
+          "margin": 0.008
+        }
+      ],
+      "lines": [],
+      "classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "det_min_score": 0.5,
+      "reference_image": "PC_B6AE7F523FA_0011.png"
+    },
+    "G071": {
+      "version": 1,
+      "sequence_id": "G071",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "enabled": false,
+      "source": "user_disabled",
+      "zones": [],
+      "lines": [],
+      "classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "det_min_score": 0.5
+    },
+    "G138": {
+      "version": 1,
+      "sequence_id": "G138",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "zones": [
+        {
+          "id": "zone1",
+          "name": "警戒区",
+          "vertices": [
+            [
+              0.4304607508532423,
+              0.37632776934749623
+            ],
+            [
+              0.6813139931740614,
+              0.37632776934749623
+            ],
+            [
+              0.6813139931740614,
+              0.629742033383915
+            ],
+            [
+              0.4304607508532423,
+              0.629742033383915
+            ]
+          ],
+          "confirm_frames": 2,
+          "max_gap_s": 8.0,
+          "exit_frames": 2,
+          "missing_frames": 2,
+          "margin": 0.008
+        }
+      ],
+      "lines": [],
+      "source": "user_drawn",
+      "reference_image": "002724_20170822_141803.jpg",
+      "enabled": true,
+      "classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "det_min_score": 0.5
+    }
+  },
+  "status": "COMPLETED",
+  "finished_at": "2026-11-02T10:28:18.884363",
+  "frames": 12,
+  "events": 2,
+  "snapshot_errors": []
+}

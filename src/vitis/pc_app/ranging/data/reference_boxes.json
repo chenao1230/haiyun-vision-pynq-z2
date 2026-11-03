@@ -1,0 +1,71 @@
+[
+  {
+    "board_frame_id": 0,
+    "dataset_frame_id": 12000,
+    "image_path": "images/012000.png",
+    "box_source": "PC_reference_not_board",
+    "boxes": [
+      {
+        "xyxy": [
+          1607.49013671875,
+          504.41005533391774,
+          2042.798046875,
+          728.4723940762606
+        ],
+        "object_id": "det_0"
+      }
+    ],
+    "expected": [
+      {
+        "distance_m": 48.771995544433594,
+        "valid_points": 268
+      }
+    ]
+  },
+  {
+    "board_frame_id": 1,
+    "dataset_frame_id": 12010,
+    "image_path": "images/012010.png",
+    "box_source": "PC_reference_not_board",
+    "boxes": [
+      {
+        "xyxy": [
+          1609.4078125,
+          487.448444366455,
+          2048.0,
+          701.0596483403986
+        ],
+        "object_id": "det_0"
+      }
+    ],
+    "expected": [
+      {
+        "distance_m": 48.676841735839844,
+        "valid_points": 275
+      }
+    ]
+  },
+  {
+    "board_frame_id": 2,
+    "dataset_frame_id": 12020,
+    "image_path": "images/012020.png",
+    "box_source": "PC_reference_not_board",
+    "boxes": [
+      {
+        "xyxy": [
+          1605.0658203125,
+          506.1391379616477,
+          2038.4822265625,
+          727.1851210160688
+        ],
+        "object_id": "det_0"
+      }
+    ],
+    "expected": [
+      {
+        "distance_m": 48.865699768066406,
+        "valid_points": 291
+      }
+    ]
+  }
+]

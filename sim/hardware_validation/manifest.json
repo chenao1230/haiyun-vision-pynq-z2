@@ -1,0 +1,18 @@
+{
+  "BOOT.bin": {
+    "bytes": 4852112,
+    "sha256": "7eea644e76c46bd47c0039e62ad54cff9aeffceb649a6b56146d9fdf41c5b724"
+  },
+  "fsbl.elf": {
+    "bytes": 511076,
+    "sha256": "2cabfa4a76c721727d59fcbffaeac7cef9482d292220b9a19968d96ad6a444bf"
+  },
+  "diagnostic.elf": {
+    "bytes": 2444764,
+    "sha256": "f28ccee38c581ac636dcc9511cea04bb8349b263bcb5642c0d195e40c6b84e54"
+  },
+  "design.bit": {
+    "bytes": 4045676,
+    "sha256": "273923147c96da7d7d13fbf4aafd014a0f425679cbc2c1b24b05bdaa899081a7"
+  }
+}

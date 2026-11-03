@@ -1,0 +1,1 @@
+{"run_id": "C6AE809C3F5", "sequence_id": "PCUPLOAD", "frame_id": 0, "source_image": "PC_C6AE809C3F5.png", "width": 1280, "height": 720, "mode": "DET", "detections": [], "tracks": [], "timing_us": {"read": 329714, "inference": 1562651, "decode_nms": 4602, "tracker": 0, "sd_csv": 0, "compute": 1567254}}

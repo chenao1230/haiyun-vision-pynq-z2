@@ -1,0 +1,3 @@
+Vivado: 2019.2
+Checkpoint: C:/Users/wsy/Documents/ChatGPT/FPGA/FPGA_Report_Hardware_20261103/03_bitstream_and_checkpoint/routed.dcp
+Export time: Tue Nov 03 14:34:46 +0800 2026

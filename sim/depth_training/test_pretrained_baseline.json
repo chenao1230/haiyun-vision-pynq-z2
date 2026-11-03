@@ -1,0 +1,4486 @@
+{
+  "split": "test",
+  "checkpoint": "E:\\Ship_Depth_Finetune_20261031\\checkpoints\\depth_anything_v2_metric_vkitti_vits.pth",
+  "fixed_scale": 1.0,
+  "depth_definition": "camera_forward_Z_m",
+  "metrics": {
+    "count": 29798,
+    "mae_m": 7.050032293998969,
+    "rmse_m": 10.506100747965704,
+    "abs_rel": 0.3199146057172977,
+    "delta1": 0.6901469897308544
+  },
+  "mean_inference_ms": 122.34637464788736,
+  "frame_count": 497,
+  "per_frame": [
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000000",
+      "count": 269,
+      "abs_sum": 1351.8951416015625,
+      "sq_sum": 20752.96484375,
+      "abs_rel_sum": 40.44556427001953,
+      "delta1_sum": 212.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000001",
+      "count": 380,
+      "abs_sum": 2595.111328125,
+      "sq_sum": 54523.1015625,
+      "abs_rel_sum": 76.6720962524414,
+      "delta1_sum": 276.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000002",
+      "count": 416,
+      "abs_sum": 2266.150634765625,
+      "sq_sum": 46393.68359375,
+      "abs_rel_sum": 65.54244232177734,
+      "delta1_sum": 331.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000003",
+      "count": 464,
+      "abs_sum": 4202.2548828125,
+      "sq_sum": 72630.5078125,
+      "abs_rel_sum": 121.24500274658203,
+      "delta1_sum": 387.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000004",
+      "count": 469,
+      "abs_sum": 3706.31201171875,
+      "sq_sum": 62386.8515625,
+      "abs_rel_sum": 106.62374877929688,
+      "delta1_sum": 402.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000005",
+      "count": 481,
+      "abs_sum": 2935.498046875,
+      "sq_sum": 37537.07421875,
+      "abs_rel_sum": 84.96865844726562,
+      "delta1_sum": 441.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000006",
+      "count": 454,
+      "abs_sum": 4041.1220703125,
+      "sq_sum": 103326.5859375,
+      "abs_rel_sum": 113.46817016601562,
+      "delta1_sum": 342.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000007",
+      "count": 444,
+      "abs_sum": 1903.443603515625,
+      "sq_sum": 32970.640625,
+      "abs_rel_sum": 54.7559814453125,
+      "delta1_sum": 413.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000008",
+      "count": 436,
+      "abs_sum": 1802.82080078125,
+      "sq_sum": 35555.76171875,
+      "abs_rel_sum": 50.58940124511719,
+      "delta1_sum": 372.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000009",
+      "count": 414,
+      "abs_sum": 1668.4483642578125,
+      "sq_sum": 35830.4765625,
+      "abs_rel_sum": 47.073699951171875,
+      "delta1_sum": 368.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000010",
+      "count": 414,
+      "abs_sum": 1519.669677734375,
+      "sq_sum": 25658.005859375,
+      "abs_rel_sum": 43.19500732421875,
+      "delta1_sum": 370.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000011",
+      "count": 396,
+      "abs_sum": 837.22314453125,
+      "sq_sum": 10215.7158203125,
+      "abs_rel_sum": 24.531330108642578,
+      "delta1_sum": 382.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000012",
+      "count": 417,
+      "abs_sum": 1632.78076171875,
+      "sq_sum": 20230.0,
+      "abs_rel_sum": 48.388545989990234,
+      "delta1_sum": 385.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000013",
+      "count": 399,
+      "abs_sum": 1470.22705078125,
+      "sq_sum": 12703.560546875,
+      "abs_rel_sum": 44.2438850402832,
+      "delta1_sum": 381.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000014",
+      "count": 291,
+      "abs_sum": 1605.204345703125,
+      "sq_sum": 11684.6865234375,
+      "abs_rel_sum": 48.69188690185547,
+      "delta1_sum": 281.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000015",
+      "count": 272,
+      "abs_sum": 1680.486083984375,
+      "sq_sum": 13393.0595703125,
+      "abs_rel_sum": 50.8598747253418,
+      "delta1_sum": 248.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000016",
+      "count": 243,
+      "abs_sum": 961.434326171875,
+      "sq_sum": 5040.7900390625,
+      "abs_rel_sum": 29.081729888916016,
+      "delta1_sum": 239.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000017",
+      "count": 195,
+      "abs_sum": 380.6369934082031,
+      "sq_sum": 1883.1427001953125,
+      "abs_rel_sum": 11.360871315002441,
+      "delta1_sum": 191.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000018",
+      "count": 173,
+      "abs_sum": 271.86175537109375,
+      "sq_sum": 1673.9053955078125,
+      "abs_rel_sum": 8.073911666870117,
+      "delta1_sum": 168.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000019",
+      "count": 119,
+      "abs_sum": 221.56692504882812,
+      "sq_sum": 1211.6357421875,
+      "abs_rel_sum": 6.584525108337402,
+      "delta1_sum": 116.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000020",
+      "count": 86,
+      "abs_sum": 306.32806396484375,
+      "sq_sum": 1239.8134765625,
+      "abs_rel_sum": 9.335033416748047,
+      "delta1_sum": 86.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000021",
+      "count": 61,
+      "abs_sum": 251.17520141601562,
+      "sq_sum": 1192.607666015625,
+      "abs_rel_sum": 7.509298801422119,
+      "delta1_sum": 59.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000022",
+      "count": 65,
+      "abs_sum": 776.482177734375,
+      "sq_sum": 9324.607421875,
+      "abs_rel_sum": 23.141891479492188,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000023",
+      "count": 40,
+      "abs_sum": 133.4956817626953,
+      "sq_sum": 451.8133239746094,
+      "abs_rel_sum": 3.9437813758850098,
+      "delta1_sum": 40.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000024",
+      "count": 30,
+      "abs_sum": 65.54002380371094,
+      "sq_sum": 145.48611450195312,
+      "abs_rel_sum": 1.9296934604644775,
+      "delta1_sum": 30.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000025",
+      "count": 49,
+      "abs_sum": 127.78104400634766,
+      "sq_sum": 1514.7041015625,
+      "abs_rel_sum": 3.6258556842803955,
+      "delta1_sum": 45.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000026",
+      "count": 75,
+      "abs_sum": 178.10299682617188,
+      "sq_sum": 1497.9305419921875,
+      "abs_rel_sum": 5.076727867126465,
+      "delta1_sum": 71.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000027",
+      "count": 93,
+      "abs_sum": 172.400634765625,
+      "sq_sum": 708.8916015625,
+      "abs_rel_sum": 4.897461414337158,
+      "delta1_sum": 90.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000028",
+      "count": 126,
+      "abs_sum": 390.31866455078125,
+      "sq_sum": 2667.841796875,
+      "abs_rel_sum": 11.114171981811523,
+      "delta1_sum": 117.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000029",
+      "count": 147,
+      "abs_sum": 758.7325439453125,
+      "sq_sum": 5211.62060546875,
+      "abs_rel_sum": 21.898990631103516,
+      "delta1_sum": 133.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000030",
+      "count": 162,
+      "abs_sum": 625.8777465820312,
+      "sq_sum": 4291.63623046875,
+      "abs_rel_sum": 17.990930557250977,
+      "delta1_sum": 144.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000031",
+      "count": 199,
+      "abs_sum": 963.33740234375,
+      "sq_sum": 6334.14453125,
+      "abs_rel_sum": 27.198766708374023,
+      "delta1_sum": 190.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000032",
+      "count": 249,
+      "abs_sum": 569.0701904296875,
+      "sq_sum": 1734.369873046875,
+      "abs_rel_sum": 16.048343658447266,
+      "delta1_sum": 249.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000033",
+      "count": 255,
+      "abs_sum": 1259.64013671875,
+      "sq_sum": 6800.0966796875,
+      "abs_rel_sum": 35.839759826660156,
+      "delta1_sum": 251.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000034",
+      "count": 278,
+      "abs_sum": 711.8563842773438,
+      "sq_sum": 2967.00244140625,
+      "abs_rel_sum": 19.88048553466797,
+      "delta1_sum": 275.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000035",
+      "count": 284,
+      "abs_sum": 944.0106201171875,
+      "sq_sum": 5179.033203125,
+      "abs_rel_sum": 26.958873748779297,
+      "delta1_sum": 274.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000036",
+      "count": 308,
+      "abs_sum": 494.74053955078125,
+      "sq_sum": 2692.7333984375,
+      "abs_rel_sum": 13.544649124145508,
+      "delta1_sum": 303.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000037",
+      "count": 325,
+      "abs_sum": 2181.42333984375,
+      "sq_sum": 33142.5859375,
+      "abs_rel_sum": 57.785404205322266,
+      "delta1_sum": 288.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000038",
+      "count": 304,
+      "abs_sum": 664.86376953125,
+      "sq_sum": 6285.52099609375,
+      "abs_rel_sum": 17.64551544189453,
+      "delta1_sum": 287.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000039",
+      "count": 346,
+      "abs_sum": 875.8775024414062,
+      "sq_sum": 8532.6748046875,
+      "abs_rel_sum": 22.303956985473633,
+      "delta1_sum": 323.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000040",
+      "count": 333,
+      "abs_sum": 876.8729248046875,
+      "sq_sum": 8481.25390625,
+      "abs_rel_sum": 22.347610473632812,
+      "delta1_sum": 307.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000041",
+      "count": 324,
+      "abs_sum": 685.6344604492188,
+      "sq_sum": 3579.46044921875,
+      "abs_rel_sum": 17.734317779541016,
+      "delta1_sum": 314.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000042",
+      "count": 332,
+      "abs_sum": 1278.35546875,
+      "sq_sum": 8889.7861328125,
+      "abs_rel_sum": 33.32747268676758,
+      "delta1_sum": 319.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000043",
+      "count": 311,
+      "abs_sum": 1326.6207275390625,
+      "sq_sum": 13115.228515625,
+      "abs_rel_sum": 33.60280990600586,
+      "delta1_sum": 290.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000044",
+      "count": 292,
+      "abs_sum": 1449.888671875,
+      "sq_sum": 21987.837890625,
+      "abs_rel_sum": 35.6256103515625,
+      "delta1_sum": 265.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000045",
+      "count": 285,
+      "abs_sum": 1248.564453125,
+      "sq_sum": 17390.08203125,
+      "abs_rel_sum": 30.724018096923828,
+      "delta1_sum": 260.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000046",
+      "count": 294,
+      "abs_sum": 1297.90185546875,
+      "sq_sum": 16339.875,
+      "abs_rel_sum": 31.471424102783203,
+      "delta1_sum": 274.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000047",
+      "count": 279,
+      "abs_sum": 1159.428466796875,
+      "sq_sum": 18021.166015625,
+      "abs_rel_sum": 27.473731994628906,
+      "delta1_sum": 244.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000048",
+      "count": 261,
+      "abs_sum": 897.274658203125,
+      "sq_sum": 8341.26171875,
+      "abs_rel_sum": 21.59387969970703,
+      "delta1_sum": 245.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000049",
+      "count": 261,
+      "abs_sum": 886.2890625,
+      "sq_sum": 7599.67626953125,
+      "abs_rel_sum": 21.193546295166016,
+      "delta1_sum": 245.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000050",
+      "count": 251,
+      "abs_sum": 574.8067626953125,
+      "sq_sum": 3423.0556640625,
+      "abs_rel_sum": 13.775907516479492,
+      "delta1_sum": 243.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000051",
+      "count": 179,
+      "abs_sum": 1250.1092529296875,
+      "sq_sum": 17573.896484375,
+      "abs_rel_sum": 32.76823043823242,
+      "delta1_sum": 123.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000052",
+      "count": 52,
+      "abs_sum": 244.48692321777344,
+      "sq_sum": 1373.9998779296875,
+      "abs_rel_sum": 6.319724082946777,
+      "delta1_sum": 52.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000068",
+      "count": 44,
+      "abs_sum": 369.10150146484375,
+      "sq_sum": 3322.225830078125,
+      "abs_rel_sum": 8.926133155822754,
+      "delta1_sum": 21.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000069",
+      "count": 143,
+      "abs_sum": 1338.07958984375,
+      "sq_sum": 23432.05859375,
+      "abs_rel_sum": 29.699275970458984,
+      "delta1_sum": 97.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000070",
+      "count": 171,
+      "abs_sum": 1176.33642578125,
+      "sq_sum": 13135.78125,
+      "abs_rel_sum": 25.19605255126953,
+      "delta1_sum": 146.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000071",
+      "count": 164,
+      "abs_sum": 2199.7373046875,
+      "sq_sum": 31701.927734375,
+      "abs_rel_sum": 49.17575454711914,
+      "delta1_sum": 26.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000072",
+      "count": 164,
+      "abs_sum": 1684.2694091796875,
+      "sq_sum": 18421.720703125,
+      "abs_rel_sum": 38.590579986572266,
+      "delta1_sum": 20.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000073",
+      "count": 69,
+      "abs_sum": 629.4232177734375,
+      "sq_sum": 6519.1103515625,
+      "abs_rel_sum": 14.473132133483887,
+      "delta1_sum": 44.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000074",
+      "count": 11,
+      "abs_sum": 124.218994140625,
+      "sq_sum": 1413.09228515625,
+      "abs_rel_sum": 2.745406150817871,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000091",
+      "count": 10,
+      "abs_sum": 49.246334075927734,
+      "sq_sum": 251.69033813476562,
+      "abs_rel_sum": 0.952786386013031,
+      "delta1_sum": 10.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000094",
+      "count": 15,
+      "abs_sum": 184.24676513671875,
+      "sq_sum": 2341.90478515625,
+      "abs_rel_sum": 3.6684136390686035,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000095",
+      "count": 11,
+      "abs_sum": 107.5535888671875,
+      "sq_sum": 1170.8751220703125,
+      "abs_rel_sum": 2.176079034805298,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000096",
+      "count": 16,
+      "abs_sum": 36.81564712524414,
+      "sq_sum": 136.94766235351562,
+      "abs_rel_sum": 0.7533646821975708,
+      "delta1_sum": 16.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000097",
+      "count": 14,
+      "abs_sum": 276.513916015625,
+      "sq_sum": 6474.9814453125,
+      "abs_rel_sum": 5.774819374084473,
+      "delta1_sum": 4.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000098",
+      "count": 17,
+      "abs_sum": 141.68267822265625,
+      "sq_sum": 1781.9130859375,
+      "abs_rel_sum": 2.9668140411376953,
+      "delta1_sum": 9.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000179",
+      "count": 10,
+      "abs_sum": 27.420310974121094,
+      "sq_sum": 90.431396484375,
+      "abs_rel_sum": 0.4988667964935303,
+      "delta1_sum": 10.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000190",
+      "count": 11,
+      "abs_sum": 17.049907684326172,
+      "sq_sum": 127.45476531982422,
+      "abs_rel_sum": 0.31442970037460327,
+      "delta1_sum": 11.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000191",
+      "count": 14,
+      "abs_sum": 110.11273956298828,
+      "sq_sum": 916.8402099609375,
+      "abs_rel_sum": 2.039778470993042,
+      "delta1_sum": 14.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000193",
+      "count": 12,
+      "abs_sum": 172.5445098876953,
+      "sq_sum": 2626.3427734375,
+      "abs_rel_sum": 3.23356032371521,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000194",
+      "count": 12,
+      "abs_sum": 87.20735168457031,
+      "sq_sum": 875.8201904296875,
+      "abs_rel_sum": 1.7389094829559326,
+      "delta1_sum": 11.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000204",
+      "count": 12,
+      "abs_sum": 111.78024291992188,
+      "sq_sum": 1073.1708984375,
+      "abs_rel_sum": 2.181211471557617,
+      "delta1_sum": 11.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000214",
+      "count": 12,
+      "abs_sum": 13.984355926513672,
+      "sq_sum": 21.005033493041992,
+      "abs_rel_sum": 0.2700052261352539,
+      "delta1_sum": 12.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000215",
+      "count": 12,
+      "abs_sum": 223.14210510253906,
+      "sq_sum": 4449.65869140625,
+      "abs_rel_sum": 4.672050952911377,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000216",
+      "count": 13,
+      "abs_sum": 286.51678466796875,
+      "sq_sum": 6620.64990234375,
+      "abs_rel_sum": 5.857333660125732,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000217",
+      "count": 15,
+      "abs_sum": 398.0188903808594,
+      "sq_sum": 10918.25390625,
+      "abs_rel_sum": 8.288419723510742,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000229",
+      "count": 15,
+      "abs_sum": 97.60205078125,
+      "sq_sum": 881.44091796875,
+      "abs_rel_sum": 2.0254158973693848,
+      "delta1_sum": 14.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000234",
+      "count": 14,
+      "abs_sum": 354.83526611328125,
+      "sq_sum": 9265.0927734375,
+      "abs_rel_sum": 7.387807369232178,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000235",
+      "count": 13,
+      "abs_sum": 172.6137237548828,
+      "sq_sum": 2602.88623046875,
+      "abs_rel_sum": 3.680265426635742,
+      "delta1_sum": 7.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000236",
+      "count": 21,
+      "abs_sum": 381.22979736328125,
+      "sq_sum": 7753.05078125,
+      "abs_rel_sum": 8.293598175048828,
+      "delta1_sum": 6.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000237",
+      "count": 18,
+      "abs_sum": 308.7518310546875,
+      "sq_sum": 6089.77734375,
+      "abs_rel_sum": 6.888215065002441,
+      "delta1_sum": 5.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000249",
+      "count": 23,
+      "abs_sum": 187.37423706054688,
+      "sq_sum": 1711.796875,
+      "abs_rel_sum": 4.438070774078369,
+      "delta1_sum": 19.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000250",
+      "count": 22,
+      "abs_sum": 60.82539749145508,
+      "sq_sum": 340.853759765625,
+      "abs_rel_sum": 1.5185688734054565,
+      "delta1_sum": 21.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000251",
+      "count": 27,
+      "abs_sum": 55.06730270385742,
+      "sq_sum": 216.92266845703125,
+      "abs_rel_sum": 1.273301124572754,
+      "delta1_sum": 27.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000252",
+      "count": 20,
+      "abs_sum": 308.11578369140625,
+      "sq_sum": 5922.544921875,
+      "abs_rel_sum": 6.851594924926758,
+      "delta1_sum": 8.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000254",
+      "count": 13,
+      "abs_sum": 371.79229736328125,
+      "sq_sum": 10734.6572265625,
+      "abs_rel_sum": 8.469852447509766,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000260",
+      "count": 14,
+      "abs_sum": 105.78439331054688,
+      "sq_sum": 858.1612548828125,
+      "abs_rel_sum": 2.3885884284973145,
+      "delta1_sum": 14.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000261",
+      "count": 25,
+      "abs_sum": 92.45698547363281,
+      "sq_sum": 621.4955444335938,
+      "abs_rel_sum": 2.2011044025421143,
+      "delta1_sum": 24.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000262",
+      "count": 26,
+      "abs_sum": 717.1806640625,
+      "sq_sum": 20452.01171875,
+      "abs_rel_sum": 15.92776107788086,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000271",
+      "count": 23,
+      "abs_sum": 186.9416961669922,
+      "sq_sum": 1589.587158203125,
+      "abs_rel_sum": 4.222049236297607,
+      "delta1_sum": 17.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000272",
+      "count": 28,
+      "abs_sum": 61.14506530761719,
+      "sq_sum": 312.468017578125,
+      "abs_rel_sum": 1.589984655380249,
+      "delta1_sum": 26.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000273",
+      "count": 17,
+      "abs_sum": 339.95855712890625,
+      "sq_sum": 7292.287109375,
+      "abs_rel_sum": 7.8772993087768555,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000274",
+      "count": 21,
+      "abs_sum": 312.8939514160156,
+      "sq_sum": 6183.1396484375,
+      "abs_rel_sum": 8.17342472076416,
+      "delta1_sum": 9.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000276",
+      "count": 19,
+      "abs_sum": 239.76564025878906,
+      "sq_sum": 3356.11279296875,
+      "abs_rel_sum": 5.798459529876709,
+      "delta1_sum": 8.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000284",
+      "count": 15,
+      "abs_sum": 64.83615112304688,
+      "sq_sum": 931.0654907226562,
+      "abs_rel_sum": 1.8592731952667236,
+      "delta1_sum": 12.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000285",
+      "count": 29,
+      "abs_sum": 153.39224243164062,
+      "sq_sum": 1349.718505859375,
+      "abs_rel_sum": 3.7011027336120605,
+      "delta1_sum": 27.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000286",
+      "count": 16,
+      "abs_sum": 137.9504852294922,
+      "sq_sum": 1629.1341552734375,
+      "abs_rel_sum": 3.5370583534240723,
+      "delta1_sum": 11.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000287",
+      "count": 18,
+      "abs_sum": 169.97616577148438,
+      "sq_sum": 2204.479736328125,
+      "abs_rel_sum": 4.247127532958984,
+      "delta1_sum": 12.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000288",
+      "count": 16,
+      "abs_sum": 232.43165588378906,
+      "sq_sum": 3872.525634765625,
+      "abs_rel_sum": 6.162544250488281,
+      "delta1_sum": 5.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000289",
+      "count": 15,
+      "abs_sum": 212.329833984375,
+      "sq_sum": 3431.417236328125,
+      "abs_rel_sum": 5.284122467041016,
+      "delta1_sum": 5.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000290",
+      "count": 20,
+      "abs_sum": 324.7291564941406,
+      "sq_sum": 8267.4189453125,
+      "abs_rel_sum": 8.796928405761719,
+      "delta1_sum": 9.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000291",
+      "count": 17,
+      "abs_sum": 184.4420166015625,
+      "sq_sum": 2228.900634765625,
+      "abs_rel_sum": 4.308935642242432,
+      "delta1_sum": 9.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000292",
+      "count": 16,
+      "abs_sum": 133.27365112304688,
+      "sq_sum": 1611.26513671875,
+      "abs_rel_sum": 3.335127830505371,
+      "delta1_sum": 13.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000293",
+      "count": 19,
+      "abs_sum": 318.1728515625,
+      "sq_sum": 6706.0048828125,
+      "abs_rel_sum": 8.090330123901367,
+      "delta1_sum": 6.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000294",
+      "count": 15,
+      "abs_sum": 200.62232971191406,
+      "sq_sum": 2942.306640625,
+      "abs_rel_sum": 5.24140739440918,
+      "delta1_sum": 5.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000295",
+      "count": 16,
+      "abs_sum": 252.02574157714844,
+      "sq_sum": 4290.16796875,
+      "abs_rel_sum": 6.026181221008301,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000300",
+      "count": 16,
+      "abs_sum": 107.15888214111328,
+      "sq_sum": 875.78466796875,
+      "abs_rel_sum": 2.8976495265960693,
+      "delta1_sum": 13.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000301",
+      "count": 32,
+      "abs_sum": 291.6167297363281,
+      "sq_sum": 3434.79296875,
+      "abs_rel_sum": 7.38132905960083,
+      "delta1_sum": 20.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000302",
+      "count": 22,
+      "abs_sum": 180.91983032226562,
+      "sq_sum": 2151.98388671875,
+      "abs_rel_sum": 4.9473066329956055,
+      "delta1_sum": 18.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000303",
+      "count": 26,
+      "abs_sum": 293.42633056640625,
+      "sq_sum": 4582.0693359375,
+      "abs_rel_sum": 7.352499961853027,
+      "delta1_sum": 20.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000304",
+      "count": 32,
+      "abs_sum": 230.33518981933594,
+      "sq_sum": 2531.663330078125,
+      "abs_rel_sum": 6.03474235534668,
+      "delta1_sum": 25.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000312",
+      "count": 14,
+      "abs_sum": 71.75834655761719,
+      "sq_sum": 915.9524536132812,
+      "abs_rel_sum": 2.3360016345977783,
+      "delta1_sum": 10.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000313",
+      "count": 26,
+      "abs_sum": 384.4816589355469,
+      "sq_sum": 7145.24853515625,
+      "abs_rel_sum": 10.318252563476562,
+      "delta1_sum": 9.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000314",
+      "count": 21,
+      "abs_sum": 247.61749267578125,
+      "sq_sum": 3656.5263671875,
+      "abs_rel_sum": 7.476472854614258,
+      "delta1_sum": 6.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000315",
+      "count": 24,
+      "abs_sum": 470.95355224609375,
+      "sq_sum": 12517.25390625,
+      "abs_rel_sum": 13.84099292755127,
+      "delta1_sum": 5.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000316",
+      "count": 14,
+      "abs_sum": 103.71534729003906,
+      "sq_sum": 949.3536376953125,
+      "abs_rel_sum": 2.6822381019592285,
+      "delta1_sum": 13.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000317",
+      "count": 25,
+      "abs_sum": 115.24723052978516,
+      "sq_sum": 597.8223876953125,
+      "abs_rel_sum": 3.0377197265625,
+      "delta1_sum": 24.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000319",
+      "count": 31,
+      "abs_sum": 224.87973022460938,
+      "sq_sum": 2431.8115234375,
+      "abs_rel_sum": 6.220860481262207,
+      "delta1_sum": 24.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000320",
+      "count": 17,
+      "abs_sum": 120.7745361328125,
+      "sq_sum": 1581.7490234375,
+      "abs_rel_sum": 3.7787370681762695,
+      "delta1_sum": 13.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000321",
+      "count": 33,
+      "abs_sum": 269.69610595703125,
+      "sq_sum": 3105.531494140625,
+      "abs_rel_sum": 7.3590989112854,
+      "delta1_sum": 21.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000322",
+      "count": 31,
+      "abs_sum": 303.2568054199219,
+      "sq_sum": 4239.80908203125,
+      "abs_rel_sum": 8.302300453186035,
+      "delta1_sum": 20.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000323",
+      "count": 30,
+      "abs_sum": 291.25567626953125,
+      "sq_sum": 3458.50244140625,
+      "abs_rel_sum": 7.634189605712891,
+      "delta1_sum": 19.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000334",
+      "count": 23,
+      "abs_sum": 137.25753784179688,
+      "sq_sum": 1473.7935791015625,
+      "abs_rel_sum": 4.48832368850708,
+      "delta1_sum": 19.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000335",
+      "count": 35,
+      "abs_sum": 233.62728881835938,
+      "sq_sum": 3522.39794921875,
+      "abs_rel_sum": 7.676495552062988,
+      "delta1_sum": 27.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000336",
+      "count": 23,
+      "abs_sum": 177.2515869140625,
+      "sq_sum": 1983.6024169921875,
+      "abs_rel_sum": 5.632781982421875,
+      "delta1_sum": 19.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000337",
+      "count": 42,
+      "abs_sum": 345.885009765625,
+      "sq_sum": 3983.1806640625,
+      "abs_rel_sum": 9.806102752685547,
+      "delta1_sum": 28.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000338",
+      "count": 32,
+      "abs_sum": 378.6344299316406,
+      "sq_sum": 5158.72509765625,
+      "abs_rel_sum": 11.135529518127441,
+      "delta1_sum": 10.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000339",
+      "count": 39,
+      "abs_sum": 783.4385375976562,
+      "sq_sum": 19029.236328125,
+      "abs_rel_sum": 21.76378631591797,
+      "delta1_sum": 4.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000340",
+      "count": 22,
+      "abs_sum": 284.3828430175781,
+      "sq_sum": 4656.0439453125,
+      "abs_rel_sum": 8.881300926208496,
+      "delta1_sum": 10.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000345",
+      "count": 43,
+      "abs_sum": 394.1421813964844,
+      "sq_sum": 4514.39892578125,
+      "abs_rel_sum": 11.169960975646973,
+      "delta1_sum": 25.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000346",
+      "count": 24,
+      "abs_sum": 315.29766845703125,
+      "sq_sum": 5468.05224609375,
+      "abs_rel_sum": 10.633037567138672,
+      "delta1_sum": 8.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000350",
+      "count": 36,
+      "abs_sum": 222.37957763671875,
+      "sq_sum": 2378.10693359375,
+      "abs_rel_sum": 7.3098626136779785,
+      "delta1_sum": 29.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000351",
+      "count": 30,
+      "abs_sum": 356.30364990234375,
+      "sq_sum": 4641.31396484375,
+      "abs_rel_sum": 10.677373886108398,
+      "delta1_sum": 8.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000352",
+      "count": 29,
+      "abs_sum": 343.2915954589844,
+      "sq_sum": 4730.35009765625,
+      "abs_rel_sum": 10.328222274780273,
+      "delta1_sum": 10.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000353",
+      "count": 38,
+      "abs_sum": 355.400390625,
+      "sq_sum": 3980.547607421875,
+      "abs_rel_sum": 9.835257530212402,
+      "delta1_sum": 21.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000354",
+      "count": 24,
+      "abs_sum": 301.12176513671875,
+      "sq_sum": 4371.6171875,
+      "abs_rel_sum": 9.044708251953125,
+      "delta1_sum": 9.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000355",
+      "count": 41,
+      "abs_sum": 630.1644287109375,
+      "sq_sum": 11595.708984375,
+      "abs_rel_sum": 18.231138229370117,
+      "delta1_sum": 6.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000356",
+      "count": 33,
+      "abs_sum": 458.4969177246094,
+      "sq_sum": 7867.6416015625,
+      "abs_rel_sum": 13.28622055053711,
+      "delta1_sum": 9.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000357",
+      "count": 19,
+      "abs_sum": 199.0911865234375,
+      "sq_sum": 2967.279052734375,
+      "abs_rel_sum": 6.608277320861816,
+      "delta1_sum": 11.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000358",
+      "count": 31,
+      "abs_sum": 415.4990234375,
+      "sq_sum": 6085.76171875,
+      "abs_rel_sum": 12.294694900512695,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000359",
+      "count": 37,
+      "abs_sum": 594.8917846679688,
+      "sq_sum": 10598.41796875,
+      "abs_rel_sum": 17.076797485351562,
+      "delta1_sum": 4.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000360",
+      "count": 27,
+      "abs_sum": 310.6087646484375,
+      "sq_sum": 3974.7568359375,
+      "abs_rel_sum": 9.156641006469727,
+      "delta1_sum": 9.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000361",
+      "count": 36,
+      "abs_sum": 286.3017578125,
+      "sq_sum": 2802.86328125,
+      "abs_rel_sum": 7.851044654846191,
+      "delta1_sum": 24.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000367",
+      "count": 37,
+      "abs_sum": 444.58148193359375,
+      "sq_sum": 5670.4814453125,
+      "abs_rel_sum": 12.10737419128418,
+      "delta1_sum": 11.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000368",
+      "count": 27,
+      "abs_sum": 327.52386474609375,
+      "sq_sum": 4194.10205078125,
+      "abs_rel_sum": 8.945762634277344,
+      "delta1_sum": 2.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000369",
+      "count": 35,
+      "abs_sum": 370.6441650390625,
+      "sq_sum": 4163.6279296875,
+      "abs_rel_sum": 10.079833984375,
+      "delta1_sum": 9.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000370",
+      "count": 24,
+      "abs_sum": 248.942138671875,
+      "sq_sum": 2727.9814453125,
+      "abs_rel_sum": 6.7479777336120605,
+      "delta1_sum": 10.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000371",
+      "count": 20,
+      "abs_sum": 212.5375213623047,
+      "sq_sum": 2341.97412109375,
+      "abs_rel_sum": 5.839347839355469,
+      "delta1_sum": 5.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000376",
+      "count": 18,
+      "abs_sum": 90.31902313232422,
+      "sq_sum": 526.1587524414062,
+      "abs_rel_sum": 2.524559497833252,
+      "delta1_sum": 18.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000377",
+      "count": 25,
+      "abs_sum": 195.00933837890625,
+      "sq_sum": 1926.903076171875,
+      "abs_rel_sum": 5.500948905944824,
+      "delta1_sum": 12.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000378",
+      "count": 23,
+      "abs_sum": 204.65501403808594,
+      "sq_sum": 2050.1005859375,
+      "abs_rel_sum": 5.809223175048828,
+      "delta1_sum": 9.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000379",
+      "count": 30,
+      "abs_sum": 228.71437072753906,
+      "sq_sum": 2160.19775390625,
+      "abs_rel_sum": 6.501711845397949,
+      "delta1_sum": 17.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000380",
+      "count": 24,
+      "abs_sum": 110.18780517578125,
+      "sq_sum": 718.8501586914062,
+      "abs_rel_sum": 3.1212689876556396,
+      "delta1_sum": 21.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000381",
+      "count": 29,
+      "abs_sum": 228.22918701171875,
+      "sq_sum": 1920.881103515625,
+      "abs_rel_sum": 6.566604137420654,
+      "delta1_sum": 19.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000382",
+      "count": 28,
+      "abs_sum": 182.54266357421875,
+      "sq_sum": 1417.098876953125,
+      "abs_rel_sum": 5.26901912689209,
+      "delta1_sum": 21.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000383",
+      "count": 29,
+      "abs_sum": 281.05633544921875,
+      "sq_sum": 2760.284423828125,
+      "abs_rel_sum": 8.14625072479248,
+      "delta1_sum": 5.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000387",
+      "count": 22,
+      "abs_sum": 37.99540710449219,
+      "sq_sum": 87.29478454589844,
+      "abs_rel_sum": 1.1239070892333984,
+      "delta1_sum": 22.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000388",
+      "count": 31,
+      "abs_sum": 223.92617797851562,
+      "sq_sum": 1800.891845703125,
+      "abs_rel_sum": 6.629347801208496,
+      "delta1_sum": 19.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000389",
+      "count": 36,
+      "abs_sum": 302.8141174316406,
+      "sq_sum": 2632.166015625,
+      "abs_rel_sum": 8.94382095336914,
+      "delta1_sum": 19.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000390",
+      "count": 25,
+      "abs_sum": 262.86199951171875,
+      "sq_sum": 2845.551513671875,
+      "abs_rel_sum": 7.952802658081055,
+      "delta1_sum": 5.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000394",
+      "count": 23,
+      "abs_sum": 139.73211669921875,
+      "sq_sum": 1012.2239990234375,
+      "abs_rel_sum": 4.212934970855713,
+      "delta1_sum": 18.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000395",
+      "count": 44,
+      "abs_sum": 295.1219177246094,
+      "sq_sum": 2460.86376953125,
+      "abs_rel_sum": 8.890048027038574,
+      "delta1_sum": 28.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000396",
+      "count": 24,
+      "abs_sum": 146.54649353027344,
+      "sq_sum": 1105.4580078125,
+      "abs_rel_sum": 4.415848255157471,
+      "delta1_sum": 16.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000397",
+      "count": 26,
+      "abs_sum": 259.749755859375,
+      "sq_sum": 2624.078369140625,
+      "abs_rel_sum": 7.884366512298584,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000398",
+      "count": 29,
+      "abs_sum": 315.7181396484375,
+      "sq_sum": 3597.466796875,
+      "abs_rel_sum": 9.54483413696289,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000399",
+      "count": 19,
+      "abs_sum": 145.64312744140625,
+      "sq_sum": 1260.630859375,
+      "abs_rel_sum": 4.4561896324157715,
+      "delta1_sum": 8.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000400",
+      "count": 26,
+      "abs_sum": 224.0977325439453,
+      "sq_sum": 2089.05029296875,
+      "abs_rel_sum": 6.864576816558838,
+      "delta1_sum": 10.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000401",
+      "count": 30,
+      "abs_sum": 240.30201721191406,
+      "sq_sum": 2135.763427734375,
+      "abs_rel_sum": 7.352761745452881,
+      "delta1_sum": 14.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000402",
+      "count": 21,
+      "abs_sum": 198.2207489013672,
+      "sq_sum": 1885.468505859375,
+      "abs_rel_sum": 6.0924835205078125,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000403",
+      "count": 17,
+      "abs_sum": 158.75253295898438,
+      "sq_sum": 1501.1214599609375,
+      "abs_rel_sum": 4.872556686401367,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000404",
+      "count": 32,
+      "abs_sum": 279.0181884765625,
+      "sq_sum": 2684.4990234375,
+      "abs_rel_sum": 8.552398681640625,
+      "delta1_sum": 10.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000405",
+      "count": 37,
+      "abs_sum": 424.57452392578125,
+      "sq_sum": 5497.576171875,
+      "abs_rel_sum": 13.123464584350586,
+      "delta1_sum": 10.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000406",
+      "count": 41,
+      "abs_sum": 524.92724609375,
+      "sq_sum": 6909.34228515625,
+      "abs_rel_sum": 16.140954971313477,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000407",
+      "count": 34,
+      "abs_sum": 454.0454406738281,
+      "sq_sum": 6330.25390625,
+      "abs_rel_sum": 14.087666511535645,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000408",
+      "count": 30,
+      "abs_sum": 304.3206787109375,
+      "sq_sum": 3219.4775390625,
+      "abs_rel_sum": 9.484783172607422,
+      "delta1_sum": 4.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000409",
+      "count": 19,
+      "abs_sum": 220.84390258789062,
+      "sq_sum": 2682.8330078125,
+      "abs_rel_sum": 6.927957534790039,
+      "delta1_sum": 2.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000410",
+      "count": 20,
+      "abs_sum": 200.55856323242188,
+      "sq_sum": 2100.98583984375,
+      "abs_rel_sum": 6.311947822570801,
+      "delta1_sum": 5.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000411",
+      "count": 27,
+      "abs_sum": 255.51736450195312,
+      "sq_sum": 2538.858154296875,
+      "abs_rel_sum": 8.018656730651855,
+      "delta1_sum": 7.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000412",
+      "count": 29,
+      "abs_sum": 271.5100402832031,
+      "sq_sum": 2668.34814453125,
+      "abs_rel_sum": 8.545629501342773,
+      "delta1_sum": 7.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000413",
+      "count": 28,
+      "abs_sum": 252.1352081298828,
+      "sq_sum": 2449.787109375,
+      "abs_rel_sum": 8.018450736999512,
+      "delta1_sum": 10.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000414",
+      "count": 42,
+      "abs_sum": 361.03106689453125,
+      "sq_sum": 3440.394287109375,
+      "abs_rel_sum": 11.556683540344238,
+      "delta1_sum": 17.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000415",
+      "count": 38,
+      "abs_sum": 423.0651550292969,
+      "sq_sum": 5092.40576171875,
+      "abs_rel_sum": 13.344006538391113,
+      "delta1_sum": 9.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000416",
+      "count": 26,
+      "abs_sum": 301.4103088378906,
+      "sq_sum": 3685.4755859375,
+      "abs_rel_sum": 9.5725679397583,
+      "delta1_sum": 4.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000417",
+      "count": 26,
+      "abs_sum": 329.56793212890625,
+      "sq_sum": 4337.0732421875,
+      "abs_rel_sum": 10.459846496582031,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000418",
+      "count": 38,
+      "abs_sum": 395.1275939941406,
+      "sq_sum": 4491.9306640625,
+      "abs_rel_sum": 12.598215103149414,
+      "delta1_sum": 10.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000419",
+      "count": 38,
+      "abs_sum": 427.441162109375,
+      "sq_sum": 5133.4072265625,
+      "abs_rel_sum": 13.630556106567383,
+      "delta1_sum": 8.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000420",
+      "count": 47,
+      "abs_sum": 381.5489501953125,
+      "sq_sum": 3671.901611328125,
+      "abs_rel_sum": 12.358009338378906,
+      "delta1_sum": 27.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000421",
+      "count": 42,
+      "abs_sum": 560.621337890625,
+      "sq_sum": 7562.9970703125,
+      "abs_rel_sum": 18.00071144104004,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000422",
+      "count": 43,
+      "abs_sum": 930.0016479492188,
+      "sq_sum": 21684.15234375,
+      "abs_rel_sum": 29.84453582763672,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000423",
+      "count": 46,
+      "abs_sum": 486.4247741699219,
+      "sq_sum": 5381.1435546875,
+      "abs_rel_sum": 16.00502586364746,
+      "delta1_sum": 4.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000424",
+      "count": 41,
+      "abs_sum": 455.1762390136719,
+      "sq_sum": 5462.6953125,
+      "abs_rel_sum": 14.888336181640625,
+      "delta1_sum": 8.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000427",
+      "count": 44,
+      "abs_sum": 252.98361206054688,
+      "sq_sum": 1801.906005859375,
+      "abs_rel_sum": 8.408639907836914,
+      "delta1_sum": 29.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000428",
+      "count": 44,
+      "abs_sum": 388.49395751953125,
+      "sq_sum": 3736.00439453125,
+      "abs_rel_sum": 12.9620943069458,
+      "delta1_sum": 15.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000429",
+      "count": 43,
+      "abs_sum": 509.46575927734375,
+      "sq_sum": 6109.9091796875,
+      "abs_rel_sum": 17.04639434814453,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000430",
+      "count": 47,
+      "abs_sum": 452.7840576171875,
+      "sq_sum": 4542.6162109375,
+      "abs_rel_sum": 15.141724586486816,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000431",
+      "count": 15,
+      "abs_sum": 126.19962310791016,
+      "sq_sum": 1074.946044921875,
+      "abs_rel_sum": 4.329692840576172,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000435",
+      "count": 46,
+      "abs_sum": 226.83575439453125,
+      "sq_sum": 1452.0260009765625,
+      "abs_rel_sum": 7.901340007781982,
+      "delta1_sum": 35.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000436",
+      "count": 41,
+      "abs_sum": 376.000244140625,
+      "sq_sum": 3751.908447265625,
+      "abs_rel_sum": 13.032690048217773,
+      "delta1_sum": 9.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000437",
+      "count": 54,
+      "abs_sum": 718.6878662109375,
+      "sq_sum": 10392.015625,
+      "abs_rel_sum": 24.5498046875,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-1815",
+      "frame_id": "000438",
+      "count": 42,
+      "abs_sum": 545.9599609375,
+      "sq_sum": 7246.64697265625,
+      "abs_rel_sum": 18.644678115844727,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000170",
+      "count": 12,
+      "abs_sum": 37.61848449707031,
+      "sq_sum": 147.88409423828125,
+      "abs_rel_sum": 0.6431002616882324,
+      "delta1_sum": 12.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000205",
+      "count": 12,
+      "abs_sum": 227.8159637451172,
+      "sq_sum": 4537.26611328125,
+      "abs_rel_sum": 4.601736068725586,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000215",
+      "count": 12,
+      "abs_sum": 53.717987060546875,
+      "sq_sum": 338.0565490722656,
+      "abs_rel_sum": 1.081612467765808,
+      "delta1_sum": 12.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000219",
+      "count": 15,
+      "abs_sum": 75.02861022949219,
+      "sq_sum": 634.4592895507812,
+      "abs_rel_sum": 1.5434820652008057,
+      "delta1_sum": 13.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000227",
+      "count": 16,
+      "abs_sum": 86.07942199707031,
+      "sq_sum": 884.8657836914062,
+      "abs_rel_sum": 1.7520695924758911,
+      "delta1_sum": 13.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000228",
+      "count": 16,
+      "abs_sum": 153.69500732421875,
+      "sq_sum": 1507.147216796875,
+      "abs_rel_sum": 3.1979880332946777,
+      "delta1_sum": 16.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000229",
+      "count": 15,
+      "abs_sum": 268.40594482421875,
+      "sq_sum": 5086.31298828125,
+      "abs_rel_sum": 5.588840007781982,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000231",
+      "count": 15,
+      "abs_sum": 47.11934280395508,
+      "sq_sum": 442.2655029296875,
+      "abs_rel_sum": 0.7252578735351562,
+      "delta1_sum": 15.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000235",
+      "count": 12,
+      "abs_sum": 14.690765380859375,
+      "sq_sum": 27.952102661132812,
+      "abs_rel_sum": 0.3129611611366272,
+      "delta1_sum": 12.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000236",
+      "count": 16,
+      "abs_sum": 148.76710510253906,
+      "sq_sum": 1735.163330078125,
+      "abs_rel_sum": 2.919771671295166,
+      "delta1_sum": 13.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000237",
+      "count": 12,
+      "abs_sum": 98.45005798339844,
+      "sq_sum": 1286.9534912109375,
+      "abs_rel_sum": 2.099173069000244,
+      "delta1_sum": 10.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000238",
+      "count": 14,
+      "abs_sum": 84.07185363769531,
+      "sq_sum": 629.305419921875,
+      "abs_rel_sum": 1.640678882598877,
+      "delta1_sum": 14.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000239",
+      "count": 16,
+      "abs_sum": 58.65142822265625,
+      "sq_sum": 268.3586120605469,
+      "abs_rel_sum": 1.2614409923553467,
+      "delta1_sum": 16.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000241",
+      "count": 17,
+      "abs_sum": 38.93633270263672,
+      "sq_sum": 143.08486938476562,
+      "abs_rel_sum": 0.8320859670639038,
+      "delta1_sum": 17.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000242",
+      "count": 15,
+      "abs_sum": 31.149234771728516,
+      "sq_sum": 84.48281860351562,
+      "abs_rel_sum": 0.6699644327163696,
+      "delta1_sum": 15.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000243",
+      "count": 13,
+      "abs_sum": 49.80439758300781,
+      "sq_sum": 354.462158203125,
+      "abs_rel_sum": 1.0419831275939941,
+      "delta1_sum": 12.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000244",
+      "count": 12,
+      "abs_sum": 75.44662475585938,
+      "sq_sum": 496.4485168457031,
+      "abs_rel_sum": 1.6236913204193115,
+      "delta1_sum": 12.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000245",
+      "count": 15,
+      "abs_sum": 33.02314758300781,
+      "sq_sum": 159.10711669921875,
+      "abs_rel_sum": 0.6877509355545044,
+      "delta1_sum": 15.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000250",
+      "count": 15,
+      "abs_sum": 52.07286071777344,
+      "sq_sum": 281.93353271484375,
+      "abs_rel_sum": 1.1318540573120117,
+      "delta1_sum": 15.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000251",
+      "count": 17,
+      "abs_sum": 30.375518798828125,
+      "sq_sum": 77.8309555053711,
+      "abs_rel_sum": 0.6241982579231262,
+      "delta1_sum": 17.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000252",
+      "count": 15,
+      "abs_sum": 69.14872741699219,
+      "sq_sum": 427.6650085449219,
+      "abs_rel_sum": 1.4880211353302002,
+      "delta1_sum": 15.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000253",
+      "count": 21,
+      "abs_sum": 113.54367065429688,
+      "sq_sum": 785.9700927734375,
+      "abs_rel_sum": 2.4240775108337402,
+      "delta1_sum": 20.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000254",
+      "count": 19,
+      "abs_sum": 109.79689025878906,
+      "sq_sum": 737.5969848632812,
+      "abs_rel_sum": 2.379268169403076,
+      "delta1_sum": 19.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000255",
+      "count": 26,
+      "abs_sum": 122.54170227050781,
+      "sq_sum": 1373.886962890625,
+      "abs_rel_sum": 2.567337989807129,
+      "delta1_sum": 21.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000256",
+      "count": 17,
+      "abs_sum": 33.64691925048828,
+      "sq_sum": 95.96114349365234,
+      "abs_rel_sum": 0.7270882725715637,
+      "delta1_sum": 17.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000257",
+      "count": 23,
+      "abs_sum": 174.73513793945312,
+      "sq_sum": 1750.1845703125,
+      "abs_rel_sum": 3.7169790267944336,
+      "delta1_sum": 21.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000258",
+      "count": 30,
+      "abs_sum": 272.6171875,
+      "sq_sum": 3549.03173828125,
+      "abs_rel_sum": 5.828001499176025,
+      "delta1_sum": 24.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000259",
+      "count": 22,
+      "abs_sum": 120.53848266601562,
+      "sq_sum": 933.1032104492188,
+      "abs_rel_sum": 2.5998528003692627,
+      "delta1_sum": 21.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000260",
+      "count": 23,
+      "abs_sum": 148.95298767089844,
+      "sq_sum": 1932.3353271484375,
+      "abs_rel_sum": 3.2756474018096924,
+      "delta1_sum": 19.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000261",
+      "count": 15,
+      "abs_sum": 41.83506774902344,
+      "sq_sum": 173.43994140625,
+      "abs_rel_sum": 0.9004559516906738,
+      "delta1_sum": 15.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000262",
+      "count": 21,
+      "abs_sum": 23.55492401123047,
+      "sq_sum": 52.01932907104492,
+      "abs_rel_sum": 0.522193431854248,
+      "delta1_sum": 21.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000264",
+      "count": 14,
+      "abs_sum": 50.59975051879883,
+      "sq_sum": 279.9222717285156,
+      "abs_rel_sum": 1.1076127290725708,
+      "delta1_sum": 14.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000265",
+      "count": 25,
+      "abs_sum": 202.8941192626953,
+      "sq_sum": 2219.1533203125,
+      "abs_rel_sum": 4.524545669555664,
+      "delta1_sum": 16.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000266",
+      "count": 27,
+      "abs_sum": 184.77365112304688,
+      "sq_sum": 1457.2490234375,
+      "abs_rel_sum": 3.712815284729004,
+      "delta1_sum": 27.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000267",
+      "count": 30,
+      "abs_sum": 189.641845703125,
+      "sq_sum": 1667.0169677734375,
+      "abs_rel_sum": 4.27247428894043,
+      "delta1_sum": 26.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000268",
+      "count": 29,
+      "abs_sum": 111.53054809570312,
+      "sq_sum": 1148.8616943359375,
+      "abs_rel_sum": 2.5164458751678467,
+      "delta1_sum": 26.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000269",
+      "count": 23,
+      "abs_sum": 134.07595825195312,
+      "sq_sum": 1337.14697265625,
+      "abs_rel_sum": 3.007582902908325,
+      "delta1_sum": 21.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000270",
+      "count": 35,
+      "abs_sum": 104.23664855957031,
+      "sq_sum": 571.1953125,
+      "abs_rel_sum": 2.273301601409912,
+      "delta1_sum": 34.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000271",
+      "count": 33,
+      "abs_sum": 265.6207275390625,
+      "sq_sum": 2623.44873046875,
+      "abs_rel_sum": 6.0273637771606445,
+      "delta1_sum": 26.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000272",
+      "count": 29,
+      "abs_sum": 161.68582153320312,
+      "sq_sum": 1628.4638671875,
+      "abs_rel_sum": 3.6864638328552246,
+      "delta1_sum": 25.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000273",
+      "count": 25,
+      "abs_sum": 44.05060958862305,
+      "sq_sum": 148.40628051757812,
+      "abs_rel_sum": 0.9889631271362305,
+      "delta1_sum": 25.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000274",
+      "count": 18,
+      "abs_sum": 103.18742370605469,
+      "sq_sum": 789.0096435546875,
+      "abs_rel_sum": 2.384509801864624,
+      "delta1_sum": 14.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000276",
+      "count": 17,
+      "abs_sum": 44.7332649230957,
+      "sq_sum": 173.54965209960938,
+      "abs_rel_sum": 1.0534385442733765,
+      "delta1_sum": 17.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000277",
+      "count": 17,
+      "abs_sum": 56.60499572753906,
+      "sq_sum": 259.6722412109375,
+      "abs_rel_sum": 1.3333775997161865,
+      "delta1_sum": 17.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000278",
+      "count": 45,
+      "abs_sum": 133.591796875,
+      "sq_sum": 804.1435546875,
+      "abs_rel_sum": 3.031667947769165,
+      "delta1_sum": 43.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000279",
+      "count": 37,
+      "abs_sum": 141.4361572265625,
+      "sq_sum": 1084.5118408203125,
+      "abs_rel_sum": 3.326021432876587,
+      "delta1_sum": 33.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000280",
+      "count": 28,
+      "abs_sum": 214.86871337890625,
+      "sq_sum": 3231.554931640625,
+      "abs_rel_sum": 4.74799919128418,
+      "delta1_sum": 24.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000281",
+      "count": 21,
+      "abs_sum": 89.21087646484375,
+      "sq_sum": 701.9637451171875,
+      "abs_rel_sum": 1.82230544090271,
+      "delta1_sum": 19.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000282",
+      "count": 25,
+      "abs_sum": 78.64910888671875,
+      "sq_sum": 338.048828125,
+      "abs_rel_sum": 1.8561820983886719,
+      "delta1_sum": 25.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000283",
+      "count": 29,
+      "abs_sum": 101.08927917480469,
+      "sq_sum": 644.418701171875,
+      "abs_rel_sum": 2.3695855140686035,
+      "delta1_sum": 27.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000284",
+      "count": 28,
+      "abs_sum": 146.13543701171875,
+      "sq_sum": 1597.2244873046875,
+      "abs_rel_sum": 3.432173252105713,
+      "delta1_sum": 25.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000285",
+      "count": 40,
+      "abs_sum": 918.553955078125,
+      "sq_sum": 22588.34765625,
+      "abs_rel_sum": 21.865154266357422,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000286",
+      "count": 47,
+      "abs_sum": 757.226806640625,
+      "sq_sum": 15838.884765625,
+      "abs_rel_sum": 17.82765007019043,
+      "delta1_sum": 9.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000287",
+      "count": 46,
+      "abs_sum": 619.9886474609375,
+      "sq_sum": 13979.638671875,
+      "abs_rel_sum": 14.533650398254395,
+      "delta1_sum": 26.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000288",
+      "count": 30,
+      "abs_sum": 143.447509765625,
+      "sq_sum": 1542.7327880859375,
+      "abs_rel_sum": 3.4556047916412354,
+      "delta1_sum": 24.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000289",
+      "count": 28,
+      "abs_sum": 90.90437316894531,
+      "sq_sum": 413.6398010253906,
+      "abs_rel_sum": 2.1907503604888916,
+      "delta1_sum": 28.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000290",
+      "count": 37,
+      "abs_sum": 121.60821533203125,
+      "sq_sum": 683.022216796875,
+      "abs_rel_sum": 2.767547369003296,
+      "delta1_sum": 36.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000291",
+      "count": 45,
+      "abs_sum": 445.6190185546875,
+      "sq_sum": 5226.0361328125,
+      "abs_rel_sum": 10.361648559570312,
+      "delta1_sum": 32.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000292",
+      "count": 41,
+      "abs_sum": 727.193359375,
+      "sq_sum": 17497.48046875,
+      "abs_rel_sum": 17.336868286132812,
+      "delta1_sum": 12.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000293",
+      "count": 36,
+      "abs_sum": 554.1868896484375,
+      "sq_sum": 13830.2734375,
+      "abs_rel_sum": 13.417684555053711,
+      "delta1_sum": 19.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000297",
+      "count": 48,
+      "abs_sum": 618.759521484375,
+      "sq_sum": 14149.5146484375,
+      "abs_rel_sum": 15.041351318359375,
+      "delta1_sum": 30.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000298",
+      "count": 47,
+      "abs_sum": 582.2196044921875,
+      "sq_sum": 11808.4130859375,
+      "abs_rel_sum": 13.950798034667969,
+      "delta1_sum": 31.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000299",
+      "count": 47,
+      "abs_sum": 620.4495849609375,
+      "sq_sum": 14544.359375,
+      "abs_rel_sum": 15.13442611694336,
+      "delta1_sum": 29.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000300",
+      "count": 48,
+      "abs_sum": 583.3435668945312,
+      "sq_sum": 12923.3779296875,
+      "abs_rel_sum": 14.192596435546875,
+      "delta1_sum": 31.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000301",
+      "count": 33,
+      "abs_sum": 221.92233276367188,
+      "sq_sum": 3990.73876953125,
+      "abs_rel_sum": 5.443904876708984,
+      "delta1_sum": 29.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000302",
+      "count": 42,
+      "abs_sum": 253.5150604248047,
+      "sq_sum": 2449.481201171875,
+      "abs_rel_sum": 5.9397430419921875,
+      "delta1_sum": 39.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000303",
+      "count": 51,
+      "abs_sum": 312.7149353027344,
+      "sq_sum": 3248.95947265625,
+      "abs_rel_sum": 7.7109575271606445,
+      "delta1_sum": 45.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000304",
+      "count": 36,
+      "abs_sum": 162.09353637695312,
+      "sq_sum": 2459.9501953125,
+      "abs_rel_sum": 3.9903697967529297,
+      "delta1_sum": 32.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000305",
+      "count": 40,
+      "abs_sum": 140.89920043945312,
+      "sq_sum": 696.68798828125,
+      "abs_rel_sum": 3.4768223762512207,
+      "delta1_sum": 40.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000306",
+      "count": 37,
+      "abs_sum": 124.78394317626953,
+      "sq_sum": 603.9984741210938,
+      "abs_rel_sum": 3.060504913330078,
+      "delta1_sum": 37.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000307",
+      "count": 44,
+      "abs_sum": 167.33152770996094,
+      "sq_sum": 1068.441162109375,
+      "abs_rel_sum": 4.147085189819336,
+      "delta1_sum": 41.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000308",
+      "count": 43,
+      "abs_sum": 170.38011169433594,
+      "sq_sum": 1714.434326171875,
+      "abs_rel_sum": 4.197192192077637,
+      "delta1_sum": 38.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000309",
+      "count": 48,
+      "abs_sum": 215.24163818359375,
+      "sq_sum": 1810.489013671875,
+      "abs_rel_sum": 5.382853984832764,
+      "delta1_sum": 43.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000310",
+      "count": 55,
+      "abs_sum": 581.950927734375,
+      "sq_sum": 9575.287109375,
+      "abs_rel_sum": 14.198312759399414,
+      "delta1_sum": 39.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000311",
+      "count": 56,
+      "abs_sum": 551.5146484375,
+      "sq_sum": 10793.021484375,
+      "abs_rel_sum": 13.626710891723633,
+      "delta1_sum": 43.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000312",
+      "count": 63,
+      "abs_sum": 669.45703125,
+      "sq_sum": 14806.509765625,
+      "abs_rel_sum": 16.57558822631836,
+      "delta1_sum": 43.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000313",
+      "count": 67,
+      "abs_sum": 655.10888671875,
+      "sq_sum": 11032.875,
+      "abs_rel_sum": 16.275047302246094,
+      "delta1_sum": 44.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000314",
+      "count": 55,
+      "abs_sum": 332.7409973144531,
+      "sq_sum": 3387.879150390625,
+      "abs_rel_sum": 7.297669410705566,
+      "delta1_sum": 49.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000315",
+      "count": 57,
+      "abs_sum": 516.0107421875,
+      "sq_sum": 7315.89013671875,
+      "abs_rel_sum": 12.500728607177734,
+      "delta1_sum": 43.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000316",
+      "count": 59,
+      "abs_sum": 653.5017700195312,
+      "sq_sum": 15222.1298828125,
+      "abs_rel_sum": 16.324960708618164,
+      "delta1_sum": 41.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000317",
+      "count": 63,
+      "abs_sum": 732.5736083984375,
+      "sq_sum": 14445.1728515625,
+      "abs_rel_sum": 17.80181884765625,
+      "delta1_sum": 44.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000318",
+      "count": 69,
+      "abs_sum": 826.6153564453125,
+      "sq_sum": 16788.439453125,
+      "abs_rel_sum": 20.379383087158203,
+      "delta1_sum": 42.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000319",
+      "count": 58,
+      "abs_sum": 520.8660888671875,
+      "sq_sum": 7450.982421875,
+      "abs_rel_sum": 12.778383255004883,
+      "delta1_sum": 47.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000320",
+      "count": 54,
+      "abs_sum": 694.7149658203125,
+      "sq_sum": 15296.0849609375,
+      "abs_rel_sum": 17.644895553588867,
+      "delta1_sum": 39.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000321",
+      "count": 52,
+      "abs_sum": 654.8719482421875,
+      "sq_sum": 14196.4970703125,
+      "abs_rel_sum": 16.786544799804688,
+      "delta1_sum": 32.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000322",
+      "count": 46,
+      "abs_sum": 111.57160186767578,
+      "sq_sum": 540.3895263671875,
+      "abs_rel_sum": 2.8550870418548584,
+      "delta1_sum": 45.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000323",
+      "count": 56,
+      "abs_sum": 423.5258483886719,
+      "sq_sum": 6373.9677734375,
+      "abs_rel_sum": 10.78360366821289,
+      "delta1_sum": 45.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000324",
+      "count": 68,
+      "abs_sum": 670.7679443359375,
+      "sq_sum": 11396.056640625,
+      "abs_rel_sum": 17.043682098388672,
+      "delta1_sum": 50.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000325",
+      "count": 60,
+      "abs_sum": 623.492919921875,
+      "sq_sum": 9903.6513671875,
+      "abs_rel_sum": 15.941702842712402,
+      "delta1_sum": 48.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000326",
+      "count": 70,
+      "abs_sum": 706.0797119140625,
+      "sq_sum": 11571.6376953125,
+      "abs_rel_sum": 17.87417221069336,
+      "delta1_sum": 48.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000327",
+      "count": 66,
+      "abs_sum": 984.3587646484375,
+      "sq_sum": 20919.9609375,
+      "abs_rel_sum": 25.286521911621094,
+      "delta1_sum": 24.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000328",
+      "count": 64,
+      "abs_sum": 444.3066711425781,
+      "sq_sum": 7487.3759765625,
+      "abs_rel_sum": 11.372532844543457,
+      "delta1_sum": 55.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000329",
+      "count": 60,
+      "abs_sum": 401.41552734375,
+      "sq_sum": 4034.62646484375,
+      "abs_rel_sum": 10.346418380737305,
+      "delta1_sum": 53.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000330",
+      "count": 61,
+      "abs_sum": 384.62164306640625,
+      "sq_sum": 4199.74853515625,
+      "abs_rel_sum": 9.640768051147461,
+      "delta1_sum": 52.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000331",
+      "count": 73,
+      "abs_sum": 820.7902221679688,
+      "sq_sum": 14168.107421875,
+      "abs_rel_sum": 21.267860412597656,
+      "delta1_sum": 39.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000332",
+      "count": 66,
+      "abs_sum": 831.4365234375,
+      "sq_sum": 15209.396484375,
+      "abs_rel_sum": 21.647720336914062,
+      "delta1_sum": 27.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000333",
+      "count": 61,
+      "abs_sum": 787.8341674804688,
+      "sq_sum": 14730.0498046875,
+      "abs_rel_sum": 20.601459503173828,
+      "delta1_sum": 26.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000334",
+      "count": 68,
+      "abs_sum": 613.362060546875,
+      "sq_sum": 8677.59375,
+      "abs_rel_sum": 15.62999153137207,
+      "delta1_sum": 44.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000335",
+      "count": 55,
+      "abs_sum": 157.44302368164062,
+      "sq_sum": 656.0337524414062,
+      "abs_rel_sum": 4.127974510192871,
+      "delta1_sum": 55.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000336",
+      "count": 49,
+      "abs_sum": 209.23214721679688,
+      "sq_sum": 1343.67431640625,
+      "abs_rel_sum": 5.528226852416992,
+      "delta1_sum": 46.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000337",
+      "count": 58,
+      "abs_sum": 274.908447265625,
+      "sq_sum": 2811.24267578125,
+      "abs_rel_sum": 6.6619439125061035,
+      "delta1_sum": 55.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000338",
+      "count": 62,
+      "abs_sum": 172.08367919921875,
+      "sq_sum": 727.5242919921875,
+      "abs_rel_sum": 4.550673007965088,
+      "delta1_sum": 60.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000339",
+      "count": 63,
+      "abs_sum": 496.8069763183594,
+      "sq_sum": 6690.47021484375,
+      "abs_rel_sum": 12.946349143981934,
+      "delta1_sum": 51.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000340",
+      "count": 71,
+      "abs_sum": 382.2445068359375,
+      "sq_sum": 3897.705078125,
+      "abs_rel_sum": 9.904810905456543,
+      "delta1_sum": 64.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000341",
+      "count": 66,
+      "abs_sum": 227.9784393310547,
+      "sq_sum": 2375.171630859375,
+      "abs_rel_sum": 6.00778865814209,
+      "delta1_sum": 59.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000342",
+      "count": 68,
+      "abs_sum": 224.62185668945312,
+      "sq_sum": 1006.0889282226562,
+      "abs_rel_sum": 5.887477874755859,
+      "delta1_sum": 68.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000343",
+      "count": 79,
+      "abs_sum": 316.0165710449219,
+      "sq_sum": 2795.93798828125,
+      "abs_rel_sum": 8.370060920715332,
+      "delta1_sum": 71.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000344",
+      "count": 76,
+      "abs_sum": 561.1049194335938,
+      "sq_sum": 5898.5673828125,
+      "abs_rel_sum": 14.720314979553223,
+      "delta1_sum": 54.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000345",
+      "count": 75,
+      "abs_sum": 502.18603515625,
+      "sq_sum": 5741.42529296875,
+      "abs_rel_sum": 13.236708641052246,
+      "delta1_sum": 63.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000346",
+      "count": 89,
+      "abs_sum": 1223.323974609375,
+      "sq_sum": 26347.673828125,
+      "abs_rel_sum": 31.92225456237793,
+      "delta1_sum": 50.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000347",
+      "count": 68,
+      "abs_sum": 789.8497924804688,
+      "sq_sum": 14047.146484375,
+      "abs_rel_sum": 20.434226989746094,
+      "delta1_sum": 38.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000348",
+      "count": 60,
+      "abs_sum": 186.24046325683594,
+      "sq_sum": 870.034912109375,
+      "abs_rel_sum": 4.988847732543945,
+      "delta1_sum": 57.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000349",
+      "count": 36,
+      "abs_sum": 47.63611602783203,
+      "sq_sum": 104.08655548095703,
+      "abs_rel_sum": 1.2409666776657104,
+      "delta1_sum": 36.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000350",
+      "count": 43,
+      "abs_sum": 120.97989654541016,
+      "sq_sum": 1181.5257568359375,
+      "abs_rel_sum": 3.115150213241577,
+      "delta1_sum": 41.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000351",
+      "count": 53,
+      "abs_sum": 416.9090576171875,
+      "sq_sum": 3432.72119140625,
+      "abs_rel_sum": 11.370726585388184,
+      "delta1_sum": 42.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000352",
+      "count": 67,
+      "abs_sum": 497.67645263671875,
+      "sq_sum": 3950.375,
+      "abs_rel_sum": 13.969377517700195,
+      "delta1_sum": 52.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000353",
+      "count": 62,
+      "abs_sum": 460.1419372558594,
+      "sq_sum": 5116.9580078125,
+      "abs_rel_sum": 13.111108779907227,
+      "delta1_sum": 53.0
+    },
+    {
+      "sequence_id": "barbados-202302220530-740",
+      "frame_id": "000354",
+      "count": 29,
+      "abs_sum": 108.0447998046875,
+      "sq_sum": 411.5932312011719,
+      "abs_rel_sum": 3.1527600288391113,
+      "delta1_sum": 29.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000093",
+      "count": 0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000109",
+      "count": 12,
+      "abs_sum": 214.08860778808594,
+      "sq_sum": 5649.224609375,
+      "abs_rel_sum": 2.915682792663574,
+      "delta1_sum": 4.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000116",
+      "count": 13,
+      "abs_sum": 277.4639587402344,
+      "sq_sum": 6098.58984375,
+      "abs_rel_sum": 3.9927656650543213,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000118",
+      "count": 16,
+      "abs_sum": 217.01788330078125,
+      "sq_sum": 3905.636962890625,
+      "abs_rel_sum": 3.0932087898254395,
+      "delta1_sum": 7.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000120",
+      "count": 13,
+      "abs_sum": 320.510009765625,
+      "sq_sum": 8515.427734375,
+      "abs_rel_sum": 4.755563259124756,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000122",
+      "count": 13,
+      "abs_sum": 216.47207641601562,
+      "sq_sum": 4210.04296875,
+      "abs_rel_sum": 3.2660837173461914,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000123",
+      "count": 13,
+      "abs_sum": 298.37371826171875,
+      "sq_sum": 8927.255859375,
+      "abs_rel_sum": 4.404897689819336,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000125",
+      "count": 13,
+      "abs_sum": 191.53347778320312,
+      "sq_sum": 2970.46923828125,
+      "abs_rel_sum": 2.9699597358703613,
+      "delta1_sum": 4.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000128",
+      "count": 14,
+      "abs_sum": 240.32135009765625,
+      "sq_sum": 4775.07080078125,
+      "abs_rel_sum": 3.6788394451141357,
+      "delta1_sum": 2.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000129",
+      "count": 12,
+      "abs_sum": 170.7838592529297,
+      "sq_sum": 2443.493408203125,
+      "abs_rel_sum": 2.7199113368988037,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000130",
+      "count": 17,
+      "abs_sum": 283.010009765625,
+      "sq_sum": 4782.97265625,
+      "abs_rel_sum": 4.523149490356445,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000131",
+      "count": 15,
+      "abs_sum": 257.9606628417969,
+      "sq_sum": 4440.55517578125,
+      "abs_rel_sum": 4.135799407958984,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000132",
+      "count": 15,
+      "abs_sum": 179.3318634033203,
+      "sq_sum": 2583.46484375,
+      "abs_rel_sum": 2.8735485076904297,
+      "delta1_sum": 6.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000133",
+      "count": 15,
+      "abs_sum": 201.75579833984375,
+      "sq_sum": 2931.6171875,
+      "abs_rel_sum": 3.3040459156036377,
+      "delta1_sum": 4.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000134",
+      "count": 21,
+      "abs_sum": 292.4532775878906,
+      "sq_sum": 4447.58056640625,
+      "abs_rel_sum": 4.887314319610596,
+      "delta1_sum": 5.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000135",
+      "count": 15,
+      "abs_sum": 213.6565399169922,
+      "sq_sum": 3095.572265625,
+      "abs_rel_sum": 3.5936286449432373,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000136",
+      "count": 23,
+      "abs_sum": 295.3475341796875,
+      "sq_sum": 3885.81982421875,
+      "abs_rel_sum": 4.966402053833008,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000137",
+      "count": 19,
+      "abs_sum": 256.38568115234375,
+      "sq_sum": 3468.9951171875,
+      "abs_rel_sum": 4.3666605949401855,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000138",
+      "count": 23,
+      "abs_sum": 338.21258544921875,
+      "sq_sum": 5128.7314453125,
+      "abs_rel_sum": 5.790132999420166,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000139",
+      "count": 22,
+      "abs_sum": 364.6317443847656,
+      "sq_sum": 6219.2939453125,
+      "abs_rel_sum": 6.321396350860596,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000140",
+      "count": 23,
+      "abs_sum": 364.7774658203125,
+      "sq_sum": 6029.69921875,
+      "abs_rel_sum": 6.3321852684021,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000141",
+      "count": 28,
+      "abs_sum": 399.2559509277344,
+      "sq_sum": 6037.2666015625,
+      "abs_rel_sum": 6.801167964935303,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000142",
+      "count": 26,
+      "abs_sum": 193.8097381591797,
+      "sq_sum": 1633.16796875,
+      "abs_rel_sum": 3.5067622661590576,
+      "delta1_sum": 26.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000143",
+      "count": 23,
+      "abs_sum": 280.1627502441406,
+      "sq_sum": 3570.28515625,
+      "abs_rel_sum": 5.093470096588135,
+      "delta1_sum": 5.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000144",
+      "count": 31,
+      "abs_sum": 418.40191650390625,
+      "sq_sum": 6098.421875,
+      "abs_rel_sum": 7.284352779388428,
+      "delta1_sum": 5.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000145",
+      "count": 29,
+      "abs_sum": 352.4271240234375,
+      "sq_sum": 4491.4130859375,
+      "abs_rel_sum": 6.443021774291992,
+      "delta1_sum": 7.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000146",
+      "count": 33,
+      "abs_sum": 506.66986083984375,
+      "sq_sum": 7987.27099609375,
+      "abs_rel_sum": 9.286839485168457,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000147",
+      "count": 25,
+      "abs_sum": 244.9259033203125,
+      "sq_sum": 2629.8779296875,
+      "abs_rel_sum": 4.6714277267456055,
+      "delta1_sum": 21.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000148",
+      "count": 25,
+      "abs_sum": 361.24322509765625,
+      "sq_sum": 5352.212890625,
+      "abs_rel_sum": 6.84165096282959,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000149",
+      "count": 31,
+      "abs_sum": 379.40960693359375,
+      "sq_sum": 4737.673828125,
+      "abs_rel_sum": 7.353899002075195,
+      "delta1_sum": 4.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000150",
+      "count": 50,
+      "abs_sum": 529.7850341796875,
+      "sq_sum": 6196.326171875,
+      "abs_rel_sum": 10.179710388183594,
+      "delta1_sum": 19.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000151",
+      "count": 37,
+      "abs_sum": 455.201416015625,
+      "sq_sum": 6023.8837890625,
+      "abs_rel_sum": 8.819762229919434,
+      "delta1_sum": 2.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000152",
+      "count": 39,
+      "abs_sum": 512.2572021484375,
+      "sq_sum": 6975.5478515625,
+      "abs_rel_sum": 10.066629409790039,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000153",
+      "count": 47,
+      "abs_sum": 605.1827392578125,
+      "sq_sum": 8371.12109375,
+      "abs_rel_sum": 11.71821117401123,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000154",
+      "count": 35,
+      "abs_sum": 362.28839111328125,
+      "sq_sum": 3908.03125,
+      "abs_rel_sum": 7.349164962768555,
+      "delta1_sum": 10.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000155",
+      "count": 45,
+      "abs_sum": 296.3741760253906,
+      "sq_sum": 2063.5224609375,
+      "abs_rel_sum": 6.50721549987793,
+      "delta1_sum": 43.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000156",
+      "count": 44,
+      "abs_sum": 494.25390625,
+      "sq_sum": 5861.08935546875,
+      "abs_rel_sum": 10.12682056427002,
+      "delta1_sum": 6.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000157",
+      "count": 49,
+      "abs_sum": 424.1793212890625,
+      "sq_sum": 4714.9951171875,
+      "abs_rel_sum": 8.608125686645508,
+      "delta1_sum": 42.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000158",
+      "count": 45,
+      "abs_sum": 428.5835266113281,
+      "sq_sum": 4668.31982421875,
+      "abs_rel_sum": 8.703927993774414,
+      "delta1_sum": 35.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000159",
+      "count": 48,
+      "abs_sum": 359.66326904296875,
+      "sq_sum": 3337.8212890625,
+      "abs_rel_sum": 7.418060779571533,
+      "delta1_sum": 41.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000160",
+      "count": 49,
+      "abs_sum": 309.00775146484375,
+      "sq_sum": 2521.4326171875,
+      "abs_rel_sum": 6.418313980102539,
+      "delta1_sum": 43.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000161",
+      "count": 46,
+      "abs_sum": 283.8065185546875,
+      "sq_sum": 2372.556640625,
+      "abs_rel_sum": 5.954095840454102,
+      "delta1_sum": 40.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000162",
+      "count": 47,
+      "abs_sum": 316.0766906738281,
+      "sq_sum": 2543.60302734375,
+      "abs_rel_sum": 6.8117265701293945,
+      "delta1_sum": 42.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000163",
+      "count": 52,
+      "abs_sum": 373.8510437011719,
+      "sq_sum": 3041.5185546875,
+      "abs_rel_sum": 8.596843719482422,
+      "delta1_sum": 46.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000164",
+      "count": 63,
+      "abs_sum": 465.80035400390625,
+      "sq_sum": 3918.402099609375,
+      "abs_rel_sum": 10.540864944458008,
+      "delta1_sum": 57.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000165",
+      "count": 61,
+      "abs_sum": 238.53262329101562,
+      "sq_sum": 1768.6627197265625,
+      "abs_rel_sum": 5.356498718261719,
+      "delta1_sum": 58.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000166",
+      "count": 47,
+      "abs_sum": 219.3259735107422,
+      "sq_sum": 1154.1546630859375,
+      "abs_rel_sum": 5.034318923950195,
+      "delta1_sum": 45.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000167",
+      "count": 52,
+      "abs_sum": 91.5648193359375,
+      "sq_sum": 398.67169189453125,
+      "abs_rel_sum": 2.1425249576568604,
+      "delta1_sum": 51.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000168",
+      "count": 58,
+      "abs_sum": 228.24887084960938,
+      "sq_sum": 1528.50244140625,
+      "abs_rel_sum": 5.063858985900879,
+      "delta1_sum": 53.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000169",
+      "count": 60,
+      "abs_sum": 258.945556640625,
+      "sq_sum": 1410.684814453125,
+      "abs_rel_sum": 6.065142631530762,
+      "delta1_sum": 57.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000170",
+      "count": 56,
+      "abs_sum": 148.9332275390625,
+      "sq_sum": 1022.1477661132812,
+      "abs_rel_sum": 3.26682710647583,
+      "delta1_sum": 51.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000171",
+      "count": 60,
+      "abs_sum": 165.76583862304688,
+      "sq_sum": 688.4226684570312,
+      "abs_rel_sum": 4.083804130554199,
+      "delta1_sum": 59.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000172",
+      "count": 51,
+      "abs_sum": 190.52963256835938,
+      "sq_sum": 909.8837890625,
+      "abs_rel_sum": 4.75961446762085,
+      "delta1_sum": 50.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000173",
+      "count": 56,
+      "abs_sum": 323.1744079589844,
+      "sq_sum": 1970.0408935546875,
+      "abs_rel_sum": 8.352386474609375,
+      "delta1_sum": 56.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000174",
+      "count": 56,
+      "abs_sum": 238.57672119140625,
+      "sq_sum": 1066.7908935546875,
+      "abs_rel_sum": 6.202915668487549,
+      "delta1_sum": 56.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000175",
+      "count": 53,
+      "abs_sum": 304.4978942871094,
+      "sq_sum": 1853.053466796875,
+      "abs_rel_sum": 8.17186164855957,
+      "delta1_sum": 50.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000176",
+      "count": 56,
+      "abs_sum": 373.8039245605469,
+      "sq_sum": 2544.689697265625,
+      "abs_rel_sum": 10.199586868286133,
+      "delta1_sum": 45.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000177",
+      "count": 50,
+      "abs_sum": 361.9246520996094,
+      "sq_sum": 2641.402099609375,
+      "abs_rel_sum": 9.987886428833008,
+      "delta1_sum": 23.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000178",
+      "count": 53,
+      "abs_sum": 187.5715789794922,
+      "sq_sum": 710.9830322265625,
+      "abs_rel_sum": 5.2046918869018555,
+      "delta1_sum": 53.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000179",
+      "count": 47,
+      "abs_sum": 285.20880126953125,
+      "sq_sum": 1760.08154296875,
+      "abs_rel_sum": 8.121463775634766,
+      "delta1_sum": 43.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000180",
+      "count": 43,
+      "abs_sum": 137.20571899414062,
+      "sq_sum": 525.2650756835938,
+      "abs_rel_sum": 3.9402198791503906,
+      "delta1_sum": 43.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000181",
+      "count": 34,
+      "abs_sum": 140.35275268554688,
+      "sq_sum": 604.6875610351562,
+      "abs_rel_sum": 4.045469284057617,
+      "delta1_sum": 34.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000182",
+      "count": 34,
+      "abs_sum": 193.1023712158203,
+      "sq_sum": 1118.7471923828125,
+      "abs_rel_sum": 5.680172920227051,
+      "delta1_sum": 32.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000183",
+      "count": 33,
+      "abs_sum": 211.16151428222656,
+      "sq_sum": 1377.5233154296875,
+      "abs_rel_sum": 6.238507270812988,
+      "delta1_sum": 17.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000184",
+      "count": 26,
+      "abs_sum": 36.32678985595703,
+      "sq_sum": 62.45332336425781,
+      "abs_rel_sum": 1.0857681035995483,
+      "delta1_sum": 26.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000185",
+      "count": 30,
+      "abs_sum": 69.78482055664062,
+      "sq_sum": 180.70635986328125,
+      "abs_rel_sum": 2.128190517425537,
+      "delta1_sum": 30.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000186",
+      "count": 21,
+      "abs_sum": 47.335411071777344,
+      "sq_sum": 123.97645568847656,
+      "abs_rel_sum": 1.4548895359039307,
+      "delta1_sum": 21.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000187",
+      "count": 13,
+      "abs_sum": 18.115283966064453,
+      "sq_sum": 40.98609924316406,
+      "abs_rel_sum": 0.5520281791687012,
+      "delta1_sum": 13.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000188",
+      "count": 13,
+      "abs_sum": 10.98698616027832,
+      "sq_sum": 11.72761344909668,
+      "abs_rel_sum": 0.3637581169605255,
+      "delta1_sum": 13.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000242",
+      "count": 15,
+      "abs_sum": 200.6077880859375,
+      "sq_sum": 2785.52978515625,
+      "abs_rel_sum": 4.482001304626465,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000243",
+      "count": 15,
+      "abs_sum": 261.07257080078125,
+      "sq_sum": 4745.53662109375,
+      "abs_rel_sum": 5.355128765106201,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000245",
+      "count": 12,
+      "abs_sum": 117.29130554199219,
+      "sq_sum": 1362.790283203125,
+      "abs_rel_sum": 2.687323570251465,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000247",
+      "count": 17,
+      "abs_sum": 233.3792266845703,
+      "sq_sum": 3541.8828125,
+      "abs_rel_sum": 5.042923927307129,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000248",
+      "count": 21,
+      "abs_sum": 284.84893798828125,
+      "sq_sum": 3944.888427734375,
+      "abs_rel_sum": 6.415244102478027,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000249",
+      "count": 16,
+      "abs_sum": 175.38990783691406,
+      "sq_sum": 1925.9705810546875,
+      "abs_rel_sum": 4.159274101257324,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000250",
+      "count": 20,
+      "abs_sum": 212.23220825195312,
+      "sq_sum": 2283.664794921875,
+      "abs_rel_sum": 4.906232833862305,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000251",
+      "count": 24,
+      "abs_sum": 292.2239990234375,
+      "sq_sum": 3622.19140625,
+      "abs_rel_sum": 6.610006332397461,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000252",
+      "count": 19,
+      "abs_sum": 216.8356170654297,
+      "sq_sum": 2570.3916015625,
+      "abs_rel_sum": 5.0475616455078125,
+      "delta1_sum": 2.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000253",
+      "count": 26,
+      "abs_sum": 413.62701416015625,
+      "sq_sum": 6643.97265625,
+      "abs_rel_sum": 9.332538604736328,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000254",
+      "count": 26,
+      "abs_sum": 348.8255920410156,
+      "sq_sum": 4965.2900390625,
+      "abs_rel_sum": 7.952498435974121,
+      "delta1_sum": 2.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000255",
+      "count": 34,
+      "abs_sum": 426.90216064453125,
+      "sq_sum": 5969.07177734375,
+      "abs_rel_sum": 9.835041046142578,
+      "delta1_sum": 5.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000256",
+      "count": 30,
+      "abs_sum": 411.95281982421875,
+      "sq_sum": 5850.30712890625,
+      "abs_rel_sum": 9.606016159057617,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000257",
+      "count": 35,
+      "abs_sum": 468.1061096191406,
+      "sq_sum": 6474.17578125,
+      "abs_rel_sum": 11.026166915893555,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000258",
+      "count": 28,
+      "abs_sum": 417.4507751464844,
+      "sq_sum": 6692.01953125,
+      "abs_rel_sum": 9.832027435302734,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000259",
+      "count": 36,
+      "abs_sum": 454.5155029296875,
+      "sq_sum": 5999.970703125,
+      "abs_rel_sum": 10.806148529052734,
+      "delta1_sum": 5.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000260",
+      "count": 33,
+      "abs_sum": 331.8201904296875,
+      "sq_sum": 3633.64013671875,
+      "abs_rel_sum": 8.107939720153809,
+      "delta1_sum": 4.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000261",
+      "count": 31,
+      "abs_sum": 338.11962890625,
+      "sq_sum": 4029.008544921875,
+      "abs_rel_sum": 8.318634986877441,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000262",
+      "count": 34,
+      "abs_sum": 367.152099609375,
+      "sq_sum": 4191.8291015625,
+      "abs_rel_sum": 9.177549362182617,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000263",
+      "count": 33,
+      "abs_sum": 402.5545959472656,
+      "sq_sum": 5166.06396484375,
+      "abs_rel_sum": 10.022385597229004,
+      "delta1_sum": 2.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000264",
+      "count": 36,
+      "abs_sum": 411.26690673828125,
+      "sq_sum": 4837.19970703125,
+      "abs_rel_sum": 10.236244201660156,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000265",
+      "count": 40,
+      "abs_sum": 501.0379333496094,
+      "sq_sum": 6375.24072265625,
+      "abs_rel_sum": 12.806367874145508,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000266",
+      "count": 39,
+      "abs_sum": 447.7703857421875,
+      "sq_sum": 5239.458984375,
+      "abs_rel_sum": 11.427631378173828,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000267",
+      "count": 40,
+      "abs_sum": 381.68829345703125,
+      "sq_sum": 3722.21533203125,
+      "abs_rel_sum": 9.86972427368164,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000268",
+      "count": 36,
+      "abs_sum": 344.78277587890625,
+      "sq_sum": 3384.333740234375,
+      "abs_rel_sum": 8.988890647888184,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000269",
+      "count": 35,
+      "abs_sum": 400.33648681640625,
+      "sq_sum": 4654.71533203125,
+      "abs_rel_sum": 10.304521560668945,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000270",
+      "count": 34,
+      "abs_sum": 341.0716552734375,
+      "sq_sum": 3562.3955078125,
+      "abs_rel_sum": 8.968413352966309,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000271",
+      "count": 22,
+      "abs_sum": 275.89044189453125,
+      "sq_sum": 3499.62158203125,
+      "abs_rel_sum": 7.326208591461182,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000272",
+      "count": 25,
+      "abs_sum": 293.44561767578125,
+      "sq_sum": 3554.5478515625,
+      "abs_rel_sum": 7.818777561187744,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000273",
+      "count": 20,
+      "abs_sum": 238.4149169921875,
+      "sq_sum": 2854.576171875,
+      "abs_rel_sum": 6.566468238830566,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000274",
+      "count": 25,
+      "abs_sum": 304.6091003417969,
+      "sq_sum": 3722.409423828125,
+      "abs_rel_sum": 8.359813690185547,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000275",
+      "count": 15,
+      "abs_sum": 172.19192504882812,
+      "sq_sum": 1984.2406005859375,
+      "abs_rel_sum": 4.75690221786499,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000276",
+      "count": 15,
+      "abs_sum": 175.51319885253906,
+      "sq_sum": 2061.62890625,
+      "abs_rel_sum": 4.904819488525391,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000277",
+      "count": 10,
+      "abs_sum": 98.06755828857422,
+      "sq_sum": 964.2005004882812,
+      "abs_rel_sum": 2.7542781829833984,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000278",
+      "count": 13,
+      "abs_sum": 133.16329956054688,
+      "sq_sum": 1368.84228515625,
+      "abs_rel_sum": 3.749122142791748,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-3270",
+      "frame_id": "000279",
+      "count": 12,
+      "abs_sum": 131.9393310546875,
+      "sq_sum": 1480.725830078125,
+      "abs_rel_sum": 3.7473816871643066,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000000",
+      "count": 19,
+      "abs_sum": 25.853620529174805,
+      "sq_sum": 44.93227767944336,
+      "abs_rel_sum": 4.78546667098999,
+      "delta1_sum": 10.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000001",
+      "count": 45,
+      "abs_sum": 48.56610870361328,
+      "sq_sum": 90.78541564941406,
+      "abs_rel_sum": 8.878738403320312,
+      "delta1_sum": 32.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000002",
+      "count": 56,
+      "abs_sum": 48.06804656982422,
+      "sq_sum": 60.15540313720703,
+      "abs_rel_sum": 8.662126541137695,
+      "delta1_sum": 43.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000003",
+      "count": 23,
+      "abs_sum": 70.23077392578125,
+      "sq_sum": 245.71963500976562,
+      "abs_rel_sum": 13.40671443939209,
+      "delta1_sum": 4.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000004",
+      "count": 79,
+      "abs_sum": 105.12023162841797,
+      "sq_sum": 181.64437866210938,
+      "abs_rel_sum": 19.359264373779297,
+      "delta1_sum": 36.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000005",
+      "count": 95,
+      "abs_sum": 104.82579040527344,
+      "sq_sum": 185.63157653808594,
+      "abs_rel_sum": 18.09889793395996,
+      "delta1_sum": 57.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000006",
+      "count": 91,
+      "abs_sum": 142.03697204589844,
+      "sq_sum": 265.5549011230469,
+      "abs_rel_sum": 24.839717864990234,
+      "delta1_sum": 34.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000007",
+      "count": 12,
+      "abs_sum": 18.412826538085938,
+      "sq_sum": 35.901268005371094,
+      "abs_rel_sum": 3.268510103225708,
+      "delta1_sum": 6.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000012",
+      "count": 63,
+      "abs_sum": 79.43620300292969,
+      "sq_sum": 132.9472198486328,
+      "abs_rel_sum": 14.329854011535645,
+      "delta1_sum": 37.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000013",
+      "count": 92,
+      "abs_sum": 97.36131286621094,
+      "sq_sum": 137.0637664794922,
+      "abs_rel_sum": 17.48604965209961,
+      "delta1_sum": 64.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000014",
+      "count": 53,
+      "abs_sum": 37.86084747314453,
+      "sq_sum": 44.32469940185547,
+      "abs_rel_sum": 7.021968841552734,
+      "delta1_sum": 45.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000015",
+      "count": 21,
+      "abs_sum": 14.554231643676758,
+      "sq_sum": 15.153522491455078,
+      "abs_rel_sum": 2.7702531814575195,
+      "delta1_sum": 15.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000016",
+      "count": 16,
+      "abs_sum": 9.464838981628418,
+      "sq_sum": 11.468853950500488,
+      "abs_rel_sum": 1.8344004154205322,
+      "delta1_sum": 13.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000038",
+      "count": 17,
+      "abs_sum": 15.158708572387695,
+      "sq_sum": 18.589054107666016,
+      "abs_rel_sum": 2.8755288124084473,
+      "delta1_sum": 13.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000039",
+      "count": 20,
+      "abs_sum": 22.17059898376465,
+      "sq_sum": 31.27569007873535,
+      "abs_rel_sum": 4.092063903808594,
+      "delta1_sum": 12.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000040",
+      "count": 21,
+      "abs_sum": 16.435388565063477,
+      "sq_sum": 20.126203536987305,
+      "abs_rel_sum": 3.048884868621826,
+      "delta1_sum": 17.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000083",
+      "count": 14,
+      "abs_sum": 13.735830307006836,
+      "sq_sum": 16.29697608947754,
+      "abs_rel_sum": 2.661616325378418,
+      "delta1_sum": 9.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000130",
+      "count": 12,
+      "abs_sum": 9.982892990112305,
+      "sq_sum": 11.089926719665527,
+      "abs_rel_sum": 1.9271824359893799,
+      "delta1_sum": 9.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000177",
+      "count": 14,
+      "abs_sum": 18.949281692504883,
+      "sq_sum": 28.428627014160156,
+      "abs_rel_sum": 3.571826696395874,
+      "delta1_sum": 4.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000178",
+      "count": 12,
+      "abs_sum": 6.932551383972168,
+      "sq_sum": 6.022912979125977,
+      "abs_rel_sum": 1.3200092315673828,
+      "delta1_sum": 11.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000214",
+      "count": 25,
+      "abs_sum": 29.272550582885742,
+      "sq_sum": 43.440067291259766,
+      "abs_rel_sum": 5.491987228393555,
+      "delta1_sum": 18.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000215",
+      "count": 45,
+      "abs_sum": 57.66126251220703,
+      "sq_sum": 89.908447265625,
+      "abs_rel_sum": 10.665575981140137,
+      "delta1_sum": 20.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000216",
+      "count": 31,
+      "abs_sum": 25.977153778076172,
+      "sq_sum": 34.25740051269531,
+      "abs_rel_sum": 4.763607025146484,
+      "delta1_sum": 20.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000217",
+      "count": 13,
+      "abs_sum": 10.62719440460205,
+      "sq_sum": 12.355072975158691,
+      "abs_rel_sum": 1.935422420501709,
+      "delta1_sum": 8.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000269",
+      "count": 9,
+      "abs_sum": 7.92099142074585,
+      "sq_sum": 9.66198444366455,
+      "abs_rel_sum": 1.543849229812622,
+      "delta1_sum": 6.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000283",
+      "count": 12,
+      "abs_sum": 9.549459457397461,
+      "sq_sum": 9.759455680847168,
+      "abs_rel_sum": 1.7959058284759521,
+      "delta1_sum": 10.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000284",
+      "count": 13,
+      "abs_sum": 14.352073669433594,
+      "sq_sum": 19.31817054748535,
+      "abs_rel_sum": 2.6566033363342285,
+      "delta1_sum": 7.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000338",
+      "count": 14,
+      "abs_sum": 13.711349487304688,
+      "sq_sum": 16.435501098632812,
+      "abs_rel_sum": 2.6941981315612793,
+      "delta1_sum": 8.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000340",
+      "count": 17,
+      "abs_sum": 13.530508995056152,
+      "sq_sum": 16.63957977294922,
+      "abs_rel_sum": 2.5127041339874268,
+      "delta1_sum": 12.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000396",
+      "count": 14,
+      "abs_sum": 17.922313690185547,
+      "sq_sum": 25.08136749267578,
+      "abs_rel_sum": 3.384645700454712,
+      "delta1_sum": 4.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000422",
+      "count": 16,
+      "abs_sum": 18.036710739135742,
+      "sq_sum": 26.427276611328125,
+      "abs_rel_sum": 3.333127737045288,
+      "delta1_sum": 8.0
+    },
+    {
+      "sequence_id": "busan-20221102-4520",
+      "frame_id": "000423",
+      "count": 14,
+      "abs_sum": 11.912067413330078,
+      "sq_sum": 11.99300479888916,
+      "abs_rel_sum": 2.210200786590576,
+      "delta1_sum": 10.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000001",
+      "count": 17,
+      "abs_sum": 153.9110107421875,
+      "sq_sum": 3309.098876953125,
+      "abs_rel_sum": 32.50346374511719,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000002",
+      "count": 19,
+      "abs_sum": 134.2764129638672,
+      "sq_sum": 1050.9365234375,
+      "abs_rel_sum": 37.682247161865234,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000003",
+      "count": 12,
+      "abs_sum": 114.60853576660156,
+      "sq_sum": 1169.683837890625,
+      "abs_rel_sum": 22.651105880737305,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000005",
+      "count": 13,
+      "abs_sum": 112.33256530761719,
+      "sq_sum": 1113.0526123046875,
+      "abs_rel_sum": 19.062170028686523,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000007",
+      "count": 15,
+      "abs_sum": 144.89434814453125,
+      "sq_sum": 1532.3994140625,
+      "abs_rel_sum": 28.853199005126953,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000008",
+      "count": 15,
+      "abs_sum": 155.77268981933594,
+      "sq_sum": 1641.6824951171875,
+      "abs_rel_sum": 26.183666229248047,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000010",
+      "count": 31,
+      "abs_sum": 198.17556762695312,
+      "sq_sum": 1495.416259765625,
+      "abs_rel_sum": 85.77056121826172,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000011",
+      "count": 20,
+      "abs_sum": 88.62931060791016,
+      "sq_sum": 446.28887939453125,
+      "abs_rel_sum": 26.797382354736328,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000020",
+      "count": 12,
+      "abs_sum": 94.36441040039062,
+      "sq_sum": 847.752685546875,
+      "abs_rel_sum": 21.669143676757812,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000021",
+      "count": 36,
+      "abs_sum": 257.1643371582031,
+      "sq_sum": 1939.879150390625,
+      "abs_rel_sum": 63.166221618652344,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000023",
+      "count": 33,
+      "abs_sum": 196.4584197998047,
+      "sq_sum": 1222.272705078125,
+      "abs_rel_sum": 60.06673049926758,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000024",
+      "count": 42,
+      "abs_sum": 236.0579833984375,
+      "sq_sum": 1358.8466796875,
+      "abs_rel_sum": 80.3807373046875,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000025",
+      "count": 13,
+      "abs_sum": 101.84774780273438,
+      "sq_sum": 854.7671508789062,
+      "abs_rel_sum": 21.736392974853516,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000029",
+      "count": 15,
+      "abs_sum": 32.13299560546875,
+      "sq_sum": 75.23699951171875,
+      "abs_rel_sum": 6.378143310546875,
+      "delta1_sum": 5.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000030",
+      "count": 11,
+      "abs_sum": 106.3587875366211,
+      "sq_sum": 1028.5689697265625,
+      "abs_rel_sum": 22.11554527282715,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000040",
+      "count": 19,
+      "abs_sum": 73.95271301269531,
+      "sq_sum": 292.0384826660156,
+      "abs_rel_sum": 38.46308135986328,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000049",
+      "count": 15,
+      "abs_sum": 92.7403564453125,
+      "sq_sum": 595.7564697265625,
+      "abs_rel_sum": 30.091468811035156,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000051",
+      "count": 15,
+      "abs_sum": 69.06038665771484,
+      "sq_sum": 329.7215881347656,
+      "abs_rel_sum": 30.71810531616211,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000052",
+      "count": 18,
+      "abs_sum": 77.48478698730469,
+      "sq_sum": 337.3431091308594,
+      "abs_rel_sum": 37.512847900390625,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000064",
+      "count": 334,
+      "abs_sum": 5079.14453125,
+      "sq_sum": 120961.6640625,
+      "abs_rel_sum": 641.83251953125,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000065",
+      "count": 570,
+      "abs_sum": 7631.39306640625,
+      "sq_sum": 127861.109375,
+      "abs_rel_sum": 994.3197021484375,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000066",
+      "count": 460,
+      "abs_sum": 10396.7607421875,
+      "sq_sum": 385761.625,
+      "abs_rel_sum": 1436.91552734375,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000067",
+      "count": 210,
+      "abs_sum": 2262.0576171875,
+      "sq_sum": 27847.7421875,
+      "abs_rel_sum": 349.95355224609375,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000068",
+      "count": 37,
+      "abs_sum": 613.2783813476562,
+      "sq_sum": 10987.4775390625,
+      "abs_rel_sum": 100.35739135742188,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000082",
+      "count": 25,
+      "abs_sum": 78.51070404052734,
+      "sq_sum": 263.7474060058594,
+      "abs_rel_sum": 39.51805114746094,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-3250",
+      "frame_id": "000119",
+      "count": 11,
+      "abs_sum": 43.174468994140625,
+      "sq_sum": 172.69305419921875,
+      "abs_rel_sum": 19.760719299316406,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-4100",
+      "frame_id": "000013",
+      "count": 6,
+      "abs_sum": 28.5631103515625,
+      "sq_sum": 136.0302734375,
+      "abs_rel_sum": 9.174158096313477,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-4100",
+      "frame_id": "000021",
+      "count": 11,
+      "abs_sum": 39.64362335205078,
+      "sq_sum": 142.88990783691406,
+      "abs_rel_sum": 19.070343017578125,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-4100",
+      "frame_id": "000042",
+      "count": 7,
+      "abs_sum": 12.504104614257812,
+      "sq_sum": 33.12938690185547,
+      "abs_rel_sum": 0.16188839077949524,
+      "delta1_sum": 7.0
+    },
+    {
+      "sequence_id": "mascoma-20221012-4100",
+      "frame_id": "000106",
+      "count": 11,
+      "abs_sum": 38.67031478881836,
+      "sq_sum": 186.17250061035156,
+      "abs_rel_sum": 0.6040423512458801,
+      "delta1_sum": 11.0
+    },
+    {
+      "sequence_id": "sunapee-20210827-910",
+      "frame_id": "000053",
+      "count": 22,
+      "abs_sum": 363.8851318359375,
+      "sq_sum": 8184.0361328125,
+      "abs_rel_sum": 35.850677490234375,
+      "delta1_sum": 2.0
+    },
+    {
+      "sequence_id": "sunapee-20210827-910",
+      "frame_id": "000054",
+      "count": 31,
+      "abs_sum": 631.0533447265625,
+      "sq_sum": 20813.59375,
+      "abs_rel_sum": 58.53578186035156,
+      "delta1_sum": 5.0
+    },
+    {
+      "sequence_id": "sunapee-20210827-910",
+      "frame_id": "000055",
+      "count": 28,
+      "abs_sum": 613.6927490234375,
+      "sq_sum": 21077.302734375,
+      "abs_rel_sum": 53.103431701660156,
+      "delta1_sum": 3.0
+    },
+    {
+      "sequence_id": "sunapee-20210827-910",
+      "frame_id": "000056",
+      "count": 25,
+      "abs_sum": 601.7706298828125,
+      "sq_sum": 19263.32421875,
+      "abs_rel_sum": 53.75957107543945,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "sunapee-20210827-910",
+      "frame_id": "000057",
+      "count": 27,
+      "abs_sum": 656.0487670898438,
+      "sq_sum": 21617.353515625,
+      "abs_rel_sum": 60.005714416503906,
+      "delta1_sum": 1.0
+    },
+    {
+      "sequence_id": "sunapee-20210827-910",
+      "frame_id": "000058",
+      "count": 39,
+      "abs_sum": 768.3515625,
+      "sq_sum": 21548.05859375,
+      "abs_rel_sum": 74.11500549316406,
+      "delta1_sum": 2.0
+    },
+    {
+      "sequence_id": "sunapee-20210827-910",
+      "frame_id": "000059",
+      "count": 16,
+      "abs_sum": 437.1454162597656,
+      "sq_sum": 15014.578125,
+      "abs_rel_sum": 40.29325866699219,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "sunapee-20210827-910",
+      "frame_id": "000084",
+      "count": 12,
+      "abs_sum": 249.19541931152344,
+      "sq_sum": 6264.5615234375,
+      "abs_rel_sum": 14.425872802734375,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "sunapee-20210827-910",
+      "frame_id": "000086",
+      "count": 11,
+      "abs_sum": 144.32135009765625,
+      "sq_sum": 2281.671142578125,
+      "abs_rel_sum": 8.932111740112305,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "sunapee-20210827-910",
+      "frame_id": "000087",
+      "count": 18,
+      "abs_sum": 305.39593505859375,
+      "sq_sum": 6009.1708984375,
+      "abs_rel_sum": 19.4149227142334,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "sunapee-20210827-910",
+      "frame_id": "000088",
+      "count": 15,
+      "abs_sum": 278.1066589355469,
+      "sq_sum": 5872.1787109375,
+      "abs_rel_sum": 17.74500274658203,
+      "delta1_sum": 0.0
+    },
+    {
+      "sequence_id": "sunapee-20210827-910",
+      "frame_id": "000089",
+      "count": 15,
+      "abs_sum": 270.5889892578125,
+      "sq_sum": 6050.9697265625,
+      "abs_rel_sum": 17.910690307617188,
+      "delta1_sum": 0.0
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+-r src/vitis/pc_app/requirements.txt
+torch
+torchvision
+matplotlib

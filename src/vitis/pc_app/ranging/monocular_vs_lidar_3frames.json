@@ -1,0 +1,67 @@
+{
+  "comparison_definition": "monocular inner-box median forward Z vs selected LiDAR ship-surface median forward Z",
+  "sample_count": 3,
+  "mae_z_m": 26.770135243733723,
+  "rmse_z_m": 26.776122064992794,
+  "mean_abs_relative_error_z": 0.6143170401497958,
+  "projected_lidar_point_metrics": {
+    "count": 834,
+    "mae_m": 28.312449015015893,
+    "rmse_m": 28.65332684296291,
+    "abs_relative_error": 0.6226992822455488
+  },
+  "rows": [
+    {
+      "board_frame_id": 0,
+      "image": "012000.png",
+      "box_index": 0,
+      "lidar_forward_z_m": 43.505393981933594,
+      "lidar_radial_m": 48.771995544433594,
+      "monocular_forward_z_m": 16.879352569580078,
+      "absolute_error_z_m": 26.626041412353516,
+      "absolute_relative_error_z": 0.6120170161752922,
+      "monocular_confidence": 0.769719882454002,
+      "lidar_points": 268,
+      "projected_point_count": 268,
+      "projected_point_prediction_median_m": 16.6582612991333,
+      "projected_point_mae_m": 27.60246139853748,
+      "projected_point_rmse_m": 27.864107452447968,
+      "projected_point_abs_relative_error": 0.6139030677459174
+    },
+    {
+      "board_frame_id": 1,
+      "image": "012010.png",
+      "box_index": 0,
+      "lidar_forward_z_m": 43.41065979003906,
+      "lidar_radial_m": 48.676841735839844,
+      "monocular_forward_z_m": 17.250596046447754,
+      "absolute_error_z_m": 26.16006374359131,
+      "absolute_relative_error_z": 0.6026184322034643,
+      "monocular_confidence": 0.7816792133621536,
+      "lidar_points": 275,
+      "projected_point_count": 275,
+      "projected_point_prediction_median_m": 16.53852653503418,
+      "projected_point_mae_m": 27.842678767117587,
+      "projected_point_rmse_m": 28.055014189322975,
+      "projected_point_abs_relative_error": 0.6191807430133345
+    },
+    {
+      "board_frame_id": 2,
+      "image": "012020.png",
+      "box_index": 0,
+      "lidar_forward_z_m": 43.80648422241211,
+      "lidar_radial_m": 48.865699768066406,
+      "monocular_forward_z_m": 16.28218364715576,
+      "absolute_error_z_m": 27.524300575256348,
+      "absolute_relative_error_z": 0.6283156720706308,
+      "monocular_confidence": 0.8254255381479969,
+      "lidar_points": 291,
+      "projected_point_count": 291,
+      "projected_point_prediction_median_m": 16.24729347229004,
+      "projected_point_mae_m": 29.410261727690287,
+      "projected_point_rmse_m": 29.902443526850664,
+      "projected_point_abs_relative_error": 0.6341253433271989
+    }
+  ],
+  "warning": "Only three reference frames; descriptive check, not a statistically valid accuracy claim."
+}

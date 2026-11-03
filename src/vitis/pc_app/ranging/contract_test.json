@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "mode": "PC reference contract test; no board or serial was involved",
+  "tested": [
+    "current reference boxes",
+    "416 coordinate mapping",
+    "unknown image",
+    "wrong sequence",
+    "invalid/empty boxes",
+    "missing point support",
+    "no stale distance reuse"
+  ],
+  "frames": [
+    {
+      "board_frame_id": 0,
+      "measurements": [
+        {
+          "track_id": null,
+          "object_id": "det_0",
+          "distance_m": 48.771995544433594,
+          "distance_value": 48.771995544433594,
+          "units": "m",
+          "valid": true,
+          "reason": null,
+          "valid_points": 268,
+          "label": "48.8 m",
+          "distance_source": "paired_observed_LiDAR_XYZ",
+          "box_source": "pc_reference_contract_test",
+          "distance_definition": "median_camera_to_visible_surface_radial_distance",
+          "dataset_frame_id": 12000,
+          "image_sha256": "1724f4559f4a8aa3d462900b5b7679867b32f4fb267f277023a5a25b8afd50ac",
+          "quality_fields": {
+            "radial_p10_m": 46.06427001953125,
+            "radial_p90_m": 53.4366340637207
+          },
+          "independent_target_distance_accuracy_verified": false
+        }
+      ]
+    },
+    {
+      "board_frame_id": 1,
+      "measurements": [
+        {
+          "track_id": null,
+          "object_id": "det_0",
+          "distance_m": 48.676841735839844,
+          "distance_value": 48.676841735839844,
+          "units": "m",
+          "valid": true,
+          "reason": null,
+          "valid_points": 275,
+          "label": "48.7 m",
+          "distance_source": "paired_observed_LiDAR_XYZ",
+          "box_source": "pc_reference_contract_test",
+          "distance_definition": "median_camera_to_visible_surface_radial_distance",
+          "dataset_frame_id": 12010,
+          "image_sha256": "6cf6cf18fbd856d16828cece0bb4a266803095530c64e72a83dc38b5393ceb9b",
+          "quality_fields": {
+            "radial_p10_m": 46.045921325683594,
+            "radial_p90_m": 53.86930847167969
+          },
+          "independent_target_distance_accuracy_verified": false
+        }
+      ]
+    },
+    {
+      "board_frame_id": 2,
+      "measurements": [
+        {
+          "track_id": null,
+          "object_id": "det_0",
+          "distance_m": 48.865699768066406,
+          "distance_value": 48.865699768066406,
+          "units": "m",
+          "valid": true,
+          "reason": null,
+          "valid_points": 291,
+          "label": "48.9 m",
+          "distance_source": "paired_observed_LiDAR_XYZ",
+          "box_source": "pc_reference_contract_test",
+          "distance_definition": "median_camera_to_visible_surface_radial_distance",
+          "dataset_frame_id": 12020,
+          "image_sha256": "ab375aa89e3cead116d505aa030c93349113f3a9a0dc1020bcfaa8265bac2af5",
+          "quality_fields": {
+            "radial_p10_m": 45.846099853515625,
+            "radial_p90_m": 58.761863708496094
+          },
+          "independent_target_distance_accuracy_verified": false
+        }
+      ]
+    }
+  ]
+}

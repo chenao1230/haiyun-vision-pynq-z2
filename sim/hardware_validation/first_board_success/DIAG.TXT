@@ -1,0 +1,156 @@
+=== DIAGNOSTIC START: SD mounted, application entered ===
+BEFORE yolo_test
+ALLOCATE image/output buffers
+READ BEGIN yolo_test/img.bin floats=519168
+READ OK yolo_test/img.bin
+INIT accelerator
+INIT accelerator OK; allocate network
+LOAD weights
+READ BEGIN folded_weights/BasicConv1/w.bin floats=864
+READ OK folded_weights/BasicConv1/w.bin
+READ BEGIN folded_weights/BasicConv1/b.bin floats=32
+READ OK folded_weights/BasicConv1/b.bin
+READ BEGIN folded_weights/BasicConv2/w.bin floats=18432
+READ OK folded_weights/BasicConv2/w.bin
+READ BEGIN folded_weights/BasicConv2/b.bin floats=64
+READ OK folded_weights/BasicConv2/b.bin
+READ BEGIN folded_weights/BasicConv3/w.bin floats=2359296
+READ OK folded_weights/BasicConv3/w.bin
+READ BEGIN folded_weights/BasicConv3/b.bin floats=512
+READ OK folded_weights/BasicConv3/b.bin
+READ BEGIN folded_weights/ResBlock1/w1.bin floats=36864
+READ OK folded_weights/ResBlock1/w1.bin
+READ BEGIN folded_weights/ResBlock1/b1.bin floats=64
+READ OK folded_weights/ResBlock1/b1.bin
+READ BEGIN folded_weights/ResBlock1/w2.bin floats=9216
+READ OK folded_weights/ResBlock1/w2.bin
+READ BEGIN folded_weights/ResBlock1/b2.bin floats=32
+READ OK folded_weights/ResBlock1/b2.bin
+READ BEGIN folded_weights/ResBlock1/w3.bin floats=9216
+READ OK folded_weights/ResBlock1/w3.bin
+READ BEGIN folded_weights/ResBlock1/b3.bin floats=32
+READ OK folded_weights/ResBlock1/b3.bin
+READ BEGIN folded_weights/ResBlock1/w4.bin floats=4096
+READ OK folded_weights/ResBlock1/w4.bin
+READ BEGIN folded_weights/ResBlock1/b4.bin floats=64
+READ OK folded_weights/ResBlock1/b4.bin
+READ BEGIN folded_weights/ResBlock2/w1.bin floats=147456
+READ OK folded_weights/ResBlock2/w1.bin
+READ BEGIN folded_weights/ResBlock2/b1.bin floats=128
+READ OK folded_weights/ResBlock2/b1.bin
+READ BEGIN folded_weights/ResBlock2/w2.bin floats=36864
+READ OK folded_weights/ResBlock2/w2.bin
+READ BEGIN folded_weights/ResBlock2/b2.bin floats=64
+READ OK folded_weights/ResBlock2/b2.bin
+READ BEGIN folded_weights/ResBlock2/w3.bin floats=36864
+READ OK folded_weights/ResBlock2/w3.bin
+READ BEGIN folded_weights/ResBlock2/b3.bin floats=64
+READ OK folded_weights/ResBlock2/b3.bin
+READ BEGIN folded_weights/ResBlock2/w4.bin floats=16384
+READ OK folded_weights/ResBlock2/w4.bin
+READ BEGIN folded_weights/ResBlock2/b4.bin floats=128
+READ OK folded_weights/ResBlock2/b4.bin
+READ BEGIN folded_weights/ResBlock3/w1.bin floats=589824
+READ OK folded_weights/ResBlock3/w1.bin
+READ BEGIN folded_weights/ResBlock3/b1.bin floats=256
+READ OK folded_weights/ResBlock3/b1.bin
+READ BEGIN folded_weights/ResBlock3/w2.bin floats=147456
+READ OK folded_weights/ResBlock3/w2.bin
+READ BEGIN folded_weights/ResBlock3/b2.bin floats=128
+READ OK folded_weights/ResBlock3/b2.bin
+READ BEGIN folded_weights/ResBlock3/w3.bin floats=147456
+READ OK folded_weights/ResBlock3/w3.bin
+READ BEGIN folded_weights/ResBlock3/b3.bin floats=128
+READ OK folded_weights/ResBlock3/b3.bin
+READ BEGIN folded_weights/ResBlock3/w4.bin floats=65536
+READ OK folded_weights/ResBlock3/w4.bin
+READ BEGIN folded_weights/ResBlock3/b4.bin floats=256
+READ OK folded_weights/ResBlock3/b4.bin
+READ BEGIN folded_weights/conv_forP5/w.bin floats=131072
+READ OK folded_weights/conv_forP5/w.bin
+READ BEGIN folded_weights/conv_forP5/b.bin floats=256
+READ OK folded_weights/conv_forP5/b.bin
+READ BEGIN folded_weights/yolo_headP4/w1.bin floats=884736
+READ OK folded_weights/yolo_headP4/w1.bin
+READ BEGIN folded_weights/yolo_headP4/b1.bin floats=256
+READ OK folded_weights/yolo_headP4/b1.bin
+READ BEGIN folded_weights/yolo_headP4/w2.bin floats=8448
+READ OK folded_weights/yolo_headP4/w2.bin
+READ BEGIN folded_weights/yolo_headP4/b2.bin floats=33
+READ OK folded_weights/yolo_headP4/b2.bin
+READ BEGIN folded_weights/yolo_headP5/w1.bin floats=1179648
+READ OK folded_weights/yolo_headP5/w1.bin
+READ BEGIN folded_weights/yolo_headP5/b1.bin floats=512
+READ OK folded_weights/yolo_headP5/b1.bin
+READ BEGIN folded_weights/yolo_headP5/w2.bin floats=16896
+READ OK folded_weights/yolo_headP5/w2.bin
+READ BEGIN folded_weights/yolo_headP5/b2.bin floats=33
+READ OK folded_weights/yolo_headP5/b2.bin
+READ BEGIN folded_weights/upsample/w.bin floats=32768
+READ OK folded_weights/upsample/w.bin
+READ BEGIN folded_weights/upsample/b.bin floats=128
+READ OK folded_weights/upsample/b.bin
+ALL WEIGHTS LOADED
+FORWARD BEGIN
+OP 1 BEGIN in=3 out=32 kernel=3 size=416 stride=2
+OP 1 OK
+OP 2 BEGIN in=32 out=64 kernel=3 size=208 stride=2
+OP 2 OK
+OP 3 BEGIN in=64 out=64 kernel=3 size=104 stride=1
+OP 3 OK
+OP 4 BEGIN in=32 out=32 kernel=3 size=104 stride=1
+OP 4 OK
+OP 5 BEGIN in=32 out=32 kernel=3 size=104 stride=1
+OP 5 OK
+OP 6 BEGIN in=64 out=64 kernel=1 size=104 stride=1
+OP 6 OK
+OP 7 BEGIN in=64 out=64 kernel=2 size=104 stride=0
+OP 7 OK
+OP 8 BEGIN in=64 out=64 kernel=2 size=104 stride=0
+OP 8 OK
+OP 9 BEGIN in=128 out=128 kernel=3 size=52 stride=1
+OP 9 OK
+OP 10 BEGIN in=64 out=64 kernel=3 size=52 stride=1
+OP 10 OK
+OP 11 BEGIN in=64 out=64 kernel=3 size=52 stride=1
+OP 11 OK
+OP 12 BEGIN in=128 out=128 kernel=1 size=52 stride=1
+OP 12 OK
+OP 13 BEGIN in=128 out=128 kernel=2 size=52 stride=0
+OP 13 OK
+OP 14 BEGIN in=128 out=128 kernel=2 size=52 stride=0
+OP 14 OK
+OP 15 BEGIN in=256 out=256 kernel=3 size=26 stride=1
+OP 15 OK
+OP 16 BEGIN in=128 out=128 kernel=3 size=26 stride=1
+OP 16 OK
+OP 17 BEGIN in=128 out=128 kernel=3 size=26 stride=1
+OP 17 OK
+OP 18 BEGIN in=256 out=256 kernel=1 size=26 stride=1
+OP 18 OK
+OP 19 BEGIN in=256 out=256 kernel=2 size=26 stride=0
+OP 19 OK
+OP 20 BEGIN in=256 out=256 kernel=2 size=26 stride=0
+OP 20 OK
+OP 21 BEGIN in=512 out=512 kernel=3 size=13 stride=1
+OP 21 OK
+OP 22 BEGIN in=512 out=256 kernel=1 size=13 stride=1
+OP 22 OK
+OP 23 BEGIN in=256 out=512 kernel=3 size=13 stride=1
+OP 23 OK
+OP 24 BEGIN in=512 out=33 kernel=1 size=13 stride=1
+OP 24 OK
+OP 25 BEGIN in=256 out=128 kernel=1 size=13 stride=1
+OP 25 OK
+OP 26 BEGIN in=128 out=128 kernel=0 size=13 stride=0
+OP 26 OK
+OP 27 BEGIN in=384 out=256 kernel=3 size=26 stride=1
+OP 27 OK
+OP 28 BEGIN in=256 out=33 kernel=1 size=26 stride=1
+OP 28 OK
+FORWARD OK
+WRITE BEGIN yolo_test/out0.bin floats=5577
+WRITE OK yolo_test/out0.bin
+WRITE BEGIN yolo_test/out1.bin floats=22308
+WRITE OK yolo_test/out1.bin
+DONE: both output files closed successfully

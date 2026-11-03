@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-11-03T20:34:56.971030",
+  "origin": "LIVE_BOARD_ETHERNET_BATCH",
+  "rules": {},
+  "status": "SUCCESS",
+  "finished_at": "2026-11-03T20:35:30.180174",
+  "frames": 12,
+  "events": 0,
+  "snapshot_errors": []
+}

@@ -1,0 +1,686 @@
+
+
+================================================================
+== Vivado HLS Report for 'load_weight_1'
+================================================================
+* Date:           Sat May 13 09:21:46 2023
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        top
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 5.50 ns | 5.500 ns |   0.69 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |        ?|        ?|        12|          1|          1|     ?|    yes   |
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 12
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 14
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 12, States = { 2 3 4 5 6 7 8 9 10 11 12 13 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 14 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 2 
+14 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.16>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%wt_buff_V727_1 = alloca i16"   --->   Operation 15 'alloca' 'wt_buff_V727_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%write_flag_1 = alloca i1"   --->   Operation 16 'alloca' 'write_flag_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%write_flag103_1 = alloca i1"   --->   Operation 17 'alloca' 'write_flag103_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%wt_buff_V726_1 = alloca i16"   --->   Operation 18 'alloca' 'wt_buff_V726_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%wt_buff_V_1 = alloca i16"   --->   Operation 19 'alloca' 'wt_buff_V_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%write_flag100_1 = alloca i1"   --->   Operation 20 'alloca' 'write_flag100_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%wt_buff_V725_1 = alloca i16"   --->   Operation 21 'alloca' 'wt_buff_V725_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%write_flag4_1 = alloca i1"   --->   Operation 22 'alloca' 'write_flag4_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%write_flag97_1 = alloca i1"   --->   Operation 23 'alloca' 'write_flag97_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%wt_buff_V7_1 = alloca i16"   --->   Operation 24 'alloca' 'wt_buff_V7_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%wt_buff_V16_1 = alloca i16"   --->   Operation 25 'alloca' 'wt_buff_V16_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%write_flag94_1 = alloca i1"   --->   Operation 26 'alloca' 'write_flag94_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%wt_buff_V624_1 = alloca i16"   --->   Operation 27 'alloca' 'wt_buff_V624_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%write_flag8_1 = alloca i1"   --->   Operation 28 'alloca' 'write_flag8_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%write_flag91_1 = alloca i1"   --->   Operation 29 'alloca' 'write_flag91_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%wt_buff_V623_1 = alloca i16"   --->   Operation 30 'alloca' 'wt_buff_V623_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%wt_buff_V2_1 = alloca i16"   --->   Operation 31 'alloca' 'wt_buff_V2_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%write_flag88_1 = alloca i1"   --->   Operation 32 'alloca' 'write_flag88_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%wt_buff_V622_1 = alloca i16"   --->   Operation 33 'alloca' 'wt_buff_V622_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%write_flag11_1 = alloca i1"   --->   Operation 34 'alloca' 'write_flag11_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%write_flag85_1 = alloca i1"   --->   Operation 35 'alloca' 'write_flag85_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%wt_buff_V6_1 = alloca i16"   --->   Operation 36 'alloca' 'wt_buff_V6_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%wt_buff_V3_1 = alloca i16"   --->   Operation 37 'alloca' 'wt_buff_V3_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%write_flag82_1 = alloca i1"   --->   Operation 38 'alloca' 'write_flag82_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%wt_buff_V521_1 = alloca i16"   --->   Operation 39 'alloca' 'wt_buff_V521_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%write_flag14_1 = alloca i1"   --->   Operation 40 'alloca' 'write_flag14_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%write_flag79_1 = alloca i1"   --->   Operation 41 'alloca' 'write_flag79_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%wt_buff_V520_1 = alloca i16"   --->   Operation 42 'alloca' 'wt_buff_V520_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%wt_buff_V14_1 = alloca i16"   --->   Operation 43 'alloca' 'wt_buff_V14_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%write_flag76_1 = alloca i1"   --->   Operation 44 'alloca' 'write_flag76_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%wt_buff_V519_1 = alloca i16"   --->   Operation 45 'alloca' 'wt_buff_V519_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%write_flag18_1 = alloca i1"   --->   Operation 46 'alloca' 'write_flag18_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%write_flag73_1 = alloca i1"   --->   Operation 47 'alloca' 'write_flag73_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%wt_buff_V5_1 = alloca i16"   --->   Operation 48 'alloca' 'wt_buff_V5_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%wt_buff_V1520_1 = alloca i16"   --->   Operation 49 'alloca' 'wt_buff_V1520_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%write_flag70_1 = alloca i1"   --->   Operation 50 'alloca' 'write_flag70_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%wt_buff_V418_1 = alloca i16"   --->   Operation 51 'alloca' 'wt_buff_V418_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%write_flag23_1 = alloca i1"   --->   Operation 52 'alloca' 'write_flag23_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%write_flag67_1 = alloca i1"   --->   Operation 53 'alloca' 'write_flag67_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%wt_buff_V417_1 = alloca i16"   --->   Operation 54 'alloca' 'wt_buff_V417_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%wt_buff_V1625_1 = alloca i16"   --->   Operation 55 'alloca' 'wt_buff_V1625_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%write_flag64_1 = alloca i1"   --->   Operation 56 'alloca' 'write_flag64_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%wt_buff_V416_1 = alloca i16"   --->   Operation 57 'alloca' 'wt_buff_V416_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%write_flag27_1 = alloca i1"   --->   Operation 58 'alloca' 'write_flag27_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%write_flag61_1 = alloca i1"   --->   Operation 59 'alloca' 'write_flag61_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%wt_buff_V4_1 = alloca i16"   --->   Operation 60 'alloca' 'wt_buff_V4_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%wt_buff_V17_1 = alloca i16"   --->   Operation 61 'alloca' 'wt_buff_V17_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%write_flag58_1 = alloca i1"   --->   Operation 62 'alloca' 'write_flag58_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%wt_buff_V315_1 = alloca i16"   --->   Operation 63 'alloca' 'wt_buff_V315_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%write_flag30_1 = alloca i1"   --->   Operation 64 'alloca' 'write_flag30_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%write_flag55_1 = alloca i1"   --->   Operation 65 'alloca' 'write_flag55_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%wt_buff_V314_1 = alloca i16"   --->   Operation 66 'alloca' 'wt_buff_V314_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%wt_buff_V28_1 = alloca i16"   --->   Operation 67 'alloca' 'wt_buff_V28_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%write_flag52_1 = alloca i1"   --->   Operation 68 'alloca' 'write_flag52_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%wt_buff_V313_1 = alloca i16"   --->   Operation 69 'alloca' 'wt_buff_V313_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%write_flag34_1 = alloca i1"   --->   Operation 70 'alloca' 'write_flag34_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%write_flag49_1 = alloca i1"   --->   Operation 71 'alloca' 'write_flag49_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%wt_buff_V31247_1 = alloca i16"   --->   Operation 72 'alloca' 'wt_buff_V31247_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%wt_buff_V2936_1 = alloca i16"   --->   Operation 73 'alloca' 'wt_buff_V2936_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%write_flag45_1 = alloca i1"   --->   Operation 74 'alloca' 'write_flag45_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%wt_buff_V211_1 = alloca i16"   --->   Operation 75 'alloca' 'wt_buff_V211_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%write_flag38_1 = alloca i1"   --->   Operation 76 'alloca' 'write_flag38_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%write_flag41_1 = alloca i1"   --->   Operation 77 'alloca' 'write_flag41_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%wt_buff_V210_1 = alloca i16"   --->   Operation 78 'alloca' 'wt_buff_V210_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%ch_out_read = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ch_out)"   --->   Operation 79 'read' 'ch_out_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%ch_in_read = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ch_in)"   --->   Operation 80 'read' 'ch_in_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%m_read = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %m)"   --->   Operation 81 'read' 'm_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%n_read = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %n)"   --->   Operation 82 'read' 'n_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%weight_V_offset_read = call i31 @_ssdm_op_Read.ap_auto.i31(i31 %weight_V_offset)"   --->   Operation 83 'read' 'weight_V_offset_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%wt_buff_7_3_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_7_3_V_read)"   --->   Operation 84 'read' 'wt_buff_7_3_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%wt_buff_7_2_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_7_2_V_read)"   --->   Operation 85 'read' 'wt_buff_7_2_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%wt_buff_7_1_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_7_1_V_read)"   --->   Operation 86 'read' 'wt_buff_7_1_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%wt_buff_7_0_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_7_0_V_read)"   --->   Operation 87 'read' 'wt_buff_7_0_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 88 [1/1] (0.00ns)   --->   "%wt_buff_6_3_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_6_3_V_read)"   --->   Operation 88 'read' 'wt_buff_6_3_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 89 [1/1] (0.00ns)   --->   "%wt_buff_6_2_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_6_2_V_read)"   --->   Operation 89 'read' 'wt_buff_6_2_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 90 [1/1] (0.00ns)   --->   "%wt_buff_6_1_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_6_1_V_read)"   --->   Operation 90 'read' 'wt_buff_6_1_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 91 [1/1] (0.00ns)   --->   "%wt_buff_6_0_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_6_0_V_read)"   --->   Operation 91 'read' 'wt_buff_6_0_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 92 [1/1] (0.00ns)   --->   "%wt_buff_5_3_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_5_3_V_read)"   --->   Operation 92 'read' 'wt_buff_5_3_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 93 [1/1] (0.00ns)   --->   "%wt_buff_5_2_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_5_2_V_read)"   --->   Operation 93 'read' 'wt_buff_5_2_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 94 [1/1] (0.00ns)   --->   "%wt_buff_5_1_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_5_1_V_read)"   --->   Operation 94 'read' 'wt_buff_5_1_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 95 [1/1] (0.00ns)   --->   "%wt_buff_5_0_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_5_0_V_read)"   --->   Operation 95 'read' 'wt_buff_5_0_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 96 [1/1] (0.00ns)   --->   "%wt_buff_4_3_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_4_3_V_read)"   --->   Operation 96 'read' 'wt_buff_4_3_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 97 [1/1] (0.00ns)   --->   "%wt_buff_4_2_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_4_2_V_read)"   --->   Operation 97 'read' 'wt_buff_4_2_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 98 [1/1] (0.00ns)   --->   "%wt_buff_4_1_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_4_1_V_read)"   --->   Operation 98 'read' 'wt_buff_4_1_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 99 [1/1] (0.00ns)   --->   "%wt_buff_4_0_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_4_0_V_read)"   --->   Operation 99 'read' 'wt_buff_4_0_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 100 [1/1] (0.00ns)   --->   "%wt_buff_3_3_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_3_3_V_read)"   --->   Operation 100 'read' 'wt_buff_3_3_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 101 [1/1] (0.00ns)   --->   "%wt_buff_3_2_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_3_2_V_read)"   --->   Operation 101 'read' 'wt_buff_3_2_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 102 [1/1] (0.00ns)   --->   "%wt_buff_3_1_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_3_1_V_read)"   --->   Operation 102 'read' 'wt_buff_3_1_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 103 [1/1] (0.00ns)   --->   "%wt_buff_3_0_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_3_0_V_read)"   --->   Operation 103 'read' 'wt_buff_3_0_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 104 [1/1] (0.00ns)   --->   "%wt_buff_2_3_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_2_3_V_read)"   --->   Operation 104 'read' 'wt_buff_2_3_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 105 [1/1] (0.00ns)   --->   "%wt_buff_2_2_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_2_2_V_read)"   --->   Operation 105 'read' 'wt_buff_2_2_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 106 [1/1] (0.00ns)   --->   "%wt_buff_2_1_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_2_1_V_read)"   --->   Operation 106 'read' 'wt_buff_2_1_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 107 [1/1] (0.00ns)   --->   "%wt_buff_2_0_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_2_0_V_read)"   --->   Operation 107 'read' 'wt_buff_2_0_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 108 [1/1] (0.00ns)   --->   "%wt_buff_1_3_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_1_3_V_read)"   --->   Operation 108 'read' 'wt_buff_1_3_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 109 [1/1] (0.00ns)   --->   "%wt_buff_1_2_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_1_2_V_read)"   --->   Operation 109 'read' 'wt_buff_1_2_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 110 [1/1] (0.00ns)   --->   "%wt_buff_1_1_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_1_1_V_read)"   --->   Operation 110 'read' 'wt_buff_1_1_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 111 [1/1] (0.00ns)   --->   "%wt_buff_1_0_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_1_0_V_read)"   --->   Operation 111 'read' 'wt_buff_1_0_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 112 [1/1] (0.00ns)   --->   "%wt_buff_0_3_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_0_3_V_read)"   --->   Operation 112 'read' 'wt_buff_0_3_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 113 [1/1] (0.00ns)   --->   "%wt_buff_0_2_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_0_2_V_read)"   --->   Operation 113 'read' 'wt_buff_0_2_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 114 [1/1] (0.00ns)   --->   "%wt_buff_0_1_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_0_1_V_read)"   --->   Operation 114 'read' 'wt_buff_0_1_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 115 [1/1] (0.00ns)   --->   "%wt_buff_0_0_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %wt_buff_0_0_V_read)"   --->   Operation 115 'read' 'wt_buff_0_0_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 116 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %weight_V, [6 x i8]* @p_str334, i32 0, i32 0, [1 x i8]* @p_str132, i32 0, i32 65536, [3 x i8]* @p_str940, [6 x i8]* @p_str536, [1 x i8]* @p_str132, i32 16, i32 16, i32 256, i32 16, [1 x i8]* @p_str132, [1 x i8]* @p_str132)"   --->   Operation 116 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 117 [1/1] (0.00ns)   --->   "%zext_ln33 = zext i16 %ch_out_read to i17" [src/pwconv.cpp:33]   --->   Operation 117 'zext' 'zext_ln33' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 118 [1/1] (0.00ns)   --->   "%zext_ln33_4 = zext i16 %m_read to i17" [src/pwconv.cpp:33]   --->   Operation 118 'zext' 'zext_ln33_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 119 [1/1] (1.54ns)   --->   "%sub_ln33 = sub i17 %zext_ln33, %zext_ln33_4" [src/pwconv.cpp:33]   --->   Operation 119 'sub' 'sub_ln33' <Predicate = true> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 120 [1/1] (0.00ns)   --->   "%tmp_39 = call i14 @_ssdm_op_PartSelect.i14.i17.i32.i32(i17 %sub_ln33, i32 3, i32 16)" [src/pwconv.cpp:33]   --->   Operation 120 'partselect' 'tmp_39' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 121 [1/1] (1.98ns)   --->   "%icmp_ln33 = icmp slt i14 %tmp_39, 1" [src/pwconv.cpp:33]   --->   Operation 121 'icmp' 'icmp_ln33' <Predicate = true> <Delay = 1.98> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.98> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 122 [1/1] (1.54ns)   --->   "%sub_ln33_1 = sub i16 %ch_out_read, %m_read" [src/pwconv.cpp:33]   --->   Operation 122 'sub' 'sub_ln33_1' <Predicate = true> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 123 [1/1] (0.00ns)   --->   "%zext_ln37 = zext i16 %ch_in_read to i32" [src/pwconv.cpp:37]   --->   Operation 123 'zext' 'zext_ln37' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 124 [1/1] (0.00ns)   --->   "%zext_ln37_1 = zext i16 %n_read to i33" [src/pwconv.cpp:37]   --->   Operation 124 'zext' 'zext_ln37_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 125 [1/1] (0.62ns)   --->   "%select_ln33 = select i1 %icmp_ln33, i16 %sub_ln33_1, i16 8" [src/pwconv.cpp:33]   --->   Operation 125 'select' 'select_ln33' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 126 [1/1] (0.00ns)   --->   "%tmp_2 = call i18 @_ssdm_op_BitConcatenate.i18.i16.i2(i16 %select_ln33, i2 0)" [src/pwconv.cpp:33]   --->   Operation 126 'bitconcatenate' 'tmp_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 127 [1/1] (0.00ns)   --->   "%zext_ln34 = zext i31 %weight_V_offset_read to i33" [src/pwconv.cpp:34]   --->   Operation 127 'zext' 'zext_ln34' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 128 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag41_1" [src/pwconv.cpp:34]   --->   Operation 128 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 129 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag38_1" [src/pwconv.cpp:34]   --->   Operation 129 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 130 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag45_1" [src/pwconv.cpp:34]   --->   Operation 130 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 131 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag49_1" [src/pwconv.cpp:34]   --->   Operation 131 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 132 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag34_1" [src/pwconv.cpp:34]   --->   Operation 132 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 133 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag52_1" [src/pwconv.cpp:34]   --->   Operation 133 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 134 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag55_1" [src/pwconv.cpp:34]   --->   Operation 134 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 135 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag30_1" [src/pwconv.cpp:34]   --->   Operation 135 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 136 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag58_1" [src/pwconv.cpp:34]   --->   Operation 136 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 137 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag61_1" [src/pwconv.cpp:34]   --->   Operation 137 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 138 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag27_1" [src/pwconv.cpp:34]   --->   Operation 138 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 139 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag64_1" [src/pwconv.cpp:34]   --->   Operation 139 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 140 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag67_1" [src/pwconv.cpp:34]   --->   Operation 140 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 141 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag23_1" [src/pwconv.cpp:34]   --->   Operation 141 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 142 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag70_1" [src/pwconv.cpp:34]   --->   Operation 142 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 143 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag73_1" [src/pwconv.cpp:34]   --->   Operation 143 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 144 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag18_1" [src/pwconv.cpp:34]   --->   Operation 144 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 145 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag76_1" [src/pwconv.cpp:34]   --->   Operation 145 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 146 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag79_1" [src/pwconv.cpp:34]   --->   Operation 146 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 147 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag14_1" [src/pwconv.cpp:34]   --->   Operation 147 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 148 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag82_1" [src/pwconv.cpp:34]   --->   Operation 148 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 149 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag85_1" [src/pwconv.cpp:34]   --->   Operation 149 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 150 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag11_1" [src/pwconv.cpp:34]   --->   Operation 150 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 151 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag88_1" [src/pwconv.cpp:34]   --->   Operation 151 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 152 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag91_1" [src/pwconv.cpp:34]   --->   Operation 152 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 153 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag8_1" [src/pwconv.cpp:34]   --->   Operation 153 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 154 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag94_1" [src/pwconv.cpp:34]   --->   Operation 154 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 155 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag97_1" [src/pwconv.cpp:34]   --->   Operation 155 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 156 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag4_1" [src/pwconv.cpp:34]   --->   Operation 156 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 157 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag100_1" [src/pwconv.cpp:34]   --->   Operation 157 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 158 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag103_1" [src/pwconv.cpp:34]   --->   Operation 158 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 159 [1/1] (0.46ns)   --->   "store i1 false, i1* %write_flag_1" [src/pwconv.cpp:34]   --->   Operation 159 'store' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 160 [1/1] (0.46ns)   --->   "br label %.preheader" [src/pwconv.cpp:34]   --->   Operation 160 'br' <Predicate = true> <Delay = 0.46>
+
+State 2 <SV = 1> <Delay = 3.15>
+ST_2 : Operation 161 [1/1] (0.00ns)   --->   "%indvar_flatten = phi i18 [ 0, %0 ], [ %add_ln34, %hls_label_1_end ]" [src/pwconv.cpp:34]   --->   Operation 161 'phi' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 162 [1/1] (0.00ns)   --->   "%mm_0 = phi i16 [ 0, %0 ], [ %select_ln37_1, %hls_label_1_end ]" [src/pwconv.cpp:37]   --->   Operation 162 'phi' 'mm_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 163 [1/1] (0.00ns)   --->   "%nn1_0 = phi i3 [ 0, %0 ], [ %nn, %hls_label_1_end ]"   --->   Operation 163 'phi' 'nn1_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 164 [1/1] (2.08ns)   --->   "%icmp_ln34 = icmp eq i18 %indvar_flatten, %tmp_2" [src/pwconv.cpp:34]   --->   Operation 164 'icmp' 'icmp_ln34' <Predicate = true> <Delay = 2.08> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.98> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 165 [1/1] (1.56ns)   --->   "%add_ln34 = add i18 %indvar_flatten, 1" [src/pwconv.cpp:34]   --->   Operation 165 'add' 'add_ln34' <Predicate = true> <Delay = 1.56> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 166 [1/1] (0.00ns)   --->   "br i1 %icmp_ln34, label %1, label %hls_label_1_begin" [src/pwconv.cpp:34]   --->   Operation 166 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 167 [1/1] (1.54ns)   --->   "%mm = add i16 1, %mm_0" [src/pwconv.cpp:34]   --->   Operation 167 'add' 'mm' <Predicate = (!icmp_ln34)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 168 [1/1] (0.98ns)   --->   "%icmp_ln35 = icmp eq i3 %nn1_0, -4" [src/pwconv.cpp:35]   --->   Operation 168 'icmp' 'icmp_ln35' <Predicate = (!icmp_ln34)> <Delay = 0.98> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.98> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 169 [1/1] (0.79ns)   --->   "%select_ln37 = select i1 %icmp_ln35, i3 0, i3 %nn1_0" [src/pwconv.cpp:37]   --->   Operation 169 'select' 'select_ln37' <Predicate = (!icmp_ln34)> <Delay = 0.79> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 170 [1/1] (0.62ns)   --->   "%select_ln37_1 = select i1 %icmp_ln35, i16 %mm, i16 %mm_0" [src/pwconv.cpp:37]   --->   Operation 170 'select' 'select_ln37_1' <Predicate = (!icmp_ln34)> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 171 [1/1] (0.00ns)   --->   "%trunc_ln37 = trunc i16 %select_ln37_1 to i3" [src/pwconv.cpp:37]   --->   Operation 171 'trunc' 'trunc_ln37' <Predicate = (!icmp_ln34)> <Delay = 0.00>
+ST_2 : Operation 172 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str212)" [src/pwconv.cpp:35]   --->   Operation 172 'specregionbegin' 'tmp' <Predicate = (!icmp_ln34)> <Delay = 0.00>
+ST_2 : Operation 173 [1/1] (0.00ns)   --->   "%empty_32 = trunc i18 %indvar_flatten to i2" [src/pwconv.cpp:34]   --->   Operation 173 'trunc' 'empty_32' <Predicate = (!icmp_ln34)> <Delay = 0.00>
+ST_2 : Operation 174 [1/1] (0.00ns)   --->   "%tmp_40 = call i18 @_ssdm_op_BitConcatenate.i18.i16.i2(i16 0, i2 %empty_32)" [src/pwconv.cpp:34]   --->   Operation 174 'bitconcatenate' 'tmp_40' <Predicate = (!icmp_ln34)> <Delay = 0.00>
+ST_2 : Operation 175 [1/1] (2.08ns)   --->   "%empty_33 = icmp eq i18 %tmp_40, 0" [src/pwconv.cpp:34]   --->   Operation 175 'icmp' 'empty_33' <Predicate = (!icmp_ln34)> <Delay = 2.08> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.98> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 176 [1/1] (0.00ns)   --->   "br i1 %empty_33, label %ReqBB, label %BurstBB" [src/pwconv.cpp:34]   --->   Operation 176 'br' <Predicate = (!icmp_ln34)> <Delay = 0.00>
+ST_2 : Operation 177 [1/1] (0.00ns)   --->   "%trunc_ln203 = trunc i3 %select_ln37 to i2" [src/pwconv.cpp:37]   --->   Operation 177 'trunc' 'trunc_ln203' <Predicate = (!icmp_ln34)> <Delay = 0.00>
+ST_2 : Operation 178 [1/1] (0.97ns)   --->   "switch i3 %trunc_ln37, label %branch7 [
+    i3 0, label %branch0
+    i3 1, label %branch1
+    i3 2, label %branch2
+    i3 3, label %branch3
+    i3 -4, label %branch4
+    i3 -3, label %branch5
+    i3 -2, label %branch6
+  ]" [src/pwconv.cpp:37]   --->   Operation 178 'switch' <Predicate = (!icmp_ln34)> <Delay = 0.97>
+ST_2 : Operation 179 [1/1] (0.96ns)   --->   "switch i2 %trunc_ln203, label %branch27 [
+    i2 0, label %branch6.hls_label_1_end_crit_edge
+    i2 1, label %branch25
+    i2 -2, label %branch26
+  ]" [src/pwconv.cpp:37]   --->   Operation 179 'switch' <Predicate = (!icmp_ln34 & trunc_ln37 == 6)> <Delay = 0.96>
+ST_2 : Operation 180 [1/1] (0.96ns)   --->   "switch i2 %trunc_ln203, label %branch23 [
+    i2 0, label %branch5.hls_label_1_end_crit_edge
+    i2 1, label %branch21
+    i2 -2, label %branch22
+  ]" [src/pwconv.cpp:37]   --->   Operation 180 'switch' <Predicate = (!icmp_ln34 & trunc_ln37 == 5)> <Delay = 0.96>
+ST_2 : Operation 181 [1/1] (0.96ns)   --->   "switch i2 %trunc_ln203, label %branch19 [
+    i2 0, label %branch4.hls_label_1_end_crit_edge
+    i2 1, label %branch17
+    i2 -2, label %branch18
+  ]" [src/pwconv.cpp:37]   --->   Operation 181 'switch' <Predicate = (!icmp_ln34 & trunc_ln37 == 4)> <Delay = 0.96>
+ST_2 : Operation 182 [1/1] (0.96ns)   --->   "switch i2 %trunc_ln203, label %branch15 [
+    i2 0, label %branch3.hls_label_1_end_crit_edge
+    i2 1, label %branch13
+    i2 -2, label %branch14
+  ]" [src/pwconv.cpp:37]   --->   Operation 182 'switch' <Predicate = (!icmp_ln34 & trunc_ln37 == 3)> <Delay = 0.96>
+ST_2 : Operation 183 [1/1] (0.96ns)   --->   "switch i2 %trunc_ln203, label %branch11 [
+    i2 0, label %branch2.hls_label_1_end_crit_edge
+    i2 1, label %branch9
+    i2 -2, label %branch10
+  ]" [src/pwconv.cpp:37]   --->   Operation 183 'switch' <Predicate = (!icmp_ln34 & trunc_ln37 == 2)> <Delay = 0.96>
+ST_2 : Operation 184 [1/1] (0.96ns)   --->   "switch i2 %trunc_ln203, label %branch745 [
+    i2 0, label %branch1.hls_label_1_end_crit_edge
+    i2 1, label %branch543
+    i2 -2, label %branch644
+  ]" [src/pwconv.cpp:37]   --->   Operation 184 'switch' <Predicate = (!icmp_ln34 & trunc_ln37 == 1)> <Delay = 0.96>
+ST_2 : Operation 185 [1/1] (0.96ns)   --->   "switch i2 %trunc_ln203, label %branch336 [
+    i2 0, label %branch0.hls_label_1_end_crit_edge
+    i2 1, label %branch134
+    i2 -2, label %branch235
+  ]" [src/pwconv.cpp:37]   --->   Operation 185 'switch' <Predicate = (!icmp_ln34 & trunc_ln37 == 0)> <Delay = 0.96>
+ST_2 : Operation 186 [1/1] (0.96ns)   --->   "switch i2 %trunc_ln203, label %branch31 [
+    i2 0, label %branch7.hls_label_1_end_crit_edge
+    i2 1, label %branch29
+    i2 -2, label %branch30
+  ]" [src/pwconv.cpp:37]   --->   Operation 186 'switch' <Predicate = (!icmp_ln34 & trunc_ln37 == 7)> <Delay = 0.96>
+ST_2 : Operation 187 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str212, i32 %tmp)" [src/pwconv.cpp:38]   --->   Operation 187 'specregionend' 'empty' <Predicate = (!icmp_ln34)> <Delay = 0.00>
+ST_2 : Operation 188 [1/1] (0.76ns)   --->   "%nn = add i3 %select_ln37, 1" [src/pwconv.cpp:35]   --->   Operation 188 'add' 'nn' <Predicate = (!icmp_ln34)> <Delay = 0.76> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 189 [1/1] (0.00ns)   --->   "br label %.preheader" [src/pwconv.cpp:35]   --->   Operation 189 'br' <Predicate = (!icmp_ln34)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 5.50>
+ST_3 : Operation 190 [1/1] (0.00ns)   --->   "%zext_ln37_2 = zext i16 %select_ln37_1 to i17" [src/pwconv.cpp:37]   --->   Operation 190 'zext' 'zext_ln37_2' <Predicate = (!icmp_ln34)> <Delay = 0.00>
+ST_3 : Operation 191 [1/1] (0.00ns) (grouped into DSP with root node mul_ln37)   --->   "%add_ln37 = add i17 %zext_ln37_2, %zext_ln33_4" [src/pwconv.cpp:37]   --->   Operation 191 'add' 'add_ln37' <Predicate = (!icmp_ln34)> <Delay = 0.00> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 1> <II = 1> <Delay = 5.50> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 192 [1/1] (0.00ns) (grouped into DSP with root node mul_ln37)   --->   "%zext_ln37_3 = zext i17 %add_ln37 to i32" [src/pwconv.cpp:37]   --->   Operation 192 'zext' 'zext_ln37_3' <Predicate = (!icmp_ln34)> <Delay = 0.00>
+ST_3 : Operation 193 [2/2] (5.50ns) (root node of the DSP)   --->   "%mul_ln37 = mul i32 %zext_ln37_3, %zext_ln37" [src/pwconv.cpp:37]   --->   Operation 193 'mul' 'mul_ln37' <Predicate = (!icmp_ln34)> <Delay = 5.50> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 1> <II = 1> <Delay = 5.50> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 194 [1/2] (0.00ns) (root node of the DSP)   --->   "%mul_ln37 = mul i32 %zext_ln37_3, %zext_ln37" [src/pwconv.cpp:37]   --->   Operation 194 'mul' 'mul_ln37' <Predicate = (!icmp_ln34)> <Delay = 0.00> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 1> <II = 1> <Delay = 5.50> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 5 <SV = 4> <Delay = 3.61>
+ST_5 : Operation 195 [1/1] (0.00ns)   --->   "%zext_ln37_4 = zext i32 %mul_ln37 to i33" [src/pwconv.cpp:37]   --->   Operation 195 'zext' 'zext_ln37_4' <Predicate = (!icmp_ln34)> <Delay = 0.00>
+ST_5 : Operation 196 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln37_2 = add i33 %zext_ln37_4, %zext_ln37_1" [src/pwconv.cpp:37]   --->   Operation 196 'add' 'add_ln37_2' <Predicate = (!icmp_ln34)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.80> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 197 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str111) nounwind" [src/pwconv.cpp:36]   --->   Operation 197 'specpipeline' <Predicate = (!icmp_ln34)> <Delay = 0.00>
+ST_5 : Operation 198 [1/1] (3.61ns) (root node of TernaryAdder)   --->   "%add_ln203 = add i33 %add_ln37_2, %zext_ln34" [src/pwconv.cpp:37]   --->   Operation 198 'add' 'add_ln203' <Predicate = (!icmp_ln34)> <Delay = 3.61> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.80> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 199 [1/1] (0.00ns)   --->   "%zext_ln203 = zext i33 %add_ln203 to i64" [src/pwconv.cpp:37]   --->   Operation 199 'zext' 'zext_ln203' <Predicate = (!icmp_ln34)> <Delay = 0.00>
+ST_5 : Operation 200 [1/1] (0.00ns)   --->   "%weight_V_addr = getelementptr i16* %weight_V, i64 %zext_ln203" [src/pwconv.cpp:37]   --->   Operation 200 'getelementptr' 'weight_V_addr' <Predicate = (!icmp_ln34)> <Delay = 0.00>
+
+State 6 <SV = 5> <Delay = 4.81>
+ST_6 : Operation 201 [7/7] (4.81ns)   --->   "%weight_V_addr_1_rd_r = call i1 @_ssdm_op_ReadReq.m_axi.i16P(i16* %weight_V_addr, i32 4)" [src/pwconv.cpp:37]   --->   Operation 201 'readreq' 'weight_V_addr_1_rd_r' <Predicate = (empty_33)> <Delay = 4.81> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 4.81>
+ST_7 : Operation 202 [6/7] (4.81ns)   --->   "%weight_V_addr_1_rd_r = call i1 @_ssdm_op_ReadReq.m_axi.i16P(i16* %weight_V_addr, i32 4)" [src/pwconv.cpp:37]   --->   Operation 202 'readreq' 'weight_V_addr_1_rd_r' <Predicate = (empty_33)> <Delay = 4.81> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 4.81>
+ST_8 : Operation 203 [5/7] (4.81ns)   --->   "%weight_V_addr_1_rd_r = call i1 @_ssdm_op_ReadReq.m_axi.i16P(i16* %weight_V_addr, i32 4)" [src/pwconv.cpp:37]   --->   Operation 203 'readreq' 'weight_V_addr_1_rd_r' <Predicate = (empty_33)> <Delay = 4.81> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 4.81>
+ST_9 : Operation 204 [4/7] (4.81ns)   --->   "%weight_V_addr_1_rd_r = call i1 @_ssdm_op_ReadReq.m_axi.i16P(i16* %weight_V_addr, i32 4)" [src/pwconv.cpp:37]   --->   Operation 204 'readreq' 'weight_V_addr_1_rd_r' <Predicate = (empty_33)> <Delay = 4.81> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 10 <SV = 9> <Delay = 4.81>
+ST_10 : Operation 205 [3/7] (4.81ns)   --->   "%weight_V_addr_1_rd_r = call i1 @_ssdm_op_ReadReq.m_axi.i16P(i16* %weight_V_addr, i32 4)" [src/pwconv.cpp:37]   --->   Operation 205 'readreq' 'weight_V_addr_1_rd_r' <Predicate = (empty_33)> <Delay = 4.81> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 11 <SV = 10> <Delay = 4.81>
+ST_11 : Operation 206 [2/7] (4.81ns)   --->   "%weight_V_addr_1_rd_r = call i1 @_ssdm_op_ReadReq.m_axi.i16P(i16* %weight_V_addr, i32 4)" [src/pwconv.cpp:37]   --->   Operation 206 'readreq' 'weight_V_addr_1_rd_r' <Predicate = (empty_33)> <Delay = 4.81> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 12 <SV = 11> <Delay = 4.81>
+ST_12 : Operation 207 [1/7] (4.81ns)   --->   "%weight_V_addr_1_rd_r = call i1 @_ssdm_op_ReadReq.m_axi.i16P(i16* %weight_V_addr, i32 4)" [src/pwconv.cpp:37]   --->   Operation 207 'readreq' 'weight_V_addr_1_rd_r' <Predicate = (empty_33)> <Delay = 4.81> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_12 : Operation 208 [1/1] (0.00ns)   --->   "br label %BurstBB"   --->   Operation 208 'br' <Predicate = (empty_33)> <Delay = 0.00>
+
+State 13 <SV = 12> <Delay = 4.81>
+ST_13 : Operation 209 [1/1] (4.81ns)   --->   "%weight_V_addr_read = call i16 @_ssdm_op_Read.m_axi.i16P(i16* %weight_V_addr)" [src/pwconv.cpp:37]   --->   Operation 209 'read' 'weight_V_addr_read' <Predicate = true> <Delay = 4.81> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_13 : Operation 210 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag88_1" [src/pwconv.cpp:37]   --->   Operation 210 'store' <Predicate = (trunc_ln37 == 6 & trunc_ln203 == 2)> <Delay = 0.46>
+ST_13 : Operation 211 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V623_1" [src/pwconv.cpp:37]   --->   Operation 211 'store' <Predicate = (trunc_ln37 == 6 & trunc_ln203 == 2)> <Delay = 0.00>
+ST_13 : Operation 212 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 212 'br' <Predicate = (trunc_ln37 == 6 & trunc_ln203 == 2)> <Delay = 0.00>
+ST_13 : Operation 213 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag85_1" [src/pwconv.cpp:37]   --->   Operation 213 'store' <Predicate = (trunc_ln37 == 6 & trunc_ln203 == 1)> <Delay = 0.46>
+ST_13 : Operation 214 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V622_1" [src/pwconv.cpp:37]   --->   Operation 214 'store' <Predicate = (trunc_ln37 == 6 & trunc_ln203 == 1)> <Delay = 0.00>
+ST_13 : Operation 215 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 215 'br' <Predicate = (trunc_ln37 == 6 & trunc_ln203 == 1)> <Delay = 0.00>
+ST_13 : Operation 216 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag82_1" [src/pwconv.cpp:37]   --->   Operation 216 'store' <Predicate = (trunc_ln37 == 6 & trunc_ln203 == 0)> <Delay = 0.46>
+ST_13 : Operation 217 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V6_1" [src/pwconv.cpp:37]   --->   Operation 217 'store' <Predicate = (trunc_ln37 == 6 & trunc_ln203 == 0)> <Delay = 0.00>
+ST_13 : Operation 218 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 218 'br' <Predicate = (trunc_ln37 == 6 & trunc_ln203 == 0)> <Delay = 0.00>
+ST_13 : Operation 219 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag91_1" [src/pwconv.cpp:37]   --->   Operation 219 'store' <Predicate = (trunc_ln37 == 6 & trunc_ln203 == 3)> <Delay = 0.46>
+ST_13 : Operation 220 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V624_1" [src/pwconv.cpp:37]   --->   Operation 220 'store' <Predicate = (trunc_ln37 == 6 & trunc_ln203 == 3)> <Delay = 0.00>
+ST_13 : Operation 221 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 221 'br' <Predicate = (trunc_ln37 == 6 & trunc_ln203 == 3)> <Delay = 0.00>
+ST_13 : Operation 222 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag76_1" [src/pwconv.cpp:37]   --->   Operation 222 'store' <Predicate = (trunc_ln37 == 5 & trunc_ln203 == 2)> <Delay = 0.46>
+ST_13 : Operation 223 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V520_1" [src/pwconv.cpp:37]   --->   Operation 223 'store' <Predicate = (trunc_ln37 == 5 & trunc_ln203 == 2)> <Delay = 0.00>
+ST_13 : Operation 224 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 224 'br' <Predicate = (trunc_ln37 == 5 & trunc_ln203 == 2)> <Delay = 0.00>
+ST_13 : Operation 225 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag73_1" [src/pwconv.cpp:37]   --->   Operation 225 'store' <Predicate = (trunc_ln37 == 5 & trunc_ln203 == 1)> <Delay = 0.46>
+ST_13 : Operation 226 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V519_1" [src/pwconv.cpp:37]   --->   Operation 226 'store' <Predicate = (trunc_ln37 == 5 & trunc_ln203 == 1)> <Delay = 0.00>
+ST_13 : Operation 227 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 227 'br' <Predicate = (trunc_ln37 == 5 & trunc_ln203 == 1)> <Delay = 0.00>
+ST_13 : Operation 228 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag70_1" [src/pwconv.cpp:37]   --->   Operation 228 'store' <Predicate = (trunc_ln37 == 5 & trunc_ln203 == 0)> <Delay = 0.46>
+ST_13 : Operation 229 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V5_1" [src/pwconv.cpp:37]   --->   Operation 229 'store' <Predicate = (trunc_ln37 == 5 & trunc_ln203 == 0)> <Delay = 0.00>
+ST_13 : Operation 230 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 230 'br' <Predicate = (trunc_ln37 == 5 & trunc_ln203 == 0)> <Delay = 0.00>
+ST_13 : Operation 231 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag79_1" [src/pwconv.cpp:37]   --->   Operation 231 'store' <Predicate = (trunc_ln37 == 5 & trunc_ln203 == 3)> <Delay = 0.46>
+ST_13 : Operation 232 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V521_1" [src/pwconv.cpp:37]   --->   Operation 232 'store' <Predicate = (trunc_ln37 == 5 & trunc_ln203 == 3)> <Delay = 0.00>
+ST_13 : Operation 233 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 233 'br' <Predicate = (trunc_ln37 == 5 & trunc_ln203 == 3)> <Delay = 0.00>
+ST_13 : Operation 234 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag64_1" [src/pwconv.cpp:37]   --->   Operation 234 'store' <Predicate = (trunc_ln37 == 4 & trunc_ln203 == 2)> <Delay = 0.46>
+ST_13 : Operation 235 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V417_1" [src/pwconv.cpp:37]   --->   Operation 235 'store' <Predicate = (trunc_ln37 == 4 & trunc_ln203 == 2)> <Delay = 0.00>
+ST_13 : Operation 236 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 236 'br' <Predicate = (trunc_ln37 == 4 & trunc_ln203 == 2)> <Delay = 0.00>
+ST_13 : Operation 237 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag61_1" [src/pwconv.cpp:37]   --->   Operation 237 'store' <Predicate = (trunc_ln37 == 4 & trunc_ln203 == 1)> <Delay = 0.46>
+ST_13 : Operation 238 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V416_1" [src/pwconv.cpp:37]   --->   Operation 238 'store' <Predicate = (trunc_ln37 == 4 & trunc_ln203 == 1)> <Delay = 0.00>
+ST_13 : Operation 239 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 239 'br' <Predicate = (trunc_ln37 == 4 & trunc_ln203 == 1)> <Delay = 0.00>
+ST_13 : Operation 240 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag58_1" [src/pwconv.cpp:37]   --->   Operation 240 'store' <Predicate = (trunc_ln37 == 4 & trunc_ln203 == 0)> <Delay = 0.46>
+ST_13 : Operation 241 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V4_1" [src/pwconv.cpp:37]   --->   Operation 241 'store' <Predicate = (trunc_ln37 == 4 & trunc_ln203 == 0)> <Delay = 0.00>
+ST_13 : Operation 242 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 242 'br' <Predicate = (trunc_ln37 == 4 & trunc_ln203 == 0)> <Delay = 0.00>
+ST_13 : Operation 243 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag67_1" [src/pwconv.cpp:37]   --->   Operation 243 'store' <Predicate = (trunc_ln37 == 4 & trunc_ln203 == 3)> <Delay = 0.46>
+ST_13 : Operation 244 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V418_1" [src/pwconv.cpp:37]   --->   Operation 244 'store' <Predicate = (trunc_ln37 == 4 & trunc_ln203 == 3)> <Delay = 0.00>
+ST_13 : Operation 245 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 245 'br' <Predicate = (trunc_ln37 == 4 & trunc_ln203 == 3)> <Delay = 0.00>
+ST_13 : Operation 246 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag52_1" [src/pwconv.cpp:37]   --->   Operation 246 'store' <Predicate = (trunc_ln37 == 3 & trunc_ln203 == 2)> <Delay = 0.46>
+ST_13 : Operation 247 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V314_1" [src/pwconv.cpp:37]   --->   Operation 247 'store' <Predicate = (trunc_ln37 == 3 & trunc_ln203 == 2)> <Delay = 0.00>
+ST_13 : Operation 248 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 248 'br' <Predicate = (trunc_ln37 == 3 & trunc_ln203 == 2)> <Delay = 0.00>
+ST_13 : Operation 249 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag49_1" [src/pwconv.cpp:37]   --->   Operation 249 'store' <Predicate = (trunc_ln37 == 3 & trunc_ln203 == 1)> <Delay = 0.46>
+ST_13 : Operation 250 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V313_1" [src/pwconv.cpp:37]   --->   Operation 250 'store' <Predicate = (trunc_ln37 == 3 & trunc_ln203 == 1)> <Delay = 0.00>
+ST_13 : Operation 251 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 251 'br' <Predicate = (trunc_ln37 == 3 & trunc_ln203 == 1)> <Delay = 0.00>
+ST_13 : Operation 252 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag45_1" [src/pwconv.cpp:37]   --->   Operation 252 'store' <Predicate = (trunc_ln37 == 3 & trunc_ln203 == 0)> <Delay = 0.46>
+ST_13 : Operation 253 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V31247_1" [src/pwconv.cpp:37]   --->   Operation 253 'store' <Predicate = (trunc_ln37 == 3 & trunc_ln203 == 0)> <Delay = 0.00>
+ST_13 : Operation 254 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 254 'br' <Predicate = (trunc_ln37 == 3 & trunc_ln203 == 0)> <Delay = 0.00>
+ST_13 : Operation 255 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag55_1" [src/pwconv.cpp:37]   --->   Operation 255 'store' <Predicate = (trunc_ln37 == 3 & trunc_ln203 == 3)> <Delay = 0.46>
+ST_13 : Operation 256 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V315_1" [src/pwconv.cpp:37]   --->   Operation 256 'store' <Predicate = (trunc_ln37 == 3 & trunc_ln203 == 3)> <Delay = 0.00>
+ST_13 : Operation 257 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 257 'br' <Predicate = (trunc_ln37 == 3 & trunc_ln203 == 3)> <Delay = 0.00>
+ST_13 : Operation 258 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V210_1" [src/pwconv.cpp:37]   --->   Operation 258 'store' <Predicate = (trunc_ln37 == 2 & trunc_ln203 == 2)> <Delay = 0.00>
+ST_13 : Operation 259 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag38_1" [src/pwconv.cpp:37]   --->   Operation 259 'store' <Predicate = (trunc_ln37 == 2 & trunc_ln203 == 2)> <Delay = 0.46>
+ST_13 : Operation 260 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 260 'br' <Predicate = (trunc_ln37 == 2 & trunc_ln203 == 2)> <Delay = 0.00>
+ST_13 : Operation 261 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V2936_1" [src/pwconv.cpp:37]   --->   Operation 261 'store' <Predicate = (trunc_ln37 == 2 & trunc_ln203 == 1)> <Delay = 0.00>
+ST_13 : Operation 262 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag34_1" [src/pwconv.cpp:37]   --->   Operation 262 'store' <Predicate = (trunc_ln37 == 2 & trunc_ln203 == 1)> <Delay = 0.46>
+ST_13 : Operation 263 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 263 'br' <Predicate = (trunc_ln37 == 2 & trunc_ln203 == 1)> <Delay = 0.00>
+ST_13 : Operation 264 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V28_1" [src/pwconv.cpp:37]   --->   Operation 264 'store' <Predicate = (trunc_ln37 == 2 & trunc_ln203 == 0)> <Delay = 0.00>
+ST_13 : Operation 265 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag30_1" [src/pwconv.cpp:37]   --->   Operation 265 'store' <Predicate = (trunc_ln37 == 2 & trunc_ln203 == 0)> <Delay = 0.46>
+ST_13 : Operation 266 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 266 'br' <Predicate = (trunc_ln37 == 2 & trunc_ln203 == 0)> <Delay = 0.00>
+ST_13 : Operation 267 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag41_1" [src/pwconv.cpp:37]   --->   Operation 267 'store' <Predicate = (trunc_ln37 == 2 & trunc_ln203 == 3)> <Delay = 0.46>
+ST_13 : Operation 268 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V211_1" [src/pwconv.cpp:37]   --->   Operation 268 'store' <Predicate = (trunc_ln37 == 2 & trunc_ln203 == 3)> <Delay = 0.00>
+ST_13 : Operation 269 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 269 'br' <Predicate = (trunc_ln37 == 2 & trunc_ln203 == 3)> <Delay = 0.00>
+ST_13 : Operation 270 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V1625_1" [src/pwconv.cpp:37]   --->   Operation 270 'store' <Predicate = (trunc_ln37 == 1 & trunc_ln203 == 2)> <Delay = 0.00>
+ST_13 : Operation 271 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag23_1" [src/pwconv.cpp:37]   --->   Operation 271 'store' <Predicate = (trunc_ln37 == 1 & trunc_ln203 == 2)> <Delay = 0.46>
+ST_13 : Operation 272 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 272 'br' <Predicate = (trunc_ln37 == 1 & trunc_ln203 == 2)> <Delay = 0.00>
+ST_13 : Operation 273 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V1520_1" [src/pwconv.cpp:37]   --->   Operation 273 'store' <Predicate = (trunc_ln37 == 1 & trunc_ln203 == 1)> <Delay = 0.00>
+ST_13 : Operation 274 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag18_1" [src/pwconv.cpp:37]   --->   Operation 274 'store' <Predicate = (trunc_ln37 == 1 & trunc_ln203 == 1)> <Delay = 0.46>
+ST_13 : Operation 275 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 275 'br' <Predicate = (trunc_ln37 == 1 & trunc_ln203 == 1)> <Delay = 0.00>
+ST_13 : Operation 276 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V14_1" [src/pwconv.cpp:37]   --->   Operation 276 'store' <Predicate = (trunc_ln37 == 1 & trunc_ln203 == 0)> <Delay = 0.00>
+ST_13 : Operation 277 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag14_1" [src/pwconv.cpp:37]   --->   Operation 277 'store' <Predicate = (trunc_ln37 == 1 & trunc_ln203 == 0)> <Delay = 0.46>
+ST_13 : Operation 278 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 278 'br' <Predicate = (trunc_ln37 == 1 & trunc_ln203 == 0)> <Delay = 0.00>
+ST_13 : Operation 279 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V17_1" [src/pwconv.cpp:37]   --->   Operation 279 'store' <Predicate = (trunc_ln37 == 1 & trunc_ln203 == 3)> <Delay = 0.00>
+ST_13 : Operation 280 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag27_1" [src/pwconv.cpp:37]   --->   Operation 280 'store' <Predicate = (trunc_ln37 == 1 & trunc_ln203 == 3)> <Delay = 0.46>
+ST_13 : Operation 281 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 281 'br' <Predicate = (trunc_ln37 == 1 & trunc_ln203 == 3)> <Delay = 0.00>
+ST_13 : Operation 282 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V2_1" [src/pwconv.cpp:37]   --->   Operation 282 'store' <Predicate = (trunc_ln37 == 0 & trunc_ln203 == 2)> <Delay = 0.00>
+ST_13 : Operation 283 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag8_1" [src/pwconv.cpp:37]   --->   Operation 283 'store' <Predicate = (trunc_ln37 == 0 & trunc_ln203 == 2)> <Delay = 0.46>
+ST_13 : Operation 284 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 284 'br' <Predicate = (trunc_ln37 == 0 & trunc_ln203 == 2)> <Delay = 0.00>
+ST_13 : Operation 285 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V16_1" [src/pwconv.cpp:37]   --->   Operation 285 'store' <Predicate = (trunc_ln37 == 0 & trunc_ln203 == 1)> <Delay = 0.00>
+ST_13 : Operation 286 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag4_1" [src/pwconv.cpp:37]   --->   Operation 286 'store' <Predicate = (trunc_ln37 == 0 & trunc_ln203 == 1)> <Delay = 0.46>
+ST_13 : Operation 287 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 287 'br' <Predicate = (trunc_ln37 == 0 & trunc_ln203 == 1)> <Delay = 0.00>
+ST_13 : Operation 288 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V_1" [src/pwconv.cpp:37]   --->   Operation 288 'store' <Predicate = (trunc_ln37 == 0 & trunc_ln203 == 0)> <Delay = 0.00>
+ST_13 : Operation 289 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag_1" [src/pwconv.cpp:37]   --->   Operation 289 'store' <Predicate = (trunc_ln37 == 0 & trunc_ln203 == 0)> <Delay = 0.46>
+ST_13 : Operation 290 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 290 'br' <Predicate = (trunc_ln37 == 0 & trunc_ln203 == 0)> <Delay = 0.00>
+ST_13 : Operation 291 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V3_1" [src/pwconv.cpp:37]   --->   Operation 291 'store' <Predicate = (trunc_ln37 == 0 & trunc_ln203 == 3)> <Delay = 0.00>
+ST_13 : Operation 292 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag11_1" [src/pwconv.cpp:37]   --->   Operation 292 'store' <Predicate = (trunc_ln37 == 0 & trunc_ln203 == 3)> <Delay = 0.46>
+ST_13 : Operation 293 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 293 'br' <Predicate = (trunc_ln37 == 0 & trunc_ln203 == 3)> <Delay = 0.00>
+ST_13 : Operation 294 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag100_1" [src/pwconv.cpp:37]   --->   Operation 294 'store' <Predicate = (trunc_ln37 == 7 & trunc_ln203 == 2)> <Delay = 0.46>
+ST_13 : Operation 295 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V726_1" [src/pwconv.cpp:37]   --->   Operation 295 'store' <Predicate = (trunc_ln37 == 7 & trunc_ln203 == 2)> <Delay = 0.00>
+ST_13 : Operation 296 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 296 'br' <Predicate = (trunc_ln37 == 7 & trunc_ln203 == 2)> <Delay = 0.00>
+ST_13 : Operation 297 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag97_1" [src/pwconv.cpp:37]   --->   Operation 297 'store' <Predicate = (trunc_ln37 == 7 & trunc_ln203 == 1)> <Delay = 0.46>
+ST_13 : Operation 298 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V725_1" [src/pwconv.cpp:37]   --->   Operation 298 'store' <Predicate = (trunc_ln37 == 7 & trunc_ln203 == 1)> <Delay = 0.00>
+ST_13 : Operation 299 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 299 'br' <Predicate = (trunc_ln37 == 7 & trunc_ln203 == 1)> <Delay = 0.00>
+ST_13 : Operation 300 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag94_1" [src/pwconv.cpp:37]   --->   Operation 300 'store' <Predicate = (trunc_ln37 == 7 & trunc_ln203 == 0)> <Delay = 0.46>
+ST_13 : Operation 301 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V7_1" [src/pwconv.cpp:37]   --->   Operation 301 'store' <Predicate = (trunc_ln37 == 7 & trunc_ln203 == 0)> <Delay = 0.00>
+ST_13 : Operation 302 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 302 'br' <Predicate = (trunc_ln37 == 7 & trunc_ln203 == 0)> <Delay = 0.00>
+ST_13 : Operation 303 [1/1] (0.46ns)   --->   "store i1 true, i1* %write_flag103_1" [src/pwconv.cpp:37]   --->   Operation 303 'store' <Predicate = (trunc_ln37 == 7 & trunc_ln203 == 3)> <Delay = 0.46>
+ST_13 : Operation 304 [1/1] (0.00ns)   --->   "store i16 %weight_V_addr_read, i16* %wt_buff_V727_1" [src/pwconv.cpp:37]   --->   Operation 304 'store' <Predicate = (trunc_ln37 == 7 & trunc_ln203 == 3)> <Delay = 0.00>
+ST_13 : Operation 305 [1/1] (0.00ns)   --->   "br label %hls_label_1_end" [src/pwconv.cpp:37]   --->   Operation 305 'br' <Predicate = (trunc_ln37 == 7 & trunc_ln203 == 3)> <Delay = 0.00>
+
+State 14 <SV = 2> <Delay = 0.62>
+ST_14 : Operation 306 [1/1] (0.00ns)   --->   "%wt_buff_V727_1_load = load i16* %wt_buff_V727_1" [src/pwconv.cpp:40]   --->   Operation 306 'load' 'wt_buff_V727_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 307 [1/1] (0.00ns)   --->   "%write_flag_1_load = load i1* %write_flag_1" [src/pwconv.cpp:40]   --->   Operation 307 'load' 'write_flag_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 308 [1/1] (0.00ns)   --->   "%write_flag103_1_load = load i1* %write_flag103_1" [src/pwconv.cpp:40]   --->   Operation 308 'load' 'write_flag103_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 309 [1/1] (0.00ns)   --->   "%wt_buff_V726_1_load = load i16* %wt_buff_V726_1" [src/pwconv.cpp:40]   --->   Operation 309 'load' 'wt_buff_V726_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 310 [1/1] (0.00ns)   --->   "%wt_buff_V_1_load = load i16* %wt_buff_V_1" [src/pwconv.cpp:40]   --->   Operation 310 'load' 'wt_buff_V_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 311 [1/1] (0.00ns)   --->   "%write_flag100_1_load = load i1* %write_flag100_1" [src/pwconv.cpp:40]   --->   Operation 311 'load' 'write_flag100_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 312 [1/1] (0.00ns)   --->   "%wt_buff_V725_1_load = load i16* %wt_buff_V725_1" [src/pwconv.cpp:40]   --->   Operation 312 'load' 'wt_buff_V725_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 313 [1/1] (0.00ns)   --->   "%write_flag4_1_load = load i1* %write_flag4_1" [src/pwconv.cpp:40]   --->   Operation 313 'load' 'write_flag4_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 314 [1/1] (0.00ns)   --->   "%write_flag97_1_load = load i1* %write_flag97_1" [src/pwconv.cpp:40]   --->   Operation 314 'load' 'write_flag97_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 315 [1/1] (0.00ns)   --->   "%wt_buff_V7_1_load = load i16* %wt_buff_V7_1" [src/pwconv.cpp:40]   --->   Operation 315 'load' 'wt_buff_V7_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 316 [1/1] (0.00ns)   --->   "%wt_buff_V16_1_load = load i16* %wt_buff_V16_1" [src/pwconv.cpp:40]   --->   Operation 316 'load' 'wt_buff_V16_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 317 [1/1] (0.00ns)   --->   "%write_flag94_1_load = load i1* %write_flag94_1" [src/pwconv.cpp:40]   --->   Operation 317 'load' 'write_flag94_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 318 [1/1] (0.00ns)   --->   "%wt_buff_V624_1_load = load i16* %wt_buff_V624_1" [src/pwconv.cpp:40]   --->   Operation 318 'load' 'wt_buff_V624_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 319 [1/1] (0.00ns)   --->   "%write_flag8_1_load = load i1* %write_flag8_1" [src/pwconv.cpp:40]   --->   Operation 319 'load' 'write_flag8_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 320 [1/1] (0.00ns)   --->   "%write_flag91_1_load = load i1* %write_flag91_1" [src/pwconv.cpp:40]   --->   Operation 320 'load' 'write_flag91_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 321 [1/1] (0.00ns)   --->   "%wt_buff_V623_1_load = load i16* %wt_buff_V623_1" [src/pwconv.cpp:40]   --->   Operation 321 'load' 'wt_buff_V623_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 322 [1/1] (0.00ns)   --->   "%wt_buff_V2_1_load = load i16* %wt_buff_V2_1" [src/pwconv.cpp:40]   --->   Operation 322 'load' 'wt_buff_V2_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 323 [1/1] (0.00ns)   --->   "%write_flag88_1_load = load i1* %write_flag88_1" [src/pwconv.cpp:40]   --->   Operation 323 'load' 'write_flag88_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 324 [1/1] (0.00ns)   --->   "%wt_buff_V622_1_load = load i16* %wt_buff_V622_1" [src/pwconv.cpp:40]   --->   Operation 324 'load' 'wt_buff_V622_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 325 [1/1] (0.00ns)   --->   "%write_flag11_1_load = load i1* %write_flag11_1" [src/pwconv.cpp:40]   --->   Operation 325 'load' 'write_flag11_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 326 [1/1] (0.00ns)   --->   "%write_flag85_1_load = load i1* %write_flag85_1" [src/pwconv.cpp:40]   --->   Operation 326 'load' 'write_flag85_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 327 [1/1] (0.00ns)   --->   "%wt_buff_V6_1_load = load i16* %wt_buff_V6_1" [src/pwconv.cpp:40]   --->   Operation 327 'load' 'wt_buff_V6_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 328 [1/1] (0.00ns)   --->   "%wt_buff_V3_1_load = load i16* %wt_buff_V3_1" [src/pwconv.cpp:40]   --->   Operation 328 'load' 'wt_buff_V3_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 329 [1/1] (0.00ns)   --->   "%write_flag82_1_load = load i1* %write_flag82_1" [src/pwconv.cpp:40]   --->   Operation 329 'load' 'write_flag82_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 330 [1/1] (0.00ns)   --->   "%wt_buff_V521_1_load = load i16* %wt_buff_V521_1" [src/pwconv.cpp:40]   --->   Operation 330 'load' 'wt_buff_V521_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 331 [1/1] (0.00ns)   --->   "%write_flag14_1_load = load i1* %write_flag14_1" [src/pwconv.cpp:40]   --->   Operation 331 'load' 'write_flag14_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 332 [1/1] (0.00ns)   --->   "%write_flag79_1_load = load i1* %write_flag79_1" [src/pwconv.cpp:40]   --->   Operation 332 'load' 'write_flag79_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 333 [1/1] (0.00ns)   --->   "%wt_buff_V520_1_load = load i16* %wt_buff_V520_1" [src/pwconv.cpp:40]   --->   Operation 333 'load' 'wt_buff_V520_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 334 [1/1] (0.00ns)   --->   "%wt_buff_V14_1_load = load i16* %wt_buff_V14_1" [src/pwconv.cpp:40]   --->   Operation 334 'load' 'wt_buff_V14_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 335 [1/1] (0.00ns)   --->   "%write_flag76_1_load = load i1* %write_flag76_1" [src/pwconv.cpp:40]   --->   Operation 335 'load' 'write_flag76_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 336 [1/1] (0.00ns)   --->   "%wt_buff_V519_1_load = load i16* %wt_buff_V519_1" [src/pwconv.cpp:40]   --->   Operation 336 'load' 'wt_buff_V519_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 337 [1/1] (0.00ns)   --->   "%write_flag18_1_load = load i1* %write_flag18_1" [src/pwconv.cpp:40]   --->   Operation 337 'load' 'write_flag18_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 338 [1/1] (0.00ns)   --->   "%write_flag73_1_load = load i1* %write_flag73_1" [src/pwconv.cpp:40]   --->   Operation 338 'load' 'write_flag73_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 339 [1/1] (0.00ns)   --->   "%wt_buff_V5_1_load = load i16* %wt_buff_V5_1" [src/pwconv.cpp:40]   --->   Operation 339 'load' 'wt_buff_V5_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 340 [1/1] (0.00ns)   --->   "%wt_buff_V1520_1_load = load i16* %wt_buff_V1520_1" [src/pwconv.cpp:40]   --->   Operation 340 'load' 'wt_buff_V1520_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 341 [1/1] (0.00ns)   --->   "%write_flag70_1_load = load i1* %write_flag70_1" [src/pwconv.cpp:40]   --->   Operation 341 'load' 'write_flag70_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 342 [1/1] (0.00ns)   --->   "%wt_buff_V418_1_load = load i16* %wt_buff_V418_1" [src/pwconv.cpp:40]   --->   Operation 342 'load' 'wt_buff_V418_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 343 [1/1] (0.00ns)   --->   "%write_flag23_1_load = load i1* %write_flag23_1" [src/pwconv.cpp:40]   --->   Operation 343 'load' 'write_flag23_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 344 [1/1] (0.00ns)   --->   "%write_flag67_1_load = load i1* %write_flag67_1" [src/pwconv.cpp:40]   --->   Operation 344 'load' 'write_flag67_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 345 [1/1] (0.00ns)   --->   "%wt_buff_V417_1_load = load i16* %wt_buff_V417_1" [src/pwconv.cpp:40]   --->   Operation 345 'load' 'wt_buff_V417_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 346 [1/1] (0.00ns)   --->   "%wt_buff_V1625_1_load = load i16* %wt_buff_V1625_1" [src/pwconv.cpp:40]   --->   Operation 346 'load' 'wt_buff_V1625_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 347 [1/1] (0.00ns)   --->   "%write_flag64_1_load = load i1* %write_flag64_1" [src/pwconv.cpp:40]   --->   Operation 347 'load' 'write_flag64_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 348 [1/1] (0.00ns)   --->   "%wt_buff_V416_1_load = load i16* %wt_buff_V416_1" [src/pwconv.cpp:40]   --->   Operation 348 'load' 'wt_buff_V416_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 349 [1/1] (0.00ns)   --->   "%write_flag27_1_load = load i1* %write_flag27_1" [src/pwconv.cpp:40]   --->   Operation 349 'load' 'write_flag27_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 350 [1/1] (0.00ns)   --->   "%write_flag61_1_load = load i1* %write_flag61_1" [src/pwconv.cpp:40]   --->   Operation 350 'load' 'write_flag61_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 351 [1/1] (0.00ns)   --->   "%wt_buff_V4_1_load = load i16* %wt_buff_V4_1" [src/pwconv.cpp:40]   --->   Operation 351 'load' 'wt_buff_V4_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 352 [1/1] (0.00ns)   --->   "%wt_buff_V17_1_load = load i16* %wt_buff_V17_1" [src/pwconv.cpp:40]   --->   Operation 352 'load' 'wt_buff_V17_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 353 [1/1] (0.00ns)   --->   "%write_flag58_1_load = load i1* %write_flag58_1" [src/pwconv.cpp:40]   --->   Operation 353 'load' 'write_flag58_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 354 [1/1] (0.00ns)   --->   "%wt_buff_V315_1_load = load i16* %wt_buff_V315_1" [src/pwconv.cpp:40]   --->   Operation 354 'load' 'wt_buff_V315_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 355 [1/1] (0.00ns)   --->   "%write_flag30_1_load = load i1* %write_flag30_1" [src/pwconv.cpp:40]   --->   Operation 355 'load' 'write_flag30_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 356 [1/1] (0.00ns)   --->   "%write_flag55_1_load = load i1* %write_flag55_1" [src/pwconv.cpp:40]   --->   Operation 356 'load' 'write_flag55_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 357 [1/1] (0.00ns)   --->   "%wt_buff_V314_1_load = load i16* %wt_buff_V314_1" [src/pwconv.cpp:40]   --->   Operation 357 'load' 'wt_buff_V314_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 358 [1/1] (0.00ns)   --->   "%wt_buff_V28_1_load = load i16* %wt_buff_V28_1" [src/pwconv.cpp:40]   --->   Operation 358 'load' 'wt_buff_V28_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 359 [1/1] (0.00ns)   --->   "%write_flag52_1_load = load i1* %write_flag52_1" [src/pwconv.cpp:40]   --->   Operation 359 'load' 'write_flag52_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 360 [1/1] (0.00ns)   --->   "%wt_buff_V313_1_load = load i16* %wt_buff_V313_1" [src/pwconv.cpp:40]   --->   Operation 360 'load' 'wt_buff_V313_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 361 [1/1] (0.00ns)   --->   "%write_flag34_1_load = load i1* %write_flag34_1" [src/pwconv.cpp:40]   --->   Operation 361 'load' 'write_flag34_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 362 [1/1] (0.00ns)   --->   "%write_flag49_1_load = load i1* %write_flag49_1" [src/pwconv.cpp:40]   --->   Operation 362 'load' 'write_flag49_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 363 [1/1] (0.00ns)   --->   "%wt_buff_V31247_1_loa = load i16* %wt_buff_V31247_1" [src/pwconv.cpp:40]   --->   Operation 363 'load' 'wt_buff_V31247_1_loa' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 364 [1/1] (0.00ns)   --->   "%wt_buff_V2936_1_load = load i16* %wt_buff_V2936_1" [src/pwconv.cpp:40]   --->   Operation 364 'load' 'wt_buff_V2936_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 365 [1/1] (0.00ns)   --->   "%write_flag45_1_load = load i1* %write_flag45_1" [src/pwconv.cpp:40]   --->   Operation 365 'load' 'write_flag45_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 366 [1/1] (0.00ns)   --->   "%wt_buff_V211_1_load = load i16* %wt_buff_V211_1" [src/pwconv.cpp:40]   --->   Operation 366 'load' 'wt_buff_V211_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 367 [1/1] (0.00ns)   --->   "%write_flag38_1_load = load i1* %write_flag38_1" [src/pwconv.cpp:40]   --->   Operation 367 'load' 'write_flag38_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 368 [1/1] (0.00ns)   --->   "%write_flag41_1_load = load i1* %write_flag41_1" [src/pwconv.cpp:40]   --->   Operation 368 'load' 'write_flag41_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 369 [1/1] (0.00ns)   --->   "%wt_buff_V210_1_load = load i16* %wt_buff_V210_1" [src/pwconv.cpp:40]   --->   Operation 369 'load' 'wt_buff_V210_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 370 [1/1] (0.62ns)   --->   "%select_ln40 = select i1 %write_flag_1_load, i16 %wt_buff_V_1_load, i16 %wt_buff_0_0_V_read_1" [src/pwconv.cpp:40]   --->   Operation 370 'select' 'select_ln40' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 371 [1/1] (0.62ns)   --->   "%select_ln40_1 = select i1 %write_flag4_1_load, i16 %wt_buff_V16_1_load, i16 %wt_buff_0_1_V_read_1" [src/pwconv.cpp:40]   --->   Operation 371 'select' 'select_ln40_1' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 372 [1/1] (0.62ns)   --->   "%select_ln40_2 = select i1 %write_flag8_1_load, i16 %wt_buff_V2_1_load, i16 %wt_buff_0_2_V_read_1" [src/pwconv.cpp:40]   --->   Operation 372 'select' 'select_ln40_2' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 373 [1/1] (0.62ns)   --->   "%select_ln40_3 = select i1 %write_flag11_1_load, i16 %wt_buff_V3_1_load, i16 %wt_buff_0_3_V_read_1" [src/pwconv.cpp:40]   --->   Operation 373 'select' 'select_ln40_3' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 374 [1/1] (0.62ns)   --->   "%select_ln40_4 = select i1 %write_flag14_1_load, i16 %wt_buff_V14_1_load, i16 %wt_buff_1_0_V_read_1" [src/pwconv.cpp:40]   --->   Operation 374 'select' 'select_ln40_4' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 375 [1/1] (0.62ns)   --->   "%select_ln40_5 = select i1 %write_flag18_1_load, i16 %wt_buff_V1520_1_load, i16 %wt_buff_1_1_V_read_1" [src/pwconv.cpp:40]   --->   Operation 375 'select' 'select_ln40_5' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 376 [1/1] (0.62ns)   --->   "%select_ln40_6 = select i1 %write_flag23_1_load, i16 %wt_buff_V1625_1_load, i16 %wt_buff_1_2_V_read_1" [src/pwconv.cpp:40]   --->   Operation 376 'select' 'select_ln40_6' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 377 [1/1] (0.62ns)   --->   "%select_ln40_7 = select i1 %write_flag27_1_load, i16 %wt_buff_V17_1_load, i16 %wt_buff_1_3_V_read_1" [src/pwconv.cpp:40]   --->   Operation 377 'select' 'select_ln40_7' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 378 [1/1] (0.62ns)   --->   "%select_ln40_8 = select i1 %write_flag30_1_load, i16 %wt_buff_V28_1_load, i16 %wt_buff_2_0_V_read_1" [src/pwconv.cpp:40]   --->   Operation 378 'select' 'select_ln40_8' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 379 [1/1] (0.62ns)   --->   "%select_ln40_9 = select i1 %write_flag34_1_load, i16 %wt_buff_V2936_1_load, i16 %wt_buff_2_1_V_read_1" [src/pwconv.cpp:40]   --->   Operation 379 'select' 'select_ln40_9' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 380 [1/1] (0.62ns)   --->   "%select_ln40_10 = select i1 %write_flag38_1_load, i16 %wt_buff_V210_1_load, i16 %wt_buff_2_2_V_read_1" [src/pwconv.cpp:40]   --->   Operation 380 'select' 'select_ln40_10' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 381 [1/1] (0.62ns)   --->   "%select_ln40_11 = select i1 %write_flag41_1_load, i16 %wt_buff_V211_1_load, i16 %wt_buff_2_3_V_read_1" [src/pwconv.cpp:40]   --->   Operation 381 'select' 'select_ln40_11' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 382 [1/1] (0.62ns)   --->   "%select_ln40_12 = select i1 %write_flag45_1_load, i16 %wt_buff_V31247_1_loa, i16 %wt_buff_3_0_V_read_1" [src/pwconv.cpp:40]   --->   Operation 382 'select' 'select_ln40_12' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 383 [1/1] (0.62ns)   --->   "%select_ln40_13 = select i1 %write_flag49_1_load, i16 %wt_buff_V313_1_load, i16 %wt_buff_3_1_V_read_1" [src/pwconv.cpp:40]   --->   Operation 383 'select' 'select_ln40_13' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 384 [1/1] (0.62ns)   --->   "%select_ln40_14 = select i1 %write_flag52_1_load, i16 %wt_buff_V314_1_load, i16 %wt_buff_3_2_V_read_1" [src/pwconv.cpp:40]   --->   Operation 384 'select' 'select_ln40_14' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 385 [1/1] (0.62ns)   --->   "%select_ln40_15 = select i1 %write_flag55_1_load, i16 %wt_buff_V315_1_load, i16 %wt_buff_3_3_V_read_1" [src/pwconv.cpp:40]   --->   Operation 385 'select' 'select_ln40_15' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 386 [1/1] (0.62ns)   --->   "%select_ln40_16 = select i1 %write_flag58_1_load, i16 %wt_buff_V4_1_load, i16 %wt_buff_4_0_V_read_1" [src/pwconv.cpp:40]   --->   Operation 386 'select' 'select_ln40_16' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 387 [1/1] (0.62ns)   --->   "%select_ln40_17 = select i1 %write_flag61_1_load, i16 %wt_buff_V416_1_load, i16 %wt_buff_4_1_V_read_1" [src/pwconv.cpp:40]   --->   Operation 387 'select' 'select_ln40_17' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 388 [1/1] (0.62ns)   --->   "%select_ln40_18 = select i1 %write_flag64_1_load, i16 %wt_buff_V417_1_load, i16 %wt_buff_4_2_V_read_1" [src/pwconv.cpp:40]   --->   Operation 388 'select' 'select_ln40_18' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 389 [1/1] (0.62ns)   --->   "%select_ln40_19 = select i1 %write_flag67_1_load, i16 %wt_buff_V418_1_load, i16 %wt_buff_4_3_V_read_1" [src/pwconv.cpp:40]   --->   Operation 389 'select' 'select_ln40_19' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 390 [1/1] (0.62ns)   --->   "%select_ln40_20 = select i1 %write_flag70_1_load, i16 %wt_buff_V5_1_load, i16 %wt_buff_5_0_V_read_1" [src/pwconv.cpp:40]   --->   Operation 390 'select' 'select_ln40_20' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 391 [1/1] (0.62ns)   --->   "%select_ln40_21 = select i1 %write_flag73_1_load, i16 %wt_buff_V519_1_load, i16 %wt_buff_5_1_V_read_1" [src/pwconv.cpp:40]   --->   Operation 391 'select' 'select_ln40_21' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 392 [1/1] (0.62ns)   --->   "%select_ln40_22 = select i1 %write_flag76_1_load, i16 %wt_buff_V520_1_load, i16 %wt_buff_5_2_V_read_1" [src/pwconv.cpp:40]   --->   Operation 392 'select' 'select_ln40_22' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 393 [1/1] (0.62ns)   --->   "%select_ln40_23 = select i1 %write_flag79_1_load, i16 %wt_buff_V521_1_load, i16 %wt_buff_5_3_V_read_1" [src/pwconv.cpp:40]   --->   Operation 393 'select' 'select_ln40_23' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 394 [1/1] (0.62ns)   --->   "%select_ln40_24 = select i1 %write_flag82_1_load, i16 %wt_buff_V6_1_load, i16 %wt_buff_6_0_V_read_1" [src/pwconv.cpp:40]   --->   Operation 394 'select' 'select_ln40_24' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 395 [1/1] (0.62ns)   --->   "%select_ln40_25 = select i1 %write_flag85_1_load, i16 %wt_buff_V622_1_load, i16 %wt_buff_6_1_V_read_1" [src/pwconv.cpp:40]   --->   Operation 395 'select' 'select_ln40_25' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 396 [1/1] (0.62ns)   --->   "%select_ln40_26 = select i1 %write_flag88_1_load, i16 %wt_buff_V623_1_load, i16 %wt_buff_6_2_V_read_1" [src/pwconv.cpp:40]   --->   Operation 396 'select' 'select_ln40_26' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 397 [1/1] (0.62ns)   --->   "%select_ln40_27 = select i1 %write_flag91_1_load, i16 %wt_buff_V624_1_load, i16 %wt_buff_6_3_V_read_1" [src/pwconv.cpp:40]   --->   Operation 397 'select' 'select_ln40_27' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 398 [1/1] (0.62ns)   --->   "%select_ln40_28 = select i1 %write_flag94_1_load, i16 %wt_buff_V7_1_load, i16 %wt_buff_7_0_V_read_1" [src/pwconv.cpp:40]   --->   Operation 398 'select' 'select_ln40_28' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 399 [1/1] (0.62ns)   --->   "%select_ln40_29 = select i1 %write_flag97_1_load, i16 %wt_buff_V725_1_load, i16 %wt_buff_7_1_V_read_1" [src/pwconv.cpp:40]   --->   Operation 399 'select' 'select_ln40_29' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 400 [1/1] (0.62ns)   --->   "%select_ln40_30 = select i1 %write_flag100_1_load, i16 %wt_buff_V726_1_load, i16 %wt_buff_7_2_V_read_1" [src/pwconv.cpp:40]   --->   Operation 400 'select' 'select_ln40_30' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 401 [1/1] (0.62ns)   --->   "%select_ln40_31 = select i1 %write_flag103_1_load, i16 %wt_buff_V727_1_load, i16 %wt_buff_7_3_V_read_1" [src/pwconv.cpp:40]   --->   Operation 401 'select' 'select_ln40_31' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 402 [1/1] (0.00ns)   --->   "%mrv = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } undef, i16 %select_ln40, 0" [src/pwconv.cpp:40]   --->   Operation 402 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 403 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv, i16 %select_ln40_1, 1" [src/pwconv.cpp:40]   --->   Operation 403 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 404 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_1, i16 %select_ln40_2, 2" [src/pwconv.cpp:40]   --->   Operation 404 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 405 [1/1] (0.00ns)   --->   "%mrv_3 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_2, i16 %select_ln40_3, 3" [src/pwconv.cpp:40]   --->   Operation 405 'insertvalue' 'mrv_3' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 406 [1/1] (0.00ns)   --->   "%mrv_4 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_3, i16 %select_ln40_4, 4" [src/pwconv.cpp:40]   --->   Operation 406 'insertvalue' 'mrv_4' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 407 [1/1] (0.00ns)   --->   "%mrv_5 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_4, i16 %select_ln40_5, 5" [src/pwconv.cpp:40]   --->   Operation 407 'insertvalue' 'mrv_5' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 408 [1/1] (0.00ns)   --->   "%mrv_6 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_5, i16 %select_ln40_6, 6" [src/pwconv.cpp:40]   --->   Operation 408 'insertvalue' 'mrv_6' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 409 [1/1] (0.00ns)   --->   "%mrv_7 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_6, i16 %select_ln40_7, 7" [src/pwconv.cpp:40]   --->   Operation 409 'insertvalue' 'mrv_7' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 410 [1/1] (0.00ns)   --->   "%mrv_8 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_7, i16 %select_ln40_8, 8" [src/pwconv.cpp:40]   --->   Operation 410 'insertvalue' 'mrv_8' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 411 [1/1] (0.00ns)   --->   "%mrv_9 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_8, i16 %select_ln40_9, 9" [src/pwconv.cpp:40]   --->   Operation 411 'insertvalue' 'mrv_9' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 412 [1/1] (0.00ns)   --->   "%mrv_s = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_9, i16 %select_ln40_10, 10" [src/pwconv.cpp:40]   --->   Operation 412 'insertvalue' 'mrv_s' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 413 [1/1] (0.00ns)   --->   "%mrv_10 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_s, i16 %select_ln40_11, 11" [src/pwconv.cpp:40]   --->   Operation 413 'insertvalue' 'mrv_10' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 414 [1/1] (0.00ns)   --->   "%mrv_11 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_10, i16 %select_ln40_12, 12" [src/pwconv.cpp:40]   --->   Operation 414 'insertvalue' 'mrv_11' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 415 [1/1] (0.00ns)   --->   "%mrv_12 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_11, i16 %select_ln40_13, 13" [src/pwconv.cpp:40]   --->   Operation 415 'insertvalue' 'mrv_12' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 416 [1/1] (0.00ns)   --->   "%mrv_13 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_12, i16 %select_ln40_14, 14" [src/pwconv.cpp:40]   --->   Operation 416 'insertvalue' 'mrv_13' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 417 [1/1] (0.00ns)   --->   "%mrv_14 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_13, i16 %select_ln40_15, 15" [src/pwconv.cpp:40]   --->   Operation 417 'insertvalue' 'mrv_14' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 418 [1/1] (0.00ns)   --->   "%mrv_15 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_14, i16 %select_ln40_16, 16" [src/pwconv.cpp:40]   --->   Operation 418 'insertvalue' 'mrv_15' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 419 [1/1] (0.00ns)   --->   "%mrv_16 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_15, i16 %select_ln40_17, 17" [src/pwconv.cpp:40]   --->   Operation 419 'insertvalue' 'mrv_16' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 420 [1/1] (0.00ns)   --->   "%mrv_17 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_16, i16 %select_ln40_18, 18" [src/pwconv.cpp:40]   --->   Operation 420 'insertvalue' 'mrv_17' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 421 [1/1] (0.00ns)   --->   "%mrv_18 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_17, i16 %select_ln40_19, 19" [src/pwconv.cpp:40]   --->   Operation 421 'insertvalue' 'mrv_18' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 422 [1/1] (0.00ns)   --->   "%mrv_19 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_18, i16 %select_ln40_20, 20" [src/pwconv.cpp:40]   --->   Operation 422 'insertvalue' 'mrv_19' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 423 [1/1] (0.00ns)   --->   "%mrv_20 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_19, i16 %select_ln40_21, 21" [src/pwconv.cpp:40]   --->   Operation 423 'insertvalue' 'mrv_20' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 424 [1/1] (0.00ns)   --->   "%mrv_21 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_20, i16 %select_ln40_22, 22" [src/pwconv.cpp:40]   --->   Operation 424 'insertvalue' 'mrv_21' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 425 [1/1] (0.00ns)   --->   "%mrv_22 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_21, i16 %select_ln40_23, 23" [src/pwconv.cpp:40]   --->   Operation 425 'insertvalue' 'mrv_22' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 426 [1/1] (0.00ns)   --->   "%mrv_23 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_22, i16 %select_ln40_24, 24" [src/pwconv.cpp:40]   --->   Operation 426 'insertvalue' 'mrv_23' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 427 [1/1] (0.00ns)   --->   "%mrv_24 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_23, i16 %select_ln40_25, 25" [src/pwconv.cpp:40]   --->   Operation 427 'insertvalue' 'mrv_24' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 428 [1/1] (0.00ns)   --->   "%mrv_25 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_24, i16 %select_ln40_26, 26" [src/pwconv.cpp:40]   --->   Operation 428 'insertvalue' 'mrv_25' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 429 [1/1] (0.00ns)   --->   "%mrv_26 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_25, i16 %select_ln40_27, 27" [src/pwconv.cpp:40]   --->   Operation 429 'insertvalue' 'mrv_26' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 430 [1/1] (0.00ns)   --->   "%mrv_27 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_26, i16 %select_ln40_28, 28" [src/pwconv.cpp:40]   --->   Operation 430 'insertvalue' 'mrv_27' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 431 [1/1] (0.00ns)   --->   "%mrv_28 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_27, i16 %select_ln40_29, 29" [src/pwconv.cpp:40]   --->   Operation 431 'insertvalue' 'mrv_28' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 432 [1/1] (0.00ns)   --->   "%mrv_29 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_28, i16 %select_ln40_30, 30" [src/pwconv.cpp:40]   --->   Operation 432 'insertvalue' 'mrv_29' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 433 [1/1] (0.00ns)   --->   "%mrv_30 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_29, i16 %select_ln40_31, 31" [src/pwconv.cpp:40]   --->   Operation 433 'insertvalue' 'mrv_30' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 434 [1/1] (0.00ns)   --->   "ret { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_30" [src/pwconv.cpp:40]   --->   Operation 434 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5.5ns, clock uncertainty: 0.688ns.
+
+ <State 1>: 4.16ns
+The critical path consists of the following:
+	wire read on port 'ch_out' [103]  (0 ns)
+	'sub' operation ('sub_ln33', src/pwconv.cpp:33) [143]  (1.54 ns)
+	'icmp' operation ('icmp_ln33', src/pwconv.cpp:33) [145]  (1.99 ns)
+	'select' operation ('select_ln33', src/pwconv.cpp:33) [149]  (0.627 ns)
+
+ <State 2>: 3.15ns
+The critical path consists of the following:
+	'phi' operation ('mm_0', src/pwconv.cpp:37) with incoming values : ('select_ln37_1', src/pwconv.cpp:37) [187]  (0 ns)
+	'add' operation ('mm', src/pwconv.cpp:34) [193]  (1.54 ns)
+	'select' operation ('select_ln37_1', src/pwconv.cpp:37) [196]  (0.627 ns)
+	blocking operation 0.979 ns on control path)
+
+ <State 3>: 5.5ns
+The critical path consists of the following:
+	'add' operation of DSP[200] ('add_ln37', src/pwconv.cpp:37) [198]  (0 ns)
+	'mul' operation of DSP[200] ('mul_ln37', src/pwconv.cpp:37) [200]  (5.5 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 3.61ns
+The critical path consists of the following:
+	'add' operation ('add_ln37_2', src/pwconv.cpp:37) [203]  (0 ns)
+	'add' operation ('add_ln203', src/pwconv.cpp:37) [206]  (3.61 ns)
+
+ <State 6>: 4.81ns
+The critical path consists of the following:
+	bus request on port 'weight_V' (src/pwconv.cpp:37) [214]  (4.81 ns)
+
+ <State 7>: 4.81ns
+The critical path consists of the following:
+	bus request on port 'weight_V' (src/pwconv.cpp:37) [214]  (4.81 ns)
+
+ <State 8>: 4.81ns
+The critical path consists of the following:
+	bus request on port 'weight_V' (src/pwconv.cpp:37) [214]  (4.81 ns)
+
+ <State 9>: 4.81ns
+The critical path consists of the following:
+	bus request on port 'weight_V' (src/pwconv.cpp:37) [214]  (4.81 ns)
+
+ <State 10>: 4.81ns
+The critical path consists of the following:
+	bus request on port 'weight_V' (src/pwconv.cpp:37) [214]  (4.81 ns)
+
+ <State 11>: 4.81ns
+The critical path consists of the following:
+	bus request on port 'weight_V' (src/pwconv.cpp:37) [214]  (4.81 ns)
+
+ <State 12>: 4.81ns
+The critical path consists of the following:
+	bus request on port 'weight_V' (src/pwconv.cpp:37) [214]  (4.81 ns)
+
+ <State 13>: 4.81ns
+The critical path consists of the following:
+	bus read on port 'weight_V' (src/pwconv.cpp:37) [217]  (4.81 ns)
+	'store' operation ('store_ln37', src/pwconv.cpp:37) of variable 'weight_V_addr_read', src/pwconv.cpp:37 on local variable 'wt_buff_V210_1' [295]  (0 ns)
+
+ <State 14>: 0.627ns
+The critical path consists of the following:
+	'load' operation ('wt_buff_V727_1_load', src/pwconv.cpp:40) on local variable 'wt_buff_V727_1' [369]  (0 ns)
+	'select' operation ('wt_buff[7][3].V', src/pwconv.cpp:40) [464]  (0.627 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
