@@ -1,0 +1,27 @@
+{
+  "destination": "D:\\haiyun_fpga_submission\\haiyun_fpga_complete",
+  "origins": {
+    "engineering": "D:\\download\\桌面\\新建文件夹 (4)\\haiyun_fpga_submission\\haiyun_fpga_submission",
+    "pc_app": "D:\\haiyun_fpga_submission\\haiyun_fpga_submission\\src\\vitis\\pc_app",
+    "skill_zip": "D:\\wechat\\xwechat_files\\wxid_24p001y4thi122_a688\\msg\\file\\2026-11\\skill.zip"
+  },
+  "copied_counts": {
+    "original": 13352,
+    "updated_pc_app": 92,
+    "updated_docs_launcher": 2,
+    "new_skill": 31
+  },
+  "source_hash_checks": 13477,
+  "source_hash_errors": [],
+  "required_paths": {
+    "src/vivado/hardware/project/haiyun_pynq_z2.xpr": true,
+    "src/vivado/hardware/create_project.tcl": true,
+    "src/vitis/firmware/app/src": true,
+    "src/vitis/firmware/app/Makefile": true,
+    "src/vitis_reference_workspace": true,
+    "src/yolov5_experiments": true,
+    "src/hls/src": true,
+    "data/models/depth_best.pth": true
+  },
+  "historical_manifest_replaced": true
+}

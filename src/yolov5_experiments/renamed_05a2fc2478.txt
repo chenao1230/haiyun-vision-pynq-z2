@@ -1,0 +1,5 @@
+1.数据集在datasets文件夹中，数据集说明在./data/seaship.yaml，更改后模型为./models/combine.yaml
+2.训练模型在train.py中修改相应参数（轮数等）运行即可，已经训练好的模型为当前目录下best.pt文件
+3.验证模型直接运行val.py即可生成相应参数
+
+6.在运行测试前需要先下载官方seaship数据集（因文件太大上传源码时删去了），运行此压缩包的xmltotxt copy.py生成YOLO格式数据集再将其放在文件夹datasets，然后无需更改任何代码便可跑通。

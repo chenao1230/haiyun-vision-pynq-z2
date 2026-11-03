@@ -1,0 +1,8 @@
+path: ./datasets/seaship
+train: ./images/train
+val : ./images/val
+test: ./images/test
+
+nc: 6
+names: ['bulk cargo carrier', 'fishing boat', 'general cargo ship', 'ore carrier', 'passenger ship', 'container ship']
+  

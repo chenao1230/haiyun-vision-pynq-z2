@@ -1,0 +1,102 @@
+{
+  "manifest_crc32": "411E56B1",
+  "groups": {
+    "DETECT10": {
+      "title": "检测01—十张独立场景图",
+      "mode": "DET",
+      "order": 0
+    },
+    "G066": {
+      "title": "跟踪01—日光单船",
+      "mode": "TRACK",
+      "order": 1
+    },
+    "G029": {
+      "title": "跟踪02—多船并行",
+      "mode": "TRACK",
+      "order": 2
+    },
+    "G071": {
+      "title": "跟踪03—交会遮挡",
+      "mode": "TRACK",
+      "order": 3
+    },
+    "G078": {
+      "title": "跟踪04—水面反光",
+      "mode": "TRACK",
+      "order": 4
+    },
+    "G002": {
+      "title": "跟踪05—低对比度远船",
+      "mode": "TRACK",
+      "order": 5
+    },
+    "G138": {
+      "title": "跟踪06—低能见度多船",
+      "mode": "TRACK",
+      "order": 6
+    },
+    "G094": {
+      "title": "跟踪07—夜景船舶",
+      "mode": "TRACK",
+      "order": 7
+    }
+  },
+  "alarm_reuse": [
+    "G066",
+    "G029",
+    "G071"
+  ],
+  "independent_images": [
+    {
+      "number": "D01",
+      "title": "日光—近景大船",
+      "source_image": "D01_Daylight_Large.jpg"
+    },
+    {
+      "number": "D02",
+      "title": "日光—白色客船",
+      "source_image": "D02_Daylight_White.jpg"
+    },
+    {
+      "number": "D03",
+      "title": "日光—集装箱船",
+      "source_image": "D03_Daylight_Container.jpg"
+    },
+    {
+      "number": "D04",
+      "title": "日光—较小船舶",
+      "source_image": "D04_Daylight_Small.jpg"
+    },
+    {
+      "number": "D05",
+      "title": "多船—交会重叠",
+      "source_image": "D05_Multi_Overlap.jpg"
+    },
+    {
+      "number": "D06",
+      "title": "阴天倾向—多船",
+      "source_image": "D06_Overcast_Multi.jpg"
+    },
+    {
+      "number": "D07",
+      "title": "水面反光—暗色船体",
+      "source_image": "D07_Reflection_Dark.jpg"
+    },
+    {
+      "number": "D08",
+      "title": "低对比度—背景融合",
+      "source_image": "D08_LowContrast.jpg"
+    },
+    {
+      "number": "D09",
+      "title": "暮光—长船",
+      "source_image": "D09_Twilight.jpg"
+    },
+    {
+      "number": "D10",
+      "title": "夜景—暗船与灯光",
+      "source_image": "D10_Night.jpg"
+    }
+  ]
+}

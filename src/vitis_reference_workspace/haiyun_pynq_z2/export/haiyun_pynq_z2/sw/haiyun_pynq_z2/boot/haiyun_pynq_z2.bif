@@ -1,0 +1,8 @@
+/*haiyun_pynq_z2*/
+the_ROM_image:
+{
+  [bootloader]<haiyun_pynq_z2/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+  <elf,ps7_cortexa9_0>
+}

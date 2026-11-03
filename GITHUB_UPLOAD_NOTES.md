@@ -1,8 +1,12 @@
-# GitHub 上传范围
+# 完整工程版本
 
-本仓库保存本机 `D:/haiyun_fpga_submission/haiyun_fpga_submission` 的完整目录快照，包含新版上位机、模型、原图、板卡运行文件、历史运行结果和构建文件。它不是此前制作的 200MB 精简包。
+当前主分支已用 `D:/haiyun_fpga_submission/haiyun_fpga_complete` 完整目录替换旧工程快照。原来缺失的 Vivado 工程、ARM 应用源码、参考 Vitis 工作区及算法实验代码已包含；旧快照中不属于完整目录的文件已从当前版本移除，历史提交保留。
 
-`data/models/depth_best.pth` 通过 Git LFS 保存。下载完整工程请安装 Git LFS 后使用：
+新版上位机和最新 skill 保持完整目录中的版本。当前是完整工程，不是 200MB 源码精简包。
+
+## 下载完整模型
+
+所有 .pt/.pth 模型使用 Git LFS。请安装 Git LFS 后执行：
 
 ```sh
 git lfs install
@@ -11,18 +15,4 @@ cd haiyun-vision-pynq-z2
 git lfs pull
 ```
 
-随后按 README.md 的顺序操作。GitHub 网页下载的源码 ZIP 是否附带 LFS 模型取决于仓库设置，优先使用上述克隆方式。
-
-## 原目录中缺失的材料
-
-以下路径在此次上传前的原目录中就不存在，并非本次上传时排除：
-
-- `src/vivado/hardware/project/haiyun_pynq_z2.xpr`
-- `src/vivado/hardware/create_project.tcl`
-- `src/vitis/firmware/app/src`
-- `src/vitis_reference_workspace`
-- `src/yolov5_experiments`
-
-因此，仓库中的旧报告或复现说明提到这些路径时，需先从原始备份补齐，不能将当前快照当作已具备所有源码的完整硬件复现工程。
-
-`report/file_manifest.json` 为原提交材料中的历史清单，随原文件保留；上位机后续修改及上述原目录缺失可能导致历史清单校验失败。
+按 README.md 操作上位机，组合来源见 ASSEMBLY_NOTES.md。文件齐全和哈希校验不代表本次重新完成了 Vivado/Vitis 全流程构建或实板回归；原有验证报告保留其原始含义。

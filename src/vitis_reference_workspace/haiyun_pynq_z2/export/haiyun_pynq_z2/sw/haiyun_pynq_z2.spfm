@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdx:platform sdx:vendor="xilinx.com"
+              sdx:library="sdx"
+              sdx:name="haiyun_pynq_z2"
+              sdx:version="1.0"
+              sdx:schemaVersion="1.0"
+              xmlns:sdx="http://www.xilinx.com/sdx">
+    <sdx:description>
+haiyun_pynq_z2
+    </sdx:description>
+    <sdx:systemConfigurations sdx:defaultConfiguration="haiyun_pynq_z2">
+        <sdx:configuration sdx:name="haiyun_pynq_z2"
+                           sdx:displayName="haiyun_pynq_z2"
+                           sdx:defaultProcessorGroup="fsbl_domain"
+                           sdx:runtimes="cpp">
+            <sdx:description>haiyun_pynq_z2</sdx:description>
+            <sdx:bootImages sdx:default="standard">
+                <sdx:image sdx:name="standard"
+                            sdx:bif="haiyun_pynq_z2/boot/haiyun_pynq_z2.bif"
+                            sdx:readme="haiyun_pynq_z2/boot/generic.readme"
+                            sdx:qemuArguments="haiyun_pynq_z2/qemu/qemu_args.txt"
+                            />
+                <sdx:image sdx:name="standalone_domain"
+                            sdx:bif="haiyun_pynq_z2/boot/haiyun_pynq_z2.bif"
+                            sdx:readme="haiyun_pynq_z2/boot/generic.readme"
+                            sdx:qemuArguments="haiyun_pynq_z2/standalone_domain/qemu/qemu_args.txt"
+                            />
+                <sdx:image sdx:name="fsbl_domain"
+                            sdx:bif="haiyun_pynq_z2/boot/haiyun_pynq_z2.bif"
+                            sdx:readme="haiyun_pynq_z2/boot/generic.readme"
+                            sdx:qemuArguments="haiyun_pynq_z2/fsbl_domain/qemu/qemu_args.txt"
+                            />
+            </sdx:bootImages>
+            <sdx:processorGroup sdx:name="standalone_domain"
+                                sdx:displayName="standalone on ps7_cortexa9_0"
+                                sdx:cpuType="cortex-a9"
+                                sdx:cpuInstance="ps7_cortexa9_0">
+                <sdx:os sdx:name="standalone"
+                        sdx:displayName="standalone"
+                        sdx:bspLibraryPaths="haiyun_pynq_z2/standalone_domain/bsplib/lib"
+                        sdx:bspIncludePaths="haiyun_pynq_z2/standalone_domain/bspinclude/include"
+                        sdx:bspConfig="haiyun_pynq_z2/standalone_domain/system.mss"
+                />
+            </sdx:processorGroup>
+            <sdx:processorGroup sdx:name="fsbl_domain"
+                                sdx:displayName="fsbl_domain"
+                                sdx:cpuType="cortex-a9"
+                                sdx:cpuInstance="ps7_cortexa9_0">
+                <sdx:os sdx:name="standalone"
+                        sdx:displayName="standalone"
+                        sdx:bspLibraryPaths="haiyun_pynq_z2/fsbl_domain/bsplib/lib"
+                        sdx:bspIncludePaths="haiyun_pynq_z2/fsbl_domain/bspinclude/include"
+                        sdx:bspConfig="haiyun_pynq_z2/fsbl_domain/system.mss"
+                />
+            </sdx:processorGroup>
+        </sdx:configuration>
+    </sdx:systemConfigurations>
+</sdx:platform>

@@ -1,0 +1,2174 @@
+Archive member included to satisfy reference by file (symbol)
+
+../../software/bsp_fsbl/lib\libxilffs.a(ff.o)
+                              C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o (f_mount)
+../../software/bsp_fsbl/lib\libxilffs.a(diskio.o)
+                              ../../software/bsp_fsbl/lib\libxilffs.a(ff.o) (disk_status)
+../../software/bsp_fsbl/lib\libxil.a(xdevcfg.o)
+                              C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o (XDcfg_CfgInitialize)
+../../software/bsp_fsbl/lib\libxil.a(xdevcfg_sinit.o)
+                              C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o (XDcfg_LookupConfig)
+../../software/bsp_fsbl/lib\libxil.a(xdevcfg_intr.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(xdevcfg.o) (XDcfg_IntrEnable)
+../../software/bsp_fsbl/lib\libxil.a(xdevcfg_g.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_sinit.o) (XDcfg_ConfigTable)
+../../software/bsp_fsbl/lib\libxil.a(xsdps.o)
+                              ../../software/bsp_fsbl/lib\libxilffs.a(diskio.o) (XSdPs_CfgInitialize)
+../../software/bsp_fsbl/lib\libxil.a(xsdps_sinit.o)
+                              ../../software/bsp_fsbl/lib\libxilffs.a(diskio.o) (XSdPs_LookupConfig)
+../../software/bsp_fsbl/lib\libxil.a(xil_assert.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(xdevcfg.o) (Xil_Assert)
+../../software/bsp_fsbl/lib\libxil.a(xil_cache.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(xsdps.o) (Xil_DCacheInvalidateRange)
+../../software/bsp_fsbl/lib\libxil.a(xil_sleepcommon.o)
+                              C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o (usleep)
+../../software/bsp_fsbl/lib\libxil.a(xtime_l.o)
+                              C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o (XTime_GetTime)
+../../software/bsp_fsbl/lib\libxil.a(xil_printf.o)
+                              C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o (xil_printf)
+../../software/bsp_fsbl/lib\libxil.a(xil_exception.o)
+                              C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o (Xil_ExceptionInit)
+../../software/bsp_fsbl/lib\libxil.a(asm_vectors.o)
+                              (_vector_table)
+../../software/bsp_fsbl/lib\libxil.a(xsdps_options.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(xsdps.o) (XSdPs_SetBlkSize)
+../../software/bsp_fsbl/lib\libxil.a(xsdps_g.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(xsdps_sinit.o) (XSdPs_ConfigTable)
+../../software/bsp_fsbl/lib\libxil.a(usleep.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(xil_sleepcommon.o) (usleep_A9)
+../../software/bsp_fsbl/lib\libxil.a(sleep.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(xil_sleepcommon.o) (sleep_A9)
+../../software/bsp_fsbl/lib\libxil.a(outbyte.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(xil_printf.o) (outbyte)
+../../software/bsp_fsbl/lib\libxil.a(vectors.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(asm_vectors.o) (FIQInterrupt)
+../../software/bsp_fsbl/lib\libxil.a(boot.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(asm_vectors.o) (_boot)
+../../software/bsp_fsbl/lib\libxil.a(xuartps_hw.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(outbyte.o) (XUartPs_SendByte)
+../../software/bsp_fsbl/lib\libxil.a(xil-crt0.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(boot.o) (_start)
+../../software/bsp_fsbl/lib\libxil.a(translation_table.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(boot.o) (MMUTable)
+../../software/bsp_fsbl/lib\libxil.a(cpu_init.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(xil-crt0.o) (__cpu_init)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+                              ../../software/bsp_fsbl/lib\libxilffs.a(ff.o) (__aeabi_uidiv)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(xil_cache.o) (__aeabi_idiv)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_dvmd_tls.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-exit.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(xil-crt0.o) (exit)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-fini.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(xil-crt0.o) (__libc_fini_array)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-impure.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-exit.o) (_global_impure_ptr)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-init.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(xil-crt0.o) (__libc_init_array)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o)
+                              ../../software/bsp_fsbl/lib\libxil.a(xil_printf.o) (__locale_ctype_ptr)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mbtowc_r.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o) (__ascii_mbtowc)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memset.o)
+                              ../../software/bsp_fsbl/lib\libxilffs.a(ff.o) (memset)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcasecmp.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o) (strcasecmp)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcat.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o) (strcat)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strchr.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o) (strchr)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcmp.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o) (strcmp)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcpy.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o) (strcpy)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strlcpy.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o) (strlcpy)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strlen.o)
+                              C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o (strlen)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncasecmp.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o) (strncasecmp)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncmp.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o) (strncmp)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncpy.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o) (strncpy)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strtol.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o) (strtol)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-vsnprintf.o)
+                              C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o (vsnprintf)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wctomb_r.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o) (__ascii_wctomb)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-__call_atexit.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-exit.o) (__call_exitprocs)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-ctype_.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o) (__set_ctype)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-getenv_r.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o) (_getenv_r)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfprintf.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-vsnprintf.o) (_svfprintf_r)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wcrtomb.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfprintf.o) (_wcrtomb_r)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wcsrtombs.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfprintf.o) (_wcsrtombs_r)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-dtoa.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfprintf.o) (_dtoa_r)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-environ.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-getenv_r.o) (environ)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-envlock.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-getenv_r.o) (__env_lock)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-freer.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfprintf.o) (_free_r)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-localeconv.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfprintf.o) (_localeconv_r)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mallocr.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfprintf.o) (_malloc_r)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memchr.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfprintf.o) (memchr)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memcpy.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-dtoa.o) (memcpy)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mlock.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-freer.o) (__malloc_lock)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mprec.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-dtoa.o) (_Balloc)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-sbrkr.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-freer.o) (_sbrk_r)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-s_frexp.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfprintf.o) (frexp)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfiprintf.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfprintf.o) (__ssprint_r)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wcsnrtombs.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wcsrtombs.o) (_wcsnrtombs_r)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-callocr.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mprec.o) (_calloc_r)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memmove.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfiprintf.o) (memmove)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-reallocr.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfiprintf.o) (_realloc_r)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-reent.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-sbrkr.o) (errno)
+../../software/bsp_fsbl/lib\libxil.a(_sbrk.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-sbrkr.o) (_sbrk)
+../../software/bsp_fsbl/lib\libxil.a(_exit.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-exit.o) (_exit)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfprintf.o) (__aeabi_uldivmod)
+e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_udivmoddi4.o)
+                              e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_aeabi_uldivmod.o) (__udivmoddi4)
+
+Allocating common symbols
+Common symbol       size              file
+
+errno               0x4               e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-reent.o)
+ApplicationFlag     0x1               C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+TransferMode        0x2               ../../software/bsp_fsbl/lib\libxil.a(xsdps.o)
+FsblLength          0x4               C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+UndefinedExceptionAddr
+                    0x4               ../../software/bsp_fsbl/lib\libxil.a(xil_exception.o)
+PartitionChecksumFlag
+                    0x1               C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+PSPartitionFlag     0x1               C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+PrefetchAbortAddr   0x4               ../../software/bsp_fsbl/lib\libxil.a(xil_exception.o)
+MoveImage           0x4               C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+Silicon_Version     0x4               C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+DcfgInstPtr         0x4               C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ExecutionAddress    0x4               C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+DataAbortAddr       0x4               ../../software/bsp_fsbl/lib\libxil.a(xil_exception.o)
+BitstreamFlag       0x1               C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+SignedPartitionFlag
+                    0x1               C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+EncryptedPartitionFlag
+                    0x1               C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+Xil_AssertStatus    0x4               ../../software/bsp_fsbl/lib\libxil.a(xil_assert.o)
+PartitionCount      0x4               C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+PLPartitionFlag     0x1               C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+SystemInitFlag      0x1               C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+PartitionHeader     0x380             C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+PcapCtrlRegVal      0x4               C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crti.o
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crti.o
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crti.o
+ .data          0x0000000000000000        0x4 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtbegin.o
+ .text          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ .data          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ .bss           0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ .text.ReleaseSD
+                0x0000000000000000       0x14 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ .text          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKGkq2f.o
+ .data          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKGkq2f.o
+ .bss           0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKGkq2f.o
+ .debug_info    0x0000000000000000      0x9cd C:\Users\LIUDAN~1\AppData\Local\Temp\ccKGkq2f.o
+ .debug_abbrev  0x0000000000000000      0x1c5 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKGkq2f.o
+ .debug_aranges
+                0x0000000000000000       0x18 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKGkq2f.o
+ .debug_line    0x0000000000000000      0x236 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKGkq2f.o
+ .debug_str     0x0000000000000000      0x610 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKGkq2f.o
+ .comment       0x0000000000000000       0x12 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKGkq2f.o
+ .ARM.attributes
+                0x0000000000000000       0x3d C:\Users\LIUDAN~1\AppData\Local\Temp\ccKGkq2f.o
+ .text          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\cc889pXK.o
+ .data          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\cc889pXK.o
+ .bss           0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\cc889pXK.o
+ .text          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ .data          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ .bss           0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ .text.GetImageHeaderStartAddr
+                0x0000000000000000       0x38 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ .text.CalcPartitionChecksum
+                0x0000000000000000       0x14 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ .text          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+ .data          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+ .bss           0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+ .text.MD5Memset
+                0x0000000000000000       0x20 C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+ .text.MD5Memcpy
+                0x0000000000000000       0x7c C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+ .text.MD5Init  0x0000000000000000       0x40 C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+ .text.MD5Update
+                0x0000000000000000      0x284 C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+ .text.MD5Final
+                0x0000000000000000      0x11c C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+ .text          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+ .data          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+ .bss           0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+ .text          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .data          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .bss           0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .text.memcpy_rom
+                0x0000000000000000       0x24 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .text.GetResetReason
+                0x0000000000000000       0x10 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .text          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccaXmHqt.o
+ .data          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccaXmHqt.o
+ .bss           0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccaXmHqt.o
+ .debug_line    0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccaXmHqt.o
+ .debug_str     0x0000000000000000       0xdb C:\Users\LIUDAN~1\AppData\Local\Temp\ccaXmHqt.o
+ .comment       0x0000000000000000       0x12 C:\Users\LIUDAN~1\AppData\Local\Temp\ccaXmHqt.o
+ .ARM.attributes
+                0x0000000000000000       0x3d C:\Users\LIUDAN~1\AppData\Local\Temp\ccaXmHqt.o
+ .text          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\cclsriMD.o
+ .data          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\cclsriMD.o
+ .bss           0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\cclsriMD.o
+ .debug_info    0x0000000000000000      0x9cd C:\Users\LIUDAN~1\AppData\Local\Temp\cclsriMD.o
+ .debug_abbrev  0x0000000000000000      0x1c5 C:\Users\LIUDAN~1\AppData\Local\Temp\cclsriMD.o
+ .debug_aranges
+                0x0000000000000000       0x18 C:\Users\LIUDAN~1\AppData\Local\Temp\cclsriMD.o
+ .debug_line    0x0000000000000000      0x236 C:\Users\LIUDAN~1\AppData\Local\Temp\cclsriMD.o
+ .debug_str     0x0000000000000000      0x610 C:\Users\LIUDAN~1\AppData\Local\Temp\cclsriMD.o
+ .comment       0x0000000000000000       0x12 C:\Users\LIUDAN~1\AppData\Local\Temp\cclsriMD.o
+ .ARM.attributes
+                0x0000000000000000       0x3d C:\Users\LIUDAN~1\AppData\Local\Temp\cclsriMD.o
+ .text          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKIMHmW.o
+ .data          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKIMHmW.o
+ .bss           0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKIMHmW.o
+ .text          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .data          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .bss           0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .text.ps7GetSiliconVersion
+                0x0000000000000000       0x14 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .text.mask_write
+                0x0000000000000000       0x18 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .text.mask_poll
+                0x0000000000000000       0x44 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .text.mask_read
+                0x0000000000000000        0xc C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .text.perf_start_clock
+                0x0000000000000000       0x14 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .text.get_number_of_cycles_for_delay
+                0x0000000000000000       0x20 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .text.perf_disable_clock
+                0x0000000000000000       0x14 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .text.ps7_debug
+                0x0000000000000000       0x44 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .data.ps7_debug_1_0
+                0x0000000000000000       0x28 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .data.ps7_debug_2_0
+                0x0000000000000000       0x28 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .data.ps7_debug_3_0
+                0x0000000000000000       0x28 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .text          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ .data          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ .bss           0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ .text          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccZMMApt.o
+ .data          0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccZMMApt.o
+ .bss           0x0000000000000000        0x0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccZMMApt.o
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxilffs.a(ff.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_sinit.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_sinit.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_intr.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_intr.o)
+ .text          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_g.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_g.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xsdps.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xsdps_sinit.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xsdps_sinit.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xil_cache.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xil_cache.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xil_sleepcommon.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xil_sleepcommon.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xtime_l.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xtime_l.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xil_printf.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xil_printf.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xil_exception.o)
+ .text          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(asm_vectors.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(asm_vectors.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(asm_vectors.o)
+ .debug_line    0x0000000000000000       0x90 ../../software/bsp_fsbl/lib\libxil.a(asm_vectors.o)
+ .debug_info    0x0000000000000000       0x26 ../../software/bsp_fsbl/lib\libxil.a(asm_vectors.o)
+ .debug_abbrev  0x0000000000000000       0x14 ../../software/bsp_fsbl/lib\libxil.a(asm_vectors.o)
+ .debug_aranges
+                0x0000000000000000       0x20 ../../software/bsp_fsbl/lib\libxil.a(asm_vectors.o)
+ .debug_str     0x0000000000000000       0x88 ../../software/bsp_fsbl/lib\libxil.a(asm_vectors.o)
+ .ARM.attributes
+                0x0000000000000000       0x1f ../../software/bsp_fsbl/lib\libxil.a(asm_vectors.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xsdps_options.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xsdps_options.o)
+ .text          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xsdps_g.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xsdps_g.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(usleep.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(usleep.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(sleep.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(sleep.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(outbyte.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(outbyte.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(vectors.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(vectors.o)
+ .text          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(boot.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(boot.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(boot.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xuartps_hw.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xuartps_hw.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xil-crt0.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xil-crt0.o)
+ .got2          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(xil-crt0.o)
+ .text          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(translation_table.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(translation_table.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(translation_table.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(cpu_init.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(cpu_init.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+ .text          0x0000000000000000      0x2b0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+ .debug_frame   0x0000000000000000       0x20 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x0000000000000000       0x1f e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_dvmd_tls.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_dvmd_tls.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-fini.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-fini.o)
+ .text          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mbtowc_r.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mbtowc_r.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcasecmp.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcasecmp.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcat.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcat.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strchr.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strchr.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcmp.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcmp.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcpy.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcpy.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strlcpy.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strlcpy.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strlen.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strlen.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncasecmp.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncasecmp.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncmp.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncmp.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncpy.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncpy.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strtol.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strtol.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-vsnprintf.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-vsnprintf.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wctomb_r.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wctomb_r.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-__call_atexit.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-__call_atexit.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-ctype_.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-ctype_.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-getenv_r.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-getenv_r.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfprintf.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfprintf.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wcrtomb.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wcrtomb.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wcsrtombs.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wcsrtombs.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-dtoa.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-dtoa.o)
+ .text          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-environ.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-envlock.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-envlock.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-freer.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-freer.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-localeconv.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-localeconv.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memchr.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memchr.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memcpy.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memcpy.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mlock.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mlock.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mprec.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mprec.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-sbrkr.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-sbrkr.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-s_frexp.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-s_frexp.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfiprintf.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfiprintf.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wcsnrtombs.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wcsnrtombs.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-callocr.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-callocr.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memmove.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memmove.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-reallocr.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-reallocr.o)
+ .text          0x0000000000000000       0xa4 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-reent.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-reent.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-reent.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(_sbrk.o)
+ .data          0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(_exit.o)
+ .bss           0x0000000000000000        0x0 ../../software/bsp_fsbl/lib\libxil.a(_exit.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_udivmoddi4.o)
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.extab     0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_udivmoddi4.o)
+ .text          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtend.o
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtend.o
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtend.o
+ .eh_frame      0x0000000000000000        0x4 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtend.o
+ .text          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtn.o
+ .data          0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtn.o
+ .bss           0x0000000000000000        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ps7_ram_0_S_AXI_BASEADDR 0x0000000000000000 0x0000000000030000
+ps7_ram_1_S_AXI_BASEADDR 0x00000000ffff0000 0x000000000000fe00
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crti.o
+LOAD e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtbegin.o
+                0x0000000000006000                _STACK_SIZE = DEFINED (_STACK_SIZE)?_STACK_SIZE:0x6000
+                0x0000000000002000                _HEAP_SIZE = DEFINED (_HEAP_SIZE)?_HEAP_SIZE:0x2000
+                0x0000000000001000                _RSA_AC_SIZE = DEFINED (_RSA_AC_SIZE)?_RSA_AC_SIZE:0x1000
+                0x0000000000000400                _ABORT_STACK_SIZE = DEFINED (_ABORT_STACK_SIZE)?_ABORT_STACK_SIZE:0x400
+                0x0000000000000800                _SUPERVISOR_STACK_SIZE = DEFINED (_SUPERVISOR_STACK_SIZE)?_SUPERVISOR_STACK_SIZE:0x800
+                0x0000000000000400                _FIQ_STACK_SIZE = DEFINED (_FIQ_STACK_SIZE)?_FIQ_STACK_SIZE:0x400
+                0x0000000000000400                _UNDEF_STACK_SIZE = DEFINED (_UNDEF_STACK_SIZE)?_UNDEF_STACK_SIZE:0x400
+
+.text           0x0000000000000000    0x13b94
+ *(.vectors)
+ .vectors       0x0000000000000000      0x12c ../../software/bsp_fsbl/lib\libxil.a(asm_vectors.o)
+                0x0000000000000000                _vector_table
+ *(.boot)
+ .boot          0x000000000000012c      0x3b0 ../../software/bsp_fsbl/lib\libxil.a(boot.o)
+                0x000000000000012c                _prestart
+                0x000000000000012c                _boot
+ *(.text)
+ .text          0x00000000000004dc       0xa8 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtbegin.o
+ .text          0x0000000000000584     0x37f8 ../../software/bsp_fsbl/lib\libxilffs.a(ff.o)
+                0x0000000000001ba4                f_mount
+                0x0000000000001c28                f_open
+                0x0000000000001fa0                f_read
+                0x0000000000002250                f_write
+                0x0000000000002568                f_sync
+                0x0000000000002694                f_close
+                0x00000000000026d0                f_lseek
+                0x0000000000002948                f_opendir
+                0x0000000000002a28                f_closedir
+                0x0000000000002a4c                f_readdir
+                0x0000000000002ac8                f_stat
+                0x0000000000002b58                f_getfree
+                0x0000000000002ccc                f_truncate
+                0x0000000000002e1c                f_unlink
+                0x0000000000002f48                f_mkdir
+                0x0000000000003150                f_rename
+                0x000000000000338c                f_mkfs
+ .text          0x0000000000003d7c      0x33c ../../software/bsp_fsbl/lib\libxilffs.a(diskio.o)
+                0x0000000000003d7c                disk_status
+                0x0000000000003eb0                disk_initialize
+                0x0000000000003f58                disk_read
+                0x0000000000003fc8                disk_ioctl
+                0x000000000000403c                get_fattime
+                0x0000000000004048                disk_write
+ .text          0x00000000000040b8      0xb9c ../../software/bsp_fsbl/lib\libxil.a(xdevcfg.o)
+                0x00000000000040b8                XDcfg_CfgInitialize
+                0x0000000000004174                XDcfg_EnablePCAP
+                0x00000000000041f8                XDcfg_DisablePCAP
+                0x000000000000427c                XDcfg_SetControlRegister
+                0x0000000000004300                XDcfg_ClearControlRegister
+                0x0000000000004384                XDcfg_GetControlRegister
+                0x0000000000004408                XDcfg_SetLockRegister
+                0x0000000000004484                XDcfg_GetLockRegister
+                0x0000000000004508                XDcfg_SetConfigRegister
+                0x0000000000004584                XDcfg_GetConfigRegister
+                0x0000000000004608                XDcfg_SetStatusRegister
+                0x0000000000004684                XDcfg_GetStatusRegister
+                0x0000000000004708                XDcfg_SetRomShadowRegister
+                0x0000000000004784                XDcfg_GetSoftwareIdRegister
+                0x0000000000004808                XDcfg_SetMiscControlRegister
+                0x000000000000488c                XDcfg_GetMiscControlRegister
+                0x0000000000004910                XDcfg_IsDmaBusy
+                0x000000000000499c                XDcfg_InitiateDma
+                0x00000000000049c8                XDcfg_Transfer
+ .text          0x0000000000004c54       0x1c ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_sinit.o)
+                0x0000000000004c54                XDcfg_LookupConfig
+ .text          0x0000000000004c70      0x3d4 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_intr.o)
+                0x0000000000004c70                XDcfg_IntrEnable
+                0x0000000000004d00                XDcfg_IntrDisable
+                0x0000000000004d90                XDcfg_IntrGetEnabled
+                0x0000000000004e18                XDcfg_IntrGetStatus
+                0x0000000000004e9c                XDcfg_IntrClear
+                0x0000000000004f18                XDcfg_InterruptHandler
+                0x0000000000004fa4                XDcfg_SetHandler
+ .text          0x0000000000005044     0x1810 ../../software/bsp_fsbl/lib\libxil.a(xsdps.o)
+                0x0000000000005044                XSdPs_CfgInitialize
+                0x0000000000005260                XSdPs_FrameCmd
+                0x00000000000053f8                XSdPs_CmdTransfer
+                0x000000000000556c                XSdPs_SdCardInitialize
+                0x0000000000005934                XSdPs_Select_Card
+                0x0000000000005954                XSdPs_SetupADMA2DescTbl64Bit
+                0x0000000000005ac4                XSdPs_SetupADMA2DescTbl
+                0x0000000000005d14                XSdPs_ReadPolled
+                0x0000000000005e7c                XSdPs_WritePolled
+                0x0000000000005fc0                XSdPs_MmcCardInitialize
+                0x00000000000061b0                XSdPs_CardInitialize
+                0x00000000000067b4                XSdPs_Idle
+ .text          0x0000000000006854       0x1c ../../software/bsp_fsbl/lib\libxil.a(xsdps_sinit.o)
+                0x0000000000006854                XSdPs_LookupConfig
+ .text          0x0000000000006870       0x70 ../../software/bsp_fsbl/lib\libxil.a(xil_assert.o)
+                0x0000000000006870                Xil_Assert
+                0x00000000000068cc                Xil_AssertSetCallback
+                0x00000000000068dc                XNullHandler
+ .text          0x00000000000068e0      0x96c ../../software/bsp_fsbl/lib\libxil.a(xil_cache.o)
+                0x00000000000068e0                Xil_DCacheInvalidateLine
+                0x0000000000006918                Xil_DCacheInvalidateRange
+                0x0000000000006a00                Xil_DCacheFlushLine
+                0x0000000000006a4c                Xil_DCacheFlushRange
+                0x0000000000006aa0                Xil_DCacheStoreLine
+                0x0000000000006ad8                Xil_ICacheInvalidateLine
+                0x0000000000006b10                Xil_ICacheInvalidateRange
+                0x0000000000006b68                Xil_L1DCacheInvalidate
+                0x0000000000006c1c                Xil_L1DCacheEnable
+                0x0000000000006c3c                Xil_L1DCacheInvalidateLine
+                0x0000000000006c54                Xil_L1DCacheInvalidateRange
+                0x0000000000006c9c                Xil_L1DCacheFlush
+                0x0000000000006d28                Xil_L1DCacheDisable
+                0x0000000000006d40                Xil_DCacheFlush
+                0x0000000000006d9c                Xil_L1DCacheFlushLine
+                0x0000000000006db4                Xil_L1DCacheFlushRange
+                0x0000000000006dfc                Xil_L1DCacheStoreLine
+                0x0000000000006e14                Xil_L1ICacheEnable
+                0x0000000000006e30                Xil_L1ICacheDisable
+                0x0000000000006e4c                Xil_L1ICacheInvalidate
+                0x0000000000006e64                Xil_L1ICacheInvalidateLine
+                0x0000000000006e7c                Xil_L1ICacheInvalidateRange
+                0x0000000000006ec4                Xil_L2CacheDisable
+                0x0000000000006f38                Xil_DCacheDisable
+                0x0000000000006f54                Xil_ICacheDisable
+                0x0000000000006f78                Xil_L2CacheInvalidate
+                0x0000000000006fe4                Xil_DCacheInvalidate
+                0x0000000000007004                Xil_ICacheInvalidate
+                0x000000000000708c                Xil_L2CacheEnable
+                0x00000000000070a4                Xil_DCacheEnable
+                0x00000000000070c8                Xil_ICacheEnable
+                0x00000000000070f8                Xil_L2CacheInvalidateLine
+                0x000000000000710c                Xil_L2CacheInvalidateRange
+                0x0000000000007174                Xil_L2CacheFlush
+                0x00000000000071b8                Xil_L2CacheFlushLine
+                0x00000000000071d0                Xil_L2CacheFlushRange
+                0x0000000000007238                Xil_L2CacheStoreLine
+ .text          0x000000000000724c        0x8 ../../software/bsp_fsbl/lib\libxil.a(xil_sleepcommon.o)
+                0x000000000000724c                sleep
+                0x0000000000007250                usleep
+ .text          0x0000000000007254       0x4c ../../software/bsp_fsbl/lib\libxil.a(xtime_l.o)
+                0x0000000000007254                XTime_SetTime
+                0x0000000000007278                XTime_GetTime
+ .text          0x00000000000072a0      0x6c0 ../../software/bsp_fsbl/lib\libxil.a(xil_printf.o)
+                0x00000000000074d4                xil_printf
+ .text          0x0000000000007960       0x70 ../../software/bsp_fsbl/lib\libxil.a(xil_exception.o)
+                0x0000000000007964                Xil_DataAbortHandler
+                0x0000000000007968                Xil_PrefetchAbortHandler
+                0x000000000000796c                Xil_UndefinedExceptionHandler
+                0x0000000000007970                Xil_ExceptionInit
+                0x0000000000007974                Xil_ExceptionRegisterHandler
+                0x000000000000798c                Xil_GetExceptionRegisterHandler
+                0x00000000000079ac                Xil_ExceptionRemoveHandler
+ .text          0x00000000000079d0      0xe80 ../../software/bsp_fsbl/lib\libxil.a(xsdps_options.o)
+                0x00000000000079d0                XSdPs_SetBlkSize
+                0x0000000000007a8c                XSdPs_Get_BusWidth
+                0x0000000000007c0c                XSdPs_Change_BusWidth
+                0x0000000000007e0c                XSdPs_Get_BusSpeed
+                0x0000000000007f74                XSdPs_Get_Status
+                0x00000000000080d8                XSdPs_Change_ClkFreq
+                0x0000000000008254                XSdPs_Change_BusSpeed
+                0x00000000000085c8                XSdPs_Pullup
+                0x000000000000867c                XSdPs_Get_Mmc_ExtCsd
+                0x00000000000087e4                XSdPs_Set_Mmc_ExtCsd
+ .text          0x0000000000008850       0x44 ../../software/bsp_fsbl/lib\libxil.a(usleep.o)
+                0x0000000000008850                usleep_A9
+ .text          0x0000000000008894       0x48 ../../software/bsp_fsbl/lib\libxil.a(sleep.o)
+                0x0000000000008894                sleep_A9
+ .text          0x00000000000088dc       0x10 ../../software/bsp_fsbl/lib\libxil.a(outbyte.o)
+                0x00000000000088dc                outbyte
+ .text          0x00000000000088ec       0x78 ../../software/bsp_fsbl/lib\libxil.a(vectors.o)
+                0x00000000000088ec                FIQInterrupt
+                0x0000000000008900                IRQInterrupt
+                0x0000000000008914                UndefinedException
+                0x0000000000008928                SWInterrupt
+                0x000000000000893c                DataAbortInterrupt
+                0x0000000000008950                PrefetchAbortInterrupt
+ .text          0x0000000000008964       0x88 ../../software/bsp_fsbl/lib\libxil.a(xuartps_hw.o)
+                0x0000000000008964                XUartPs_SendByte
+                0x000000000000897c                XUartPs_RecvByte
+                0x0000000000008998                XUartPs_ResetHw
+ .text          0x00000000000089ec       0x78 ../../software/bsp_fsbl/lib\libxil.a(xil-crt0.o)
+                0x0000000000008a00                _start
+ .text          0x0000000000008a64       0x3c ../../software/bsp_fsbl/lib\libxil.a(cpu_init.o)
+                0x0000000000008a64                __cpu_init
+ .text          0x0000000000008aa0      0x278 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+                0x0000000000008aa0                __aeabi_uidiv
+                0x0000000000008aa0                __udivsi3
+                0x0000000000008cfc                __aeabi_uidivmod
+ .text          0x0000000000008d18        0x4 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_dvmd_tls.o)
+                0x0000000000008d18                __aeabi_idiv0
+                0x0000000000008d18                __aeabi_ldiv0
+ .text          0x0000000000008d1c       0x20 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-exit.o)
+                0x0000000000008d1c                exit
+ .text          0x0000000000008d3c       0x30 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-fini.o)
+                0x0000000000008d3c                __libc_fini_array
+ .text          0x0000000000008d6c       0x50 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-init.o)
+                0x0000000000008d6c                __libc_init_array
+ .text          0x0000000000008dbc      0x9e0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o)
+                0x0000000000008e28                __loadlocale
+                0x00000000000094a8                __get_locale_env
+                0x00000000000094fc                _setlocale_r
+                0x0000000000009740                __locale_mb_cur_max
+                0x0000000000009760                __locale_ctype_ptr_l
+                0x0000000000009768                __locale_ctype_ptr
+                0x0000000000009788                setlocale
+ .text          0x000000000000979c      0x4b8 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mbtowc_r.o)
+                0x000000000000979c                _mbtowc_r
+                0x00000000000097c4                __ascii_mbtowc
+                0x00000000000097e8                __utf8_mbtowc
+                0x00000000000099f0                __sjis_mbtowc
+                0x0000000000009a74                __eucjp_mbtowc
+                0x0000000000009b2c                __jis_mbtowc
+ .text          0x0000000000009c54       0xa0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memset.o)
+                0x0000000000009c54                memset
+ .text          0x0000000000009cf4       0x44 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcasecmp.o)
+                0x0000000000009cf4                strcasecmp
+ .text          0x0000000000009d38       0x40 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcat.o)
+                0x0000000000009d38                strcat
+ .text          0x0000000000009d78       0xe4 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strchr.o)
+                0x0000000000009d78                strchr
+ *fill*         0x0000000000009e5c        0x4 
+ .text          0x0000000000009e60      0x2dc e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcmp.o)
+                0x0000000000009e68                strcmp
+ .text          0x000000000000a13c       0xc4 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcpy.o)
+                0x000000000000a13c                strcpy
+ .text          0x000000000000a200       0x58 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strlcpy.o)
+                0x000000000000a200                strlcpy
+ *fill*         0x000000000000a258       0x28 
+ .text          0x000000000000a280       0xdc e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strlen.o)
+                0x000000000000a280                strlen
+ .text          0x000000000000a35c       0x5c e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncasecmp.o)
+                0x000000000000a35c                strncasecmp
+ .text          0x000000000000a3b8       0xa4 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncmp.o)
+                0x000000000000a3b8                strncmp
+ .text          0x000000000000a45c       0x80 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncpy.o)
+                0x000000000000a45c                strncpy
+ .text          0x000000000000a4dc      0x198 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strtol.o)
+                0x000000000000a5fc                _strtol_r
+                0x000000000000a624                strtol_l
+                0x000000000000a644                strtol
+ .text          0x000000000000a674       0x8c e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-vsnprintf.o)
+                0x000000000000a674                _vsnprintf_r
+                0x000000000000a6e0                vsnprintf
+ .text          0x000000000000a700      0x22c e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wctomb_r.o)
+                0x000000000000a700                _wctomb_r
+                0x000000000000a728                __ascii_wctomb
+                0x000000000000a740                __utf8_wctomb
+                0x000000000000a7e4                __sjis_wctomb
+                0x000000000000a838                __eucjp_wctomb
+                0x000000000000a8a8                __jis_wctomb
+ .text          0x000000000000a92c       0xdc e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-__call_atexit.o)
+                0x000000000000a92c                __call_exitprocs
+ .text          0x000000000000aa08       0x10 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-ctype_.o)
+                0x000000000000aa08                __set_ctype
+ .text          0x000000000000aa18       0x98 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-getenv_r.o)
+                0x000000000000aa18                _findenv_r
+                0x000000000000aaa0                _getenv_r
+ .text          0x000000000000aab0     0x1b4c e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfprintf.o)
+                0x000000000000aab0                _svfprintf_r
+ .text          0x000000000000c5fc       0xac e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wcrtomb.o)
+                0x000000000000c5fc                _wcrtomb_r
+                0x000000000000c650                wcrtomb
+ .text          0x000000000000c6a8       0x3c e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wcsrtombs.o)
+                0x000000000000c6a8                _wcsrtombs_r
+                0x000000000000c6c0                wcsrtombs
+ *fill*         0x000000000000c6e4        0x4 
+ .text          0x000000000000c6e8      0xe54 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-dtoa.o)
+                0x000000000000c830                _dtoa_r
+ .text          0x000000000000d53c        0x8 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-envlock.o)
+                0x000000000000d53c                __env_lock
+                0x000000000000d540                __env_unlock
+ .text          0x000000000000d544      0x29c e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-freer.o)
+                0x000000000000d544                _malloc_trim_r
+                0x000000000000d5f0                _free_r
+ .text          0x000000000000d7e0       0x44 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-localeconv.o)
+                0x000000000000d7e0                __localeconv_l
+                0x000000000000d7e4                _localeconv_r
+                0x000000000000d804                localeconv
+ .text          0x000000000000d824      0x564 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mallocr.o)
+                0x000000000000d824                _malloc_r
+ *fill*         0x000000000000dd88        0x8 
+ .text          0x000000000000dd90       0xa0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memchr.o)
+                0x000000000000dd90                memchr
+ *fill*         0x000000000000de30       0x10 
+ .text          0x000000000000de40      0x5e0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memcpy.o)
+                0x000000000000de40                memcpy
+ .text          0x000000000000e420        0x8 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mlock.o)
+                0x000000000000e420                __malloc_lock
+                0x000000000000e424                __malloc_unlock
+ .text          0x000000000000e428      0x8fc e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mprec.o)
+                0x000000000000e428                _Balloc
+                0x000000000000e474                _Bfree
+                0x000000000000e488                __multadd
+                0x000000000000e518                __s2b
+                0x000000000000e5b0                __hi0bits
+                0x000000000000e5f0                __lo0bits
+                0x000000000000e64c                __i2b
+                0x000000000000e660                __multiply
+                0x000000000000e7a0                __pow5mult
+                0x000000000000e844                __lshift
+                0x000000000000e900                __mcmp
+                0x000000000000e93c                __mdiff
+                0x000000000000ea44                __ulp
+                0x000000000000ea94                __b2d
+                0x000000000000eb44                __d2b
+                0x000000000000ebf8                __ratio
+                0x000000000000ec58                _mprec_log10
+                0x000000000000ec80                __copybits
+                0x000000000000ecc8                __any_on
+ .text          0x000000000000ed24       0x28 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-sbrkr.o)
+                0x000000000000ed24                _sbrk_r
+ *fill*         0x000000000000ed4c        0x4 
+ .text          0x000000000000ed50       0x80 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-s_frexp.o)
+                0x000000000000ed50                frexp
+ .text          0x000000000000edd0      0xe90 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfiprintf.o)
+                0x000000000000edd0                __ssprint_r
+                0x000000000000eec8                _svfiprintf_r
+ .text          0x000000000000fc60      0x15c e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wcsnrtombs.o)
+                0x000000000000fc60                _wcsnrtombs_l
+                0x000000000000fd54                _wcsnrtombs_r
+                0x000000000000fd84                wcsnrtombs
+ .text          0x000000000000fdbc       0x64 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-callocr.o)
+                0x000000000000fdbc                _calloc_r
+ .text          0x000000000000fe20       0xd0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memmove.o)
+                0x000000000000fe20                memmove
+ .text          0x000000000000fef0      0x374 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-reallocr.o)
+                0x000000000000fef0                _realloc_r
+ .text          0x0000000000010264       0x40 ../../software/bsp_fsbl/lib\libxil.a(_sbrk.o)
+                0x0000000000010264                _sbrk
+ .text          0x00000000000102a4        0x4 ../../software/bsp_fsbl/lib\libxil.a(_exit.o)
+                0x00000000000102a4                _exit
+ .text          0x00000000000102a8       0x30 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+                0x00000000000102a8                __aeabi_uldivmod
+ .text          0x00000000000102d8      0x118 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x00000000000102d8                __udivmoddi4
+ *(.text.*)
+ .text.EarlyLog
+                0x00000000000103f0       0xdc C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+                0x00000000000103f0                EarlyLog
+ .text.EarlyPrintf
+                0x00000000000104cc       0x54 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+                0x00000000000104cc                EarlyPrintf
+ .text.InitSD   0x0000000000010520       0xbc C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+                0x0000000000010520                InitSD
+ .text.SDAccess
+                0x00000000000105dc       0xcc C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+                0x00000000000105dc                SDAccess
+ .text.InitNor  0x00000000000106a8       0x14 C:\Users\LIUDAN~1\AppData\Local\Temp\cc889pXK.o
+                0x00000000000106a8                InitNor
+ .text.NorAccess
+                0x00000000000106bc       0x50 C:\Users\LIUDAN~1\AppData\Local\Temp\cc889pXK.o
+                0x00000000000106bc                NorAccess
+ .text.GetPartitionHeaderStartAddr
+                0x000000000001070c       0x38 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+                0x000000000001070c                GetPartitionHeaderStartAddr
+ .text.GetFsblLength
+                0x0000000000010744       0x38 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+                0x0000000000010744                GetFsblLength
+ .text.LoadPartitionsHeaderInfo
+                0x000000000001077c       0x34 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+                0x000000000001077c                LoadPartitionsHeaderInfo
+ .text.HeaderDump
+                0x00000000000107b0       0xb8 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+                0x00000000000107b0                HeaderDump
+ .text.IsLastPartition
+                0x0000000000010868       0x50 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+                0x0000000000010868                IsLastPartition
+ .text.GetPartitionCount
+                0x00000000000108b8       0x34 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+                0x00000000000108b8                GetPartitionCount
+ .text.GetPartitionHeaderInfo
+                0x00000000000108ec      0x10c C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+                0x00000000000108ec                GetPartitionHeaderInfo
+ .text.IsEmptyHeader
+                0x00000000000109f8       0x3c C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+                0x00000000000109f8                IsEmptyHeader
+ .text.ValidatePartitionHeaderChecksum
+                0x0000000000010a34       0x4c C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+                0x0000000000010a34                ValidatePartitionHeaderChecksum
+ .text.ValidateHeader
+                0x0000000000010a80       0x6c C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+                0x0000000000010a80                ValidateHeader
+ .text.PartitionMove
+                0x0000000000010aec      0x264 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+                0x0000000000010aec                PartitionMove
+ .text.DecryptPartition
+                0x0000000000010d50       0x40 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+                0x0000000000010d50                DecryptPartition
+ .text.GetPartitionChecksum
+                0x0000000000010d90       0x24 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+                0x0000000000010d90                GetPartitionChecksum
+ .text.ValidateParition
+                0x0000000000010db4      0x108 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+                0x0000000000010db4                ValidateParition
+ .text.LoadBootImage
+                0x0000000000010ebc      0x6c4 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+                0x0000000000010ebc                LoadBootImage
+ .text.MD5Transform
+                0x0000000000011580      0xa10 C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+                0x0000000000011580                MD5Transform
+ .text.md5      0x0000000000011f90      0x284 C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+                0x0000000000011f90                md5
+ .text.FsblHookBeforeBitstreamDload
+                0x0000000000012214       0x24 C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+                0x0000000000012214                FsblHookBeforeBitstreamDload
+ .text.FsblHookAfterBitstreamDload
+                0x0000000000012238       0x24 C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+                0x0000000000012238                FsblHookAfterBitstreamDload
+ .text.FsblHookBeforeHandoff
+                0x000000000001225c       0x24 C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+                0x000000000001225c                FsblHookBeforeHandoff
+ .text.FsblHookFallback
+                0x0000000000012280       0x20 C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+                0x0000000000012280                FsblHookFallback
+ .text.OutputStatus
+                0x00000000000122a0       0x40 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+                0x00000000000122a0                OutputStatus
+ .text.strcpy_rom
+                0x00000000000122e0       0x40 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+                0x00000000000122e0                strcpy_rom
+ .text.MarkFSBLIn
+                0x0000000000012320       0x14 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+                0x0000000000012320                MarkFSBLIn
+ .text.ClearFSBLIn
+                0x0000000000012334       0x14 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+                0x0000000000012334                ClearFSBLIn
+ .text.GetSiliconVersion
+                0x0000000000012348       0x54 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+                0x0000000000012348                GetSiliconVersion
+ .text.HeaderChecksum
+                0x000000000001239c       0x9c C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+                0x000000000001239c                HeaderChecksum
+ .text.ImageCheckID
+                0x0000000000012438       0x40 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+                0x0000000000012438                ImageCheckID
+ .text.NextValidImageCheck
+                0x0000000000012478       0xfc C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+                0x0000000000012478                NextValidImageCheck
+ .text.FsblFallback
+                0x0000000000012574      0x130 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+                0x0000000000012574                FsblFallback
+ .text.FsblHandoff
+                0x00000000000126a4       0xb8 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+                0x00000000000126a4                FsblHandoff
+ .text.ErrorLockdown
+                0x000000000001275c       0x10 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+                0x000000000001275c                ErrorLockdown
+ .text.FIQ_Handler
+                0x000000000001276c       0x1c C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .text.IRQ_Handler
+                0x0000000000012788       0x1c C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .text.Data_Abort_Handler
+                0x00000000000127a4       0x1c C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .text.PreFetch_Abort_Handler
+                0x00000000000127c0       0x1c C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .text.SVC_Handler
+                0x00000000000127dc       0x1c C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .text.Undef_Handler
+                0x00000000000127f8       0x1c C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .text.DDRInitCheck
+                0x0000000000012814       0x54 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+                0x0000000000012814                DDRInitCheck
+ .text.main     0x0000000000012868      0x4a0 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+                0x0000000000012868                main
+ .text.DiagnosticDdrTest
+                0x0000000000012d08      0x174 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKIMHmW.o
+                0x0000000000012d08                DiagnosticDdrTest
+ .text.getPS7MessageInfo
+                0x0000000000012e7c       0x78 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000012e7c                getPS7MessageInfo
+ .text.perf_reset_clock
+                0x0000000000012ef4       0x1c C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000012ef4                perf_reset_clock
+ .text.perf_reset_and_start_timer
+                0x0000000000012f10       0x1c C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000012f10                perf_reset_and_start_timer
+ .text.ps7_config
+                0x0000000000012f2c      0x12c C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000012f2c                ps7_config
+ .text.ps7_post_config
+                0x0000000000013058       0x44 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000013058                ps7_post_config
+ .text.ps7_init
+                0x000000000001309c      0x1c8 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x000000000001309c                ps7_init
+ .text.InitPcap
+                0x0000000000013264       0x4c C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+                0x0000000000013264                InitPcap
+ .text.FabricInit
+                0x00000000000132b0      0x278 C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+                0x00000000000132b0                FabricInit
+ .text.ClearPcapStatus
+                0x0000000000013528      0x114 C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+                0x0000000000013528                ClearPcapStatus
+ .text.PcapDumpRegisters
+                0x000000000001363c      0x180 C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+                0x000000000001363c                PcapDumpRegisters
+ .text.XDcfgPollDone
+                0x00000000000137bc       0xd8 C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+                0x00000000000137bc                XDcfgPollDone
+ .text.PcapDataTransfer
+                0x0000000000013894      0x104 C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+                0x0000000000013894                PcapDataTransfer
+ .text.PcapLoadPartition
+                0x0000000000013998      0x1fc C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+                0x0000000000013998                PcapLoadPartition
+ *(.gnu.linkonce.t.*)
+ *(.plt)
+ *(.gnu_warning)
+ *(.gcc_execpt_table)
+ *(.glue_7)
+ .glue_7        0x0000000000013b94        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x0000000000013b94        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x0000000000013b94        0x0 linker stubs
+ *(.ARM.extab)
+ *(.gnu.linkonce.armextab.*)
+
+.v4_bx          0x0000000000013b94        0x0
+ .v4_bx         0x0000000000013b94        0x0 linker stubs
+
+.iplt           0x0000000000013b94        0x0
+ .iplt          0x0000000000013b94        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtbegin.o
+
+.handoff        0x0000000000013b94       0x4c
+ .handoff       0x0000000000013b94       0x4c C:\Users\LIUDAN~1\AppData\Local\Temp\ccZMMApt.o
+                0x0000000000013b94                FsblHandoffJtagExit
+                0x0000000000013bb8                FsblHandoffExit
+
+.init           0x0000000000013be0        0xc
+ *(.init)
+ .init          0x0000000000013be0        0x4 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crti.o
+                0x0000000000013be0                _init
+ .init          0x0000000000013be4        0x8 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtn.o
+
+.fini           0x0000000000013bec        0xc
+ *(.fini)
+ .fini          0x0000000000013bec        0x4 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crti.o
+                0x0000000000013bec                _fini
+ .fini          0x0000000000013bf0        0x8 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtn.o
+
+.rodata         0x0000000000013bf8     0x1a18
+                0x0000000000013bf8                __rodata_start = .
+ *(.rodata)
+ .rodata        0x0000000000013bf8       0x1e ../../software/bsp_fsbl/lib\libxilffs.a(ff.o)
+ *fill*         0x0000000000013c16        0x2 
+ .rodata        0x0000000000013c18        0x4 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-impure.o)
+                0x0000000000013c18                _global_impure_ptr
+ .rodata        0x0000000000013c1c      0x188 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o)
+                0x0000000000013c38                __C_locale
+ .rodata        0x0000000000013da4       0x90 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mbtowc_r.o)
+ .rodata        0x0000000000013e34      0x101 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-ctype_.o)
+                0x0000000000013e34                _ctype_
+ *fill*         0x0000000000013f35        0x3 
+ .rodata        0x0000000000013f38       0x20 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfprintf.o)
+ .rodata        0x0000000000013f58      0x128 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mprec.o)
+                0x0000000000013f68                __mprec_tens
+                0x0000000000014030                __mprec_tinytens
+                0x0000000000014058                __mprec_bigtens
+ .rodata        0x0000000000014080       0x20 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfiprintf.o)
+ *(.rodata.*)
+ .rodata.EarlyLog.str1.4
+                0x00000000000140a0       0x10 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+                                         0x13 (size before relaxing)
+ .rodata.InitSD.str1.4
+                0x00000000000140b0       0x30 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ .rodata.SDAccess.str1.4
+                0x00000000000140e0       0xa2 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ *fill*         0x0000000000014182        0x2 
+ .rodata.DecryptPartition.str1.4
+                0x0000000000014184       0x1d C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ *fill*         0x00000000000141a1        0x3 
+ .rodata.GetFsblLength.str1.4
+                0x00000000000141a4       0x27 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ *fill*         0x00000000000141cb        0x1 
+ .rodata.GetPartitionHeaderInfo.str1.4
+                0x00000000000141cc       0xc0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ .rodata.GetPartitionHeaderStartAddr.str1.4
+                0x000000000001428c       0x14 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ .rodata.HeaderDump.str1.4
+                0x00000000000142a0      0x128 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ .rodata.LoadBootImage.str1.4
+                0x00000000000143c8      0x2cf C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ *fill*         0x0000000000014697        0x1 
+ .rodata.PartitionMove.str1.4
+                0x0000000000014698       0x51 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ *fill*         0x00000000000146e9        0x3 
+ .rodata.ValidateHeader.str1.4
+                0x00000000000146ec       0x57 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ *fill*         0x0000000000014743        0x1 
+ .rodata.ValidateParition.str1.4
+                0x0000000000014744       0x62 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+                                         0x66 (size before relaxing)
+ *fill*         0x00000000000147a6        0x2 
+ .rodata.ValidatePartitionHeaderChecksum.str1.4
+                0x00000000000147a8       0x27 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ *fill*         0x00000000000147cf        0x1 
+ .rodata.FsblHookAfterBitstreamDload.str1.4
+                0x00000000000147d0       0x3f C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+ *fill*         0x000000000001480f        0x1 
+ .rodata.FsblHookBeforeBitstreamDload.str1.4
+                0x0000000000014810       0x44 C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+ .rodata.FsblHookBeforeHandoff.str1.4
+                0x0000000000014854       0x41 C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+ *fill*         0x0000000000014895        0x3 
+ .rodata.FsblHookFallback.str1.4
+                0x0000000000014898       0x38 C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+ .rodata.Data_Abort_Handler.str1.4
+                0x00000000000148d0       0x16 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ *fill*         0x00000000000148e6        0x2 
+ .rodata.FIQ_Handler.str1.4
+                0x00000000000148e8        0xf C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ *fill*         0x00000000000148f7        0x1 
+ .rodata.FsblFallback.str1.4
+                0x00000000000148f8       0x98 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .rodata.FsblHandoff.str1.4
+                0x0000000000014990       0x59 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ *fill*         0x00000000000149e9        0x3 
+ .rodata.GetSiliconVersion.str1.4
+                0x00000000000149ec       0x30 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .rodata.HeaderChecksum.str1.4
+                0x0000000000014a1c       0x14 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .rodata.IRQ_Handler.str1.4
+                0x0000000000014a30        0xf C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ *fill*         0x0000000000014a3f        0x1 
+ .rodata.NextValidImageCheck.str1.4
+                0x0000000000014a40       0x45 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ *fill*         0x0000000000014a85        0x3 
+ .rodata.OutputStatus.str1.4
+                0x0000000000014a88       0x18 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .rodata.PreFetch_Abort_Handler.str1.4
+                0x0000000000014aa0       0x1a C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ *fill*         0x0000000000014aba        0x2 
+ .rodata.SVC_Handler.str1.4
+                0x0000000000014abc        0xf C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ *fill*         0x0000000000014acb        0x1 
+ .rodata.Undef_Handler.str1.4
+                0x0000000000014acc       0x14 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .rodata.main.str1.4
+                0x0000000000014ae0      0x333 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ *fill*         0x0000000000014e13        0x1 
+ .rodata.DiagnosticDdrTest.str1.4
+                0x0000000000014e14       0xf6 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKIMHmW.o
+ *fill*         0x0000000000014f0a        0x2 
+ .rodata.getPS7MessageInfo.str1.4
+                0x0000000000014f0c       0xd0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .rodata.ClearPcapStatus.str1.4
+                0x0000000000014fdc       0x96 C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ *fill*         0x0000000000015072        0x2 
+ .rodata.FabricInit.str1.4
+                0x0000000000015074       0x95 C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ *fill*         0x0000000000015109        0x3 
+ .rodata.InitPcap.str1.4
+                0x000000000001510c       0x1e C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ *fill*         0x000000000001512a        0x2 
+ .rodata.PcapDataTransfer.str1.4
+                0x000000000001512c       0x7a C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ *fill*         0x00000000000151a6        0x2 
+ .rodata.PcapDumpRegisters.str1.4
+                0x00000000000151a8      0x1e7 C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ *fill*         0x000000000001538f        0x1 
+ .rodata.PcapLoadPartition.str1.4
+                0x0000000000015390       0x9c C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ .rodata.XDcfgPollDone.str1.4
+                0x000000000001542c       0x1b C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+                                         0x23 (size before relaxing)
+ *fill*         0x0000000000015447        0x1 
+ .rodata.str1.4
+                0x0000000000015448       0x17 ../../software/bsp_fsbl/lib\libxilffs.a(ff.o)
+ *fill*         0x000000000001545f        0x1 
+ .rodata.str1.4
+                0x0000000000015460        0xa ../../software/bsp_fsbl/lib\libxil.a(xdevcfg.o)
+ *fill*         0x000000000001546a        0x2 
+ .rodata.str1.4
+                0x000000000001546c        0xf ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_intr.o)
+ *fill*         0x000000000001547b        0x1 
+ .rodata.str1.4
+                0x000000000001547c        0x8 ../../software/bsp_fsbl/lib\libxil.a(xsdps.o)
+ .rodata.str1.4
+                0x0000000000015484       0x11 ../../software/bsp_fsbl/lib\libxil.a(xil_printf.o)
+ *fill*         0x0000000000015495        0x3 
+ .rodata.str1.4
+                0x0000000000015498       0x10 ../../software/bsp_fsbl/lib\libxil.a(xsdps_options.o)
+ .rodata.str1.4
+                0x00000000000154a8      0x128 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o)
+                                        0x130 (size before relaxing)
+ .rodata.str1.4
+                0x00000000000155d0       0x2e e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfprintf.o)
+                                         0x42 (size before relaxing)
+ *fill*         0x00000000000155fe        0x2 
+ .rodata.str1.4
+                0x0000000000015600       0x10 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-dtoa.o)
+                                         0x12 (size before relaxing)
+ .rodata.str1.4
+                0x0000000000015610       0x2f e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfiprintf.o)
+ *(.gnu.linkonce.r.*)
+                0x000000000001563f                __rodata_end = .
+
+.rodata1        0x0000000000015610        0x0
+                0x0000000000015610                __rodata1_start = .
+ *(.rodata1)
+ *(.rodata1.*)
+                0x0000000000015610                __rodata1_end = .
+
+.sdata2         0x0000000000015610        0x0
+                0x0000000000015610                __sdata2_start = .
+ *(.sdata2)
+ *(.sdata2.*)
+ *(.gnu.linkonce.s2.*)
+                0x0000000000015610                __sdata2_end = .
+
+.sbss2          0x0000000000015610        0x0
+                0x0000000000015610                __sbss2_start = .
+ *(.sbss2)
+ *(.sbss2.*)
+ *(.gnu.linkonce.sb2.*)
+                0x0000000000015610                __sbss2_end = .
+
+.data           0x0000000000015610     0x278c
+                0x0000000000015610                __data_start = .
+ *(.data)
+ .data          0x0000000000015610        0x2 ../../software/bsp_fsbl/lib\libxilffs.a(diskio.o)
+ *fill*         0x0000000000015612        0x2 
+ .data          0x0000000000015614        0x8 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_g.o)
+                0x0000000000015614                XDcfg_ConfigTable
+ .data          0x000000000001561c        0x4 ../../software/bsp_fsbl/lib\libxil.a(xil_assert.o)
+                0x000000000001561c                Xil_AssertWait
+ .data          0x0000000000015620       0x38 ../../software/bsp_fsbl/lib\libxil.a(xil_exception.o)
+                0x0000000000015620                XExc_VectorTable
+ .data          0x0000000000015658       0x24 ../../software/bsp_fsbl/lib\libxil.a(xsdps_g.o)
+                0x0000000000015658                XSdPs_ConfigTable
+ *fill*         0x000000000001567c        0x4 
+ .data          0x0000000000015680      0x430 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-impure.o)
+                0x0000000000015680                _impure_ptr
+ .data          0x0000000000015ab0      0x18c e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o)
+                0x0000000000015ab0                __global_locale
+                0x0000000000015c1c                __default_locale
+ .data          0x0000000000015c3c        0x4 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-environ.o)
+                0x0000000000015c3c                environ
+ .data          0x0000000000015c40      0x410 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mallocr.o)
+                0x0000000000015c40                __malloc_av_
+                0x0000000000016048                __malloc_sbrk_base
+                0x000000000001604c                __malloc_trim_threshold
+ *(.data.*)
+ .data.boot_file
+                0x0000000000016050        0x4 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ .data.ps7_clock_init_data
+                0x0000000000016054        0x4 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000016054                ps7_clock_init_data
+ .data.ps7_clock_init_data_1_0
+                0x0000000000016058       0x8c C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000016058                ps7_clock_init_data_1_0
+ .data.ps7_clock_init_data_2_0
+                0x00000000000160e4       0x8c C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x00000000000160e4                ps7_clock_init_data_2_0
+ .data.ps7_clock_init_data_3_0
+                0x0000000000016170       0x8c C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000016170                ps7_clock_init_data_3_0
+ .data.ps7_ddr_init_data
+                0x00000000000161fc        0x4 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x00000000000161fc                ps7_ddr_init_data
+ .data.ps7_ddr_init_data_1_0
+                0x0000000000016200      0x50c C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000016200                ps7_ddr_init_data_1_0
+ .data.ps7_ddr_init_data_2_0
+                0x000000000001670c      0x52c C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x000000000001670c                ps7_ddr_init_data_2_0
+ .data.ps7_ddr_init_data_3_0
+                0x0000000000016c38      0x51c C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000016c38                ps7_ddr_init_data_3_0
+ .data.ps7_mio_init_data
+                0x0000000000017154        0x4 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000017154                ps7_mio_init_data
+ .data.ps7_mio_init_data_1_0
+                0x0000000000017158      0x19c C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000017158                ps7_mio_init_data_1_0
+ .data.ps7_mio_init_data_2_0
+                0x00000000000172f4      0x19c C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x00000000000172f4                ps7_mio_init_data_2_0
+ .data.ps7_mio_init_data_3_0
+                0x0000000000017490      0x19c C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000017490                ps7_mio_init_data_3_0
+ .data.ps7_peripherals_init_data
+                0x000000000001762c        0x4 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x000000000001762c                ps7_peripherals_init_data
+ .data.ps7_peripherals_init_data_1_0
+                0x0000000000017630       0xbc C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000017630                ps7_peripherals_init_data_1_0
+ .data.ps7_peripherals_init_data_2_0
+                0x00000000000176ec       0xbc C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x00000000000176ec                ps7_peripherals_init_data_2_0
+ .data.ps7_peripherals_init_data_3_0
+                0x00000000000177a8       0xbc C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x00000000000177a8                ps7_peripherals_init_data_3_0
+ .data.ps7_pll_init_data
+                0x0000000000017864        0x4 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000017864                ps7_pll_init_data
+ .data.ps7_pll_init_data_1_0
+                0x0000000000017868      0x180 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000017868                ps7_pll_init_data_1_0
+ .data.ps7_pll_init_data_2_0
+                0x00000000000179e8      0x180 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x00000000000179e8                ps7_pll_init_data_2_0
+ .data.ps7_pll_init_data_3_0
+                0x0000000000017b68      0x180 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000017b68                ps7_pll_init_data_3_0
+ .data.ps7_post_config_1_0
+                0x0000000000017ce8       0x3c C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000017ce8                ps7_post_config_1_0
+ .data.ps7_post_config_2_0
+                0x0000000000017d24       0x3c C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000017d24                ps7_post_config_2_0
+ .data.ps7_post_config_3_0
+                0x0000000000017d60       0x3c C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                0x0000000000017d60                ps7_post_config_3_0
+ *(.gnu.linkonce.d.*)
+ *(.jcr)
+ *(.got)
+ *(.got.plt)
+                0x0000000000017d9c                __data_end = .
+
+.tm_clone_table
+                0x0000000000017d9c        0x0
+ .tm_clone_table
+                0x0000000000017d9c        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtbegin.o
+ .tm_clone_table
+                0x0000000000017d9c        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtend.o
+
+.igot.plt       0x0000000000017d9c        0x0
+ .igot.plt      0x0000000000017d9c        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtbegin.o
+
+.data1          0x0000000000017d9c        0x0
+                0x0000000000017d9c                __data1_start = .
+ *(.data1)
+ *(.data1.*)
+                0x0000000000017d9c                __data1_end = .
+
+.got
+ *(.got)
+
+.ctors          0x0000000000017d9c        0x0
+                0x0000000000017d9c                __CTOR_LIST__ = .
+                0x0000000000017d9c                ___CTORS_LIST___ = .
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+                0x0000000000017d9c                __CTOR_END__ = .
+                0x0000000000017d9c                ___CTORS_END___ = .
+
+.dtors          0x0000000000017d9c        0x0
+                0x0000000000017d9c                __DTOR_LIST__ = .
+                0x0000000000017d9c                ___DTORS_LIST___ = .
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+                0x0000000000017d9c                __DTOR_END__ = .
+                0x0000000000017d9c                ___DTORS_END___ = .
+
+.fixup          0x0000000000017d9c        0x0
+                0x0000000000017d9c                __fixup_start = .
+ *(.fixup)
+                0x0000000000017d9c                __fixup_end = .
+
+.eh_frame       0x0000000000017d9c        0x0
+ *(.eh_frame)
+ .eh_frame      0x0000000000017d9c        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtbegin.o
+
+.eh_framehdr    0x0000000000017d9c        0x0
+                0x0000000000017d9c                __eh_framehdr_start = .
+ *(.eh_framehdr)
+                0x0000000000017d9c                __eh_framehdr_end = .
+
+.gcc_except_table
+ *(.gcc_except_table)
+
+.mmu_tbl        0x0000000000018000     0x4000
+                0x0000000000018000                __mmu_tbl_start = .
+ *(.mmu_tbl)
+ .mmu_tbl       0x0000000000018000     0x4000 ../../software/bsp_fsbl/lib\libxil.a(translation_table.o)
+                0x0000000000018000                MMUTable
+                0x000000000001c000                __mmu_tbl_end = .
+
+.ARM.exidx      0x000000000001c000        0x8
+                0x000000000001c000                __exidx_start = .
+ *(.ARM.exidx*)
+ .ARM.exidx     0x000000000001c000        0x8 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_udivmoddi4.o)
+ *(.gnu.linkonce.armexidix.*.*)
+                0x000000000001c008                __exidx_end = .
+
+.rel.dyn        0x000000000001c008        0x0
+ .rel.iplt      0x000000000001c008        0x0 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtbegin.o
+
+.preinit_array  0x000000000001c008        0x0
+                0x000000000001c008                __preinit_array_start = .
+ *(SORT_BY_NAME(.preinit_array.*))
+ *(.preinit_array)
+                0x000000000001c008                __preinit_array_end = .
+
+.init_array     0x000000000001c008        0x4
+                0x000000000001c008                __init_array_start = .
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+ .init_array    0x000000000001c008        0x4 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtbegin.o
+                0x000000000001c00c                __init_array_end = .
+
+.fini_array     0x000000000001c00c        0x4
+                0x000000000001c00c                __fini_array_start = .
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array)
+ .fini_array    0x000000000001c00c        0x4 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtbegin.o
+                0x000000000001c010                __fini_array_end = .
+
+.rsa_ac         0x000000000001c010     0x1030
+                0x000000000001c040                . = ALIGN (0x40)
+ *fill*         0x000000000001c010       0x30 
+                0x000000000001c040                __rsa_ac_start = .
+                0x000000000001d040                . = (. + _RSA_AC_SIZE)
+ *fill*         0x000000000001c040     0x1000 
+                0x000000000001d040                __rsa_ac_end = .
+
+.ARM.attributes
+                0x000000000001d040       0x33
+                0x000000000001d040                __ARM.attributes_start = .
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x000000000001d040       0x1f e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crti.o
+ .ARM.attributes
+                0x000000000001d05f       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtbegin.o
+ .ARM.attributes
+                0x000000000001d092       0x33 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ .ARM.attributes
+                0x000000000001d0c5       0x33 C:\Users\LIUDAN~1\AppData\Local\Temp\cc889pXK.o
+ .ARM.attributes
+                0x000000000001d0f8       0x33 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ .ARM.attributes
+                0x000000000001d12b       0x33 C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+ .ARM.attributes
+                0x000000000001d15e       0x33 C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+ .ARM.attributes
+                0x000000000001d191       0x33 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .ARM.attributes
+                0x000000000001d1c4       0x33 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKIMHmW.o
+ .ARM.attributes
+                0x000000000001d1f7       0x33 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .ARM.attributes
+                0x000000000001d22a       0x33 C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ .ARM.attributes
+                0x000000000001d25d       0x1f C:\Users\LIUDAN~1\AppData\Local\Temp\ccZMMApt.o
+ .ARM.attributes
+                0x000000000001d27c       0x33 ../../software/bsp_fsbl/lib\libxilffs.a(ff.o)
+ .ARM.attributes
+                0x000000000001d2af       0x33 ../../software/bsp_fsbl/lib\libxilffs.a(diskio.o)
+ .ARM.attributes
+                0x000000000001d2e2       0x33 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg.o)
+ .ARM.attributes
+                0x000000000001d315       0x33 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_sinit.o)
+ .ARM.attributes
+                0x000000000001d348       0x33 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_intr.o)
+ .ARM.attributes
+                0x000000000001d37b       0x3d ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_g.o)
+ .ARM.attributes
+                0x000000000001d3b8       0x33 ../../software/bsp_fsbl/lib\libxil.a(xsdps.o)
+ .ARM.attributes
+                0x000000000001d3eb       0x33 ../../software/bsp_fsbl/lib\libxil.a(xsdps_sinit.o)
+ .ARM.attributes
+                0x000000000001d41e       0x33 ../../software/bsp_fsbl/lib\libxil.a(xil_assert.o)
+ .ARM.attributes
+                0x000000000001d451       0x33 ../../software/bsp_fsbl/lib\libxil.a(xil_cache.o)
+ .ARM.attributes
+                0x000000000001d484       0x33 ../../software/bsp_fsbl/lib\libxil.a(xil_sleepcommon.o)
+ .ARM.attributes
+                0x000000000001d4b7       0x33 ../../software/bsp_fsbl/lib\libxil.a(xtime_l.o)
+ .ARM.attributes
+                0x000000000001d4ea       0x33 ../../software/bsp_fsbl/lib\libxil.a(xil_printf.o)
+ .ARM.attributes
+                0x000000000001d51d       0x33 ../../software/bsp_fsbl/lib\libxil.a(xil_exception.o)
+ .ARM.attributes
+                0x000000000001d550       0x33 ../../software/bsp_fsbl/lib\libxil.a(xsdps_options.o)
+ .ARM.attributes
+                0x000000000001d583       0x3d ../../software/bsp_fsbl/lib\libxil.a(xsdps_g.o)
+ .ARM.attributes
+                0x000000000001d5c0       0x33 ../../software/bsp_fsbl/lib\libxil.a(usleep.o)
+ .ARM.attributes
+                0x000000000001d5f3       0x33 ../../software/bsp_fsbl/lib\libxil.a(sleep.o)
+ .ARM.attributes
+                0x000000000001d626       0x33 ../../software/bsp_fsbl/lib\libxil.a(outbyte.o)
+ .ARM.attributes
+                0x000000000001d659       0x33 ../../software/bsp_fsbl/lib\libxil.a(vectors.o)
+ .ARM.attributes
+                0x000000000001d68c       0x1f ../../software/bsp_fsbl/lib\libxil.a(boot.o)
+ .ARM.attributes
+                0x000000000001d6ab       0x33 ../../software/bsp_fsbl/lib\libxil.a(xuartps_hw.o)
+ .ARM.attributes
+                0x000000000001d6de       0x1f ../../software/bsp_fsbl/lib\libxil.a(xil-crt0.o)
+ .ARM.attributes
+                0x000000000001d6fd       0x1f ../../software/bsp_fsbl/lib\libxil.a(translation_table.o)
+ .ARM.attributes
+                0x000000000001d71c       0x1f ../../software/bsp_fsbl/lib\libxil.a(cpu_init.o)
+ .ARM.attributes
+                0x000000000001d73b       0x1f e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x000000000001d75a       0x1f e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x000000000001d779       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-exit.o)
+ .ARM.attributes
+                0x000000000001d7ac       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-fini.o)
+ .ARM.attributes
+                0x000000000001d7df       0x31 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x000000000001d810       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x000000000001d843       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o)
+ .ARM.attributes
+                0x000000000001d876       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mbtowc_r.o)
+ .ARM.attributes
+                0x000000000001d8a9       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000000000001d8dc       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcasecmp.o)
+ .ARM.attributes
+                0x000000000001d90f       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcat.o)
+ .ARM.attributes
+                0x000000000001d942       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strchr.o)
+ .ARM.attributes
+                0x000000000001d975       0x1d e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcmp.o)
+ .ARM.attributes
+                0x000000000001d992       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcpy.o)
+ .ARM.attributes
+                0x000000000001d9c5       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strlcpy.o)
+ .ARM.attributes
+                0x000000000001d9f8       0x19 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x000000000001da11       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncasecmp.o)
+ .ARM.attributes
+                0x000000000001da44       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncmp.o)
+ .ARM.attributes
+                0x000000000001da77       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncpy.o)
+ .ARM.attributes
+                0x000000000001daaa       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strtol.o)
+ .ARM.attributes
+                0x000000000001dadd       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-vsnprintf.o)
+ .ARM.attributes
+                0x000000000001db10       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wctomb_r.o)
+ .ARM.attributes
+                0x000000000001db43       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x000000000001db76       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-ctype_.o)
+ .ARM.attributes
+                0x000000000001dba9       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-getenv_r.o)
+ .ARM.attributes
+                0x000000000001dbdc       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfprintf.o)
+ .ARM.attributes
+                0x000000000001dc0f       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wcrtomb.o)
+ .ARM.attributes
+                0x000000000001dc42       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wcsrtombs.o)
+ .ARM.attributes
+                0x000000000001dc75       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-dtoa.o)
+ .ARM.attributes
+                0x000000000001dca8       0x31 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-environ.o)
+ .ARM.attributes
+                0x000000000001dcd9       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-envlock.o)
+ .ARM.attributes
+                0x000000000001dd0c       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-freer.o)
+ .ARM.attributes
+                0x000000000001dd3f       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-localeconv.o)
+ .ARM.attributes
+                0x000000000001dd72       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mallocr.o)
+ .ARM.attributes
+                0x000000000001dda5       0x1b e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memchr.o)
+ .ARM.attributes
+                0x000000000001ddc0       0x1b e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x000000000001dddb       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mlock.o)
+ .ARM.attributes
+                0x000000000001de0e       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mprec.o)
+ .ARM.attributes
+                0x000000000001de41       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x000000000001de74       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-s_frexp.o)
+ .ARM.attributes
+                0x000000000001dea7       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfiprintf.o)
+ .ARM.attributes
+                0x000000000001deda       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wcsnrtombs.o)
+ .ARM.attributes
+                0x000000000001df0d       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-callocr.o)
+ .ARM.attributes
+                0x000000000001df40       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x000000000001df73       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-reallocr.o)
+ .ARM.attributes
+                0x000000000001dfa6       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-reent.o)
+ .ARM.attributes
+                0x000000000001dfd9       0x33 ../../software/bsp_fsbl/lib\libxil.a(_sbrk.o)
+ .ARM.attributes
+                0x000000000001e00c       0x33 ../../software/bsp_fsbl/lib\libxil.a(_exit.o)
+ .ARM.attributes
+                0x000000000001e03f       0x1f e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x000000000001e05e       0x33 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x000000000001e091       0x31 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtend.o
+ .ARM.attributes
+                0x000000000001e0c2       0x1f e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtn.o
+                0x000000000001e0e1                __ARM.attributes_end = .
+
+.sdata          0x000000000001d040        0x0
+                0x000000000001d040                __sdata_start = .
+ *(.sdata)
+ *(.sdata.*)
+ *(.gnu.linkonce.s.*)
+                0x000000000001d040                __sdata_end = .
+
+.sbss           0x000000000001d040        0x0
+                0x000000000001d040                __sbss_start = .
+ *(.sbss)
+ *(.sbss.*)
+ *(.gnu.linkonce.sb.*)
+                0x000000000001d040                __sbss_end = .
+
+.tdata          0x000000000001d040        0x0
+                0x000000000001d040                __tdata_start = .
+ *(.tdata)
+ *(.tdata.*)
+ *(.gnu.linkonce.td.*)
+                0x000000000001d040                __tdata_end = .
+
+.tbss           0x000000000001d040        0x0
+                0x000000000001d040                __tbss_start = .
+ *(.tbss)
+ *(.tbss.*)
+ *(.gnu.linkonce.tb.*)
+                0x000000000001d040                __tbss_end = .
+
+.bss            0x000000000001d040     0x12e8
+                0x000000000001d040                __bss_start = .
+                0x000000000001d040                __bss_start__ = .
+ *(.bss)
+ .bss           0x000000000001d040       0x1c e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtbegin.o
+ .bss           0x000000000001d05c        0xa ../../software/bsp_fsbl/lib\libxilffs.a(ff.o)
+ *fill*         0x000000000001d066        0x2 
+ .bss           0x000000000001d068      0x114 ../../software/bsp_fsbl/lib\libxilffs.a(diskio.o)
+ *fill*         0x000000000001d17c        0x4 
+ .bss           0x000000000001d180      0x620 ../../software/bsp_fsbl/lib\libxil.a(xsdps.o)
+ .bss           0x000000000001d7a0        0x4 ../../software/bsp_fsbl/lib\libxil.a(xil_assert.o)
+ .bss           0x000000000001d7a4      0x2ac e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o)
+                0x000000000001da4c                _PathLocale
+ .bss           0x000000000001da50        0x4 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-environ.o)
+ .bss           0x000000000001da54       0x34 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mallocr.o)
+                0x000000000001da54                __malloc_top_pad
+                0x000000000001da58                __malloc_current_mallinfo
+                0x000000000001da80                __malloc_max_sbrked_mem
+                0x000000000001da84                __malloc_max_total_mem
+ .bss           0x000000000001da88        0x4 ../../software/bsp_fsbl/lib\libxil.a(_sbrk.o)
+ *(.bss.*)
+ .bss.buffer    0x000000000001da8c       0x20 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ .bss.early_ready
+                0x000000000001daac        0x4 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ *fill*         0x000000000001dab0       0x10 
+ .bss.fatfs     0x000000000001dac0      0x240 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ .bss.fil       0x000000000001dd00      0x240 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ .bss.FlashReadBaseAddress
+                0x000000000001df40        0x4 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+                0x000000000001df40                FlashReadBaseAddress
+ .bss.LinearBootDeviceFlag
+                0x000000000001df44        0x1 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+                0x000000000001df44                LinearBootDeviceFlag
+ *fill*         0x000000000001df45        0x3 
+ .bss.DcfgInstance
+                0x000000000001df48       0x18 C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ *(.gnu.linkonce.b.*)
+ *(COMMON)
+ COMMON         0x000000000001df60      0x3a0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+                0x000000000001df60                ApplicationFlag
+                0x000000000001df64                FsblLength
+                0x000000000001df68                PartitionChecksumFlag
+                0x000000000001df69                PSPartitionFlag
+                0x000000000001df6c                MoveImage
+                0x000000000001df70                ExecutionAddress
+                0x000000000001df74                BitstreamFlag
+                0x000000000001df75                SignedPartitionFlag
+                0x000000000001df76                EncryptedPartitionFlag
+                0x000000000001df78                PartitionCount
+                0x000000000001df7c                PLPartitionFlag
+                0x000000000001df80                PartitionHeader
+ COMMON         0x000000000001e300        0xc C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+                0x000000000001e300                Silicon_Version
+                0x000000000001e304                SystemInitFlag
+                0x000000000001e308                PcapCtrlRegVal
+ COMMON         0x000000000001e30c        0x4 C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+                0x000000000001e30c                DcfgInstPtr
+ COMMON         0x000000000001e310        0x2 ../../software/bsp_fsbl/lib\libxil.a(xsdps.o)
+                0x000000000001e310                TransferMode
+ *fill*         0x000000000001e312        0x2 
+ COMMON         0x000000000001e314        0x4 ../../software/bsp_fsbl/lib\libxil.a(xil_assert.o)
+                0x000000000001e314                Xil_AssertStatus
+ COMMON         0x000000000001e318        0xc ../../software/bsp_fsbl/lib\libxil.a(xil_exception.o)
+                0x000000000001e318                UndefinedExceptionAddr
+                0x000000000001e31c                PrefetchAbortAddr
+                0x000000000001e320                DataAbortAddr
+ COMMON         0x000000000001e324        0x4 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-reent.o)
+                0x000000000001e324                errno
+                0x000000000001e328                __bss_end = .
+                0x000000000001e328                __bss_end__ = .
+                0x000000000001d040                _SDA_BASE_ = (__sdata_start + ((__sbss_end - __sdata_start) / 0x2))
+                0x0000000000015610                _SDA2_BASE_ = (__sdata2_start + ((__sbss2_end - __sdata2_start) / 0x2))
+
+.heap           0x000000000001e328     0x2008
+                0x000000000001e330                . = ALIGN (0x10)
+ *fill*         0x000000000001e328        0x8 
+                0x000000000001e330                _heap = .
+                0x000000000001e330                HeapBase = .
+                0x000000000001e330                _heap_start = .
+                0x0000000000020330                . = (. + _HEAP_SIZE)
+ *fill*         0x000000000001e330     0x2000 
+                0x0000000000020330                _heap_end = .
+                0x0000000000020330                HeapLimit = .
+
+.stack          0x00000000ffff0000     0xd400
+                0x00000000ffff0000                . = ALIGN (0x10)
+                0x00000000ffff0000                _stack_end = .
+                0x00000000ffff6000                . = (. + _STACK_SIZE)
+ *fill*         0x00000000ffff0000     0x6000 
+                0x00000000ffff6000                _stack = .
+                0x00000000ffff6000                __stack = _stack
+                0x00000000ffff6000                . = ALIGN (0x10)
+                0x00000000ffff6000                _irq_stack_end = .
+                0x00000000ffffc000                . = (. + _STACK_SIZE)
+ *fill*         0x00000000ffff6000     0x6000 
+                0x00000000ffffc000                __irq_stack = .
+                0x00000000ffffc000                _supervisor_stack_end = .
+                0x00000000ffffc800                . = (. + _SUPERVISOR_STACK_SIZE)
+ *fill*         0x00000000ffffc000      0x800 
+                0x00000000ffffc800                . = ALIGN (0x10)
+                0x00000000ffffc800                __supervisor_stack = .
+                0x00000000ffffc800                _abort_stack_end = .
+                0x00000000ffffcc00                . = (. + _ABORT_STACK_SIZE)
+ *fill*         0x00000000ffffc800      0x400 
+                0x00000000ffffcc00                . = ALIGN (0x10)
+                0x00000000ffffcc00                __abort_stack = .
+                0x00000000ffffcc00                _fiq_stack_end = .
+                0x00000000ffffd000                . = (. + _FIQ_STACK_SIZE)
+ *fill*         0x00000000ffffcc00      0x400 
+                0x00000000ffffd000                . = ALIGN (0x10)
+                0x00000000ffffd000                __fiq_stack = .
+                0x00000000ffffd000                _undef_stack_end = .
+                0x00000000ffffd400                . = (. + _UNDEF_STACK_SIZE)
+ *fill*         0x00000000ffffd000      0x400 
+                0x00000000ffffd400                . = ALIGN (0x10)
+                0x00000000ffffd400                __undef_stack = .
+                0x00000000ffffd400                _end = .
+LOAD C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+LOAD C:\Users\LIUDAN~1\AppData\Local\Temp\ccKGkq2f.o
+LOAD C:\Users\LIUDAN~1\AppData\Local\Temp\cc889pXK.o
+LOAD C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+LOAD C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+LOAD C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+LOAD C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+LOAD C:\Users\LIUDAN~1\AppData\Local\Temp\ccaXmHqt.o
+LOAD C:\Users\LIUDAN~1\AppData\Local\Temp\cclsriMD.o
+LOAD C:\Users\LIUDAN~1\AppData\Local\Temp\ccKIMHmW.o
+LOAD C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+LOAD C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+LOAD C:\Users\LIUDAN~1\AppData\Local\Temp\ccZMMApt.o
+START GROUP
+LOAD ../../software/bsp_fsbl/lib\librsa.a
+LOAD ../../software/bsp_fsbl/lib\libxilffs.a
+LOAD ../../software/bsp_fsbl/lib\libxil.a
+LOAD e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a
+LOAD e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a
+END GROUP
+START GROUP
+LOAD e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a
+LOAD e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libg.a
+LOAD e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a
+END GROUP
+LOAD e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtend.o
+LOAD e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtn.o
+OUTPUT(Debug/haiyun_fsbl.elf elf32-littlearm)
+
+.comment        0x0000000000000000       0x11
+ .comment       0x0000000000000000       0x11 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtbegin.o
+                                         0x12 (size before relaxing)
+ .comment       0x0000000000000011       0x12 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ .comment       0x0000000000000011       0x12 C:\Users\LIUDAN~1\AppData\Local\Temp\cc889pXK.o
+ .comment       0x0000000000000011       0x12 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ .comment       0x0000000000000011       0x12 C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+ .comment       0x0000000000000011       0x12 C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+ .comment       0x0000000000000011       0x12 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .comment       0x0000000000000011       0x12 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKIMHmW.o
+ .comment       0x0000000000000011       0x12 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .comment       0x0000000000000011       0x12 C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxilffs.a(ff.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxilffs.a(diskio.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_sinit.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_intr.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_g.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(xsdps.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(xsdps_sinit.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(xil_assert.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(xil_cache.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(xil_sleepcommon.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(xtime_l.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(xil_printf.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(xil_exception.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(xsdps_options.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(xsdps_g.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(usleep.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(sleep.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(outbyte.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(vectors.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(xuartps_hw.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-exit.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-fini.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-impure.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-init.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-locale.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mbtowc_r.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memset.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcasecmp.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcat.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strchr.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcpy.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strlcpy.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncasecmp.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncmp.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strncpy.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strtol.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-vsnprintf.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wctomb_r.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-__call_atexit.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-ctype_.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-getenv_r.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfprintf.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wcrtomb.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wcsrtombs.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-dtoa.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-environ.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-envlock.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-freer.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-localeconv.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mallocr.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mlock.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-mprec.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-sbrkr.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-s_frexp.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-svfiprintf.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-wcsnrtombs.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-callocr.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-memmove.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-reallocr.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-reent.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(_sbrk.o)
+ .comment       0x0000000000000011       0x12 ../../software/bsp_fsbl/lib\libxil.a(_exit.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_udivmoddi4.o)
+ .comment       0x0000000000000011       0x12 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard/crtend.o
+
+.debug_info     0x0000000000000000    0x285cf
+ .debug_info    0x0000000000000000     0x11de C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ .debug_info    0x00000000000011de      0xb9d C:\Users\LIUDAN~1\AppData\Local\Temp\cc889pXK.o
+ .debug_info    0x0000000000001d7b     0x2111 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ .debug_info    0x0000000000003e8c      0xbdb C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+ .debug_info    0x0000000000004a67      0xb24 C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+ .debug_info    0x000000000000558b     0x213e C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .debug_info    0x00000000000076c9      0xb1b C:\Users\LIUDAN~1\AppData\Local\Temp\ccKIMHmW.o
+ .debug_info    0x00000000000081e4     0x11f4 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .debug_info    0x00000000000093d8     0x1b2e C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ .debug_info    0x000000000000af06       0x26 C:\Users\LIUDAN~1\AppData\Local\Temp\ccZMMApt.o
+ .debug_info    0x000000000000af2c     0x5c89 ../../software/bsp_fsbl/lib\libxilffs.a(ff.o)
+ .debug_info    0x0000000000010bb5     0x12e9 ../../software/bsp_fsbl/lib\libxilffs.a(diskio.o)
+ .debug_info    0x0000000000011e9e     0x2443 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg.o)
+ .debug_info    0x00000000000142e1      0xa3c ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_sinit.o)
+ .debug_info    0x0000000000014d1d     0x1023 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_intr.o)
+ .debug_info    0x0000000000015d40      0x9f4 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_g.o)
+ .debug_info    0x0000000000016734     0x4a4c ../../software/bsp_fsbl/lib\libxil.a(xsdps.o)
+ .debug_info    0x000000000001b180      0xac3 ../../software/bsp_fsbl/lib\libxil.a(xsdps_sinit.o)
+ .debug_info    0x000000000001bc43      0x1dc ../../software/bsp_fsbl/lib\libxil.a(xil_assert.o)
+ .debug_info    0x000000000001be1f     0x31b8 ../../software/bsp_fsbl/lib\libxil.a(xil_cache.o)
+ .debug_info    0x000000000001efd7      0x9b6 ../../software/bsp_fsbl/lib\libxil.a(xil_sleepcommon.o)
+ .debug_info    0x000000000001f98d      0xc33 ../../software/bsp_fsbl/lib\libxil.a(xtime_l.o)
+ .debug_info    0x00000000000205c0     0x1006 ../../software/bsp_fsbl/lib\libxil.a(xil_printf.o)
+ .debug_info    0x00000000000215c6      0x357 ../../software/bsp_fsbl/lib\libxil.a(xil_exception.o)
+ .debug_info    0x000000000002191d     0x31ee ../../software/bsp_fsbl/lib\libxil.a(xsdps_options.o)
+ .debug_info    0x0000000000024b0b      0xa72 ../../software/bsp_fsbl/lib\libxil.a(xsdps_g.o)
+ .debug_info    0x000000000002557d      0x9d8 ../../software/bsp_fsbl/lib\libxil.a(usleep.o)
+ .debug_info    0x0000000000025f55      0x9d8 ../../software/bsp_fsbl/lib\libxil.a(sleep.o)
+ .debug_info    0x000000000002692d      0x9c5 ../../software/bsp_fsbl/lib\libxil.a(outbyte.o)
+ .debug_info    0x00000000000272f2      0x1ac ../../software/bsp_fsbl/lib\libxil.a(vectors.o)
+ .debug_info    0x000000000002749e       0x26 ../../software/bsp_fsbl/lib\libxil.a(boot.o)
+ .debug_info    0x00000000000274c4      0xe54 ../../software/bsp_fsbl/lib\libxil.a(xuartps_hw.o)
+ .debug_info    0x0000000000028318       0x26 ../../software/bsp_fsbl/lib\libxil.a(xil-crt0.o)
+ .debug_info    0x000000000002833e       0x26 ../../software/bsp_fsbl/lib\libxil.a(cpu_init.o)
+ .debug_info    0x0000000000028364      0x16a ../../software/bsp_fsbl/lib\libxil.a(_sbrk.o)
+ .debug_info    0x00000000000284ce      0x101 ../../software/bsp_fsbl/lib\libxil.a(_exit.o)
+
+.debug_abbrev   0x0000000000000000     0x5df4
+ .debug_abbrev  0x0000000000000000      0x338 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ .debug_abbrev  0x0000000000000338      0x2c3 C:\Users\LIUDAN~1\AppData\Local\Temp\cc889pXK.o
+ .debug_abbrev  0x00000000000005fb      0x43f C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ .debug_abbrev  0x0000000000000a3a      0x2aa C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+ .debug_abbrev  0x0000000000000ce4      0x24b C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+ .debug_abbrev  0x0000000000000f2f      0x458 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .debug_abbrev  0x0000000000001387      0x25e C:\Users\LIUDAN~1\AppData\Local\Temp\ccKIMHmW.o
+ .debug_abbrev  0x00000000000015e5      0x420 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .debug_abbrev  0x0000000000001a05      0x3cb C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ .debug_abbrev  0x0000000000001dd0       0x14 C:\Users\LIUDAN~1\AppData\Local\Temp\ccZMMApt.o
+ .debug_abbrev  0x0000000000001de4      0x551 ../../software/bsp_fsbl/lib\libxilffs.a(ff.o)
+ .debug_abbrev  0x0000000000002335      0x3f0 ../../software/bsp_fsbl/lib\libxilffs.a(diskio.o)
+ .debug_abbrev  0x0000000000002725      0x47e ../../software/bsp_fsbl/lib\libxil.a(xdevcfg.o)
+ .debug_abbrev  0x0000000000002ba3      0x213 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_sinit.o)
+ .debug_abbrev  0x0000000000002db6      0x364 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_intr.o)
+ .debug_abbrev  0x000000000000311a      0x1d8 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_g.o)
+ .debug_abbrev  0x00000000000032f2      0x58b ../../software/bsp_fsbl/lib\libxil.a(xsdps.o)
+ .debug_abbrev  0x000000000000387d      0x20c ../../software/bsp_fsbl/lib\libxil.a(xsdps_sinit.o)
+ .debug_abbrev  0x0000000000003a89      0x112 ../../software/bsp_fsbl/lib\libxil.a(xil_assert.o)
+ .debug_abbrev  0x0000000000003b9b      0x4e3 ../../software/bsp_fsbl/lib\libxil.a(xil_cache.o)
+ .debug_abbrev  0x000000000000407e      0x217 ../../software/bsp_fsbl/lib\libxil.a(xil_sleepcommon.o)
+ .debug_abbrev  0x0000000000004295      0x2d5 ../../software/bsp_fsbl/lib\libxil.a(xtime_l.o)
+ .debug_abbrev  0x000000000000456a      0x427 ../../software/bsp_fsbl/lib\libxil.a(xil_printf.o)
+ .debug_abbrev  0x0000000000004991      0x1d3 ../../software/bsp_fsbl/lib\libxil.a(xil_exception.o)
+ .debug_abbrev  0x0000000000004b64      0x48b ../../software/bsp_fsbl/lib\libxil.a(xsdps_options.o)
+ .debug_abbrev  0x0000000000004fef      0x1d8 ../../software/bsp_fsbl/lib\libxil.a(xsdps_g.o)
+ .debug_abbrev  0x00000000000051c7      0x257 ../../software/bsp_fsbl/lib\libxil.a(usleep.o)
+ .debug_abbrev  0x000000000000541e      0x257 ../../software/bsp_fsbl/lib\libxil.a(sleep.o)
+ .debug_abbrev  0x0000000000005675      0x21a ../../software/bsp_fsbl/lib\libxil.a(outbyte.o)
+ .debug_abbrev  0x000000000000588f       0xc0 ../../software/bsp_fsbl/lib\libxil.a(vectors.o)
+ .debug_abbrev  0x000000000000594f       0x14 ../../software/bsp_fsbl/lib\libxil.a(boot.o)
+ .debug_abbrev  0x0000000000005963      0x2fa ../../software/bsp_fsbl/lib\libxil.a(xuartps_hw.o)
+ .debug_abbrev  0x0000000000005c5d       0x14 ../../software/bsp_fsbl/lib\libxil.a(xil-crt0.o)
+ .debug_abbrev  0x0000000000005c71       0x14 ../../software/bsp_fsbl/lib\libxil.a(cpu_init.o)
+ .debug_abbrev  0x0000000000005c85       0xe9 ../../software/bsp_fsbl/lib\libxil.a(_sbrk.o)
+ .debug_abbrev  0x0000000000005d6e       0x86 ../../software/bsp_fsbl/lib\libxil.a(_exit.o)
+
+.debug_loc      0x0000000000000000    0x19340
+ .debug_loc     0x0000000000000000      0x122 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ .debug_loc     0x0000000000000122      0x226 C:\Users\LIUDAN~1\AppData\Local\Temp\cc889pXK.o
+ .debug_loc     0x0000000000000348     0x1021 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ .debug_loc     0x0000000000001369     0x23fc C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+ .debug_loc     0x0000000000003765      0xad9 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .debug_loc     0x000000000000423e       0xe3 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKIMHmW.o
+ .debug_loc     0x0000000000004321      0x824 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .debug_loc     0x0000000000004b45      0xbd2 C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ .debug_loc     0x0000000000005717     0x7e0a ../../software/bsp_fsbl/lib\libxilffs.a(ff.o)
+ .debug_loc     0x000000000000d521      0x65a ../../software/bsp_fsbl/lib\libxilffs.a(diskio.o)
+ .debug_loc     0x000000000000db7b     0x1a0f ../../software/bsp_fsbl/lib\libxil.a(xdevcfg.o)
+ .debug_loc     0x000000000000f58a       0x25 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_sinit.o)
+ .debug_loc     0x000000000000f5af      0x650 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_intr.o)
+ .debug_loc     0x000000000000fbff     0x3f8f ../../software/bsp_fsbl/lib\libxil.a(xsdps.o)
+ .debug_loc     0x0000000000013b8e       0x25 ../../software/bsp_fsbl/lib\libxil.a(xsdps_sinit.o)
+ .debug_loc     0x0000000000013bb3       0x64 ../../software/bsp_fsbl/lib\libxil.a(xil_assert.o)
+ .debug_loc     0x0000000000013c17     0x235d ../../software/bsp_fsbl/lib\libxil.a(xil_cache.o)
+ .debug_loc     0x0000000000015f74       0x4a ../../software/bsp_fsbl/lib\libxil.a(xil_sleepcommon.o)
+ .debug_loc     0x0000000000015fbe      0x19e ../../software/bsp_fsbl/lib\libxil.a(xtime_l.o)
+ .debug_loc     0x000000000001615c      0x74d ../../software/bsp_fsbl/lib\libxil.a(xil_printf.o)
+ .debug_loc     0x00000000000168a9       0x99 ../../software/bsp_fsbl/lib\libxil.a(xil_exception.o)
+ .debug_loc     0x0000000000016942     0x258e ../../software/bsp_fsbl/lib\libxil.a(xsdps_options.o)
+ .debug_loc     0x0000000000018ed0       0x3c ../../software/bsp_fsbl/lib\libxil.a(usleep.o)
+ .debug_loc     0x0000000000018f0c       0x3c ../../software/bsp_fsbl/lib\libxil.a(sleep.o)
+ .debug_loc     0x0000000000018f48       0x25 ../../software/bsp_fsbl/lib\libxil.a(outbyte.o)
+ .debug_loc     0x0000000000018f6d      0x380 ../../software/bsp_fsbl/lib\libxil.a(xuartps_hw.o)
+ .debug_loc     0x00000000000192ed       0x3e ../../software/bsp_fsbl/lib\libxil.a(_sbrk.o)
+ .debug_loc     0x000000000001932b       0x15 ../../software/bsp_fsbl/lib\libxil.a(_exit.o)
+
+.debug_aranges  0x0000000000000000      0x698
+ .debug_aranges
+                0x0000000000000000       0x40 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ .debug_aranges
+                0x0000000000000040       0x28 C:\Users\LIUDAN~1\AppData\Local\Temp\cc889pXK.o
+ .debug_aranges
+                0x0000000000000068       0xa0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ .debug_aranges
+                0x0000000000000108       0x50 C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+ .debug_aranges
+                0x0000000000000158       0x38 C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+ .debug_aranges
+                0x0000000000000190       0xc0 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .debug_aranges
+                0x0000000000000250       0x20 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKIMHmW.o
+ .debug_aranges
+                0x0000000000000270       0x88 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .debug_aranges
+                0x00000000000002f8       0x50 C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ .debug_aranges
+                0x0000000000000348       0x20 C:\Users\LIUDAN~1\AppData\Local\Temp\ccZMMApt.o
+ .debug_aranges
+                0x0000000000000368       0x20 ../../software/bsp_fsbl/lib\libxilffs.a(ff.o)
+ .debug_aranges
+                0x0000000000000388       0x20 ../../software/bsp_fsbl/lib\libxilffs.a(diskio.o)
+ .debug_aranges
+                0x00000000000003a8       0x20 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg.o)
+ .debug_aranges
+                0x00000000000003c8       0x20 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_sinit.o)
+ .debug_aranges
+                0x00000000000003e8       0x20 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_intr.o)
+ .debug_aranges
+                0x0000000000000408       0x18 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_g.o)
+ .debug_aranges
+                0x0000000000000420       0x20 ../../software/bsp_fsbl/lib\libxil.a(xsdps.o)
+ .debug_aranges
+                0x0000000000000440       0x20 ../../software/bsp_fsbl/lib\libxil.a(xsdps_sinit.o)
+ .debug_aranges
+                0x0000000000000460       0x20 ../../software/bsp_fsbl/lib\libxil.a(xil_assert.o)
+ .debug_aranges
+                0x0000000000000480       0x20 ../../software/bsp_fsbl/lib\libxil.a(xil_cache.o)
+ .debug_aranges
+                0x00000000000004a0       0x20 ../../software/bsp_fsbl/lib\libxil.a(xil_sleepcommon.o)
+ .debug_aranges
+                0x00000000000004c0       0x20 ../../software/bsp_fsbl/lib\libxil.a(xtime_l.o)
+ .debug_aranges
+                0x00000000000004e0       0x20 ../../software/bsp_fsbl/lib\libxil.a(xil_printf.o)
+ .debug_aranges
+                0x0000000000000500       0x20 ../../software/bsp_fsbl/lib\libxil.a(xil_exception.o)
+ .debug_aranges
+                0x0000000000000520       0x20 ../../software/bsp_fsbl/lib\libxil.a(xsdps_options.o)
+ .debug_aranges
+                0x0000000000000540       0x18 ../../software/bsp_fsbl/lib\libxil.a(xsdps_g.o)
+ .debug_aranges
+                0x0000000000000558       0x20 ../../software/bsp_fsbl/lib\libxil.a(usleep.o)
+ .debug_aranges
+                0x0000000000000578       0x20 ../../software/bsp_fsbl/lib\libxil.a(sleep.o)
+ .debug_aranges
+                0x0000000000000598       0x20 ../../software/bsp_fsbl/lib\libxil.a(outbyte.o)
+ .debug_aranges
+                0x00000000000005b8       0x20 ../../software/bsp_fsbl/lib\libxil.a(vectors.o)
+ .debug_aranges
+                0x00000000000005d8       0x20 ../../software/bsp_fsbl/lib\libxil.a(boot.o)
+ .debug_aranges
+                0x00000000000005f8       0x20 ../../software/bsp_fsbl/lib\libxil.a(xuartps_hw.o)
+ .debug_aranges
+                0x0000000000000618       0x20 ../../software/bsp_fsbl/lib\libxil.a(xil-crt0.o)
+ .debug_aranges
+                0x0000000000000638       0x20 ../../software/bsp_fsbl/lib\libxil.a(cpu_init.o)
+ .debug_aranges
+                0x0000000000000658       0x20 ../../software/bsp_fsbl/lib\libxil.a(_sbrk.o)
+ .debug_aranges
+                0x0000000000000678       0x20 ../../software/bsp_fsbl/lib\libxil.a(_exit.o)
+
+.debug_ranges   0x0000000000000000     0x36b8
+ .debug_ranges  0x0000000000000000       0x30 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ .debug_ranges  0x0000000000000030       0x18 C:\Users\LIUDAN~1\AppData\Local\Temp\cc889pXK.o
+ .debug_ranges  0x0000000000000048       0xd0 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ .debug_ranges  0x0000000000000118      0x120 C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+ .debug_ranges  0x0000000000000238       0x28 C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+ .debug_ranges  0x0000000000000260      0x150 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .debug_ranges  0x00000000000003b0       0x10 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKIMHmW.o
+ .debug_ranges  0x00000000000003c0       0xa8 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .debug_ranges  0x0000000000000468       0xd8 C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ .debug_ranges  0x0000000000000540      0xe98 ../../software/bsp_fsbl/lib\libxilffs.a(ff.o)
+ .debug_ranges  0x00000000000013d8       0xd0 ../../software/bsp_fsbl/lib\libxilffs.a(diskio.o)
+ .debug_ranges  0x00000000000014a8      0x3b0 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg.o)
+ .debug_ranges  0x0000000000001858       0xa8 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_intr.o)
+ .debug_ranges  0x0000000000001900      0xdb8 ../../software/bsp_fsbl/lib\libxil.a(xsdps.o)
+ .debug_ranges  0x00000000000026b8      0x5e8 ../../software/bsp_fsbl/lib\libxil.a(xil_cache.o)
+ .debug_ranges  0x0000000000002ca0       0x48 ../../software/bsp_fsbl/lib\libxil.a(xtime_l.o)
+ .debug_ranges  0x0000000000002ce8       0x78 ../../software/bsp_fsbl/lib\libxil.a(xil_printf.o)
+ .debug_ranges  0x0000000000002d60      0x868 ../../software/bsp_fsbl/lib\libxil.a(xsdps_options.o)
+ .debug_ranges  0x00000000000035c8       0xf0 ../../software/bsp_fsbl/lib\libxil.a(xuartps_hw.o)
+
+.debug_line     0x0000000000000000    0x13842
+ .debug_line    0x0000000000000000      0x466 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ .debug_line    0x0000000000000466      0x31d C:\Users\LIUDAN~1\AppData\Local\Temp\cc889pXK.o
+ .debug_line    0x0000000000000783     0x12d8 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ .debug_line    0x0000000000001a5b      0x974 C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+ .debug_line    0x00000000000023cf      0x302 C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+ .debug_line    0x00000000000026d1      0xfa8 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .debug_line    0x0000000000003679      0x380 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKIMHmW.o
+ .debug_line    0x00000000000039f9      0x660 C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .debug_line    0x0000000000004059      0xdfb C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ .debug_line    0x0000000000004e54       0x55 C:\Users\LIUDAN~1\AppData\Local\Temp\ccZMMApt.o
+ .debug_line    0x0000000000004ea9     0x4800 ../../software/bsp_fsbl/lib\libxilffs.a(ff.o)
+ .debug_line    0x00000000000096a9      0x660 ../../software/bsp_fsbl/lib\libxilffs.a(diskio.o)
+ .debug_line    0x0000000000009d09     0x16b9 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg.o)
+ .debug_line    0x000000000000b3c2      0x251 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_sinit.o)
+ .debug_line    0x000000000000b613      0x895 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_intr.o)
+ .debug_line    0x000000000000bea8      0x227 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_g.o)
+ .debug_line    0x000000000000c0cf     0x25f4 ../../software/bsp_fsbl/lib\libxil.a(xsdps.o)
+ .debug_line    0x000000000000e6c3      0x24c ../../software/bsp_fsbl/lib\libxil.a(xsdps_sinit.o)
+ .debug_line    0x000000000000e90f      0x193 ../../software/bsp_fsbl/lib\libxil.a(xil_assert.o)
+ .debug_line    0x000000000000eaa2     0x14c0 ../../software/bsp_fsbl/lib\libxil.a(xil_cache.o)
+ .debug_line    0x000000000000ff62      0x19f ../../software/bsp_fsbl/lib\libxil.a(xil_sleepcommon.o)
+ .debug_line    0x0000000000010101      0x33f ../../software/bsp_fsbl/lib\libxil.a(xtime_l.o)
+ .debug_line    0x0000000000010440      0x706 ../../software/bsp_fsbl/lib\libxil.a(xil_printf.o)
+ .debug_line    0x0000000000010b46      0x22c ../../software/bsp_fsbl/lib\libxil.a(xil_exception.o)
+ .debug_line    0x0000000000010d72     0x1868 ../../software/bsp_fsbl/lib\libxil.a(xsdps_options.o)
+ .debug_line    0x00000000000125da      0x223 ../../software/bsp_fsbl/lib\libxil.a(xsdps_g.o)
+ .debug_line    0x00000000000127fd      0x248 ../../software/bsp_fsbl/lib\libxil.a(usleep.o)
+ .debug_line    0x0000000000012a45      0x249 ../../software/bsp_fsbl/lib\libxil.a(sleep.o)
+ .debug_line    0x0000000000012c8e      0x23e ../../software/bsp_fsbl/lib\libxil.a(outbyte.o)
+ .debug_line    0x0000000000012ecc      0x170 ../../software/bsp_fsbl/lib\libxil.a(vectors.o)
+ .debug_line    0x000000000001303c      0x13e ../../software/bsp_fsbl/lib\libxil.a(boot.o)
+ .debug_line    0x000000000001317a      0x404 ../../software/bsp_fsbl/lib\libxil.a(xuartps_hw.o)
+ .debug_line    0x000000000001357e       0x55 ../../software/bsp_fsbl/lib\libxil.a(xil-crt0.o)
+ .debug_line    0x00000000000135d3       0x48 ../../software/bsp_fsbl/lib\libxil.a(cpu_init.o)
+ .debug_line    0x000000000001361b      0x167 ../../software/bsp_fsbl/lib\libxil.a(_sbrk.o)
+ .debug_line    0x0000000000013782       0xc0 ../../software/bsp_fsbl/lib\libxil.a(_exit.o)
+
+.debug_str      0x0000000000000000     0x2d63
+ .debug_str     0x0000000000000000      0x892 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+                                        0x957 (size before relaxing)
+ .debug_str     0x0000000000000892       0x6d C:\Users\LIUDAN~1\AppData\Local\Temp\cc889pXK.o
+                                        0x6d4 (size before relaxing)
+ .debug_str     0x00000000000008ff      0x546 C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+                                        0xc76 (size before relaxing)
+ .debug_str     0x0000000000000e45       0xa9 C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+                                        0x242 (size before relaxing)
+ .debug_str     0x0000000000000eee       0x38 C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+                                        0x692 (size before relaxing)
+ .debug_str     0x0000000000000f26      0x2c7 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+                                        0xadd (size before relaxing)
+ .debug_str     0x00000000000011ed       0x38 C:\Users\LIUDAN~1\AppData\Local\Temp\ccKIMHmW.o
+                                        0x66a (size before relaxing)
+ .debug_str     0x0000000000001225      0x2da C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+                                        0x8c6 (size before relaxing)
+ .debug_str     0x00000000000014ff      0x21d C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+                                        0x9a5 (size before relaxing)
+ .debug_str     0x000000000000171c       0x1f C:\Users\LIUDAN~1\AppData\Local\Temp\ccZMMApt.o
+                                         0x6f (size before relaxing)
+ .debug_str     0x000000000000173b      0x43b ../../software/bsp_fsbl/lib\libxilffs.a(ff.o)
+                                        0xb2b (size before relaxing)
+ .debug_str     0x0000000000001b76      0x1f4 ../../software/bsp_fsbl/lib\libxilffs.a(diskio.o)
+                                        0x8e0 (size before relaxing)
+ .debug_str     0x0000000000001d6a      0x25c ../../software/bsp_fsbl/lib\libxil.a(xdevcfg.o)
+                                        0x8e4 (size before relaxing)
+ .debug_str     0x0000000000001fc6       0x29 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_sinit.o)
+                                        0x5fe (size before relaxing)
+ .debug_str     0x0000000000001fef       0x52 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_intr.o)
+                                        0x720 (size before relaxing)
+ .debug_str     0x0000000000002041        0xc ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_g.o)
+                                        0x5da (size before relaxing)
+ .debug_str     0x000000000000204d      0x395 ../../software/bsp_fsbl/lib\libxil.a(xsdps.o)
+                                        0xb7f (size before relaxing)
+ .debug_str     0x00000000000023e2       0x20 ../../software/bsp_fsbl/lib\libxil.a(xsdps_sinit.o)
+                                        0x660 (size before relaxing)
+ .debug_str     0x0000000000002402       0xe4 ../../software/bsp_fsbl/lib\libxil.a(xil_assert.o)
+                                        0x234 (size before relaxing)
+ .debug_str     0x00000000000024e6      0x3c6 ../../software/bsp_fsbl/lib\libxil.a(xil_cache.o)
+                                        0x9fc (size before relaxing)
+ .debug_str     0x00000000000028ac       0x25 ../../software/bsp_fsbl/lib\libxil.a(xil_sleepcommon.o)
+                                        0x58a (size before relaxing)
+ .debug_str     0x00000000000028d1       0x2a ../../software/bsp_fsbl/lib\libxil.a(xtime_l.o)
+                                        0x625 (size before relaxing)
+ .debug_str     0x00000000000028fb       0xf2 ../../software/bsp_fsbl/lib\libxil.a(xil_printf.o)
+                                        0x6d0 (size before relaxing)
+ .debug_str     0x00000000000029ed      0x123 ../../software/bsp_fsbl/lib\libxil.a(xil_exception.o)
+                                        0x326 (size before relaxing)
+ .debug_str     0x0000000000002b10       0x6e ../../software/bsp_fsbl/lib\libxil.a(xsdps_options.o)
+                                        0x9e5 (size before relaxing)
+ .debug_str     0x0000000000002b7e        0xa ../../software/bsp_fsbl/lib\libxil.a(xsdps_g.o)
+                                        0x63c (size before relaxing)
+ .debug_str     0x0000000000002b88        0x9 ../../software/bsp_fsbl/lib\libxil.a(usleep.o)
+                                        0x595 (size before relaxing)
+ .debug_str     0x0000000000002b91        0x9 ../../software/bsp_fsbl/lib\libxil.a(sleep.o)
+                                        0x592 (size before relaxing)
+ .debug_str     0x0000000000002b91       0x1b ../../software/bsp_fsbl/lib\libxil.a(outbyte.o)
+                                        0x5b0 (size before relaxing)
+ .debug_str     0x0000000000002bac       0x6d ../../software/bsp_fsbl/lib\libxil.a(vectors.o)
+                                        0x25c (size before relaxing)
+ .debug_str     0x0000000000002c19        0x7 ../../software/bsp_fsbl/lib\libxil.a(boot.o)
+                                         0x81 (size before relaxing)
+ .debug_str     0x0000000000002c20       0xa5 ../../software/bsp_fsbl/lib\libxil.a(xuartps_hw.o)
+                                        0x63e (size before relaxing)
+ .debug_str     0x0000000000002cc5        0xb ../../software/bsp_fsbl/lib\libxil.a(xil-crt0.o)
+                                         0x85 (size before relaxing)
+ .debug_str     0x0000000000002cd0        0xb ../../software/bsp_fsbl/lib\libxil.a(cpu_init.o)
+                                         0x85 (size before relaxing)
+ .debug_str     0x0000000000002cdb       0x46 ../../software/bsp_fsbl/lib\libxil.a(_sbrk.o)
+                                        0x1d6 (size before relaxing)
+ .debug_str     0x0000000000002d21       0x42 ../../software/bsp_fsbl/lib\libxil.a(_exit.o)
+                                        0x1a9 (size before relaxing)
+
+.debug_frame    0x0000000000000000     0x1c08
+ .debug_frame   0x0000000000000000       0xc4 C:\Users\LIUDAN~1\AppData\Local\Temp\ccE7EzrP.o
+ .debug_frame   0x00000000000000c4       0x30 C:\Users\LIUDAN~1\AppData\Local\Temp\cc889pXK.o
+ .debug_frame   0x00000000000000f4      0x1ec C:\Users\LIUDAN~1\AppData\Local\Temp\ccc3gFCr.o
+ .debug_frame   0x00000000000002e0       0xe4 C:\Users\LIUDAN~1\AppData\Local\Temp\ccMPd1yn.o
+ .debug_frame   0x00000000000003c4       0x70 C:\Users\LIUDAN~1\AppData\Local\Temp\ccyAYuPm.o
+ .debug_frame   0x0000000000000434      0x200 C:\Users\LIUDAN~1\AppData\Local\Temp\cc3RSGNn.o
+ .debug_frame   0x0000000000000634       0x3c C:\Users\LIUDAN~1\AppData\Local\Temp\ccKIMHmW.o
+ .debug_frame   0x0000000000000670      0x12c C:\Users\LIUDAN~1\AppData\Local\Temp\ccHWzaVj.o
+ .debug_frame   0x000000000000079c      0x104 C:\Users\LIUDAN~1\AppData\Local\Temp\cc6gvviR.o
+ .debug_frame   0x00000000000008a0      0x548 ../../software/bsp_fsbl/lib\libxilffs.a(ff.o)
+ .debug_frame   0x0000000000000de8       0xb8 ../../software/bsp_fsbl/lib\libxilffs.a(diskio.o)
+ .debug_frame   0x0000000000000ea0      0x204 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg.o)
+ .debug_frame   0x00000000000010a4       0x20 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_sinit.o)
+ .debug_frame   0x00000000000010c4       0xc8 ../../software/bsp_fsbl/lib\libxil.a(xdevcfg_intr.o)
+ .debug_frame   0x000000000000118c      0x1b0 ../../software/bsp_fsbl/lib\libxil.a(xsdps.o)
+ .debug_frame   0x000000000000133c       0x20 ../../software/bsp_fsbl/lib\libxil.a(xsdps_sinit.o)
+ .debug_frame   0x000000000000135c       0x4c ../../software/bsp_fsbl/lib\libxil.a(xil_assert.o)
+ .debug_frame   0x00000000000013a8      0x2f0 ../../software/bsp_fsbl/lib\libxil.a(xil_cache.o)
+ .debug_frame   0x0000000000001698       0x30 ../../software/bsp_fsbl/lib\libxil.a(xil_sleepcommon.o)
+ .debug_frame   0x00000000000016c8       0x30 ../../software/bsp_fsbl/lib\libxil.a(xtime_l.o)
+ .debug_frame   0x00000000000016f8       0xec ../../software/bsp_fsbl/lib\libxil.a(xil_printf.o)
+ .debug_frame   0x00000000000017e4       0x90 ../../software/bsp_fsbl/lib\libxil.a(xil_exception.o)
+ .debug_frame   0x0000000000001874      0x160 ../../software/bsp_fsbl/lib\libxil.a(xsdps_options.o)
+ .debug_frame   0x00000000000019d4       0x34 ../../software/bsp_fsbl/lib\libxil.a(usleep.o)
+ .debug_frame   0x0000000000001a08       0x34 ../../software/bsp_fsbl/lib\libxil.a(sleep.o)
+ .debug_frame   0x0000000000001a3c       0x20 ../../software/bsp_fsbl/lib\libxil.a(outbyte.o)
+ .debug_frame   0x0000000000001a5c       0x70 ../../software/bsp_fsbl/lib\libxil.a(vectors.o)
+ .debug_frame   0x0000000000001acc       0x48 ../../software/bsp_fsbl/lib\libxil.a(xuartps_hw.o)
+ .debug_frame   0x0000000000001b14       0x20 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+ .debug_frame   0x0000000000001b34       0x68 e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/thumb/v7-a+fp/hard\libc.a(lib_a-strcmp.o)
+ .debug_frame   0x0000000000001b9c       0x20 ../../software/bsp_fsbl/lib\libxil.a(_sbrk.o)
+ .debug_frame   0x0000000000001bbc       0x20 ../../software/bsp_fsbl/lib\libxil.a(_exit.o)
+ .debug_frame   0x0000000000001bdc       0x2c e:/viti/vitis/2019.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/thumb/v7-a+fp/hard\libgcc.a(_aeabi_uldivmod.o)
