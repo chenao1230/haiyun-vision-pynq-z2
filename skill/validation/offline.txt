@@ -1,0 +1,12 @@
+test_dma_completion (__main__.Tests.test_dma_completion) ... ok
+test_dma_error (__main__.Tests.test_dma_error) ... ok
+test_dma_timeout (__main__.Tests.test_dma_timeout) ... ok
+test_exact_large_integer (__main__.Tests.test_exact_large_integer) ... ok
+test_nan (__main__.Tests.test_nan) ... ok
+test_shape (__main__.Tests.test_shape) ... ok
+test_tolerance (__main__.Tests.test_tolerance) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.006s
+
+OK

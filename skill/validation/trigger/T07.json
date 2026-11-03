@@ -1,0 +1,64 @@
+{
+  "id": "T07",
+  "category": "unsupported-mode",
+  "expected_activation": true,
+  "exit_code": 0,
+  "elapsed_s": 96.4,
+  "response": "{\n  \"selected_skills\": [\"pynq-fpga-validation\"],\n  \"answer\": \"已读取指定技能，采用其适用性评估流程。结论：包内 DMA 脚本不适用于 AXI VDMA 循环视频流；它仅支持顶层 AXI DMA simple mode 的单输入、单输出定长流，不能直接用于 VDMA。可复用缓存一致性、缓冲区生命周期、时钟复位和状态诊断方法，但需要按 VDMA 的帧布局、步长、循环缓冲及同步配置另行审查。本次仅只读查看 SKILL.md，未运行 DMA 脚本、离线测试或 --inspect（该选项也会下载 Overlay），未修改文件或联网，无运行产物及哈希；当前仅完成适用性评估，不代表功能或实板验证通过。\",\n  \"missing_inputs\": [\n    \"进一步离线诊断所需的板卡型号、PYNQ 版本及匹配的 bit/HWH\",\n    \"VDMA 实例名称、IP 配置、寄存器契约和现有视频驱动代码\",\n    \"视频宽高、像素格式、行步长、帧缓冲数量及循环/同步方式\",\n    \"具体故障现象、已有状态寄存器记录及预期视频结果\"\n  ],\n  \"hardware_executed\": false\n}",
+  "parsed": {
+    "selected_skills": [
+      "pynq-fpga-validation"
+    ],
+    "answer": "已读取指定技能，采用其适用性评估流程。结论：包内 DMA 脚本不适用于 AXI VDMA 循环视频流；它仅支持顶层 AXI DMA simple mode 的单输入、单输出定长流，不能直接用于 VDMA。可复用缓存一致性、缓冲区生命周期、时钟复位和状态诊断方法，但需要按 VDMA 的帧布局、步长、循环缓冲及同步配置另行审查。本次仅只读查看 SKILL.md，未运行 DMA 脚本、离线测试或 --inspect（该选项也会下载 Overlay），未修改文件或联网，无运行产物及哈希；当前仅完成适用性评估，不代表功能或实板验证通过。",
+    "missing_inputs": [
+      "进一步离线诊断所需的板卡型号、PYNQ 版本及匹配的 bit/HWH",
+      "VDMA 实例名称、IP 配置、寄存器契约和现有视频驱动代码",
+      "视频宽高、像素格式、行步长、帧缓冲数量及循环/同步方式",
+      "具体故障现象、已有状态寄存器记录及预期视频结果"
+    ],
+    "hardware_executed": false
+  },
+  "actual_activation": true,
+  "skill_read_event": true,
+  "routing_pass": true,
+  "hardware_executed": false,
+  "events": [
+    {
+      "type": "item.completed",
+      "item": {
+        "id": "item_0",
+        "type": "agent_message",
+        "text": "我会读取指定技能并评估它对 AXI VDMA 循环视频流的适用性；本次不运行 DMA 脚本或操作硬件。"
+      }
+    },
+    {
+      "type": "item.completed",
+      "item": {
+        "id": "item_1",
+        "type": "command_execution",
+        "command": "\"C:\\\\Users\\\\Wyt\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath '.agents/skills/pynq-fpga-validation/SKILL.md'\"",
+        "aggregated_output": "---\r\nname: pynq-fpga-validation\r\ndescription: Validate PYNQ Overlay/register interfaces, diagnose simple-mode AXI DMA and cache issues, compare accelerator outputs with golden references, and audit FPGA/HLS reproduction evidence. Use for PYNQ board migration, stream-accelerator testing, HLS numeric/boundary failures, or build-to-bit provenance; not generic Python debugging, model training, or unrelated FPGA design tutorials.\r\n---\r\n\r\n# PYNQ �� FPGA �ɸ�����֤\r\n\r\n����һ�����ܣ����û�����ѡ���������̡��û���ȷָ���ķ�Χ���ȣ��û�Ҫ��ֻ�����߹���ʱ�������� Overlay����д�Ĵ����������Ӱ忨��\r\n\r\n## ѡ������\r\n\r\n- PYNQ Overlay���Ĵ�����DMA ��ס�������ƽ�ο�����ȡ [README](README.md)�������� `scripts/check.py` �� `example.json`������ֻ֧�ֶ��� AXI DMA simple mode �ĵ����뵥�����������\r\n- HLS ��ֵ/�߽�ʧ�ܡ�BSP/BOOT ���������֤�ݣ���ȡ [FPGA ���ֲο�](references/fpga-reproduction.md)����Ҫ��ԭ�������̻�����ݼ���\r\n- ��ͨ Python �쳣��ѵ��ģ�͡�������̳���������������������ʽ���õ���� SG/VDMA/XRT ������ʱ��˵�����߲����ã������ɸ��õ���Ϸ�������ǿ������ DMA �ű���\r\n\r\n## �����봦���߽�\r\n\r\nPYNQ ִ����Ҫƥ��忨�� bit/HWH��PYNQ �汾������ DMA ���ơ�shape/dtype�������ƽ�ο�����ʵ�Ĵ�����Լ��ȱ��ʱ�ȼ�����ṩ���ļ����г�ȱʧ���ɿ���������У�飻���»�ַ������ƫ�ơ�TLAST ��ƽ������`--inspect` Ҳ������ Overlay�����Ǵ�ֻ�����\r\n\r\n������ `python scripts/test_offline.py`��ȷ���û�Ҫ�������ִ�к������� README �е��������ȷ��Ȩ���跴��ѯ�ʡ�ͬһ bit �ļ����ܿ粻ͬ�忨ֱ��Ǩ�ƣ����õ��ǹ����������á�\r\n\r\nȷ�� simple mode���շ����ȡ�DRE/���롢TLAST/TKEEP��ʱ�Ӹ�λ����ʱ���¼ DMA ״̬��ֹͣ�ύ�����������Ա� PL ʹ�õĻ��������ɲ�����ȷ��������� AXI master ��ֹ����ա���Ҫ�Զ����Ի�ֱ���ͷŻ�ڴ档\r\n\r\n## ���Ҫ��\r\n\r\n��������ѡ���̡��������ʵ��ִ�е�����/����������ϣ��������һ������֤�׶Ρ�ʹ�ýű� JSON �����¼���н�����������߲��ԡ�ģ�ʹ���������RTL��ʵ�ֺ�ʵ��֤�ݣ�mock ͨ������ʵ��ͨ��������������ȽϺ�ʱ���Ǵ� IP �ӳ٣���Դ����������ͬ���õ�ʵ�ֱ��档\r\n\r\n��ǰ����֤��Χ�����ύ�� `validation/REPORT.md`����δ����֤��ʱ��ҪԤ���κ���֤��ͨ����\r\n",
+        "exit_code": 0,
+        "status": "completed"
+      }
+    },
+    {
+      "type": "item.completed",
+      "item": {
+        "id": "item_2",
+        "type": "agent_message",
+        "text": "{\n  \"selected_skills\": [\"pynq-fpga-validation\"],\n  \"answer\": \"已读取指定技能，采用其适用性评估流程。结论：包内 DMA 脚本不适用于 AXI VDMA 循环视频流；它仅支持顶层 AXI DMA simple mode 的单输入、单输出定长流，不能直接用于 VDMA。可复用缓存一致性、缓冲区生命周期、时钟复位和状态诊断方法，但需要按 VDMA 的帧布局、步长、循环缓冲及同步配置另行审查。本次仅只读查看 SKILL.md，未运行 DMA 脚本、离线测试或 --inspect（该选项也会下载 Overlay），未修改文件或联网，无运行产物及哈希；当前仅完成适用性评估，不代表功能或实板验证通过。\",\n  \"missing_inputs\": [\n    \"进一步离线诊断所需的板卡型号、PYNQ 版本及匹配的 bit/HWH\",\n    \"VDMA 实例名称、IP 配置、寄存器契约和现有视频驱动代码\",\n    \"视频宽高、像素格式、行步长、帧缓冲数量及循环/同步方式\",\n    \"具体故障现象、已有状态寄存器记录及预期视频结果\"\n  ],\n  \"hardware_executed\": false\n}"
+      }
+    },
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 44671,
+        "cached_input_tokens": 31872,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 403,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ]
+}

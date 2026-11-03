@@ -1,0 +1,32 @@
+{
+  "validator_sha256": "6068513d924ed3559e186dfcdead7439129828dcf402167fd925c06dffbf2806",
+  "validator_source": "C:\\Users\\Wyt\\.codex\\skills\\.system\\skill-creator\\scripts\\quick_validate.py",
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "checks": [
+    {
+      "check": "official-format",
+      "exit_code": 0,
+      "command": [
+        "C:\\Users\\Wyt\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-X",
+        "utf8",
+        "C:\\Users\\Wyt\\.codex\\skills\\.system\\skill-creator\\scripts\\quick_validate.py",
+        "C:\\Users\\Wyt\\Documents\\ChatGPT\\FPGA\\skill\\pynq-fpga-validation"
+      ],
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "check": "offline",
+      "exit_code": 0,
+      "command": [
+        "C:\\Users\\Wyt\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-X",
+        "utf8",
+        "C:\\Users\\Wyt\\Documents\\ChatGPT\\FPGA\\skill\\pynq-fpga-validation\\scripts\\test_offline.py"
+      ],
+      "stdout": "",
+      "stderr": "test_dma_completion (__main__.Tests.test_dma_completion) ... ok\ntest_dma_error (__main__.Tests.test_dma_error) ... ok\ntest_dma_timeout (__main__.Tests.test_dma_timeout) ... ok\ntest_exact_large_integer (__main__.Tests.test_exact_large_integer) ... ok\ntest_nan (__main__.Tests.test_nan) ... ok\ntest_shape (__main__.Tests.test_shape) ... ok\ntest_tolerance (__main__.Tests.test_tolerance) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.006s\n\nOK\n"
+    }
+  ]
+}
