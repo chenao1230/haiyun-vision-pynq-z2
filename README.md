@@ -17,7 +17,7 @@ Copyright (c) 2026 Haiyun Vision contributors.
 - Vivado 重建入口：`build/recreate_vivado.cmd`。
 - 当前 Vitis/ARM 应用：`src/vitis/firmware/app/src/`，Makefile 位于其上级。
 - 当前 BSP 与 FSBL：`src/vitis/build/official_generated_fast2/`、`src/vitis/build/official_generated/`。
-- 设计报告：[设计报告.pdf](report/设计报告.pdf)。
+- 设计报告：[设计报告.pdf](report/design_report.pdf)。
 - 技能包使用说明：[skill/README.md](skill/README.md)；上位机按下文顺序操作。
 
 ## 与官方推荐目录的对应
