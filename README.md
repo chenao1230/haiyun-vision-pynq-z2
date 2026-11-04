@@ -9,8 +9,8 @@
 - Vivado 重建入口：`build/recreate_vivado.cmd`。
 - 当前 Vitis/ARM 应用：`src/vitis/firmware/app/src/`，Makefile 位于其上级。
 - 当前 BSP 与 FSBL：`src/vitis/build/official_generated_fast2/`、`src/vitis/build/official_generated/`。
-- 设计报告：`report/design_report.docx`。
-- 提交检查：`report/submission_checklist.md`；复现：`report/reproduction.md`。
+- 设计报告：[设计报告.pdf](report/设计报告.pdf)、[设计报告 (1).pdf](report/设计报告%20%281%29.pdf)。
+- 技能包使用说明：[skill/README.md](skill/README.md)；上位机按下文顺序操作。
 
 ## 与官方推荐目录的对应
 |目录|内容|
@@ -28,7 +28,7 @@
 |skill|可复用流程、校验工具、提示词与案例|
 |report|报告、协作记录、复现步骤与材料索引|
 
-本目录是独立提交副本，上位机界面和操作流程已更新，以下说明对应当前版本。目录名使用英文；工具生成的 Makefile、BOOT.bin、IP 名称等保留原大小写，避免破坏工具或源码依赖。中文说明文件重命名映射见 report/source_map.json。
+本目录是独立提交副本，上位机界面和操作流程已更新，以下说明对应当前版本。目录名使用英文；工具生成的 Makefile、BOOT.bin、IP 名称等保留原大小写，避免破坏工具或源码依赖。报告文件保留本次提交的原文件名。
 
 ## 上位机操作说明（按顺序执行）
 

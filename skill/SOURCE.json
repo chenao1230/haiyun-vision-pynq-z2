@@ -1,0 +1,16 @@
+{
+  "source_archive": "C:\\Users\\wsy\\Documents\\ChatGPT\\FPGA\\FPGA_Skill_Submission_20261103\\FPGA_Skill.zip",
+  "sha256": "31199a51b72f41e9e26180d9b4313c5668442207d39a869b35c3e6cc5a98ef61",
+  "reused": [
+    "scripts/*",
+    "examples/*",
+    "tests/run_tests.py"
+  ],
+  "rewritten": [
+    "SKILL.md",
+    "references/*",
+    "assets/*",
+    "prompts/workflows.md"
+  ],
+  "historical_pass_records_reused_as_current": false
+}

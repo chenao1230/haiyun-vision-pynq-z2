@@ -1,12 +1,84 @@
-test_dma_completion (__main__.Tests.test_dma_completion) ... ok
-test_dma_error (__main__.Tests.test_dma_error) ... ok
-test_dma_timeout (__main__.Tests.test_dma_timeout) ... ok
-test_exact_large_integer (__main__.Tests.test_exact_large_integer) ... ok
-test_nan (__main__.Tests.test_nan) ... ok
-test_shape (__main__.Tests.test_shape) ... ok
-test_tolerance (__main__.Tests.test_tolerance) ... ok
+{
+  "tests": [
+    {
+      "name": "hash_same",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "name": "hash_different",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "name": "hash_missing",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "name": "hash_input_protection",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true,
+      "stderr": "usage: check_files.py [-h] --reference REFERENCE --candidate CANDIDATE\n                      [CANDIDATE ...] --output OUTPUT\ncheck_files.py: error: output must not overwrite input\n"
+    },
+    {
+      "name": "numeric_within_tolerance",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "name": "numeric_outside_tolerance",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "name": "numeric_wrong_length",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "name": "numeric_nonfinite",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true,
+      "stderr": "usage: compare_values.py [-h] --reference REFERENCE --actual ACTUAL\n                         [--atol ATOL] [--rtol RTOL] --output OUTPUT\ncompare_values.py: error: finite numeric values required\n"
+    },
+    {
+      "name": "actual_vivado_report",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "name": "missing_report",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "name": "negative_slack_fixture",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "stderr": ""
+    }
+  ],
+  "all_passed": true,
+  "fixture_note": "Hash and numeric edge cases and negative slack are synthetic. Actual report test uses included project reports."
+}
 
-----------------------------------------------------------------------
-Ran 7 tests in 0.006s
-
-OK
