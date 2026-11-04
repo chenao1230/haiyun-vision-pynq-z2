@@ -2,6 +2,14 @@
 
 平台：PYNQ-Z2，XC7Z020-1CLG400C。PL 执行 YOLOv4-Tiny 计算，ARM 执行调度、后处理、ByteTrack 与以太网通信；电脑运行上位机、告警及单目深度预测。
 
+## 开源许可
+
+Copyright (c) 2026 Haiyun Vision contributors.
+
+本项目原创代码采用 **GNU AGPL-3.0-only** 开源协议，允许在遵守协议条件的前提下使用、修改和再分发。完整条款见 [LICENSE](LICENSE)，适用范围和第三方协议见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+
+再分发或修改时，应保留版权与许可声明、标明修改并按协议提供对应源码；通过网络向用户提供修改版程序的服务时，还需遵守相应源码提供义务。第三方代码继续适用原协议；模型权重、数据和报告材料的权利按各自来源确定，不因项目代码开源而自动重新授权。
+
 ## 先看这些入口
 - 使用：`start_pc.cmd`，或 `python src/vitis/pc_app/app.py`。
 - 当前上板文件：`board/BOOT.bin`；完整演示启动分区内容：`board/sd_card/`。
